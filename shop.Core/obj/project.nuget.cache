@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mgtKD3REZLLeY+1pfBAmZVcNdSKLA+OMApibGpreBwa/NijXz+lxBbyCVUPOaYRr3WRgmllv9WG7ql3BLXSdTw==",
+  "dgSpecHash": "GGFEP6G6KlXr0vBf9VjCHEsSfnO3w86LkhiDuAeC5wfUaCa7yFN69JPZKuwXGdWD7uhNyMnawU2GbHYKUA5iKA==",
   "success": true,
-  "projectFilePath": "D:\\programming\\Eshop-WebApi\\shop.Core\\shop.Core.csproj",
+  "projectFilePath": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\Eshop-Api\\shop.Core\\shop.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\acer\\.nuget\\packages\\hangfire.aspnetcore\\1.8.2\\hangfire.aspnetcore.1.8.2.nupkg.sha512",
     "C:\\Users\\acer\\.nuget\\packages\\hangfire.core\\1.8.2\\hangfire.core.1.8.2.nupkg.sha512",

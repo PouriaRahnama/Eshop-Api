@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\programming\\Eshop-WebApi\\shop.Data\\shop.Data.csproj": {}
+    "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\Eshop-Api\\shop.Data\\shop.Data.csproj": {}
   },
   "projects": {
-    "D:\\programming\\Eshop-WebApi\\shop.Core\\shop.Core.csproj": {
+    "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\Eshop-Api\\shop.Core\\shop.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\programming\\Eshop-WebApi\\shop.Core\\shop.Core.csproj",
+        "projectUniqueName": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\Eshop-Api\\shop.Core\\shop.Core.csproj",
         "projectName": "shop.Core",
-        "projectPath": "D:\\programming\\Eshop-WebApi\\shop.Core\\shop.Core.csproj",
+        "projectPath": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\Eshop-Api\\shop.Core\\shop.Core.csproj",
         "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
-        "outputPath": "D:\\programming\\Eshop-WebApi\\shop.Core\\obj\\",
+        "outputPath": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\Eshop-Api\\shop.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -85,14 +85,14 @@
         }
       }
     },
-    "D:\\programming\\Eshop-WebApi\\shop.Data\\shop.Data.csproj": {
+    "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\Eshop-Api\\shop.Data\\shop.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\programming\\Eshop-WebApi\\shop.Data\\shop.Data.csproj",
+        "projectUniqueName": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\Eshop-Api\\shop.Data\\shop.Data.csproj",
         "projectName": "shop.Data",
-        "projectPath": "D:\\programming\\Eshop-WebApi\\shop.Data\\shop.Data.csproj",
+        "projectPath": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\Eshop-Api\\shop.Data\\shop.Data.csproj",
         "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
-        "outputPath": "D:\\programming\\Eshop-WebApi\\shop.Data\\obj\\",
+        "outputPath": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\Eshop-Api\\shop.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -109,8 +109,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\programming\\Eshop-WebApi\\shop.Core\\shop.Core.csproj": {
-                "projectPath": "D:\\programming\\Eshop-WebApi\\shop.Core\\shop.Core.csproj"
+              "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\Eshop-Api\\shop.Core\\shop.Core.csproj": {
+                "projectPath": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\Eshop-Api\\shop.Core\\shop.Core.csproj"
               }
             }
           }

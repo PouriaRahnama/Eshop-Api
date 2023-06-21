@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\programming\\Eshop-WebApi\\Shop.Identity\\Shop.Identity.csproj": {}
+    "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\Eshop-Api\\Shop.Identity\\Shop.Identity.csproj": {}
   },
   "projects": {
-    "D:\\programming\\Eshop-WebApi\\Shop.Identity\\Shop.Identity.csproj": {
+    "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\Eshop-Api\\Shop.Identity\\Shop.Identity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\programming\\Eshop-WebApi\\Shop.Identity\\Shop.Identity.csproj",
+        "projectUniqueName": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\Eshop-Api\\Shop.Identity\\Shop.Identity.csproj",
         "projectName": "Shop.Identity",
-        "projectPath": "D:\\programming\\Eshop-WebApi\\Shop.Identity\\Shop.Identity.csproj",
+        "projectPath": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\Eshop-Api\\Shop.Identity\\Shop.Identity.csproj",
         "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
-        "outputPath": "D:\\programming\\Eshop-WebApi\\Shop.Identity\\obj\\",
+        "outputPath": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\Eshop-Api\\Shop.Identity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",

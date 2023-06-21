@@ -27,6 +27,9 @@ public class CategoryService : ICategoryService
     public async Task<OperationResult> AddChildCategory(CreateChildCategoryDto CreateChildCategoryDto)
     {
         var parentCategory =await _repository.GetEntity(c => c.Id == CreateChildCategoryDto.ParentId);
+        if(parentCategory.Deleted == true)
+            return OperationResult.Error("!این دسته حذف شده است");
+
         if (parentCategory.ParentID != null)
                 return OperationResult.Error("1 child in Exist!");
 

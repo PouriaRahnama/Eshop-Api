@@ -1,5 +1,32 @@
 ﻿namespace shop.Service.Extension.Util
 {
+    public class OperationResult<TData>
+    {
+        public const string SuccessMessage = "عملیات با موفقیت انجام شد";
+
+        public string Message { get; set; }
+        public string Title { get; set; } = null;
+        public OperationResultStatus Status { get; set; }
+        public TData Data { get; set; }
+        public static OperationResult<TData> Success(TData data)
+        {
+            return new OperationResult<TData>()
+            {
+                Status = OperationResultStatus.Success,
+                Title = SuccessMessage,
+                Data = data,
+            };
+        }
+        public static OperationResult<TData> NotFound()
+        {
+            return new OperationResult<TData>()
+            {
+                Status = OperationResultStatus.NotFound,
+                Title = "NotFound",
+                Data = default(TData),
+            };
+        }
+    }
     public class OperationResult
     {
         public string Message { get; set; }

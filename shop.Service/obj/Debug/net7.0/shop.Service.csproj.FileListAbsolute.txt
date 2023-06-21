@@ -100,3 +100,20 @@ C:\Users\acer\Desktop\Eshop-WebApi\shop.Service\obj\Debug\net7.0\shop.Service.dl
 C:\Users\acer\Desktop\Eshop-WebApi\shop.Service\obj\Debug\net7.0\refint\shop.Service.dll
 C:\Users\acer\Desktop\Eshop-WebApi\shop.Service\obj\Debug\net7.0\shop.Service.pdb
 C:\Users\acer\Desktop\Eshop-WebApi\shop.Service\obj\Debug\net7.0\ref\shop.Service.dll
+D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-8\Eshop-Api\shop.Service\bin\Debug\net7.0\shop.Service.deps.json
+D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-8\Eshop-Api\shop.Service\bin\Debug\net7.0\shop.Service.dll
+D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-8\Eshop-Api\shop.Service\bin\Debug\net7.0\shop.Service.pdb
+D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-8\Eshop-Api\shop.Service\bin\Debug\net7.0\shop.Core.dll
+D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-8\Eshop-Api\shop.Service\bin\Debug\net7.0\shop.Data.dll
+D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-8\Eshop-Api\shop.Service\bin\Debug\net7.0\shop.Core.pdb
+D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-8\Eshop-Api\shop.Service\bin\Debug\net7.0\shop.Data.pdb
+D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-8\Eshop-Api\shop.Service\obj\Debug\net7.0\shop.Service.csproj.AssemblyReference.cache
+D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-8\Eshop-Api\shop.Service\obj\Debug\net7.0\shop.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-8\Eshop-Api\shop.Service\obj\Debug\net7.0\shop.Service.AssemblyInfoInputs.cache
+D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-8\Eshop-Api\shop.Service\obj\Debug\net7.0\shop.Service.AssemblyInfo.cs
+D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-8\Eshop-Api\shop.Service\obj\Debug\net7.0\shop.Service.csproj.CoreCompileInputs.cache
+D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-8\Eshop-Api\shop.Service\obj\Debug\net7.0\shop.Service.csproj.CopyComplete
+D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-8\Eshop-Api\shop.Service\obj\Debug\net7.0\shop.Service.dll
+D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-8\Eshop-Api\shop.Service\obj\Debug\net7.0\refint\shop.Service.dll
+D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-8\Eshop-Api\shop.Service\obj\Debug\net7.0\shop.Service.pdb
+D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-8\Eshop-Api\shop.Service\obj\Debug\net7.0\ref\shop.Service.dll

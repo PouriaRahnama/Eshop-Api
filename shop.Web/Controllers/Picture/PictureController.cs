@@ -3,7 +3,7 @@
 
 namespace shop.Web.Controllers.Picture
 {
-    public class PictureController : ShopController
+    public class PictureController 
     {
 
     }

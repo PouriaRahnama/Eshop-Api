@@ -8,9 +8,9 @@ namespace shop.Service.Middleware
 {
     public interface IErrorHandler
     {
-        string ErrorMessage { get; set; }
-        int StatusCode { get; set; }
+    //    string ErrorMessage { get; set; }
+    //    int StatusCode { get; set; }
 
-        void GetError(Exception ex);
+    //    void GetError(Exception ex);
     }
 }

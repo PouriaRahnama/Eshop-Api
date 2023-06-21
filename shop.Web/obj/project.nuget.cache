@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Co5ADc3htQPjLC8pdbdXDTC7viJLesP6vuxekhSzLmGqaAAwm6q9wZT6vaA5vmbWMCiPHjvn43Hn0PbtMYh6Mg==",
+  "dgSpecHash": "acASLaSOphtTfvUfnjDTF1/rDMtM58EppVes3PfyRI6YOLMnZdBjymsVMdGB08OKgNjAecMyu3GHn2zfkM/PLg==",
   "success": true,
-  "projectFilePath": "D:\\programming\\Eshop-WebApi\\shop.Web\\shop.Web.csproj",
+  "projectFilePath": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\Eshop-Api\\shop.Web\\shop.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\acer\\.nuget\\packages\\anglesharp\\0.17.1\\anglesharp.0.17.1.nupkg.sha512",
     "C:\\Users\\acer\\.nuget\\packages\\anglesharp.css\\0.17.0\\anglesharp.css.0.17.0.nupkg.sha512",
