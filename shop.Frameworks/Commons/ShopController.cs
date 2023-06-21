@@ -23,7 +23,7 @@ namespace shop.Frameworks.Commons
             };
         }
 
-        protected ApiResult<TData> CreatedResult<TData>(OperationResult<TData> operation, string location)
+        protected ApiResult<TData> CreatedResult<TData>(OperationResult<TData> operation, string? location)
         {
             bool isSuccess = operation.Status == OperationResultStatus.Success;
             if (isSuccess)

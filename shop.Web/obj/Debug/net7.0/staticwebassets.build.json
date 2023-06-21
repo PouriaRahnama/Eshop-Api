@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2w6hALggw4NRhiLOCD6yJWZuNf4WUGq9puD23lbSB6U=",
+  "Hash": "hWal7hu3ZXVuEgaegtPNtwbW5yZPVVTQJcHeTNYjMeI=",
   "Source": "shop.Web",
   "BasePath": "_content/shop.Web",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "shop.Web\\wwwroot",
       "Source": "shop.Web",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\Eshop-Api\\shop.Web\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\shop.Web\\wwwroot\\",
       "BasePath": "_content/shop.Web",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\Eshop-Api\\shop.Web\\wwwroot\\index.html",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\shop.Web\\wwwroot\\index.html",
       "SourceId": "shop.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\Eshop-Api\\shop.Web\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\shop.Web\\wwwroot\\",
       "BasePath": "_content/shop.Web",
       "RelativePath": "index.html",
       "AssetKind": "All",

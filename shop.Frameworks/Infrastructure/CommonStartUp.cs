@@ -15,7 +15,7 @@ namespace shop.Framework.Infrastructure
         {           
             services.AddSwaggerGen();
 
-            //services.AddScoped<IErrorHandler, ErrorHandler>();
+            services.AddScoped<IErrorHandler, ErrorHandler>();
         }
 
         public void Configure(IApplicationBuilder app)
@@ -29,18 +29,12 @@ namespace shop.Framework.Infrastructure
                         c.SwaggerEndpoint("/swagger/v1/swagger.json", "Shop API V1")
                     );
             }
-
-            //
-            //app.UseExceptionHandler(app =>
-            //{
-            //    //Register Exception Middleware
-            //    app.UseMiddleware<ErrorHandlerMiddleware>();
-            //});
-
-
-
-        }
-
-        
+          
+            app.UseExceptionHandler(app =>
+            {
+                //Register Exception Middleware
+                app.UseMiddleware<ErrorHandlerMiddleware>();
+            });
+        }      
     }
 }

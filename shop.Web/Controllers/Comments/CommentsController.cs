@@ -7,5 +7,12 @@ namespace shop.Web.Controllers.Comments
     [ApiController]
     public class CommentsController : ControllerBase
     {
+        [HttpGet]
+        public ActionResult get()
+        {
+            var a = "dfg";
+            var b = Convert.ToInt32(a);
+            return Ok();
+        }
     }
 }

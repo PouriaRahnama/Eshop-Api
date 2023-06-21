@@ -12564,3 +12564,1425 @@ Login failed for user 'DESKTOP-L6ERISM\acer'.
    at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
 ClientConnectionId:df5d3f96-5cb3-4931-bbb3-f7215dde7d21
 Error Number:4060,State:1,Class:11
+2023-06-21 23:39:55.060 +03:30 [ERR] Was unable to use the TryAutoDetectSchemaDependentOptions option due to an exception.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerStorage.Initialize()
+ClientConnectionId:3e74c263-ee66-486f-a4ae-3b16338883ab
+Error Number:4060,State:1,Class:11
+2023-06-21 23:39:55.147 +03:30 [ERR] Execution BackgroundServerProcess is in the Failed state now due to an exception, execution will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:3e74c263-ee66-486f-a4ae-3b16338883ab
+Error Number:4060,State:1,Class:11
+2023-06-21 23:39:55.556 +03:30 [ERR] Execution BackgroundServerProcess is in the Failed state now due to an exception, execution will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:3e74c263-ee66-486f-a4ae-3b16338883ab
+Error Number:4060,State:1,Class:11
+2023-06-21 23:40:15.232 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) Executing
+2023-06-21 23:40:17.580 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) Executed
+2023-06-21 23:40:20.185 +03:30 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:00:25.0351999 due to an exception, will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:a192ca1e-61e4-406a-b3e8-54abdb1ccf85
+Error Number:4060,State:1,Class:11
+2023-06-21 23:40:20.185 +03:30 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:00:24.6167788 due to an exception, will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:a192ca1e-61e4-406a-b3e8-54abdb1ccf85
+Error Number:4060,State:1,Class:11
+2023-06-21 23:40:45.248 +03:30 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:00:50.0977429 due to an exception, will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:3e052cfd-fb48-4059-9538-9fce96e5b975
+Error Number:4060,State:1,Class:11
+2023-06-21 23:40:45.248 +03:30 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:00:49.6794555 due to an exception, will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:3e052cfd-fb48-4059-9538-9fce96e5b975
+Error Number:4060,State:1,Class:11
+2023-06-21 23:41:00.261 +03:30 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:01:04.6924131 due to an exception, will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:3e052cfd-fb48-4059-9538-9fce96e5b975
+Error Number:4060,State:1,Class:11
+2023-06-21 23:41:00.261 +03:30 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:01:05.1108259 due to an exception, will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:3e052cfd-fb48-4059-9538-9fce96e5b975
+Error Number:4060,State:1,Class:11
+2023-06-21 23:41:25.913 +03:30 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:01:30.7628128 due to an exception, will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:71ad8acb-8948-478a-857d-4198f73e78b4
+Error Number:4060,State:1,Class:11
+2023-06-21 23:41:25.914 +03:30 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:01:30.3456263 due to an exception, will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:71ad8acb-8948-478a-857d-4198f73e78b4
+Error Number:4060,State:1,Class:11
+2023-06-21 23:41:40.936 +03:30 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:01:45.7865333 due to an exception, will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:71ad8acb-8948-478a-857d-4198f73e78b4
+Error Number:4060,State:1,Class:11
+2023-06-21 23:41:40.936 +03:30 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:01:45.3681207 due to an exception, will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:71ad8acb-8948-478a-857d-4198f73e78b4
+Error Number:4060,State:1,Class:11
+2023-06-21 23:41:55.966 +03:30 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:02:00.3977254 due to an exception, will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:71ad8acb-8948-478a-857d-4198f73e78b4
+Error Number:4060,State:1,Class:11
+2023-06-21 23:41:55.968 +03:30 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:02:00.8187244 due to an exception, will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:71ad8acb-8948-478a-857d-4198f73e78b4
+Error Number:4060,State:1,Class:11
+2023-06-21 23:42:21.449 +03:30 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:02:25.8805489 due to an exception, will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:99df9145-b7f8-4957-9ef2-907cc3838c96
+Error Number:4060,State:1,Class:11
+2023-06-21 23:42:21.449 +03:30 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:02:26.2989617 due to an exception, will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:99df9145-b7f8-4957-9ef2-907cc3838c96
+Error Number:4060,State:1,Class:11
+2023-06-21 23:43:30.188 +03:30 [ERR] Was unable to use the TryAutoDetectSchemaDependentOptions option due to an exception.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerStorage.Initialize()
+ClientConnectionId:99345d5d-9702-4c85-b80e-9743ed5c6238
+Error Number:4060,State:1,Class:11
+2023-06-21 23:43:30.270 +03:30 [ERR] Execution BackgroundServerProcess is in the Failed state now due to an exception, execution will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:99345d5d-9702-4c85-b80e-9743ed5c6238
+Error Number:4060,State:1,Class:11
+2023-06-21 23:43:30.617 +03:30 [ERR] Execution BackgroundServerProcess is in the Failed state now due to an exception, execution will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:99345d5d-9702-4c85-b80e-9743ed5c6238
+Error Number:4060,State:1,Class:11
+2023-06-21 23:43:55.321 +03:30 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:00:25.0455607 due to an exception, will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:31c8811d-0bf2-4345-be9b-0ead2f309b30
+Error Number:4060,State:1,Class:11
+2023-06-21 23:43:55.321 +03:30 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:00:24.7031628 due to an exception, will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:31c8811d-0bf2-4345-be9b-0ead2f309b30
+Error Number:4060,State:1,Class:11
+2023-06-21 23:43:56.304 +03:30 [ERR] shop.Web.Controllers.Comments.CommentsController.get (shop.Web) Executing
+2023-06-21 23:43:56.307 +03:30 [ERR] shop.Web.Controllers.Comments.CommentsController.get (shop.Web) Executed
+2023-06-21 23:43:56.318 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.FormatException: The input string 'dfg' was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, ReadOnlySpan`1 value, TypeCode type)
+   at System.Convert.ToInt32(String value)
+   at shop.Web.Controllers.Comments.CommentsController.get() in D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-8\PouriaRahnama\Eshop-Api\shop.Web\Controllers\Comments\CommentsController.cs:line 14
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext) in C:\projects\ahoy\src\Swashbuckle.AspNetCore.SwaggerUI\SwaggerUIMiddleware.cs:line 77
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-06-21 23:44:12.762 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.CreateCategory (shop.Web) Executing
+2023-06-21 23:44:14.353 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.CreateCategory (shop.Web) Executed
+2023-06-21 23:44:20.399 +03:30 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:00:49.7811532 due to an exception, will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:5773d5be-c56b-4987-9945-1698fd6bb7f0
+Error Number:4060,State:1,Class:11
+2023-06-21 23:44:20.399 +03:30 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:00:50.1235587 due to an exception, will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:5773d5be-c56b-4987-9945-1698fd6bb7f0
+Error Number:4060,State:1,Class:11
+2023-06-21 23:44:35.409 +03:30 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:01:05.1328478 due to an exception, will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:5773d5be-c56b-4987-9945-1698fd6bb7f0
+Error Number:4060,State:1,Class:11
+2023-06-21 23:44:35.410 +03:30 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:01:04.7923859 due to an exception, will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:5773d5be-c56b-4987-9945-1698fd6bb7f0
+Error Number:4060,State:1,Class:11
+2023-06-21 23:45:00.472 +03:30 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:01:30.1963345 due to an exception, will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:ef889b3d-c2c6-499f-bd62-d29c1e7afa9f
+Error Number:4060,State:1,Class:11
+2023-06-21 23:45:00.472 +03:30 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:01:29.8539233 due to an exception, will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:ef889b3d-c2c6-499f-bd62-d29c1e7afa9f
+Error Number:4060,State:1,Class:11
+2023-06-21 23:45:15.483 +03:30 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:01:44.8647933 due to an exception, will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:ef889b3d-c2c6-499f-bd62-d29c1e7afa9f
+Error Number:4060,State:1,Class:11
+2023-06-21 23:45:15.483 +03:30 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:01:45.2072304 due to an exception, will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:ef889b3d-c2c6-499f-bd62-d29c1e7afa9f
+Error Number:4060,State:1,Class:11
+2023-06-21 23:45:35.725 +03:30 [ERR] Was unable to use the TryAutoDetectSchemaDependentOptions option due to an exception.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerStorage.Initialize()
+ClientConnectionId:545fd88e-91da-485f-bc24-49173621e8dc
+Error Number:4060,State:1,Class:11
+2023-06-21 23:45:35.867 +03:30 [ERR] Execution BackgroundServerProcess is in the Failed state now due to an exception, execution will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:545fd88e-91da-485f-bc24-49173621e8dc
+Error Number:4060,State:1,Class:11
+2023-06-21 23:45:36.513 +03:30 [ERR] Execution BackgroundServerProcess is in the Failed state now due to an exception, execution will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:545fd88e-91da-485f-bc24-49173621e8dc
+Error Number:4060,State:1,Class:11
+2023-06-21 23:45:48.221 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.CreateCategory (shop.Web) Executing
+2023-06-21 23:46:08.572 +03:30 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:00:32.0557461 due to an exception, will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the login process. (provider: Shared Memory Provider, error: 0 - No process is on the other end of the pipe.)
+ ---> System.ComponentModel.Win32Exception (233): No process is on the other end of the pipe.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:c72dfeca-201a-44fc-a7c7-066570ba5063
+Error Number:233,State:0,Class:20
+2023-06-21 23:46:08.883 +03:30 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:00:33.0119957 due to an exception, will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the login process. (provider: Shared Memory Provider, error: 0 - No process is on the other end of the pipe.)
+ ---> System.ComponentModel.Win32Exception (233): No process is on the other end of the pipe.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ThrowExceptionAndWarning(Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:c72dfeca-201a-44fc-a7c7-066570ba5063
+Error Number:233,State:0,Class:20
+2023-06-21 23:48:01.714 +03:30 [ERR] Was unable to use the TryAutoDetectSchemaDependentOptions option due to an exception.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerStorage.Initialize()
+ClientConnectionId:8c2ee3b6-1417-46b7-a07c-728aa39e0380
+Error Number:4060,State:1,Class:11
+2023-06-21 23:48:01.799 +03:30 [ERR] Execution BackgroundServerProcess is in the Failed state now due to an exception, execution will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:8c2ee3b6-1417-46b7-a07c-728aa39e0380
+Error Number:4060,State:1,Class:11
+2023-06-21 23:48:02.315 +03:30 [ERR] Execution BackgroundServerProcess is in the Failed state now due to an exception, execution will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:8c2ee3b6-1417-46b7-a07c-728aa39e0380
+Error Number:4060,State:1,Class:11
+2023-06-21 23:48:19.521 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.CreateCategory (shop.Web) Executing
+2023-06-21 23:48:29.798 +03:30 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:00:27.4772008 due to an exception, will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:118b03b4-4613-4775-8db3-9c8e1745675f
+Error Number:4060,State:1,Class:11
+2023-06-21 23:48:29.798 +03:30 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:00:27.9955860 due to an exception, will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:118b03b4-4613-4775-8db3-9c8e1745675f
+Error Number:4060,State:1,Class:11
+2023-06-21 23:48:45.323 +03:30 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:00:43.0021211 due to an exception, will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:118b03b4-4613-4775-8db3-9c8e1745675f
+Error Number:4060,State:1,Class:11
+2023-06-21 23:48:45.328 +03:30 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:00:43.5255189 due to an exception, will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:118b03b4-4613-4775-8db3-9c8e1745675f
+Error Number:4060,State:1,Class:11
+2023-06-21 23:48:45.338 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.CreateCategory (shop.Web) Executed
+2023-06-21 23:54:56.623 +03:30 [ERR] Was unable to use the TryAutoDetectSchemaDependentOptions option due to an exception.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerStorage.Initialize()
+ClientConnectionId:ff6ecd30-f0c5-4ff8-9ce5-dec5b65fe6ae
+Error Number:4060,State:1,Class:11
+2023-06-21 23:54:56.679 +03:30 [ERR] Execution BackgroundServerProcess is in the Failed state now due to an exception, execution will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:ff6ecd30-f0c5-4ff8-9ce5-dec5b65fe6ae
+Error Number:4060,State:1,Class:11
+2023-06-21 23:54:56.923 +03:30 [ERR] Execution BackgroundServerProcess is in the Failed state now due to an exception, execution will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:ff6ecd30-f0c5-4ff8-9ce5-dec5b65fe6ae
+Error Number:4060,State:1,Class:11
+2023-06-21 23:55:06.754 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.CreateCategory (shop.Web) Executing
+2023-06-21 23:55:08.212 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.CreateCategory (shop.Web) Executed
+2023-06-21 23:55:21.730 +03:30 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:00:25.0484090 due to an exception, will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:c3f0ba9a-b8d0-4347-81c9-b093d2179628
+Error Number:4060,State:1,Class:11
+2023-06-21 23:55:21.730 +03:30 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:00:24.8065267 due to an exception, will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:c3f0ba9a-b8d0-4347-81c9-b093d2179628
+Error Number:4060,State:1,Class:11
+2023-06-21 23:55:46.776 +03:30 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:00:50.0945535 due to an exception, will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:ee94a1a3-3721-4599-8dee-f3386326a5b5
+Error Number:4060,State:1,Class:11
+2023-06-21 23:55:46.778 +03:30 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:00:49.8539389 due to an exception, will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:ee94a1a3-3721-4599-8dee-f3386326a5b5
+Error Number:4060,State:1,Class:11
+2023-06-21 23:56:03.804 +03:30 [ERR] Was unable to use the TryAutoDetectSchemaDependentOptions option due to an exception.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerStorage.Initialize()
+ClientConnectionId:77c82bca-edf9-4449-9cbc-285851798b9d
+Error Number:4060,State:1,Class:11
+2023-06-21 23:56:03.858 +03:30 [ERR] Execution BackgroundServerProcess is in the Failed state now due to an exception, execution will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:77c82bca-edf9-4449-9cbc-285851798b9d
+Error Number:4060,State:1,Class:11
+2023-06-21 23:56:04.102 +03:30 [ERR] Execution BackgroundServerProcess is in the Failed state now due to an exception, execution will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:77c82bca-edf9-4449-9cbc-285851798b9d
+Error Number:4060,State:1,Class:11
+2023-06-21 23:56:28.908 +03:30 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:00:24.8045543 due to an exception, will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:158a486f-0445-4b50-bfb9-e3f5a78e2b80
+Error Number:4060,State:1,Class:11
+2023-06-21 23:56:28.908 +03:30 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:00:25.0465845 due to an exception, will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:158a486f-0445-4b50-bfb9-e3f5a78e2b80
+Error Number:4060,State:1,Class:11
+2023-06-21 23:56:41.909 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.CreateCategory (shop.Web) Executing
+2023-06-21 23:56:43.779 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.CreateCategory (shop.Web) Executed
+2023-06-21 23:56:53.972 +03:30 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:00:50.1107258 due to an exception, will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:fa6a042d-621d-4ed5-bb67-b08d038dd6da
+Error Number:4060,State:1,Class:11
+2023-06-21 23:56:53.972 +03:30 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:00:49.8690082 due to an exception, will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:fa6a042d-621d-4ed5-bb67-b08d038dd6da
+Error Number:4060,State:1,Class:11
+2023-06-21 23:57:08.982 +03:30 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:01:04.8792903 due to an exception, will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:fa6a042d-621d-4ed5-bb67-b08d038dd6da
+Error Number:4060,State:1,Class:11
+2023-06-21 23:57:08.982 +03:30 [ERR] Execution BackgroundServerProcess is still in the Failed state for 00:01:05.1212224 due to an exception, will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "HangfireG2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-L6ERISM\acer'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.SqlServer.SqlServerConnection.AnnounceServer(String serverId, ServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:fa6a042d-621d-4ed5-bb67-b08d038dd6da
+Error Number:4060,State:1,Class:11
+2023-06-21 23:57:22.175 +03:30 [FTL] Execution loop BackgroundServerProcess:fbb38153 was unable to wait for '00:00:15' delay due to an exception. Execution will be stopped.
+System.OperationCanceledException: The operation was canceled.
+   at System.Threading.CancellationToken.ThrowOperationCanceledException()
+   at System.Threading.CancellationToken.ThrowIfCancellationRequested()
+   at Hangfire.Processing.TaskExtensions.WaitOne(WaitHandle waitHandle, TimeSpan timeout, CancellationToken token)
+   at Hangfire.Processing.BackgroundExecution.HandleDelay(Guid executionId, TimeSpan delay)
+2023-06-21 23:57:22.177 +03:30 [FTL] Execution loop BackgroundServerProcess:66be9f40 was unable to wait for '00:00:15' delay due to an exception. Execution will be stopped.
+System.OperationCanceledException: The operation was canceled.
+   at System.Threading.CancellationToken.ThrowOperationCanceledException()
+   at System.Threading.CancellationToken.ThrowIfCancellationRequested()
+   at Hangfire.Processing.TaskExtensions.WaitOne(WaitHandle waitHandle, TimeSpan timeout, CancellationToken token)
+   at Hangfire.Processing.BackgroundExecution.HandleDelay(Guid executionId, TimeSpan delay)

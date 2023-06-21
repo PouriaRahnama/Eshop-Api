@@ -42,16 +42,14 @@ namespace shop.Web.Controllers.Category
         public async Task<ApiResult> CreateCategory(CreateCategoryDto CreateCategoryDto)
         {
             var result = await _categoryService.AddCategory(CreateCategoryDto);
-            var url = Url.Action("GetCategories", "Category");
-            return CreatedResult(result, $"{HttpContext.Request.Scheme}://{HttpContext.Request.Host}{url}");
+            return CreatedResult(result,null);
         }
 
         [HttpPost("AddChild(1 Child)")]
         public async Task<ApiResult> CreateCategory(CreateChildCategoryDto CreateChildCategoryDto)
         {
             var result = await _categoryService.AddChildCategory(CreateChildCategoryDto);
-            return CommandResult(result);
-
+            return CreatedResult(result,null);
         }
 
         [HttpPut]
