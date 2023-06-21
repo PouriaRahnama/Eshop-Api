@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "0juB27VXZGK4/jUIH1yJRBCD6FzUNUJBTiMt4/tjFV4=",
+  "Source": "shop.Web",
+  "BasePath": "_content/shop.Web",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "shop.Web\\wwwroot",
+      "Source": "shop.Web",
+      "ContentRoot": "D:\\programming\\Eshop-WebApi\\shop.Web\\wwwroot\\",
+      "BasePath": "_content/shop.Web",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\programming\\Eshop-WebApi\\shop.Web\\wwwroot\\index.html",
+      "SourceId": "shop.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\programming\\Eshop-WebApi\\shop.Web\\wwwroot\\",
+      "BasePath": "_content/shop.Web",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ]
+}

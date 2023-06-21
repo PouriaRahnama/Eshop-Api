@@ -1,0 +1,102 @@
+D:\Project\DotNet\Project_Azure\dotNet-G1\shop.Service\bin\Debug\net7.0\shop.Service.deps.json
+D:\Project\DotNet\Project_Azure\dotNet-G1\shop.Service\bin\Debug\net7.0\shop.Service.dll
+D:\Project\DotNet\Project_Azure\dotNet-G1\shop.Service\bin\Debug\net7.0\shop.Service.pdb
+D:\Project\DotNet\Project_Azure\dotNet-G1\shop.Service\bin\Debug\net7.0\shop.Core.dll
+D:\Project\DotNet\Project_Azure\dotNet-G1\shop.Service\bin\Debug\net7.0\shop.Core.pdb
+D:\Project\DotNet\Project_Azure\dotNet-G1\shop.Service\obj\Debug\net7.0\shop.Service.csproj.AssemblyReference.cache
+D:\Project\DotNet\Project_Azure\dotNet-G1\shop.Service\obj\Debug\net7.0\shop.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\DotNet\Project_Azure\dotNet-G1\shop.Service\obj\Debug\net7.0\shop.Service.AssemblyInfoInputs.cache
+D:\Project\DotNet\Project_Azure\dotNet-G1\shop.Service\obj\Debug\net7.0\shop.Service.AssemblyInfo.cs
+D:\Project\DotNet\Project_Azure\dotNet-G1\shop.Service\obj\Debug\net7.0\shop.Service.csproj.CoreCompileInputs.cache
+D:\Project\DotNet\Project_Azure\dotNet-G1\shop.Service\obj\Debug\net7.0\shop.Service.csproj.CopyComplete
+D:\Project\DotNet\Project_Azure\dotNet-G1\shop.Service\obj\Debug\net7.0\shop.Service.dll
+D:\Project\DotNet\Project_Azure\dotNet-G1\shop.Service\obj\Debug\net7.0\refint\shop.Service.dll
+D:\Project\DotNet\Project_Azure\dotNet-G1\shop.Service\obj\Debug\net7.0\shop.Service.pdb
+D:\Project\DotNet\Project_Azure\dotNet-G1\shop.Service\obj\Debug\net7.0\ref\shop.Service.dll
+D:\Project\DotNet\Project_Azure\dotNet-G1\shop.Service\bin\Debug\net7.0\shop.Data.dll
+D:\Project\DotNet\Project_Azure\dotNet-G1\shop.Service\bin\Debug\net7.0\shop.Data.pdb
+C:\Users\acer\Desktop\session15\dotNet-G1\shop.Service\bin\Debug\net7.0\shop.Service.deps.json
+C:\Users\acer\Desktop\session15\dotNet-G1\shop.Service\bin\Debug\net7.0\shop.Service.dll
+C:\Users\acer\Desktop\session15\dotNet-G1\shop.Service\bin\Debug\net7.0\shop.Service.pdb
+C:\Users\acer\Desktop\session15\dotNet-G1\shop.Service\bin\Debug\net7.0\shop.Core.dll
+C:\Users\acer\Desktop\session15\dotNet-G1\shop.Service\bin\Debug\net7.0\shop.Data.dll
+C:\Users\acer\Desktop\session15\dotNet-G1\shop.Service\bin\Debug\net7.0\shop.Core.pdb
+C:\Users\acer\Desktop\session15\dotNet-G1\shop.Service\bin\Debug\net7.0\shop.Data.pdb
+C:\Users\acer\Desktop\session15\dotNet-G1\shop.Service\obj\Debug\net7.0\shop.Service.csproj.AssemblyReference.cache
+C:\Users\acer\Desktop\session15\dotNet-G1\shop.Service\obj\Debug\net7.0\shop.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\acer\Desktop\session15\dotNet-G1\shop.Service\obj\Debug\net7.0\shop.Service.AssemblyInfoInputs.cache
+C:\Users\acer\Desktop\session15\dotNet-G1\shop.Service\obj\Debug\net7.0\shop.Service.AssemblyInfo.cs
+C:\Users\acer\Desktop\session15\dotNet-G1\shop.Service\obj\Debug\net7.0\shop.Service.csproj.CoreCompileInputs.cache
+C:\Users\acer\Desktop\session15\dotNet-G1\shop.Service\obj\Debug\net7.0\shop.Service.csproj.CopyComplete
+C:\Users\acer\Desktop\session15\dotNet-G1\shop.Service\obj\Debug\net7.0\shop.Service.dll
+C:\Users\acer\Desktop\session15\dotNet-G1\shop.Service\obj\Debug\net7.0\refint\shop.Service.dll
+C:\Users\acer\Desktop\session15\dotNet-G1\shop.Service\obj\Debug\net7.0\shop.Service.pdb
+C:\Users\acer\Desktop\session15\dotNet-G1\shop.Service\obj\Debug\net7.0\ref\shop.Service.dll
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\shop.Service\bin\Debug\net7.0\shop.Service.deps.json
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\shop.Service\bin\Debug\net7.0\shop.Service.dll
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\shop.Service\bin\Debug\net7.0\shop.Service.pdb
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\shop.Service\bin\Debug\net7.0\shop.Core.dll
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\shop.Service\bin\Debug\net7.0\shop.Data.dll
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\shop.Service\bin\Debug\net7.0\shop.Core.pdb
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\shop.Service\bin\Debug\net7.0\shop.Data.pdb
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\shop.Service\obj\Debug\net7.0\shop.Service.csproj.AssemblyReference.cache
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\shop.Service\obj\Debug\net7.0\shop.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\shop.Service\obj\Debug\net7.0\shop.Service.AssemblyInfoInputs.cache
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\shop.Service\obj\Debug\net7.0\shop.Service.AssemblyInfo.cs
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\shop.Service\obj\Debug\net7.0\shop.Service.csproj.CoreCompileInputs.cache
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\shop.Service\obj\Debug\net7.0\shop.Service.csproj.CopyComplete
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\shop.Service\obj\Debug\net7.0\shop.Service.dll
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\shop.Service\obj\Debug\net7.0\refint\shop.Service.dll
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\shop.Service\obj\Debug\net7.0\shop.Service.pdb
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\shop.Service\obj\Debug\net7.0\ref\shop.Service.dll
+D:\programming\Eshop-WebApi\shop.Service\obj\Debug\net7.0\shop.Service.csproj.AssemblyReference.cache
+D:\programming\Eshop-WebApi\shop.Service\obj\Debug\net7.0\shop.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\programming\Eshop-WebApi\shop.Service\obj\Debug\net7.0\shop.Service.AssemblyInfoInputs.cache
+D:\programming\Eshop-WebApi\shop.Service\obj\Debug\net7.0\shop.Service.AssemblyInfo.cs
+D:\programming\Eshop-WebApi\shop.Service\obj\Debug\net7.0\shop.Service.csproj.CoreCompileInputs.cache
+D:\programming\Eshop-WebApi\shop.Service\bin\Debug\net7.0\shop.Service.deps.json
+D:\programming\Eshop-WebApi\shop.Service\bin\Debug\net7.0\shop.Service.dll
+D:\programming\Eshop-WebApi\shop.Service\bin\Debug\net7.0\shop.Service.pdb
+D:\programming\Eshop-WebApi\shop.Service\bin\Debug\net7.0\shop.Core.dll
+D:\programming\Eshop-WebApi\shop.Service\bin\Debug\net7.0\shop.Data.dll
+D:\programming\Eshop-WebApi\shop.Service\bin\Debug\net7.0\shop.Core.pdb
+D:\programming\Eshop-WebApi\shop.Service\bin\Debug\net7.0\shop.Data.pdb
+D:\programming\Eshop-WebApi\shop.Service\obj\Debug\net7.0\shop.Service.csproj.CopyComplete
+D:\programming\Eshop-WebApi\shop.Service\obj\Debug\net7.0\shop.Service.dll
+D:\programming\Eshop-WebApi\shop.Service\obj\Debug\net7.0\refint\shop.Service.dll
+D:\programming\Eshop-WebApi\shop.Service\obj\Debug\net7.0\shop.Service.pdb
+D:\programming\Eshop-WebApi\shop.Service\obj\Debug\net7.0\ref\shop.Service.dll
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\shop.Service\obj\Debug\net7.0\shop.Service.csproj.AssemblyReference.cache
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\shop.Service\obj\Debug\net7.0\shop.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\shop.Service\obj\Debug\net7.0\shop.Service.AssemblyInfoInputs.cache
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\shop.Service\obj\Debug\net7.0\shop.Service.AssemblyInfo.cs
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\shop.Service\obj\Debug\net7.0\shop.Service.csproj.CoreCompileInputs.cache
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\shop.Service\bin\Debug\net7.0\shop.Service.deps.json
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\shop.Service\bin\Debug\net7.0\shop.Service.dll
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\shop.Service\bin\Debug\net7.0\shop.Service.pdb
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\shop.Service\bin\Debug\net7.0\shop.Core.dll
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\shop.Service\bin\Debug\net7.0\shop.Data.dll
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\shop.Service\bin\Debug\net7.0\shop.Core.pdb
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\shop.Service\bin\Debug\net7.0\shop.Data.pdb
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\shop.Service\obj\Debug\net7.0\shop.Service.csproj.CopyComplete
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\shop.Service\obj\Debug\net7.0\shop.Service.dll
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\shop.Service\obj\Debug\net7.0\refint\shop.Service.dll
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\shop.Service\obj\Debug\net7.0\shop.Service.pdb
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\shop.Service\obj\Debug\net7.0\ref\shop.Service.dll
+C:\Users\acer\Desktop\Eshop-WebApi\shop.Service\bin\Debug\net7.0\shop.Service.deps.json
+C:\Users\acer\Desktop\Eshop-WebApi\shop.Service\bin\Debug\net7.0\shop.Service.dll
+C:\Users\acer\Desktop\Eshop-WebApi\shop.Service\bin\Debug\net7.0\shop.Service.pdb
+C:\Users\acer\Desktop\Eshop-WebApi\shop.Service\bin\Debug\net7.0\shop.Core.dll
+C:\Users\acer\Desktop\Eshop-WebApi\shop.Service\bin\Debug\net7.0\shop.Data.dll
+C:\Users\acer\Desktop\Eshop-WebApi\shop.Service\bin\Debug\net7.0\shop.Core.pdb
+C:\Users\acer\Desktop\Eshop-WebApi\shop.Service\bin\Debug\net7.0\shop.Data.pdb
+C:\Users\acer\Desktop\Eshop-WebApi\shop.Service\obj\Debug\net7.0\shop.Service.csproj.AssemblyReference.cache
+C:\Users\acer\Desktop\Eshop-WebApi\shop.Service\obj\Debug\net7.0\shop.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\acer\Desktop\Eshop-WebApi\shop.Service\obj\Debug\net7.0\shop.Service.AssemblyInfoInputs.cache
+C:\Users\acer\Desktop\Eshop-WebApi\shop.Service\obj\Debug\net7.0\shop.Service.AssemblyInfo.cs
+C:\Users\acer\Desktop\Eshop-WebApi\shop.Service\obj\Debug\net7.0\shop.Service.csproj.CoreCompileInputs.cache
+C:\Users\acer\Desktop\Eshop-WebApi\shop.Service\obj\Debug\net7.0\shop.Service.csproj.CopyComplete
+C:\Users\acer\Desktop\Eshop-WebApi\shop.Service\obj\Debug\net7.0\shop.Service.dll
+C:\Users\acer\Desktop\Eshop-WebApi\shop.Service\obj\Debug\net7.0\refint\shop.Service.dll
+C:\Users\acer\Desktop\Eshop-WebApi\shop.Service\obj\Debug\net7.0\shop.Service.pdb
+C:\Users\acer\Desktop\Eshop-WebApi\shop.Service\obj\Debug\net7.0\ref\shop.Service.dll

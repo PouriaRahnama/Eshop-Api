@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+
+
+	<ItemGroup>
+		<PackageReference Include="IntelliTect.Coalesce.Swashbuckle" Version="3.1.1" />
+		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.5.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen.ConventionalRouting" Version="4.3.0" />
+		<PackageReference Include="Microex.Swagger" Version="1.0.3" />
+		<PackageReference Include="Microsoft.OpenApi" Version="1.4.3" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\shop.Core\shop.Core.csproj" />
+		<ProjectReference Include="..\shop.Service\shop.Service.csproj" />
+	</ItemGroup>
+
+</Project>

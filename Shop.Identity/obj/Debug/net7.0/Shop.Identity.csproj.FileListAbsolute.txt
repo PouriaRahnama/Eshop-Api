@@ -1,0 +1,282 @@
+D:\Project\DotNet\Project_Azure\dotNet-G1\Shop.Identity\bin\Debug\net7.0\appsettings.Development.json
+D:\Project\DotNet\Project_Azure\dotNet-G1\Shop.Identity\bin\Debug\net7.0\appsettings.json
+D:\Project\DotNet\Project_Azure\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Shop.Identity.staticwebassets.runtime.json
+D:\Project\DotNet\Project_Azure\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Shop.Identity.exe
+D:\Project\DotNet\Project_Azure\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Shop.Identity.deps.json
+D:\Project\DotNet\Project_Azure\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Shop.Identity.runtimeconfig.json
+D:\Project\DotNet\Project_Azure\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Shop.Identity.dll
+D:\Project\DotNet\Project_Azure\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Shop.Identity.pdb
+D:\Project\DotNet\Project_Azure\dotNet-G1\Shop.Identity\bin\Debug\net7.0\IdentityModel.dll
+D:\Project\DotNet\Project_Azure\dotNet-G1\Shop.Identity\bin\Debug\net7.0\IdentityServer4.dll
+D:\Project\DotNet\Project_Azure\dotNet-G1\Shop.Identity\bin\Debug\net7.0\IdentityServer4.Storage.dll
+D:\Project\DotNet\Project_Azure\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+D:\Project\DotNet\Project_Azure\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+D:\Project\DotNet\Project_Azure\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Project\DotNet\Project_Azure\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+D:\Project\DotNet\Project_Azure\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+D:\Project\DotNet\Project_Azure\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Project\DotNet\Project_Azure\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+D:\Project\DotNet\Project_Azure\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Microsoft.OpenApi.dll
+D:\Project\DotNet\Project_Azure\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Newtonsoft.Json.dll
+D:\Project\DotNet\Project_Azure\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Project\DotNet\Project_Azure\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Project\DotNet\Project_Azure\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Project\DotNet\Project_Azure\dotNet-G1\Shop.Identity\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Project\DotNet\Project_Azure\dotNet-G1\Shop.Identity\obj\Debug\net7.0\Shop.Identity.csproj.AssemblyReference.cache
+D:\Project\DotNet\Project_Azure\dotNet-G1\Shop.Identity\obj\Debug\net7.0\Shop.Identity.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\DotNet\Project_Azure\dotNet-G1\Shop.Identity\obj\Debug\net7.0\Shop.Identity.AssemblyInfoInputs.cache
+D:\Project\DotNet\Project_Azure\dotNet-G1\Shop.Identity\obj\Debug\net7.0\Shop.Identity.AssemblyInfo.cs
+D:\Project\DotNet\Project_Azure\dotNet-G1\Shop.Identity\obj\Debug\net7.0\Shop.Identity.csproj.CoreCompileInputs.cache
+D:\Project\DotNet\Project_Azure\dotNet-G1\Shop.Identity\obj\Debug\net7.0\Shop.Identity.MvcApplicationPartsAssemblyInfo.cs
+D:\Project\DotNet\Project_Azure\dotNet-G1\Shop.Identity\obj\Debug\net7.0\Shop.Identity.MvcApplicationPartsAssemblyInfo.cache
+D:\Project\DotNet\Project_Azure\dotNet-G1\Shop.Identity\obj\Debug\net7.0\Shop.Identity.RazorAssemblyInfo.cache
+D:\Project\DotNet\Project_Azure\dotNet-G1\Shop.Identity\obj\Debug\net7.0\Shop.Identity.RazorAssemblyInfo.cs
+D:\Project\DotNet\Project_Azure\dotNet-G1\Shop.Identity\obj\Debug\net7.0\staticwebassets\msbuild.Shop.Identity.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Project\DotNet\Project_Azure\dotNet-G1\Shop.Identity\obj\Debug\net7.0\staticwebassets\msbuild.build.Shop.Identity.props
+D:\Project\DotNet\Project_Azure\dotNet-G1\Shop.Identity\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Shop.Identity.props
+D:\Project\DotNet\Project_Azure\dotNet-G1\Shop.Identity\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.Shop.Identity.props
+D:\Project\DotNet\Project_Azure\dotNet-G1\Shop.Identity\obj\Debug\net7.0\staticwebassets.pack.json
+D:\Project\DotNet\Project_Azure\dotNet-G1\Shop.Identity\obj\Debug\net7.0\staticwebassets.build.json
+D:\Project\DotNet\Project_Azure\dotNet-G1\Shop.Identity\obj\Debug\net7.0\staticwebassets.development.json
+D:\Project\DotNet\Project_Azure\dotNet-G1\Shop.Identity\obj\Debug\net7.0\scopedcss\bundle\Shop.Identity.styles.css
+D:\Project\DotNet\Project_Azure\dotNet-G1\Shop.Identity\obj\Debug\net7.0\Shop.Identity.csproj.CopyComplete
+D:\Project\DotNet\Project_Azure\dotNet-G1\Shop.Identity\obj\Debug\net7.0\Shop.Identity.dll
+D:\Project\DotNet\Project_Azure\dotNet-G1\Shop.Identity\obj\Debug\net7.0\refint\Shop.Identity.dll
+D:\Project\DotNet\Project_Azure\dotNet-G1\Shop.Identity\obj\Debug\net7.0\Shop.Identity.pdb
+D:\Project\DotNet\Project_Azure\dotNet-G1\Shop.Identity\obj\Debug\net7.0\Shop.Identity.genruntimeconfig.cache
+D:\Project\DotNet\Project_Azure\dotNet-G1\Shop.Identity\obj\Debug\net7.0\ref\Shop.Identity.dll
+C:\Users\acer\Desktop\session15\dotNet-G1\Shop.Identity\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\acer\Desktop\session15\dotNet-G1\Shop.Identity\bin\Debug\net7.0\appsettings.json
+C:\Users\acer\Desktop\session15\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Shop.Identity.staticwebassets.runtime.json
+C:\Users\acer\Desktop\session15\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Shop.Identity.exe
+C:\Users\acer\Desktop\session15\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Shop.Identity.deps.json
+C:\Users\acer\Desktop\session15\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Shop.Identity.runtimeconfig.json
+C:\Users\acer\Desktop\session15\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Shop.Identity.dll
+C:\Users\acer\Desktop\session15\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Shop.Identity.pdb
+C:\Users\acer\Desktop\session15\dotNet-G1\Shop.Identity\bin\Debug\net7.0\IdentityModel.dll
+C:\Users\acer\Desktop\session15\dotNet-G1\Shop.Identity\bin\Debug\net7.0\IdentityServer4.dll
+C:\Users\acer\Desktop\session15\dotNet-G1\Shop.Identity\bin\Debug\net7.0\IdentityServer4.Storage.dll
+C:\Users\acer\Desktop\session15\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+C:\Users\acer\Desktop\session15\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\acer\Desktop\session15\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\acer\Desktop\session15\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\acer\Desktop\session15\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\acer\Desktop\session15\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\acer\Desktop\session15\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\acer\Desktop\session15\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Users\acer\Desktop\session15\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\acer\Desktop\session15\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\acer\Desktop\session15\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\acer\Desktop\session15\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\acer\Desktop\session15\dotNet-G1\Shop.Identity\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\acer\Desktop\session15\dotNet-G1\Shop.Identity\obj\Debug\net7.0\Shop.Identity.csproj.AssemblyReference.cache
+C:\Users\acer\Desktop\session15\dotNet-G1\Shop.Identity\obj\Debug\net7.0\Shop.Identity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\acer\Desktop\session15\dotNet-G1\Shop.Identity\obj\Debug\net7.0\Shop.Identity.AssemblyInfoInputs.cache
+C:\Users\acer\Desktop\session15\dotNet-G1\Shop.Identity\obj\Debug\net7.0\Shop.Identity.AssemblyInfo.cs
+C:\Users\acer\Desktop\session15\dotNet-G1\Shop.Identity\obj\Debug\net7.0\Shop.Identity.csproj.CoreCompileInputs.cache
+C:\Users\acer\Desktop\session15\dotNet-G1\Shop.Identity\obj\Debug\net7.0\Shop.Identity.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\acer\Desktop\session15\dotNet-G1\Shop.Identity\obj\Debug\net7.0\Shop.Identity.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\acer\Desktop\session15\dotNet-G1\Shop.Identity\obj\Debug\net7.0\Shop.Identity.RazorAssemblyInfo.cache
+C:\Users\acer\Desktop\session15\dotNet-G1\Shop.Identity\obj\Debug\net7.0\Shop.Identity.RazorAssemblyInfo.cs
+C:\Users\acer\Desktop\session15\dotNet-G1\Shop.Identity\obj\Debug\net7.0\staticwebassets\msbuild.Shop.Identity.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\acer\Desktop\session15\dotNet-G1\Shop.Identity\obj\Debug\net7.0\staticwebassets\msbuild.build.Shop.Identity.props
+C:\Users\acer\Desktop\session15\dotNet-G1\Shop.Identity\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Shop.Identity.props
+C:\Users\acer\Desktop\session15\dotNet-G1\Shop.Identity\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.Shop.Identity.props
+C:\Users\acer\Desktop\session15\dotNet-G1\Shop.Identity\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\acer\Desktop\session15\dotNet-G1\Shop.Identity\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\acer\Desktop\session15\dotNet-G1\Shop.Identity\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\acer\Desktop\session15\dotNet-G1\Shop.Identity\obj\Debug\net7.0\scopedcss\bundle\Shop.Identity.styles.css
+C:\Users\acer\Desktop\session15\dotNet-G1\Shop.Identity\obj\Debug\net7.0\Shop.Identity.csproj.CopyComplete
+C:\Users\acer\Desktop\session15\dotNet-G1\Shop.Identity\obj\Debug\net7.0\Shop.Identity.dll
+C:\Users\acer\Desktop\session15\dotNet-G1\Shop.Identity\obj\Debug\net7.0\refint\Shop.Identity.dll
+C:\Users\acer\Desktop\session15\dotNet-G1\Shop.Identity\obj\Debug\net7.0\Shop.Identity.pdb
+C:\Users\acer\Desktop\session15\dotNet-G1\Shop.Identity\obj\Debug\net7.0\Shop.Identity.genruntimeconfig.cache
+C:\Users\acer\Desktop\session15\dotNet-G1\Shop.Identity\obj\Debug\net7.0\ref\Shop.Identity.dll
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\Shop.Identity\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\Shop.Identity\bin\Debug\net7.0\appsettings.json
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Shop.Identity.staticwebassets.runtime.json
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Shop.Identity.exe
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Shop.Identity.deps.json
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Shop.Identity.runtimeconfig.json
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Shop.Identity.dll
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Shop.Identity.pdb
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\Shop.Identity\bin\Debug\net7.0\IdentityModel.dll
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\Shop.Identity\bin\Debug\net7.0\IdentityServer4.dll
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\Shop.Identity\bin\Debug\net7.0\IdentityServer4.Storage.dll
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\Shop.Identity\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\Shop.Identity\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\Shop.Identity\obj\Debug\net7.0\Shop.Identity.csproj.AssemblyReference.cache
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\Shop.Identity\obj\Debug\net7.0\Shop.Identity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\Shop.Identity\obj\Debug\net7.0\Shop.Identity.AssemblyInfoInputs.cache
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\Shop.Identity\obj\Debug\net7.0\Shop.Identity.AssemblyInfo.cs
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\Shop.Identity\obj\Debug\net7.0\Shop.Identity.csproj.CoreCompileInputs.cache
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\Shop.Identity\obj\Debug\net7.0\Shop.Identity.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\Shop.Identity\obj\Debug\net7.0\Shop.Identity.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\Shop.Identity\obj\Debug\net7.0\Shop.Identity.RazorAssemblyInfo.cache
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\Shop.Identity\obj\Debug\net7.0\Shop.Identity.RazorAssemblyInfo.cs
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\Shop.Identity\obj\Debug\net7.0\staticwebassets\msbuild.Shop.Identity.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\Shop.Identity\obj\Debug\net7.0\staticwebassets\msbuild.build.Shop.Identity.props
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\Shop.Identity\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Shop.Identity.props
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\Shop.Identity\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.Shop.Identity.props
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\Shop.Identity\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\Shop.Identity\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\Shop.Identity\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\Shop.Identity\obj\Debug\net7.0\scopedcss\bundle\Shop.Identity.styles.css
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\Shop.Identity\obj\Debug\net7.0\Shop.Identity.csproj.CopyComplete
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\Shop.Identity\obj\Debug\net7.0\Shop.Identity.dll
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\Shop.Identity\obj\Debug\net7.0\refint\Shop.Identity.dll
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\Shop.Identity\obj\Debug\net7.0\Shop.Identity.pdb
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\Shop.Identity\obj\Debug\net7.0\Shop.Identity.genruntimeconfig.cache
+C:\Users\acer\Desktop\session15 The End\dotNet-G1\Shop.Identity\obj\Debug\net7.0\ref\Shop.Identity.dll
+D:\programming\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\appsettings.Development.json
+D:\programming\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\appsettings.json
+D:\programming\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Shop.Identity.staticwebassets.runtime.json
+D:\programming\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Shop.Identity.exe
+D:\programming\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Shop.Identity.deps.json
+D:\programming\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Shop.Identity.runtimeconfig.json
+D:\programming\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Shop.Identity.dll
+D:\programming\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Shop.Identity.pdb
+D:\programming\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\IdentityModel.dll
+D:\programming\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\IdentityServer4.dll
+D:\programming\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\IdentityServer4.Storage.dll
+D:\programming\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+D:\programming\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+D:\programming\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\programming\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+D:\programming\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+D:\programming\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\programming\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+D:\programming\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Microsoft.OpenApi.dll
+D:\programming\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Newtonsoft.Json.dll
+D:\programming\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\programming\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\programming\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\programming\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+D:\programming\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\Shop.Identity.csproj.AssemblyReference.cache
+D:\programming\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\Shop.Identity.GeneratedMSBuildEditorConfig.editorconfig
+D:\programming\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\Shop.Identity.AssemblyInfoInputs.cache
+D:\programming\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\Shop.Identity.AssemblyInfo.cs
+D:\programming\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\Shop.Identity.csproj.CoreCompileInputs.cache
+D:\programming\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\Shop.Identity.MvcApplicationPartsAssemblyInfo.cs
+D:\programming\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\Shop.Identity.MvcApplicationPartsAssemblyInfo.cache
+D:\programming\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\Shop.Identity.RazorAssemblyInfo.cache
+D:\programming\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\Shop.Identity.RazorAssemblyInfo.cs
+D:\programming\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\staticwebassets\msbuild.Shop.Identity.Microsoft.AspNetCore.StaticWebAssets.props
+D:\programming\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\staticwebassets\msbuild.build.Shop.Identity.props
+D:\programming\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Shop.Identity.props
+D:\programming\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.Shop.Identity.props
+D:\programming\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\staticwebassets.pack.json
+D:\programming\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\staticwebassets.build.json
+D:\programming\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\staticwebassets.development.json
+D:\programming\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\scopedcss\bundle\Shop.Identity.styles.css
+D:\programming\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\Shop.Identity.csproj.CopyComplete
+D:\programming\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\Shop.Identity.dll
+D:\programming\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\refint\Shop.Identity.dll
+D:\programming\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\Shop.Identity.pdb
+D:\programming\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\Shop.Identity.genruntimeconfig.cache
+D:\programming\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\ref\Shop.Identity.dll
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\appsettings.Development.json
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\appsettings.json
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Shop.Identity.staticwebassets.runtime.json
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Shop.Identity.exe
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Shop.Identity.deps.json
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Shop.Identity.runtimeconfig.json
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Shop.Identity.dll
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Shop.Identity.pdb
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\IdentityModel.dll
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\IdentityServer4.dll
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\IdentityServer4.Storage.dll
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Microsoft.OpenApi.dll
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Newtonsoft.Json.dll
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\Shop.Identity.csproj.AssemblyReference.cache
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\Shop.Identity.GeneratedMSBuildEditorConfig.editorconfig
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\Shop.Identity.AssemblyInfoInputs.cache
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\Shop.Identity.AssemblyInfo.cs
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\Shop.Identity.csproj.CoreCompileInputs.cache
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\Shop.Identity.MvcApplicationPartsAssemblyInfo.cs
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\Shop.Identity.MvcApplicationPartsAssemblyInfo.cache
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\Shop.Identity.RazorAssemblyInfo.cache
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\Shop.Identity.RazorAssemblyInfo.cs
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\staticwebassets\msbuild.Shop.Identity.Microsoft.AspNetCore.StaticWebAssets.props
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\staticwebassets\msbuild.build.Shop.Identity.props
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Shop.Identity.props
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.Shop.Identity.props
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\staticwebassets.pack.json
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\staticwebassets.build.json
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\staticwebassets.development.json
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\scopedcss\bundle\Shop.Identity.styles.css
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\Shop.Identity.csproj.CopyComplete
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\Shop.Identity.dll
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\refint\Shop.Identity.dll
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\Shop.Identity.pdb
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\Shop.Identity.genruntimeconfig.cache
+D:\programming\Asp.Net Core7 Web Api (حضوری)\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\ref\Shop.Identity.dll
+C:\Users\acer\Desktop\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\acer\Desktop\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\appsettings.json
+C:\Users\acer\Desktop\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Shop.Identity.staticwebassets.runtime.json
+C:\Users\acer\Desktop\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Shop.Identity.exe
+C:\Users\acer\Desktop\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Shop.Identity.deps.json
+C:\Users\acer\Desktop\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Shop.Identity.runtimeconfig.json
+C:\Users\acer\Desktop\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Shop.Identity.dll
+C:\Users\acer\Desktop\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Shop.Identity.pdb
+C:\Users\acer\Desktop\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\IdentityModel.dll
+C:\Users\acer\Desktop\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\IdentityServer4.dll
+C:\Users\acer\Desktop\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\IdentityServer4.Storage.dll
+C:\Users\acer\Desktop\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+C:\Users\acer\Desktop\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\acer\Desktop\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\acer\Desktop\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\acer\Desktop\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\acer\Desktop\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\acer\Desktop\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\acer\Desktop\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Users\acer\Desktop\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\acer\Desktop\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\acer\Desktop\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\acer\Desktop\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\acer\Desktop\Eshop-WebApi\Shop.Identity\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\acer\Desktop\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\Shop.Identity.csproj.AssemblyReference.cache
+C:\Users\acer\Desktop\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\Shop.Identity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\acer\Desktop\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\Shop.Identity.AssemblyInfoInputs.cache
+C:\Users\acer\Desktop\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\Shop.Identity.AssemblyInfo.cs
+C:\Users\acer\Desktop\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\Shop.Identity.csproj.CoreCompileInputs.cache
+C:\Users\acer\Desktop\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\Shop.Identity.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\acer\Desktop\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\Shop.Identity.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\acer\Desktop\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\Shop.Identity.RazorAssemblyInfo.cache
+C:\Users\acer\Desktop\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\Shop.Identity.RazorAssemblyInfo.cs
+C:\Users\acer\Desktop\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\staticwebassets\msbuild.Shop.Identity.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\acer\Desktop\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\staticwebassets\msbuild.build.Shop.Identity.props
+C:\Users\acer\Desktop\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Shop.Identity.props
+C:\Users\acer\Desktop\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.Shop.Identity.props
+C:\Users\acer\Desktop\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\acer\Desktop\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\acer\Desktop\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\acer\Desktop\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\scopedcss\bundle\Shop.Identity.styles.css
+C:\Users\acer\Desktop\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\Shop.Identity.csproj.CopyComplete
+C:\Users\acer\Desktop\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\Shop.Identity.dll
+C:\Users\acer\Desktop\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\refint\Shop.Identity.dll
+C:\Users\acer\Desktop\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\Shop.Identity.pdb
+C:\Users\acer\Desktop\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\Shop.Identity.genruntimeconfig.cache
+C:\Users\acer\Desktop\Eshop-WebApi\Shop.Identity\obj\Debug\net7.0\ref\Shop.Identity.dll
