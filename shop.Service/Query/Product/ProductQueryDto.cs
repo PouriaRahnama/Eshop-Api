@@ -23,7 +23,7 @@ namespace shop.Service.Query
         public string Key { get; set; }
         public string Value { get; set; }
     }
-    public class ProductImageDto : BaseDto
+    public class ProductImageDto
     {
         public int ProductID { get; set; }
         public int PictureID { get; set; }

@@ -131,6 +131,7 @@ namespace shop.Data.Repository
             if (entity == null)
                 throw new ArgumentNullException(nameof(entity));
             entity.Deleted = true;
+            await UpdateAsync(entity);
             await _context.SaveChangesAsync();
         }
 

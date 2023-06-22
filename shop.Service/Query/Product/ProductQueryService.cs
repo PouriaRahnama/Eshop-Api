@@ -15,7 +15,7 @@ namespace shop.Service.Query
 
         public async Task<ProductQueryDto?> GetProductById(int productId)
         {
-            var product = await _Context.Set<Product>()
+            var product = await _Context.Set<Product>().Where(s => s.Deleted == false)
                 .FirstOrDefaultAsync(f => f.Id == productId);
 
             var model = product.Map();
@@ -25,7 +25,7 @@ namespace shop.Service.Query
             return model;
         }
 
-        public async Task<ProductFilterResult> Handle(ProductFilterParams request)
+        public async Task<ProductFilterResult> GetProductByFilter(ProductFilterParams request)
         {
             var @params = request;
             var result = _Context.Set<Product>().OrderByDescending(d => d.Id).AsQueryable();

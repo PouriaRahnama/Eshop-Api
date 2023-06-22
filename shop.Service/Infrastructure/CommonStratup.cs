@@ -25,6 +25,7 @@ namespace shop.Service.Infrastructure
             services.AddScoped<IRoleService, RoleService>();
             //
             services.AddScoped<CategoryQueryService, CategoryQueryService>();
+            services.AddScoped<ProductQueryService, ProductQueryService>();
         }
 
         public void Configure(IApplicationBuilder app)

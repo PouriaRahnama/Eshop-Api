@@ -14,23 +14,23 @@
                 ImageName = product.ImageName,
                 Title = product.Name,
 
-                Specifications = product.Specifications.Select(s => new ProductSpecificationDto()
+                Specifications = product.Specifications.Where(s => s.Deleted == false).Select(s => new ProductSpecificationDto()
                 {
                     Id = s.Id,
                     Value = s.Value,
-                    Key = s.Name
+                    Key = s.Name,
+                    CreationDate = s.CreateON
 
                 }).ToList(),
 
-                Images = product.ProductPictures.Select(s => new ProductImageDto()
+                Images = product.ProductPictures.Where(s => s.Deleted == false).Select(s => new ProductImageDto()
                 {
-                    Id = s.PictureID,
-                    CreationDate = s.CreateON,
-                    ProductID = s.ProductID
+                    ProductID = s.ProductID,
+                    PictureID = s.PictureID,
 
                 }).ToList(),
 
-                Category = product.ProductCategories.Select(s => new ProductCategoryDto()
+                Category = product.ProductCategories.Where(s => s.Deleted == false).Select(s => new ProductCategoryDto()
                 {
                     Id = s.CategoryID,
                     CreationDate = s.CreateON,

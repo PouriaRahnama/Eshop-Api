@@ -7,6 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wwwroot\ProductImage\**" />
+    <Content Remove="wwwroot\ProductImage\**" />
+    <EmbeddedResource Remove="wwwroot\ProductImage\**" />
+    <None Remove="wwwroot\ProductImage\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Mapster" Version="7.3.0" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="7.0.5" />
@@ -26,7 +33,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\ProductImage\" />
+    <Folder Include="wwwroot\" />
   </ItemGroup>
 
 </Project>

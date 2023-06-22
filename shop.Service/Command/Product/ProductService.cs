@@ -4,6 +4,7 @@ using shop.Data.Repository;
 using shop.Service.DTOs.ProductCommand;
 using shop.Service.Extension.FileUtil.Interfaces;
 using shop.Service.Extension.Util;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace shop.Service.Command
 {
@@ -53,7 +54,7 @@ namespace shop.Service.Command
             var product = new Product()
             {
                 Description = CreateProductDto.Description,
-                Name = imageName,
+                Name = CreateProductDto.Title,
                 ImageName = imageName
             };
 
@@ -134,14 +135,15 @@ namespace shop.Service.Command
             if (product == null)
                 return OperationResult.NotFound();
 
-            var category = await _repository.FindByIdAsync(RemoveProductCategoryDto.CategoryID);
+            var category = await _caegoryRepository.FindByIdAsync(RemoveProductCategoryDto.CategoryID);
             if (category == null)
                 return OperationResult.NotFound();
                                
             var productCategory = new ProductCategory()
             {
                 CategoryID = RemoveProductCategoryDto.CategoryID,
-                ProductID = RemoveProductCategoryDto.ProductID
+                ProductID = RemoveProductCategoryDto.ProductID,
+                UpdateON = DateTime.Now
             };
 
             await _ProductCategoryRepository.DeleteAsync(productCategory);
@@ -186,12 +188,12 @@ namespace shop.Service.Command
                                      
         public async Task<OperationResult> UpdateProduct(EditProductDto EditProductDto)
         {
-            var OldProduct = await _repository.FindByIdAsync(EditProductDto.ProductId);
-            if (OldProduct == null)
+            var Product = await _repository.FindByIdAsync(EditProductDto.ProductId);
+            if (Product == null)
                 return OperationResult.NotFound();
 
-            string oldImage = OldProduct.ImageName;
-            string NewImageName = OldProduct.ImageName;
+            string oldImage = Product.ImageName;
+            string NewImageName = Product.ImageName;
 
             if (EditProductDto.ImageFile != null)
             {
@@ -199,14 +201,13 @@ namespace shop.Service.Command
                     .SaveFileAndGenerateName(EditProductDto.ImageFile, Directories.ProductImages);
             }
 
-            var NewProduct = new Product()
-            {  
-                Description = EditProductDto.Description,
-                Name = EditProductDto.Title,
-                ImageName = NewImageName
-            };
+            Product.Description = EditProductDto.Description;
+            Product.Name = EditProductDto.Title;
+            Product.ImageName = NewImageName;
+            Product.UpdateON = DateTime.Now;
 
-            await _repository.AddAsync(NewProduct);
+           
+            await _repository.UpdateAsync(Product);
 
             if (EditProductDto.ImageFile != null)
             {
