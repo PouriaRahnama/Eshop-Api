@@ -12261,3 +12261,39 @@ System.NullReferenceException: Object reference not set to an instance of an obj
 2023-06-22 18:14:23.978 +03:30 [ERR] shop.Web.Controllers.Order.OrderController.AddOrderItem (shop.Web) Executed
 2023-06-22 18:17:36.641 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) Executing
 2023-06-22 18:17:39.509 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) Executed
+2023-06-22 23:34:33.915 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'shop.Service.Query.RoleQueryService' while attempting to activate 'shop.Web.Controllers.Role.RoleController'.
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-06-22 23:36:25.141 +03:30 [ERR] shop.Web.Controllers.Role.RoleController.AddRole (shop.Web) Executing
+2023-06-22 23:36:28.868 +03:30 [ERR] shop.Web.Controllers.Role.RoleController.AddRole (shop.Web) Executed
+2023-06-22 23:38:42.283 +03:30 [ERR] shop.Web.Controllers.Role.RoleController.AddRolePermission (shop.Web) Executing
+2023-06-22 23:38:43.161 +03:30 [ERR] shop.Web.Controllers.Role.RoleController.AddRolePermission (shop.Web) Executed
+2023-06-22 23:41:56.544 +03:30 [ERR] shop.Web.Controllers.Role.RoleController.UpdateRole (shop.Web) Executing
+2023-06-22 23:41:56.654 +03:30 [ERR] shop.Web.Controllers.Role.RoleController.UpdateRole (shop.Web) Executed
+2023-06-22 23:43:41.003 +03:30 [ERR] shop.Web.Controllers.Role.RoleController.UpdateRole (shop.Web) Executing
+2023-06-22 23:43:41.088 +03:30 [ERR] shop.Web.Controllers.Role.RoleController.UpdateRole (shop.Web) Executed
+2023-06-22 23:45:18.534 +03:30 [ERR] shop.Web.Controllers.Role.RoleController.RemoveRolePermission (shop.Web) Executing
+2023-06-22 23:45:18.674 +03:30 [ERR] shop.Web.Controllers.Role.RoleController.RemoveRolePermission (shop.Web) Executed
+2023-06-22 23:46:36.990 +03:30 [ERR] shop.Web.Controllers.Role.RoleController.GetRoleById (shop.Web) Executing
+2023-06-22 23:46:37.100 +03:30 [ERR] shop.Web.Controllers.Role.RoleController.GetRoleById (shop.Web) Executed
+2023-06-22 23:48:33.490 +03:30 [ERR] shop.Web.Controllers.Role.RoleController.GetRoleById (shop.Web) Executing
+2023-06-22 23:48:33.560 +03:30 [ERR] shop.Web.Controllers.Role.RoleController.GetRoleById (shop.Web) Executed
+2023-06-22 23:49:01.740 +03:30 [ERR] shop.Web.Controllers.Role.RoleController.GetAllRole (shop.Web) Executing
+2023-06-22 23:49:01.921 +03:30 [ERR] shop.Web.Controllers.Role.RoleController.GetAllRole (shop.Web) Executed
+2023-06-22 23:49:46.937 +03:30 [ERR] shop.Web.Controllers.Role.RoleController.GetAllRole (shop.Web) Executing
+2023-06-22 23:49:47.100 +03:30 [ERR] shop.Web.Controllers.Role.RoleController.GetAllRole (shop.Web) Executed

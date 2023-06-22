@@ -9,7 +9,7 @@ namespace shop.Data.Mapping.RoleMap
         public void Configure(EntityTypeBuilder<RolePermission> builder)
         {
 
-
+            builder.Ignore(r => r.PermissionStatus);
         }
     }
 }

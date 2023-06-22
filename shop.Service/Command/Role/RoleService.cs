@@ -51,17 +51,15 @@ namespace shop.Service.Command
         }
         public async Task<OperationResult> UpdateRole(EditRoleDto EditRoleDto)
         {
-            var OldRole = await _RoleRepository.FindByIdAsync(EditRoleDto.RoleId);
-            if (OldRole == null)
+            var Role = await _RoleRepository.FindByIdAsync(EditRoleDto.RoleId);
+            if (Role == null)
                 return OperationResult.NotFound();
 
-            var NewRole = new Role()
-            {
-                Title = EditRoleDto.Title,
-                UpdateON = DateTime.Now,
-            };
+            Role.Title = EditRoleDto.Title;
+            Role.UpdateON = DateTime.Now;
 
-            await _RoleRepository.UpdateAsync(NewRole);
+
+            await _RoleRepository.UpdateAsync(Role);
             return OperationResult.Success();
         }
     }

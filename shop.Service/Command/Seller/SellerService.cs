@@ -36,19 +36,21 @@ namespace shop.Service.Command
         }
         public async Task<OperationResult> AddSeller(AddSellerDto AddSellerDto)
         {
-            var Seller = await _repository.GetEntity(s => s.NationalCode == AddSellerDto.NationalCode
+            var seller = await _repository.GetEntity(s => s.NationalCode == AddSellerDto.NationalCode
             || s.UserId == AddSellerDto.UserId);
-            if (Seller != null)
-                return OperationResult.Error("!فروشنده ای با این کد ملی وجود دارد");
 
-
-            var seller = new Seller()
+            if (seller == null)
             {
-                ShopName = AddSellerDto.ShopName,
-                NationalCode = AddSellerDto.NationalCode,
-                UserId = AddSellerDto.UserId,
-                SellerStatus = SellerStatus.New
-            };
+                seller = new Seller()
+                {
+                    ShopName = AddSellerDto.ShopName,
+                    NationalCode = AddSellerDto.NationalCode,
+                    UserId = AddSellerDto.UserId,
+                    SellerStatus = SellerStatus.New
+                };
+            }
+            else
+                return OperationResult.Error("!فروشنده ای با این مشخصات وجود دارد");
 
             await _repository.AddAsync(seller);
             return OperationResult.Success();
@@ -68,14 +70,17 @@ namespace shop.Service.Command
             if (seller == null)
                 return OperationResult.NotFound();
 
-            var NewInventory = new SellerInventory()
-            {
-                Count = EditInventoryDto.Count,
-                Price = EditInventoryDto.Price,
-                DiscountPercentage = EditInventoryDto.DiscountPercentage
-            };
+            var Inventory = await _SellerInventoryRepository.FindByIdAsync(EditInventoryDto.InventoryId);
+            if(Inventory == null)
+                return OperationResult.NotFound();
 
-            await _SellerInventoryRepository.UpdateAsync(NewInventory);
+
+            Inventory.Count = EditInventoryDto.Count;
+            Inventory.Price = EditInventoryDto.Price;
+            Inventory.DiscountPercentage = EditInventoryDto.DiscountPercentage;
+            Inventory.UpdateON = DateTime.Now;
+
+             await _SellerInventoryRepository.UpdateAsync(Inventory);
             return OperationResult.Success();
         }
         public async Task<OperationResult> UpdateSeller(EditSellerDto EditSellerDto)
@@ -84,19 +89,19 @@ namespace shop.Service.Command
             if (seller == null)
                 return OperationResult.NotFound();
 
-            var NationalCodeExistInDataBase = _repository.GetEntity(r => r.NationalCode == EditSellerDto.NationalCode);
+            var NationalCodeExistInDataBase = _repository.Table.Where(s => s.NationalCode == EditSellerDto.NationalCode).FirstOrDefault();
 
             if (EditSellerDto.NationalCode != seller.NationalCode)
                 if (NationalCodeExistInDataBase != null)
                     return OperationResult.Error("کدملی متعلق به شخص دیگری است");
 
-            var NewSeller = new Seller()
-            {
-                SellerStatus = EditSellerDto.Status,
-                NationalCode = EditSellerDto.NationalCode,
-                ShopName = EditSellerDto.ShopName,
-                UpdateON = DateTime.Now
-            };
+
+            seller.SellerStatus = EditSellerDto.Status;
+            seller.NationalCode = EditSellerDto.NationalCode;
+            seller.ShopName = EditSellerDto.ShopName;
+            seller.UpdateON = DateTime.Now;
+
+
 
             await _repository.UpdateAsync(seller);
             return OperationResult.Success();

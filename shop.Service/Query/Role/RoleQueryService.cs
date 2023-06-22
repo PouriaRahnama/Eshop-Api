@@ -13,7 +13,7 @@ namespace shop.Service.Query
             _Context = Context;
         }
 
-        public async Task<RoleQueryDto?> GetRoleById( int RoleId)
+        public async Task<RoleQueryDto?> GetRoleById(int RoleId)
         {
             var role = await _Context.Set<Role>().FirstOrDefaultAsync(f => f.Id == RoleId);
             if (role == null)
@@ -23,18 +23,18 @@ namespace shop.Service.Query
             {
                 Id = role.Id,
                 CreationDate = role.CreateON,
-                Permissions = role.Permissions.Select(s => s.PermissionStatus).ToList(),
+                Permissions = role.Permissions.Where(p => p.Deleted == false).Select(s => s.PermissionStatus).ToList(),
                 Title = role.Title
             };
         }
 
-        public async Task<List<RoleQueryDto>> Handle()
+        public async Task<List<RoleQueryDto>> GetAllRole()
         {
             return await _Context.Set<Role>().Select(role => new RoleQueryDto()
             {
                 Id = role.Id,
                 CreationDate = role.CreateON,
-                Permissions = role.Permissions.Select(s => s.PermissionStatus).ToList(),
+                Permissions = role.Permissions.Where(p => p.Deleted == false).Select(s => s.PermissionStatus).ToList(),
                 Title = role.Title
             }).ToListAsync();
         }
