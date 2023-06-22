@@ -9,7 +9,8 @@ namespace shop.Service.Query
     {
         public static OrderQueryDto Map(this Order order)
         {
-            return new OrderQueryDto()
+
+            var result =  new OrderQueryDto()
             {
                 CreationDate = order.CreateON,
                 Id = order.Id,
@@ -27,6 +28,8 @@ namespace shop.Service.Query
                 OrderTotal = order.OrderTotal,
                 OrderItem = new()
             };
+
+            return result;
         }
 
         public static async Task<List<OrderItemDto>> GetOrderItems(this OrderQueryDto orderDto, IApplicationContext context)
@@ -51,13 +54,8 @@ namespace shop.Service.Query
             return list;
         }
 
-        public static OrderFilterData MapFilterData(this Order order, IApplicationContext context)
+        public static OrderFilterData MapFilterData(this Order order)
         {
-            var userFullName = context.Set<Core.Domain.User.User>()
-                .Where(r => r.Id == order.UserId)
-                .Select(u => $"{u.Name} {u.Family}")
-                .First();
-
             return new OrderFilterData()
             {
                 Status = order.orderStatus,
@@ -67,7 +65,8 @@ namespace shop.Service.Query
                 Shire = order.Addresses?.Shire,
                 TotalItemCount = order.OrderItems.Count,
                 TotalPrice = order.OrderTotal,
-                UserFullName = userFullName,
+                Name = order.User.Name,
+                Family = order.User.Family,
                 UserId = order.UserId
             };
         }

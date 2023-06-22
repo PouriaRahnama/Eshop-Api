@@ -88,97 +88,6 @@
           }
         }
       },
-      "Hangfire.AspNetCore/1.8.2": {
-        "dependencies": {
-          "Hangfire.NetCore": "1.8.2"
-        },
-        "runtime": {
-          "lib/netcoreapp3.0/Hangfire.AspNetCore.dll": {
-            "assemblyVersion": "1.8.2.0",
-            "fileVersion": "1.8.2.0"
-          }
-        }
-      },
-      "Hangfire.Core/1.8.2": {
-        "dependencies": {
-          "Newtonsoft.Json": "13.0.3"
-        },
-        "runtime": {
-          "lib/netstandard2.0/Hangfire.Core.dll": {
-            "assemblyVersion": "1.8.2.0",
-            "fileVersion": "1.8.2.0"
-          }
-        },
-        "resources": {
-          "lib/netstandard2.0/ca/Hangfire.Core.resources.dll": {
-            "locale": "ca"
-          },
-          "lib/netstandard2.0/de/Hangfire.Core.resources.dll": {
-            "locale": "de"
-          },
-          "lib/netstandard2.0/es/Hangfire.Core.resources.dll": {
-            "locale": "es"
-          },
-          "lib/netstandard2.0/fa/Hangfire.Core.resources.dll": {
-            "locale": "fa"
-          },
-          "lib/netstandard2.0/fr/Hangfire.Core.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/netstandard2.0/nb/Hangfire.Core.resources.dll": {
-            "locale": "nb"
-          },
-          "lib/netstandard2.0/nl/Hangfire.Core.resources.dll": {
-            "locale": "nl"
-          },
-          "lib/netstandard2.0/pt-BR/Hangfire.Core.resources.dll": {
-            "locale": "pt-BR"
-          },
-          "lib/netstandard2.0/pt-PT/Hangfire.Core.resources.dll": {
-            "locale": "pt-PT"
-          },
-          "lib/netstandard2.0/pt/Hangfire.Core.resources.dll": {
-            "locale": "pt"
-          },
-          "lib/netstandard2.0/sv/Hangfire.Core.resources.dll": {
-            "locale": "sv"
-          },
-          "lib/netstandard2.0/tr-TR/Hangfire.Core.resources.dll": {
-            "locale": "tr-TR"
-          },
-          "lib/netstandard2.0/zh-TW/Hangfire.Core.resources.dll": {
-            "locale": "zh-TW"
-          },
-          "lib/netstandard2.0/zh/Hangfire.Core.resources.dll": {
-            "locale": "zh"
-          }
-        }
-      },
-      "Hangfire.NetCore/1.8.2": {
-        "dependencies": {
-          "Hangfire.Core": "1.8.2",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0-preview.3.23174.8",
-          "Microsoft.Extensions.Hosting.Abstractions": "3.0.0",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.0-preview.3.23174.8"
-        },
-        "runtime": {
-          "lib/netstandard2.1/Hangfire.NetCore.dll": {
-            "assemblyVersion": "0.0.0.0",
-            "fileVersion": "0.0.0.0"
-          }
-        }
-      },
-      "Hangfire.SqlServer/1.8.2": {
-        "dependencies": {
-          "Hangfire.Core": "1.8.2"
-        },
-        "runtime": {
-          "lib/netstandard2.0/Hangfire.SqlServer.dll": {
-            "assemblyVersion": "1.8.2.0",
-            "fileVersion": "1.8.2.0"
-          }
-        }
-      },
       "HtmlSanitizer/8.0.645": {
         "dependencies": {
           "AngleSharp": "0.17.1",
@@ -342,8 +251,8 @@
           "Microsoft.AspNetCore.Http.Abstractions": "2.0.1",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0-preview.3.23174.8",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0-preview.3.23174.8",
-          "Microsoft.Extensions.FileProviders.Abstractions": "3.0.0",
-          "Microsoft.Extensions.Hosting.Abstractions": "3.0.0",
+          "Microsoft.Extensions.FileProviders.Abstractions": "2.0.0",
+          "Microsoft.Extensions.Hosting.Abstractions": "2.0.1",
           "Microsoft.Extensions.Logging.Abstractions": "8.0.0-preview.3.23174.8"
         }
       },
@@ -371,7 +280,7 @@
       "Microsoft.AspNetCore.Http.Extensions/2.0.1": {
         "dependencies": {
           "Microsoft.AspNetCore.Http.Abstractions": "2.0.1",
-          "Microsoft.Extensions.FileProviders.Abstractions": "3.0.0",
+          "Microsoft.Extensions.FileProviders.Abstractions": "2.0.0",
           "Microsoft.Net.Http.Headers": "2.0.1",
           "System.Buffers": "4.5.1"
         }
@@ -415,7 +324,7 @@
           "Microsoft.AspNetCore.ResponseCaching.Abstractions": "2.0.1",
           "Microsoft.AspNetCore.Routing": "2.0.1",
           "Microsoft.Extensions.DependencyModel": "2.0.3",
-          "Microsoft.Extensions.FileProviders.Abstractions": "3.0.0",
+          "Microsoft.Extensions.FileProviders.Abstractions": "2.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "8.0.0-preview.3.23174.8",
           "System.Diagnostics.DiagnosticSource": "6.0.0"
         }
@@ -456,7 +365,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Hosting.Abstractions": "2.0.1",
           "Microsoft.AspNetCore.Http.Extensions": "2.0.1",
-          "Microsoft.Extensions.FileProviders.Abstractions": "3.0.0",
+          "Microsoft.Extensions.FileProviders.Abstractions": "2.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "8.0.0-preview.3.23174.8",
           "Microsoft.Extensions.WebEncoders": "2.0.0"
         }
@@ -922,24 +831,17 @@
           }
         }
       },
-      "Microsoft.Extensions.FileProviders.Abstractions/3.0.0": {
+      "Microsoft.Extensions.FileProviders.Abstractions/2.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "8.0.0-preview.3.23174.8"
         }
       },
       "Microsoft.Extensions.FileProviders.Embedded/2.0.0": {
         "dependencies": {
-          "Microsoft.Extensions.FileProviders.Abstractions": "3.0.0"
+          "Microsoft.Extensions.FileProviders.Abstractions": "2.0.0"
         }
       },
-      "Microsoft.Extensions.Hosting.Abstractions/3.0.0": {
-        "dependencies": {
-          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0-preview.3.23174.8",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0-preview.3.23174.8",
-          "Microsoft.Extensions.FileProviders.Abstractions": "3.0.0",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.0-preview.3.23174.8"
-        }
-      },
+      "Microsoft.Extensions.Hosting.Abstractions/2.0.1": {},
       "Microsoft.Extensions.Localization/2.0.1": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0-preview.3.23174.8",
@@ -2200,10 +2102,10 @@
       },
       "shop.Core/1.0.0": {
         "dependencies": {
-          "Hangfire.AspNetCore": "1.8.2",
-          "Hangfire.Core": "1.8.2",
-          "Hangfire.SqlServer": "1.8.2",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.0.1",
+          "Microsoft.Extensions.Caching.Memory": "8.0.0-preview.3.23174.8",
           "Microsoft.Extensions.Caching.Redis": "2.2.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0-preview.3.23174.8",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0-preview.3.23174.8",
           "Newtonsoft.Json": "13.0.3"
         },
@@ -2278,34 +2180,6 @@
       "sha512": "sha512-31UJpTHOiWq95CDOHazE3Ub/hE/PydNWsJMwnEVTqFFP4WhAugwpaVGxzOxKgNeSUUeqS2W6lxV+q7u1pAOfXg==",
       "path": "castle.core/5.1.0",
       "hashPath": "castle.core.5.1.0.nupkg.sha512"
-    },
-    "Hangfire.AspNetCore/1.8.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-V5vyez3g3GM7CEwvCsTX/IShYdxtxfTu2LCOFOjF4b/c1fgiMFts8KGuXEKu47pydULWZOkiuPA57X5WsfgeZQ==",
-      "path": "hangfire.aspnetcore/1.8.2",
-      "hashPath": "hangfire.aspnetcore.1.8.2.nupkg.sha512"
-    },
-    "Hangfire.Core/1.8.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-eRFHfJdLHd24pP/PA2oKdsaA0ajioSH+tSHBqexUYPlKPqG9aIbMWQLoVW7IqLjX0n29BWW65Hjy3gP0refCJA==",
-      "path": "hangfire.core/1.8.2",
-      "hashPath": "hangfire.core.1.8.2.nupkg.sha512"
-    },
-    "Hangfire.NetCore/1.8.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-oyan560O84YGNUfvPJx3UcWXifhfZqkt7QDGNr8mMumvv4H+jQHuAdRTYoUrX4SZ+0N0TVAOBucmOAvHYTV+VQ==",
-      "path": "hangfire.netcore/1.8.2",
-      "hashPath": "hangfire.netcore.1.8.2.nupkg.sha512"
-    },
-    "Hangfire.SqlServer/1.8.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-3pQ7SaOvVda3HJXsniUfbPbOI33++iyNb4mQdAUjy+1ERInQ5uE0VY1Ad8hia9LU07ucM2xICGGvFPeFZqfJUw==",
-      "path": "hangfire.sqlserver/1.8.2",
-      "hashPath": "hangfire.sqlserver.1.8.2.nupkg.sha512"
     },
     "HtmlSanitizer/8.0.645": {
       "type": "package",
@@ -2699,12 +2573,12 @@
       "path": "microsoft.extensions.dependencymodel/2.0.3",
       "hashPath": "microsoft.extensions.dependencymodel.2.0.3.nupkg.sha512"
     },
-    "Microsoft.Extensions.FileProviders.Abstractions/3.0.0": {
+    "Microsoft.Extensions.FileProviders.Abstractions/2.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-kahEeykb6FyQytoZNNXuz74X85B4weIEt8Kd+0klK48bkXDWOIHAOvNjlGsPMcS9CL935Te8QGQS83JqCbpdHA==",
-      "path": "microsoft.extensions.fileproviders.abstractions/3.0.0",
-      "hashPath": "microsoft.extensions.fileproviders.abstractions.3.0.0.nupkg.sha512"
+      "sha512": "sha512-Z0AK+hmLO33WAXQ5P1uPzhH7z5yjDHX/XnUefXxE//SyvCb9x4cVjND24dT5566t/yzGp8/WLD7EG9KQKZZklQ==",
+      "path": "microsoft.extensions.fileproviders.abstractions/2.0.0",
+      "hashPath": "microsoft.extensions.fileproviders.abstractions.2.0.0.nupkg.sha512"
     },
     "Microsoft.Extensions.FileProviders.Embedded/2.0.0": {
       "type": "package",
@@ -2713,12 +2587,12 @@
       "path": "microsoft.extensions.fileproviders.embedded/2.0.0",
       "hashPath": "microsoft.extensions.fileproviders.embedded.2.0.0.nupkg.sha512"
     },
-    "Microsoft.Extensions.Hosting.Abstractions/3.0.0": {
+    "Microsoft.Extensions.Hosting.Abstractions/2.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-qeDWS5ErmkUN96BdQqpmeCmLk5HJWQ/SPw3ux5v5/Qb0hKZS5wojBMulnBC7JUEiBwg7Ir71Yjf1lFiRT5MdtQ==",
-      "path": "microsoft.extensions.hosting.abstractions/3.0.0",
-      "hashPath": "microsoft.extensions.hosting.abstractions.3.0.0.nupkg.sha512"
+      "sha512": "sha512-A43O0JzdTE+u5t2pFeraN+3fjlV6jcX3Ra5wIscCX1cM2RHDoOLDQmoDpvDti0ct5TsBEDHVTycbyFqtu0fm+Q==",
+      "path": "microsoft.extensions.hosting.abstractions/2.0.1",
+      "hashPath": "microsoft.extensions.hosting.abstractions.2.0.1.nupkg.sha512"
     },
     "Microsoft.Extensions.Localization/2.0.1": {
       "type": "package",

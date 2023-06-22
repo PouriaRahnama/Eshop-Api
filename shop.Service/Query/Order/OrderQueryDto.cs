@@ -36,7 +36,8 @@ namespace shop.Service.Query
     public class OrderFilterData : BaseDto
     {
         public long UserId { get; set; }
-        public string UserFullName { get; set; }
+        public string Name { get; set; }
+        public string Family { get; set; }
         public OrderStatus Status { get; set; }
         public string? Shire { get; set; }
         public string? City { get; set; }

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using shop.Core.Caching;
 using shop.Frameworks;
 using shop.Frameworks.Commons;
 using shop.Service.Command;
@@ -11,10 +12,12 @@ namespace shop.Web.Controllers.Product
     {
         private readonly IProductService _productService;
         private readonly ProductQueryService _productQueryService;
-        public ProductController(IProductService productService, ProductQueryService productQueryService)
+        private readonly ICacheManager _cacheManager;
+        public ProductController(IProductService productService, ProductQueryService productQueryService, ICacheManager cacheManager)
         {
             _productService = productService;
             _productQueryService = productQueryService;
+            _cacheManager = cacheManager;
         }
 
         [HttpPost("AddProductCategory*")]
@@ -56,6 +59,7 @@ namespace shop.Web.Controllers.Product
         public async Task<ApiResult<ProductQueryDto?>> GetProductById(int productId)
         {
             var product = await _productQueryService.GetProductById(productId);
+            await _cacheManager.GetAsync("GetProductById", 60, async () => _productQueryService.GetProductById(productId).Result);
             return QueryResult(product);
         }
 

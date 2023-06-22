@@ -2,7 +2,6 @@
 {
     public class CreateOrderItemDto
     {
-        public int OrderID { get; set; }
         public int inventoryId { get; set; }
         public int Count { get; set; }
         public int userId { get; set; }

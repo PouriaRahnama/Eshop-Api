@@ -34,10 +34,10 @@ namespace shop.Service.Query
         public async Task<OrderFilterResult> GetOrderByFilter(OrderFilterParams filterParams)
         {
             var @params = filterParams;
-            var result = _Context.Set<Core.Domain.Order.Order>().OrderByDescending(d => d.Id).AsQueryable();
+            var result = _Context.Set<Core.Domain.Order.Order>().AsQueryable();
 
             if (@params.Status != null)
-                result = result.Where(r => r.orderStatus == @params.Status);
+                result = result.Where(r => r.OrderStatusId == (int)@params.Status);
 
             if (@params.UserId != null)
                 result = result.Where(r => r.UserId == @params.UserId);
@@ -53,7 +53,7 @@ namespace shop.Service.Query
             var model = new OrderFilterResult()
             {
                 Data = await result.Skip(skip).Take(@params.Take)
-                    .Select(order => order.MapFilterData(_Context))
+                    .Select(order => order.MapFilterData())
                     .ToListAsync(),
                 FilterParams = @params
             };

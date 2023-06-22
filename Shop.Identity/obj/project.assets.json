@@ -999,11 +999,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\Shop.Identity.csproj",
+      "projectUniqueName": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\Shop.Identity.csproj",
       "projectName": "Shop.Identity",
-      "projectPath": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\Shop.Identity.csproj",
+      "projectPath": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\Shop.Identity.csproj",
       "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
-      "outputPath": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\obj\\",
+      "outputPath": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",

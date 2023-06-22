@@ -1,5 +1,6 @@
 ﻿using shop.Core.Domain.Order;
 using shop.Core.Domain.Seller;
+using shop.Core.Domain.User;
 using shop.Data.Repository;
 using shop.Service.DTOs.OrderCommand;
 using shop.Service.Extension.Util;
@@ -9,18 +10,21 @@ namespace shop.Service.Command
     public class OrderService : IOrderService
     {
         private readonly IRepository<Order> _OrderRepository;
+        private readonly IRepository<User> _userRepository;
         private readonly IRepository<SellerInventory> _SellerInventoryRepository;
         private readonly IRepository<OrderItem> _OrderItemRepository;
         private readonly IRepository<OrderAddress> _OrderAddressRepository;
         public OrderService(IRepository<Order> OrderRepository,
             IRepository<OrderItem> orderItemRepository,
             IRepository<SellerInventory> sellerInventoryRepository,
-            IRepository<OrderAddress> OrderAddressRepository)
+            IRepository<OrderAddress> OrderAddressRepository,
+            IRepository<User> userRepository)
         {
             _OrderRepository = OrderRepository;
             _OrderItemRepository = orderItemRepository;
             _SellerInventoryRepository = sellerInventoryRepository;
             _OrderAddressRepository = OrderAddressRepository;
+            _userRepository = userRepository;
         }
 
         public async Task<OperationResult> AddOrderItem(CreateOrderItemDto CreateOrderItemDto)
@@ -32,21 +36,22 @@ namespace shop.Service.Command
             if (inventory.Count <= CreateOrderItemDto.Count)
                 return OperationResult.Error("تعداد محصولات موجود کمتر از حد درخواستی است.");
 
-            var order = await _OrderRepository.GetEntity(f => f.UserId == CreateOrderItemDto.userId
-            && f.orderStatus == OrderStatus.Pending);
-            if (order == null)
-                order = new Order()
+            var Order = await _OrderRepository.GetEntity(o => o.UserId == CreateOrderItemDto.userId && o.OrderStatusId == 10);
+            if(Order == null)
+            {
+                 Order = new Order()
                 {
                     UserId = CreateOrderItemDto.userId,
                     orderStatus = OrderStatus.Pending,
                 };
-            _OrderRepository.Add(order);
-
+                _OrderRepository.Add(Order);
+            }
+                
             var OrderItem = new OrderItem()
             {
                 Count = CreateOrderItemDto.Count,
                 InventoryId = CreateOrderItemDto.inventoryId,
-                OrderId = order.Id,
+                OrderId = Order.Id,
                 Price = inventory.Price
             };
 
@@ -59,7 +64,7 @@ namespace shop.Service.Command
         public async Task<OperationResult> DecreaseOrderItem(DecreaseOrderItemCountDto DecreaseOrderItemCountDto)
         {
             var currentOrder = await _OrderRepository.GetEntity(f => f.UserId == DecreaseOrderItemCountDto.UserId
-                && f.orderStatus == OrderStatus.Pending);
+            && f.OrderStatusId == 10);
             if (currentOrder == null)
                 return OperationResult.NotFound();
 
@@ -74,8 +79,7 @@ namespace shop.Service.Command
         }
         public async Task<OperationResult> IncreaseOrderItem(IncreaseOrderItemCountDto IncreaseOrderItemCountDto)
         {
-            var currentOrder = await _OrderRepository.GetEntity(f => f.UserId == IncreaseOrderItemCountDto.UserId
-                && f.orderStatus == OrderStatus.Pending);
+            var currentOrder = await _OrderRepository.GetEntity(f => f.UserId == IncreaseOrderItemCountDto.UserId);
             if (currentOrder == null)
                 return OperationResult.NotFound();
 
@@ -84,6 +88,8 @@ namespace shop.Service.Command
                 return OperationResult.NotFound();
 
             currentItem.Count -= IncreaseOrderItemCountDto.Count;
+            if (currentItem.Count <= 0)
+                currentItem.Count = 0;
 
             await _OrderItemRepository.UpdateAsync(currentItem);
             return OperationResult.Success();
@@ -91,7 +97,7 @@ namespace shop.Service.Command
         public async Task<OperationResult> RemoveOrderItem(RemoveOrderItemDto RemoveOrderItemDto)
         {
             var currentOrder = await _OrderRepository.GetEntity(f => f.UserId == RemoveOrderItemDto.UserId
-               && f.orderStatus == OrderStatus.Pending);
+               && f.OrderStatusId == 10);
             if (currentOrder == null)
                 return OperationResult.NotFound();
 
@@ -101,36 +107,38 @@ namespace shop.Service.Command
 
             return OperationResult.Success();
         }
+
         public async Task<OperationResult> AddOrderAddress(AddOrderAddressDto AddOrderAddressDto)
         {
-            var currentOrder = await _OrderRepository.GetEntity(f => f.UserId == AddOrderAddressDto.UserId
-            && f.orderStatus == OrderStatus.Pending);
-            if (currentOrder == null)
-                return OperationResult.NotFound("!سفارشی با این مشخصات وجود ندارد");
+            var currentUser = await _userRepository.FindByIdAsync(AddOrderAddressDto.UserId);
+            if (currentUser == null)
+                return OperationResult.NotFound("!کاربری با این مشخصات وجود ندارد");
 
-            var ExistOrderAddress = await _OrderAddressRepository.GetEntity(ad => ad.OrderId == currentOrder.Id);
-            if (ExistOrderAddress == null)
+            var ExistOrderAddress = await _OrderAddressRepository.GetEntity(ad => ad.OrderId == AddOrderAddressDto.OrderId);
+            if (ExistOrderAddress != null)
                 return OperationResult.NotFound("!آدرسی مربوط به این سفارش موجوداست");
 
             var address = new OrderAddress()
             {
                 NationalCode = AddOrderAddressDto.NationalCode,
                 Name = AddOrderAddressDto.Name,
-                OrderId = currentOrder.Id,
+                OrderId = AddOrderAddressDto.OrderId,
                 Family = AddOrderAddressDto.Family,
                 PhoneNumber = AddOrderAddressDto.PhoneNumber,
                 PostalAddress = AddOrderAddressDto.PostalAddress,
                 PostalCode = AddOrderAddressDto.PostalCode,
                 Shire = AddOrderAddressDto.Shire,
+                City = AddOrderAddressDto.City
+
             };
 
             await _OrderAddressRepository.AddAsync(address);
             return OperationResult.Success();
         }
+
         public async Task<OperationResult> RemoveOrderAddress(RemoveOrderAddressDto RemoveOrderAddressDto)
         {
-            var currentOrder = await _OrderRepository.GetEntity(f => f.Id == RemoveOrderAddressDto.OrderId
-                && f.orderStatus == OrderStatus.Pending);
+            var currentOrder = await _OrderRepository.FindByIdAsync(RemoveOrderAddressDto.OrderId);
             if (currentOrder == null)
                 return OperationResult.NotFound();
 

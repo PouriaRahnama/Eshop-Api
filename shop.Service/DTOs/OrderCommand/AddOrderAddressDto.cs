@@ -2,7 +2,9 @@
 {
     public class AddOrderAddressDto
     {
-        public long UserId { get; set; }
+        public int UserId { get; set; }
+        public int OrderId { get; set; }
+
         public string Shire { get; set; }
         public string City { get; set; }
         public string PostalCode { get; set; }

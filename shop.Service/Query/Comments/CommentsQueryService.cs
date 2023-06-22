@@ -19,7 +19,7 @@ namespace shop.Service.Query.Comments
             var result = _context.Set<Comment>().OrderByDescending(d => d.CreateON).AsQueryable();
 
             if (@params.CommentStatus != null)
-                result = result.Where(r => r.Status == @params.CommentStatus);
+                result = result.Where(r => r.StatusId == (int)@params.CommentStatus);
 
             if (@params.UserId != null)
                 result = result.Where(r => r.UserId == @params.UserId);

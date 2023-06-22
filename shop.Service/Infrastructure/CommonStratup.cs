@@ -6,6 +6,7 @@ using shop.Core.Infrastructure;
 using shop.Service.Command;
 using shop.Service.Infrastructure.Filter;
 using shop.Service.Query;
+using shop.Service.Query.Comments;
 
 namespace shop.Service.Infrastructure
 {
@@ -26,6 +27,8 @@ namespace shop.Service.Infrastructure
             //
             services.AddScoped<CategoryQueryService, CategoryQueryService>();
             services.AddScoped<ProductQueryService, ProductQueryService>();
+            services.AddScoped<OrderQueryService, OrderQueryService>();
+            services.AddScoped<CommentsQueryService, CommentsQueryService>();
         }
 
         public void Configure(IApplicationBuilder app)

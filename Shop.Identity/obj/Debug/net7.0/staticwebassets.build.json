@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Khz6a2+52MMUMiiqGMRSQHStDlHQJx1quDSnzig8nUQ=",
+  "Hash": "IAU/fBOjoWdyPTS2aeT6+rRJuGrslgVHve26oNe3dCc=",
   "Source": "Shop.Identity",
   "BasePath": "_content/Shop.Identity",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Shop.Identity\\wwwroot",
       "Source": "Shop.Identity",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\css\\site.css",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\css\\site.css",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\css\\site.min.css",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\css\\site.min.css",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "css/site.min.css",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.min.css"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\css\\site.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\css\\site.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "css/site.scss",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\favicon.ico",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\favicon.ico",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\icon.jpg",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\icon.jpg",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "icon.jpg",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\icon.jpg"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\icon.png",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\icon.png",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "icon.png",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\icon.png"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\js\\signin-redirect.js",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\js\\signin-redirect.js",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "js/signin-redirect.js",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signin-redirect.js"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\js\\signout-redirect.js",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\js\\signout-redirect.js",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "js/signout-redirect.js",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\js\\signout-redirect.js"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -289,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -306,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -323,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -357,10 +357,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -391,10 +391,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -408,10 +408,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -425,10 +425,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -442,10 +442,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -459,10 +459,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -476,10 +476,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -493,10 +493,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -510,10 +510,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\README.md",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\README.md",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/README.md",
       "AssetKind": "All",
@@ -527,10 +527,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\README.md"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_alert.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_alert.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/_alert.scss",
       "AssetKind": "All",
@@ -544,10 +544,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_alert.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_badge.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_badge.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/_badge.scss",
       "AssetKind": "All",
@@ -561,10 +561,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_badge.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_breadcrumb.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_breadcrumb.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/_breadcrumb.scss",
       "AssetKind": "All",
@@ -578,10 +578,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_breadcrumb.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_button-group.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_button-group.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/_button-group.scss",
       "AssetKind": "All",
@@ -595,10 +595,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_button-group.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_buttons.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_buttons.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/_buttons.scss",
       "AssetKind": "All",
@@ -612,10 +612,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_buttons.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_card.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_card.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/_card.scss",
       "AssetKind": "All",
@@ -629,10 +629,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_card.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_carousel.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_carousel.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/_carousel.scss",
       "AssetKind": "All",
@@ -646,10 +646,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_carousel.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_close.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_close.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/_close.scss",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_close.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_code.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_code.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/_code.scss",
       "AssetKind": "All",
@@ -680,10 +680,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_code.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_custom-forms.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_custom-forms.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/_custom-forms.scss",
       "AssetKind": "All",
@@ -697,10 +697,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_custom-forms.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_dropdown.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_dropdown.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/_dropdown.scss",
       "AssetKind": "All",
@@ -714,10 +714,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_dropdown.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_forms.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_forms.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/_forms.scss",
       "AssetKind": "All",
@@ -731,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_forms.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_functions.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_functions.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/_functions.scss",
       "AssetKind": "All",
@@ -748,10 +748,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_functions.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_grid.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_grid.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/_grid.scss",
       "AssetKind": "All",
@@ -765,10 +765,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_grid.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_images.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_images.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/_images.scss",
       "AssetKind": "All",
@@ -782,10 +782,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_images.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_input-group.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_input-group.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/_input-group.scss",
       "AssetKind": "All",
@@ -799,10 +799,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_input-group.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_jumbotron.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_jumbotron.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/_jumbotron.scss",
       "AssetKind": "All",
@@ -816,10 +816,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_jumbotron.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_list-group.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_list-group.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/_list-group.scss",
       "AssetKind": "All",
@@ -833,10 +833,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_list-group.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_media.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_media.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/_media.scss",
       "AssetKind": "All",
@@ -850,10 +850,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_media.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_mixins.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_mixins.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/_mixins.scss",
       "AssetKind": "All",
@@ -867,10 +867,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_mixins.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_modal.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_modal.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/_modal.scss",
       "AssetKind": "All",
@@ -884,10 +884,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_modal.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_nav.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_nav.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/_nav.scss",
       "AssetKind": "All",
@@ -901,10 +901,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_nav.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_navbar.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_navbar.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/_navbar.scss",
       "AssetKind": "All",
@@ -918,10 +918,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_navbar.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_pagination.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_pagination.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/_pagination.scss",
       "AssetKind": "All",
@@ -935,10 +935,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_pagination.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_popover.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_popover.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/_popover.scss",
       "AssetKind": "All",
@@ -952,10 +952,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_popover.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_print.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_print.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/_print.scss",
       "AssetKind": "All",
@@ -969,10 +969,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_print.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_progress.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_progress.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/_progress.scss",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_progress.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_reboot.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_reboot.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/_reboot.scss",
       "AssetKind": "All",
@@ -1003,10 +1003,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_reboot.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_root.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_root.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/_root.scss",
       "AssetKind": "All",
@@ -1020,10 +1020,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_root.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_spinners.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_spinners.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/_spinners.scss",
       "AssetKind": "All",
@@ -1037,10 +1037,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_spinners.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_tables.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_tables.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/_tables.scss",
       "AssetKind": "All",
@@ -1054,10 +1054,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_tables.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_toasts.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_toasts.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/_toasts.scss",
       "AssetKind": "All",
@@ -1071,10 +1071,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_toasts.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_tooltip.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_tooltip.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/_tooltip.scss",
       "AssetKind": "All",
@@ -1088,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_tooltip.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_transitions.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_transitions.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/_transitions.scss",
       "AssetKind": "All",
@@ -1105,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_transitions.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_type.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_type.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/_type.scss",
       "AssetKind": "All",
@@ -1122,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_type.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_utilities.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_utilities.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/_utilities.scss",
       "AssetKind": "All",
@@ -1139,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_utilities.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_variables.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\_variables.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/_variables.scss",
       "AssetKind": "All",
@@ -1156,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_variables.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\bootstrap.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\bootstrap.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/bootstrap.scss",
       "AssetKind": "All",
@@ -1173,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\bootstrap.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\bootstrap-grid.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\bootstrap-grid.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/bootstrap-grid.scss",
       "AssetKind": "All",
@@ -1190,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\bootstrap-grid.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\bootstrap-reboot.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\bootstrap-reboot.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/bootstrap-reboot.scss",
       "AssetKind": "All",
@@ -1207,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\bootstrap-reboot.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_alert.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_alert.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/mixins/_alert.scss",
       "AssetKind": "All",
@@ -1224,10 +1224,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_alert.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_background-variant.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_background-variant.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/mixins/_background-variant.scss",
       "AssetKind": "All",
@@ -1241,10 +1241,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_background-variant.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_badge.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_badge.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/mixins/_badge.scss",
       "AssetKind": "All",
@@ -1258,10 +1258,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_badge.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_border-radius.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_border-radius.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/mixins/_border-radius.scss",
       "AssetKind": "All",
@@ -1275,10 +1275,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_border-radius.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_box-shadow.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_box-shadow.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/mixins/_box-shadow.scss",
       "AssetKind": "All",
@@ -1292,10 +1292,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_box-shadow.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_breakpoints.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_breakpoints.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/mixins/_breakpoints.scss",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_breakpoints.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_buttons.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_buttons.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/mixins/_buttons.scss",
       "AssetKind": "All",
@@ -1326,10 +1326,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_buttons.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_caret.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_caret.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/mixins/_caret.scss",
       "AssetKind": "All",
@@ -1343,10 +1343,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_caret.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_clearfix.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_clearfix.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/mixins/_clearfix.scss",
       "AssetKind": "All",
@@ -1360,10 +1360,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_clearfix.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_deprecate.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_deprecate.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/mixins/_deprecate.scss",
       "AssetKind": "All",
@@ -1377,10 +1377,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_deprecate.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_float.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_float.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/mixins/_float.scss",
       "AssetKind": "All",
@@ -1394,10 +1394,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_float.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_forms.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_forms.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/mixins/_forms.scss",
       "AssetKind": "All",
@@ -1411,10 +1411,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_forms.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_gradients.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_gradients.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/mixins/_gradients.scss",
       "AssetKind": "All",
@@ -1428,10 +1428,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_gradients.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_grid.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_grid.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/mixins/_grid.scss",
       "AssetKind": "All",
@@ -1445,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_grid.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_grid-framework.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_grid-framework.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/mixins/_grid-framework.scss",
       "AssetKind": "All",
@@ -1462,10 +1462,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_grid-framework.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_hover.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_hover.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/mixins/_hover.scss",
       "AssetKind": "All",
@@ -1479,10 +1479,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_hover.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_image.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_image.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/mixins/_image.scss",
       "AssetKind": "All",
@@ -1496,10 +1496,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_image.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_list-group.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_list-group.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/mixins/_list-group.scss",
       "AssetKind": "All",
@@ -1513,10 +1513,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_list-group.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_lists.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_lists.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/mixins/_lists.scss",
       "AssetKind": "All",
@@ -1530,10 +1530,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_lists.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_nav-divider.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_nav-divider.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/mixins/_nav-divider.scss",
       "AssetKind": "All",
@@ -1547,10 +1547,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_nav-divider.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_pagination.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_pagination.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/mixins/_pagination.scss",
       "AssetKind": "All",
@@ -1564,10 +1564,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_pagination.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_reset-text.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_reset-text.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/mixins/_reset-text.scss",
       "AssetKind": "All",
@@ -1581,10 +1581,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_reset-text.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_resize.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_resize.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/mixins/_resize.scss",
       "AssetKind": "All",
@@ -1598,10 +1598,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_resize.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_screen-reader.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_screen-reader.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/mixins/_screen-reader.scss",
       "AssetKind": "All",
@@ -1615,10 +1615,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_screen-reader.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_size.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_size.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/mixins/_size.scss",
       "AssetKind": "All",
@@ -1632,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_size.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_table-row.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_table-row.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/mixins/_table-row.scss",
       "AssetKind": "All",
@@ -1649,10 +1649,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_table-row.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_text-emphasis.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_text-emphasis.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/mixins/_text-emphasis.scss",
       "AssetKind": "All",
@@ -1666,10 +1666,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_text-emphasis.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_text-hide.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_text-hide.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/mixins/_text-hide.scss",
       "AssetKind": "All",
@@ -1683,10 +1683,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_text-hide.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_text-truncate.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_text-truncate.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/mixins/_text-truncate.scss",
       "AssetKind": "All",
@@ -1700,10 +1700,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_text-truncate.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_transition.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_transition.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/mixins/_transition.scss",
       "AssetKind": "All",
@@ -1717,10 +1717,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_transition.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_visibility.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_visibility.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/mixins/_visibility.scss",
       "AssetKind": "All",
@@ -1734,10 +1734,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_visibility.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_align.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_align.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/utilities/_align.scss",
       "AssetKind": "All",
@@ -1751,10 +1751,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\utilities\\_align.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_background.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_background.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/utilities/_background.scss",
       "AssetKind": "All",
@@ -1768,10 +1768,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\utilities\\_background.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_borders.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_borders.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/utilities/_borders.scss",
       "AssetKind": "All",
@@ -1785,10 +1785,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\utilities\\_borders.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_clearfix.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_clearfix.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/utilities/_clearfix.scss",
       "AssetKind": "All",
@@ -1802,10 +1802,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\utilities\\_clearfix.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_display.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_display.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/utilities/_display.scss",
       "AssetKind": "All",
@@ -1819,10 +1819,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\utilities\\_display.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_embed.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_embed.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/utilities/_embed.scss",
       "AssetKind": "All",
@@ -1836,10 +1836,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\utilities\\_embed.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_flex.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_flex.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/utilities/_flex.scss",
       "AssetKind": "All",
@@ -1853,10 +1853,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\utilities\\_flex.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_float.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_float.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/utilities/_float.scss",
       "AssetKind": "All",
@@ -1870,10 +1870,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\utilities\\_float.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_overflow.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_overflow.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/utilities/_overflow.scss",
       "AssetKind": "All",
@@ -1887,10 +1887,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\utilities\\_overflow.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_position.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_position.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/utilities/_position.scss",
       "AssetKind": "All",
@@ -1904,10 +1904,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\utilities\\_position.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_screenreaders.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_screenreaders.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/utilities/_screenreaders.scss",
       "AssetKind": "All",
@@ -1921,10 +1921,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\utilities\\_screenreaders.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_shadows.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_shadows.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/utilities/_shadows.scss",
       "AssetKind": "All",
@@ -1938,10 +1938,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\utilities\\_shadows.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_sizing.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_sizing.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/utilities/_sizing.scss",
       "AssetKind": "All",
@@ -1955,10 +1955,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\utilities\\_sizing.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_spacing.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_spacing.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/utilities/_spacing.scss",
       "AssetKind": "All",
@@ -1972,10 +1972,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\utilities\\_spacing.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_stretched-link.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_stretched-link.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/utilities/_stretched-link.scss",
       "AssetKind": "All",
@@ -1989,10 +1989,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\utilities\\_stretched-link.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_text.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_text.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/utilities/_text.scss",
       "AssetKind": "All",
@@ -2006,10 +2006,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\utilities\\_text.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_visibility.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_visibility.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/utilities/_visibility.scss",
       "AssetKind": "All",
@@ -2023,10 +2023,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\utilities\\_visibility.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\vendor\\_rfs.scss",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\bootstrap\\scss\\vendor\\_rfs.scss",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/bootstrap/scss/vendor/_rfs.scss",
       "AssetKind": "All",
@@ -2040,10 +2040,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\vendor\\_rfs.scss"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -2057,10 +2057,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -2074,10 +2074,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -2091,10 +2091,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/jquery/dist/jquery.slim.js",
       "AssetKind": "All",
@@ -2108,10 +2108,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.slim.js"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/jquery/dist/jquery.slim.min.js",
       "AssetKind": "All",
@@ -2125,10 +2125,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/jquery/dist/jquery.slim.min.map",
       "AssetKind": "All",
@@ -2142,10 +2142,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -2159,10 +2159,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\jquery\\README.md",
+      "Identity": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\lib\\jquery\\README.md",
       "SourceId": "Shop.Identity",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-8\\PouriaRahnama\\Eshop-Api\\Shop.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-10\\Eshop-Api\\Shop.Identity\\wwwroot\\",
       "BasePath": "_content/Shop.Identity",
       "RelativePath": "lib/jquery/README.md",
       "AssetKind": "All",

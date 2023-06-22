@@ -18,7 +18,7 @@ namespace shop.Data.Infrastructure
             services.AddScoped(typeof(IRepository<>), typeof(EFRepository<>));
             services.AddDbContextPool<IApplicationContext,SqlServerApplicationContext>((options) =>
             {               
-                options.UseSqlServer("Data Source=.;Initial Catalog=ShopApp;Integrated Security=true;Encrypt=false;").UseLazyLoadingProxies();
+                options.UseSqlServer("Data Source=.;Initial Catalog=ShopApp;Integrated Security=true;Encrypt=false;MultipleActiveResultSets=true").UseLazyLoadingProxies();
             }, poolSize: 16);
         }
 

@@ -8,10 +8,10 @@
     ".NETCoreApp,Version=v7.0": {
       "shop.Core/1.0.0": {
         "dependencies": {
-          "Hangfire.AspNetCore": "1.8.2",
-          "Hangfire.Core": "1.8.2",
-          "Hangfire.SqlServer": "1.8.2",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.0.1",
+          "Microsoft.Extensions.Caching.Memory": "7.0.0",
           "Microsoft.Extensions.Caching.Redis": "2.2.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0-preview.3.23174.8",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0-preview.3.23174.8",
           "Newtonsoft.Json": "13.0.3"
         },
@@ -19,106 +19,59 @@
           "shop.Core.dll": {}
         }
       },
-      "Hangfire.AspNetCore/1.8.2": {
+      "Microsoft.AspNetCore.Http.Abstractions/2.0.1": {
         "dependencies": {
-          "Hangfire.NetCore": "1.8.2"
+          "Microsoft.AspNetCore.Http.Features": "2.0.1",
+          "System.Text.Encodings.Web": "4.4.0"
         },
         "runtime": {
-          "lib/netcoreapp3.0/Hangfire.AspNetCore.dll": {
-            "assemblyVersion": "1.8.2.0",
-            "fileVersion": "1.8.2.0"
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll": {
+            "assemblyVersion": "2.0.1.0",
+            "fileVersion": "2.0.1.17303"
           }
         }
       },
-      "Hangfire.Core/1.8.2": {
+      "Microsoft.AspNetCore.Http.Features/2.0.1": {
         "dependencies": {
-          "Newtonsoft.Json": "13.0.3"
+          "Microsoft.Extensions.Primitives": "8.0.0-preview.3.23174.8"
         },
         "runtime": {
-          "lib/netstandard2.0/Hangfire.Core.dll": {
-            "assemblyVersion": "1.8.2.0",
-            "fileVersion": "1.8.2.0"
-          }
-        },
-        "resources": {
-          "lib/netstandard2.0/ca/Hangfire.Core.resources.dll": {
-            "locale": "ca"
-          },
-          "lib/netstandard2.0/de/Hangfire.Core.resources.dll": {
-            "locale": "de"
-          },
-          "lib/netstandard2.0/es/Hangfire.Core.resources.dll": {
-            "locale": "es"
-          },
-          "lib/netstandard2.0/fa/Hangfire.Core.resources.dll": {
-            "locale": "fa"
-          },
-          "lib/netstandard2.0/fr/Hangfire.Core.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/netstandard2.0/nb/Hangfire.Core.resources.dll": {
-            "locale": "nb"
-          },
-          "lib/netstandard2.0/nl/Hangfire.Core.resources.dll": {
-            "locale": "nl"
-          },
-          "lib/netstandard2.0/pt-BR/Hangfire.Core.resources.dll": {
-            "locale": "pt-BR"
-          },
-          "lib/netstandard2.0/pt-PT/Hangfire.Core.resources.dll": {
-            "locale": "pt-PT"
-          },
-          "lib/netstandard2.0/pt/Hangfire.Core.resources.dll": {
-            "locale": "pt"
-          },
-          "lib/netstandard2.0/sv/Hangfire.Core.resources.dll": {
-            "locale": "sv"
-          },
-          "lib/netstandard2.0/tr-TR/Hangfire.Core.resources.dll": {
-            "locale": "tr-TR"
-          },
-          "lib/netstandard2.0/zh-TW/Hangfire.Core.resources.dll": {
-            "locale": "zh-TW"
-          },
-          "lib/netstandard2.0/zh/Hangfire.Core.resources.dll": {
-            "locale": "zh"
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll": {
+            "assemblyVersion": "2.0.1.0",
+            "fileVersion": "2.0.1.17303"
           }
         }
       },
-      "Hangfire.NetCore/1.8.2": {
+      "Microsoft.Extensions.Caching.Abstractions/7.0.0": {
         "dependencies": {
-          "Hangfire.Core": "1.8.2",
+          "Microsoft.Extensions.Primitives": "8.0.0-preview.3.23174.8"
+        },
+        "runtime": {
+          "lib/net7.0/Microsoft.Extensions.Caching.Abstractions.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.22.51805"
+          }
+        }
+      },
+      "Microsoft.Extensions.Caching.Memory/7.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Caching.Abstractions": "7.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0-preview.3.23174.8",
-          "Microsoft.Extensions.Hosting.Abstractions": "3.0.0",
-          "Microsoft.Extensions.Logging.Abstractions": "3.0.0"
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Options": "7.0.0",
+          "Microsoft.Extensions.Primitives": "8.0.0-preview.3.23174.8"
         },
         "runtime": {
-          "lib/netstandard2.1/Hangfire.NetCore.dll": {
-            "assemblyVersion": "0.0.0.0",
-            "fileVersion": "0.0.0.0"
+          "lib/net7.0/Microsoft.Extensions.Caching.Memory.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.22.51805"
           }
-        }
-      },
-      "Hangfire.SqlServer/1.8.2": {
-        "dependencies": {
-          "Hangfire.Core": "1.8.2"
-        },
-        "runtime": {
-          "lib/netstandard2.0/Hangfire.SqlServer.dll": {
-            "assemblyVersion": "1.8.2.0",
-            "fileVersion": "1.8.2.0"
-          }
-        }
-      },
-      "Microsoft.Extensions.Caching.Abstractions/2.2.0": {
-        "dependencies": {
-          "Microsoft.Extensions.Primitives": "3.0.0"
         }
       },
       "Microsoft.Extensions.Caching.Redis/2.2.0": {
         "dependencies": {
-          "Microsoft.Extensions.Caching.Abstractions": "2.2.0",
-          "Microsoft.Extensions.Options": "2.2.0",
+          "Microsoft.Extensions.Caching.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Options": "7.0.0",
           "StackExchange.Redis.StrongName": "1.2.6"
         },
         "runtime": {
@@ -128,9 +81,15 @@
           }
         }
       },
-      "Microsoft.Extensions.Configuration.Abstractions/3.0.0": {
+      "Microsoft.Extensions.Configuration.Abstractions/8.0.0-preview.3.23174.8": {
         "dependencies": {
-          "Microsoft.Extensions.Primitives": "3.0.0"
+          "Microsoft.Extensions.Primitives": "8.0.0-preview.3.23174.8"
+        },
+        "runtime": {
+          "lib/net7.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.17408"
+          }
         }
       },
       "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0-preview.3.23174.8": {
@@ -141,28 +100,34 @@
           }
         }
       },
-      "Microsoft.Extensions.FileProviders.Abstractions/3.0.0": {
-        "dependencies": {
-          "Microsoft.Extensions.Primitives": "3.0.0"
+      "Microsoft.Extensions.Logging.Abstractions/7.0.0": {
+        "runtime": {
+          "lib/net7.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.22.51805"
+          }
         }
       },
-      "Microsoft.Extensions.Hosting.Abstractions/3.0.0": {
-        "dependencies": {
-          "Microsoft.Extensions.Configuration.Abstractions": "3.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0-preview.3.23174.8",
-          "Microsoft.Extensions.FileProviders.Abstractions": "3.0.0",
-          "Microsoft.Extensions.Logging.Abstractions": "3.0.0"
-        }
-      },
-      "Microsoft.Extensions.Logging.Abstractions/3.0.0": {},
-      "Microsoft.Extensions.Options/2.2.0": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0-preview.3.23174.8",
-          "Microsoft.Extensions.Primitives": "3.0.0",
-          "System.ComponentModel.Annotations": "4.5.0"
+          "Microsoft.Extensions.Primitives": "8.0.0-preview.3.23174.8"
+        },
+        "runtime": {
+          "lib/net7.0/Microsoft.Extensions.Options.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.22.51805"
+          }
         }
       },
-      "Microsoft.Extensions.Primitives/3.0.0": {},
+      "Microsoft.Extensions.Primitives/8.0.0-preview.3.23174.8": {
+        "runtime": {
+          "lib/net7.0/Microsoft.Extensions.Primitives.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.17408"
+          }
+        }
+      },
       "Microsoft.NETCore.Platforms/1.1.0": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
       "Microsoft.Win32.Primitives/4.3.0": {
@@ -360,7 +325,6 @@
           "System.Threading": "4.3.0"
         }
       },
-      "System.ComponentModel.Annotations/4.5.0": {},
       "System.Console/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -904,6 +868,7 @@
           "System.Text.Encoding": "4.3.0"
         }
       },
+      "System.Text.Encodings.Web/4.4.0": {},
       "System.Text.RegularExpressions/4.3.0": {
         "dependencies": {
           "System.Runtime": "4.3.0"
@@ -990,40 +955,33 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Hangfire.AspNetCore/1.8.2": {
+    "Microsoft.AspNetCore.Http.Abstractions/2.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-V5vyez3g3GM7CEwvCsTX/IShYdxtxfTu2LCOFOjF4b/c1fgiMFts8KGuXEKu47pydULWZOkiuPA57X5WsfgeZQ==",
-      "path": "hangfire.aspnetcore/1.8.2",
-      "hashPath": "hangfire.aspnetcore.1.8.2.nupkg.sha512"
+      "sha512": "sha512-i3mGpHEGnMq/x9eDxdWVP4e+VdPD8DuhdVYR4sH0wxWiM6oa0tNAhwDGoOrDop548PSwLM8Qs7DGPvrZqIqjmQ==",
+      "path": "microsoft.aspnetcore.http.abstractions/2.0.1",
+      "hashPath": "microsoft.aspnetcore.http.abstractions.2.0.1.nupkg.sha512"
     },
-    "Hangfire.Core/1.8.2": {
+    "Microsoft.AspNetCore.Http.Features/2.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-eRFHfJdLHd24pP/PA2oKdsaA0ajioSH+tSHBqexUYPlKPqG9aIbMWQLoVW7IqLjX0n29BWW65Hjy3gP0refCJA==",
-      "path": "hangfire.core/1.8.2",
-      "hashPath": "hangfire.core.1.8.2.nupkg.sha512"
+      "sha512": "sha512-J9JvFF7gC2SDJTV/4XWXQaKX4zdjR2ixlGy/KUD7Og+dkeHleD7f8+wtRUthuQV1yCU3t/gz/IrmbpmQj+Tlzg==",
+      "path": "microsoft.aspnetcore.http.features/2.0.1",
+      "hashPath": "microsoft.aspnetcore.http.features.2.0.1.nupkg.sha512"
     },
-    "Hangfire.NetCore/1.8.2": {
+    "Microsoft.Extensions.Caching.Abstractions/7.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-oyan560O84YGNUfvPJx3UcWXifhfZqkt7QDGNr8mMumvv4H+jQHuAdRTYoUrX4SZ+0N0TVAOBucmOAvHYTV+VQ==",
-      "path": "hangfire.netcore/1.8.2",
-      "hashPath": "hangfire.netcore.1.8.2.nupkg.sha512"
+      "sha512": "sha512-IeimUd0TNbhB4ded3AbgBLQv2SnsiVugDyGV1MvspQFVlA07nDC7Zul7kcwH5jWN3JiTcp/ySE83AIJo8yfKjg==",
+      "path": "microsoft.extensions.caching.abstractions/7.0.0",
+      "hashPath": "microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512"
     },
-    "Hangfire.SqlServer/1.8.2": {
+    "Microsoft.Extensions.Caching.Memory/7.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-3pQ7SaOvVda3HJXsniUfbPbOI33++iyNb4mQdAUjy+1ERInQ5uE0VY1Ad8hia9LU07ucM2xICGGvFPeFZqfJUw==",
-      "path": "hangfire.sqlserver/1.8.2",
-      "hashPath": "hangfire.sqlserver.1.8.2.nupkg.sha512"
-    },
-    "Microsoft.Extensions.Caching.Abstractions/2.2.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-spsJkYo8gGJapaxTSQFN/wqA+ghpJMLwB4ZyTB+fSdpd7AmMFP/YSpIcGmczcw4KggpxLGhLk7lCkSIlgvHaqQ==",
-      "path": "microsoft.extensions.caching.abstractions/2.2.0",
-      "hashPath": "microsoft.extensions.caching.abstractions.2.2.0.nupkg.sha512"
+      "sha512": "sha512-xpidBs2KCE2gw1JrD0quHE72kvCaI3xFql5/Peb2GRtUuZX+dYPoK/NTdVMiM67Svym0M0Df9A3xyU0FbMQhHw==",
+      "path": "microsoft.extensions.caching.memory/7.0.0",
+      "hashPath": "microsoft.extensions.caching.memory.7.0.0.nupkg.sha512"
     },
     "Microsoft.Extensions.Caching.Redis/2.2.0": {
       "type": "package",
@@ -1032,12 +990,12 @@
       "path": "microsoft.extensions.caching.redis/2.2.0",
       "hashPath": "microsoft.extensions.caching.redis.2.2.0.nupkg.sha512"
     },
-    "Microsoft.Extensions.Configuration.Abstractions/3.0.0": {
+    "Microsoft.Extensions.Configuration.Abstractions/8.0.0-preview.3.23174.8": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Lge/PbXC53jI1MF2J92X5EZOeKV8Q/rlB1aV3H9I/ZTDyQGOyBcL03IAvnviWpHKj43BDkNy6kU2KKoh8kAS0g==",
-      "path": "microsoft.extensions.configuration.abstractions/3.0.0",
-      "hashPath": "microsoft.extensions.configuration.abstractions.3.0.0.nupkg.sha512"
+      "sha512": "sha512-MWHtyuSmaspZcGbOQxdWEmUW9VAYpD+pN4YtApbE3tu1NFiWb7ooQNBPV/g6JgGhMAo3FSmTmaK8Cirg+8hxdw==",
+      "path": "microsoft.extensions.configuration.abstractions/8.0.0-preview.3.23174.8",
+      "hashPath": "microsoft.extensions.configuration.abstractions.8.0.0-preview.3.23174.8.nupkg.sha512"
     },
     "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0-preview.3.23174.8": {
       "type": "package",
@@ -1046,40 +1004,26 @@
       "path": "microsoft.extensions.dependencyinjection.abstractions/8.0.0-preview.3.23174.8",
       "hashPath": "microsoft.extensions.dependencyinjection.abstractions.8.0.0-preview.3.23174.8.nupkg.sha512"
     },
-    "Microsoft.Extensions.FileProviders.Abstractions/3.0.0": {
+    "Microsoft.Extensions.Logging.Abstractions/7.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-kahEeykb6FyQytoZNNXuz74X85B4weIEt8Kd+0klK48bkXDWOIHAOvNjlGsPMcS9CL935Te8QGQS83JqCbpdHA==",
-      "path": "microsoft.extensions.fileproviders.abstractions/3.0.0",
-      "hashPath": "microsoft.extensions.fileproviders.abstractions.3.0.0.nupkg.sha512"
+      "sha512": "sha512-kmn78+LPVMOWeITUjIlfxUPDsI0R6G0RkeAMBmQxAJ7vBJn4q2dTva7pWi65ceN5vPGjJ9q/Uae2WKgvfktJAw==",
+      "path": "microsoft.extensions.logging.abstractions/7.0.0",
+      "hashPath": "microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512"
     },
-    "Microsoft.Extensions.Hosting.Abstractions/3.0.0": {
+    "Microsoft.Extensions.Options/7.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-qeDWS5ErmkUN96BdQqpmeCmLk5HJWQ/SPw3ux5v5/Qb0hKZS5wojBMulnBC7JUEiBwg7Ir71Yjf1lFiRT5MdtQ==",
-      "path": "microsoft.extensions.hosting.abstractions/3.0.0",
-      "hashPath": "microsoft.extensions.hosting.abstractions.3.0.0.nupkg.sha512"
+      "sha512": "sha512-lP1yBnTTU42cKpMozuafbvNtQ7QcBjr/CcK3bYOGEMH55Fjt+iecXjT6chR7vbgCMqy3PG3aNQSZgo/EuY/9qQ==",
+      "path": "microsoft.extensions.options/7.0.0",
+      "hashPath": "microsoft.extensions.options.7.0.0.nupkg.sha512"
     },
-    "Microsoft.Extensions.Logging.Abstractions/3.0.0": {
+    "Microsoft.Extensions.Primitives/8.0.0-preview.3.23174.8": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-+PsosTYZn+omucI0ff9eywo9QcPLwcbIWf7dz7ZLM1zGR8gVZXJ3wo6+tkuIedUNW5iWENlVJPEvrGjiVeoNNQ==",
-      "path": "microsoft.extensions.logging.abstractions/3.0.0",
-      "hashPath": "microsoft.extensions.logging.abstractions.3.0.0.nupkg.sha512"
-    },
-    "Microsoft.Extensions.Options/2.2.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-UpZLNLBpIZ0GTebShui7xXYh6DmBHjWM8NxGxZbdQh/bPZ5e6YswqI+bru6BnEL5eWiOdodsXtEz3FROcgi/qg==",
-      "path": "microsoft.extensions.options/2.2.0",
-      "hashPath": "microsoft.extensions.options.2.2.0.nupkg.sha512"
-    },
-    "Microsoft.Extensions.Primitives/3.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-6gwewTbmOh+ZVBicVkL1XRp79sx4O7BVY6Yy+7OYZdwn3pyOKe9lOam+3gXJ3TZMjhJZdV0Ub8hxHt2vkrmN5Q==",
-      "path": "microsoft.extensions.primitives/3.0.0",
-      "hashPath": "microsoft.extensions.primitives.3.0.0.nupkg.sha512"
+      "sha512": "sha512-OWIsqdLG3OQScTk7NjcSnlk4xCq+UaILk+vkYIAf2fWaueUAncEuBP3mReHvkChbdJtVbK2ns5loUAGaEZFleA==",
+      "path": "microsoft.extensions.primitives/8.0.0-preview.3.23174.8",
+      "hashPath": "microsoft.extensions.primitives.8.0.0-preview.3.23174.8.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",
@@ -1276,13 +1220,6 @@
       "sha512": "sha512-prtjIEMhGUnQq6RnPEYLpFt8AtLbp9yq2zxOSrY7KJJZrw25Fi97IzBqY7iqssbM61Ek5b8f3MG/sG1N2sN5KA==",
       "path": "system.collections.nongeneric/4.3.0",
       "hashPath": "system.collections.nongeneric.4.3.0.nupkg.sha512"
-    },
-    "System.ComponentModel.Annotations/4.5.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-UxYQ3FGUOtzJ7LfSdnYSFd7+oEv6M8NgUatatIN2HxNtDdlcvFAf+VIq4Of9cDMJEJC0aSRv/x898RYhB4Yppg==",
-      "path": "system.componentmodel.annotations/4.5.0",
-      "hashPath": "system.componentmodel.annotations.4.5.0.nupkg.sha512"
     },
     "System.Console/4.3.0": {
       "type": "package",
@@ -1612,6 +1549,13 @@
       "sha512": "sha512-YVMK0Bt/A43RmwizJoZ22ei2nmrhobgeiYwFzC4YAN+nue8RF6djXDMog0UCn+brerQoYVyaS+ghy9P/MUVcmw==",
       "path": "system.text.encoding.extensions/4.3.0",
       "hashPath": "system.text.encoding.extensions.4.3.0.nupkg.sha512"
+    },
+    "System.Text.Encodings.Web/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-l/tYeikqMHX2MD2jzrHDfR9ejrpTTF7wvAEbR51AMvzip1wSJgiURbDik4iv/w7ZgytmTD/hlwpplEhF9bmFNw==",
+      "path": "system.text.encodings.web/4.4.0",
+      "hashPath": "system.text.encodings.web.4.4.0.nupkg.sha512"
     },
     "System.Text.RegularExpressions/4.3.0": {
       "type": "package",

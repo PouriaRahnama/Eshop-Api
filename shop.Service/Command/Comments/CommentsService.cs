@@ -27,20 +27,19 @@ public class CommentsService : ICommentsService
     }
     public async Task<OperationResult> UpdateComments(EditCommentDto EditCommentDto)
     {
-        //var Comment = _repository.Table.FirstOrDefault(c => c.Id == EditCommentDto.Id);
         var Comment = await _repository.FindByIdAsync(EditCommentDto.Id);
 
         if (Comment == null || Comment.UserId != EditCommentDto.UserId)
             return OperationResult.NotFound();
 
         Comment.Text = EditCommentDto.Text;
+        Comment.UpdateON = DateTime.Now;
 
         await _repository.UpdateAsync(Comment);
         return OperationResult.Success();
     }
     public async Task<OperationResult> ChangeStatus(ChangeStatusDto ChangeStatusDto)
     {
-        //var Comment = _repository.Table.FirstOrDefault(c => c.Id == ChangeStatusDto.Id);
         var Comment = await _repository.FindByIdAsync(ChangeStatusDto.Id);
         if (Comment == null)
             return OperationResult.NotFound();
