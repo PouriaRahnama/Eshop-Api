@@ -12,8 +12,8 @@ using shop.Data.ApplicationContext;
 namespace shop.Data.Migrations
 {
     [DbContext(typeof(SqlServerApplicationContext))]
-    [Migration("20230621093541_init2")]
-    partial class init2
+    [Migration("20230623082512_init")]
+    partial class init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -422,9 +422,6 @@ namespace shop.Data.Migrations
                     b.Property<int>("PermissionId")
                         .HasColumnType("int");
 
-                    b.Property<int>("PermissionStatus")
-                        .HasColumnType("int");
-
                     b.Property<int>("RoleId")
                         .HasColumnType("int");
 
@@ -652,9 +649,6 @@ namespace shop.Data.Migrations
                         .HasColumnType("int");
 
                     b.Property<int>("StatusId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Type")
                         .HasColumnType("int");
 
                     b.Property<DateTime?>("UpdateON")

@@ -1,62 +1,6 @@
-2023-06-23 02:34:04.381 +03:30 [FTL] Application startup exception
-System.InvalidOperationException: Scheme already exists: Bearer
-   at Microsoft.AspNetCore.Authentication.AuthenticationOptions.AddScheme(String name, Action`1 configureBuilder)
-   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
-   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
-   at Microsoft.Extensions.Options.UnnamedOptionsManager`1.get_Value()
-   at Microsoft.AspNetCore.Authentication.AuthenticationSchemeProvider..ctor(IOptions`1 options, IDictionary`2 schemes)
-   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
-   at System.Reflection.ConstructorInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)
-   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
-   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(Type serviceType)
-   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
-   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
-   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType)
-   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
-   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
-   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass5_0.<UseMiddleware>b__0(RequestDelegate next)
-   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
-   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
-   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
-2023-06-23 02:34:20.272 +03:30 [FTL] Application startup exception
-System.InvalidOperationException: Scheme already exists: Bearer
-   at Microsoft.AspNetCore.Authentication.AuthenticationOptions.AddScheme(String name, Action`1 configureBuilder)
-   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
-   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
-   at Microsoft.Extensions.Options.UnnamedOptionsManager`1.get_Value()
-   at Microsoft.AspNetCore.Authentication.AuthenticationSchemeProvider..ctor(IOptions`1 options, IDictionary`2 schemes)
-   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
-   at System.Reflection.ConstructorInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)
-   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
-   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(Type serviceType)
-   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
-   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
-   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType)
-   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
-   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
-   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass5_0.<UseMiddleware>b__0(RequestDelegate next)
-   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
-   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
-   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
-2023-06-23 02:48:27.532 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) Executing
-2023-06-23 02:48:31.737 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) Executed
-2023-06-23 09:10:18.544 +03:30 [ERR] Shop.Api.Controllers.AuthController.Register (shop.Web) Executing
-2023-06-23 09:10:58.373 +03:30 [ERR] Shop.Api.Controllers.AuthController.Register (shop.Web) Executed
-2023-06-23 09:12:06.814 +03:30 [ERR] Shop.Api.Controllers.AuthController.Login (shop.Web) Executing
-2023-06-23 09:14:56.670 +03:30 [ERR] Shop.Api.Controllers.AuthController.Login (shop.Web) Executed
-2023-06-23 09:20:03.684 +03:30 [ERR] Shop.Api.Controllers.AuthController.Register (shop.Web) Executing
-2023-06-23 09:20:08.947 +03:30 [ERR] Shop.Api.Controllers.AuthController.Register (shop.Web) Executed
-2023-06-23 09:22:22.883 +03:30 [ERR] Shop.Api.Controllers.AuthController.Login (shop.Web) Executing
-2023-06-23 09:22:24.860 +03:30 [ERR] Shop.Api.Controllers.AuthController.Login (shop.Web) Executed
-2023-06-23 09:26:47.381 +03:30 [ERR] shop.Web.Controllers.Product.ProductController.GetProductById (shop.Web) Executing
-2023-06-23 09:26:53.453 +03:30 [ERR] shop.Web.Controllers.Product.ProductController.GetProductById (shop.Web) Executed
+2023-06-23 11:56:25.392 +03:30 [ERR] shop.Web.Controllers.User.UserController.AddUser (shop.Web) Executing
+2023-06-23 11:56:28.655 +03:30 [ERR] shop.Web.Controllers.User.UserController.AddUser (shop.Web) Executed
+2023-06-23 11:57:49.287 +03:30 [ERR] shop.Web.Controllers.User.UserController.ChangeWallet (shop.Web) Executing
+2023-06-23 11:57:52.296 +03:30 [ERR] shop.Web.Controllers.User.UserController.ChangeWallet (shop.Web) Executed
+2023-06-23 11:58:30.361 +03:30 [ERR] shop.Web.Controllers.User.UserController.GetUserByFilter (shop.Web) Executing
+2023-06-23 11:58:30.578 +03:30 [ERR] shop.Web.Controllers.User.UserController.GetUserByFilter (shop.Web) Executed

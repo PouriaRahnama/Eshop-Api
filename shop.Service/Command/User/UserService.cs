@@ -19,12 +19,14 @@ namespace shop.Service.Command
         public UserService(IRepository<User> Repository,
             IRepository<Role> RoleRepository,
             IRepository<UserRole> UserRoleRepository,
-            IFileService fileService)
+            IFileService fileService,
+            IRepository<Wallet> WalletRepository)
         {
             _repository = Repository;
             _fileService = fileService;
             _RoleRepository = RoleRepository;
             _UserRoleRepository = UserRoleRepository;
+            _WalletRepository = WalletRepository;
         }
 
         public async Task<OperationResult> AddUser(CreateUserDto CreateUserDto)
@@ -56,18 +58,16 @@ namespace shop.Service.Command
                 NewAvatarName = await _fileService
                 .SaveFileAndGenerateName(EditUserDto.Avatar, Directories.UserAvatars);
 
-            var NewUser = new User()
-            {
-                AvatarName = NewAvatarName,
-                Password = EditUserDto.Password,
-                Email = EditUserDto.Email,
-                PhoneNumber = EditUserDto.PhoneNumber,
-                Family = EditUserDto.Family,
-                Name = EditUserDto.Name,
-                UpdateON = DateTime.Now
-            };
+            user.AvatarName = NewAvatarName;
+            user.Password = Sha256Hasher.Hash(EditUserDto.Password);
+            user.Email = EditUserDto.Email;
+            user.PhoneNumber = EditUserDto.PhoneNumber;
+            user.Family = EditUserDto.Family;
+            user.Name = EditUserDto.Name;
+            user.UpdateON = DateTime.Now;
 
-            await _repository.UpdateAsync(NewUser);
+
+            await _repository.UpdateAsync(user);
             if (EditUserDto.Avatar != null || oldAvatarName != "avatar.png")
                 _fileService.DeleteFile(Directories.UserAvatars, oldAvatarName);
 
@@ -120,8 +120,9 @@ namespace shop.Service.Command
                 Price = ChargeWalletDto.Price,
                 IsFinally = ChargeWalletDto.IsFinally,
                 Desciption = ChargeWalletDto.Description,
-                UpdateON = DateTime.Now,
-                Type = ChargeWalletDto.Type
+                StatusId = (int)ChargeWalletDto.Type,
+                FinallyDate = DateTime.Now,
+                UserId = ChargeWalletDto.UserId             
             };
 
             await _WalletRepository.AddAsync(wallet);

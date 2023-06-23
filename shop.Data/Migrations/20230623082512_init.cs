@@ -25,7 +25,7 @@ namespace shop.Data.Migrations
                     ParentID = table.Column<int>(type: "int", nullable: true),
                     Deleted = table.Column<bool>(type: "bit", nullable: false),
                     CreateON = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    UpdateON = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    UpdateON = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -47,7 +47,7 @@ namespace shop.Data.Migrations
                     ImageName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Deleted = table.Column<bool>(type: "bit", nullable: false),
                     CreateON = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    UpdateON = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    UpdateON = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -65,7 +65,7 @@ namespace shop.Data.Migrations
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Deleted = table.Column<bool>(type: "bit", nullable: false),
                     CreateON = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    UpdateON = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    UpdateON = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -81,7 +81,7 @@ namespace shop.Data.Migrations
                     Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Deleted = table.Column<bool>(type: "bit", nullable: false),
                     CreateON = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    UpdateON = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    UpdateON = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -100,7 +100,7 @@ namespace shop.Data.Migrations
                     ImageName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Deleted = table.Column<bool>(type: "bit", nullable: false),
                     CreateON = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    UpdateON = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    UpdateON = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -121,7 +121,7 @@ namespace shop.Data.Migrations
                     AvatarName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Deleted = table.Column<bool>(type: "bit", nullable: false),
                     CreateON = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    UpdateON = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    UpdateON = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -136,7 +136,7 @@ namespace shop.Data.Migrations
                     CategoryID = table.Column<int>(type: "int", nullable: false),
                     Deleted = table.Column<bool>(type: "bit", nullable: false),
                     CreateON = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    UpdateON = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    UpdateON = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -164,7 +164,7 @@ namespace shop.Data.Migrations
                     PictureID = table.Column<int>(type: "int", nullable: false),
                     Deleted = table.Column<bool>(type: "bit", nullable: false),
                     CreateON = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    UpdateON = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    UpdateON = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -194,7 +194,7 @@ namespace shop.Data.Migrations
                     Value = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Deleted = table.Column<bool>(type: "bit", nullable: false),
                     CreateON = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    UpdateON = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    UpdateON = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -215,10 +215,9 @@ namespace shop.Data.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     RoleId = table.Column<int>(type: "int", nullable: false),
                     PermissionId = table.Column<int>(type: "int", nullable: false),
-                    PermissionStatus = table.Column<int>(type: "int", nullable: false),
                     Deleted = table.Column<bool>(type: "bit", nullable: false),
                     CreateON = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    UpdateON = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    UpdateON = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -243,7 +242,7 @@ namespace shop.Data.Migrations
                     StatusId = table.Column<int>(type: "int", nullable: false),
                     Deleted = table.Column<bool>(type: "bit", nullable: false),
                     CreateON = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    UpdateON = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    UpdateON = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -273,7 +272,7 @@ namespace shop.Data.Migrations
                     OrderStatusId = table.Column<int>(type: "int", nullable: false),
                     Deleted = table.Column<bool>(type: "bit", nullable: false),
                     CreateON = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    UpdateON = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    UpdateON = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -298,7 +297,7 @@ namespace shop.Data.Migrations
                     SellerStatusId = table.Column<int>(type: "int", nullable: false),
                     Deleted = table.Column<bool>(type: "bit", nullable: false),
                     CreateON = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    UpdateON = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    UpdateON = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -319,7 +318,7 @@ namespace shop.Data.Migrations
                     RoleId = table.Column<int>(type: "int", nullable: false),
                     Deleted = table.Column<bool>(type: "bit", nullable: false),
                     CreateON = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    UpdateON = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    UpdateON = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -350,10 +349,9 @@ namespace shop.Data.Migrations
                     StatusId = table.Column<int>(type: "int", nullable: false),
                     IsFinally = table.Column<bool>(type: "bit", nullable: false),
                     FinallyDate = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    Type = table.Column<int>(type: "int", nullable: false),
                     Deleted = table.Column<bool>(type: "bit", nullable: false),
                     CreateON = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    UpdateON = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    UpdateON = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -383,7 +381,7 @@ namespace shop.Data.Migrations
                     NationalCode = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Deleted = table.Column<bool>(type: "bit", nullable: false),
                     CreateON = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    UpdateON = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    UpdateON = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -409,7 +407,7 @@ namespace shop.Data.Migrations
                     DiscountPercentage = table.Column<int>(type: "int", nullable: true),
                     Deleted = table.Column<bool>(type: "bit", nullable: false),
                     CreateON = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    UpdateON = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    UpdateON = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -441,7 +439,7 @@ namespace shop.Data.Migrations
                     ProductId = table.Column<int>(type: "int", nullable: true),
                     Deleted = table.Column<bool>(type: "bit", nullable: false),
                     CreateON = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    UpdateON = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    UpdateON = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
                 constraints: table =>
                 {
