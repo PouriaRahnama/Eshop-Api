@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using shop.Frameworks;
 using shop.Frameworks.Commons;
@@ -19,6 +20,7 @@ namespace shop.Web.Controllers.Slider
             _sliderQueryService = sliderQueryService;
         }
 
+        [Authorize]
         [HttpGet("GetList")]
         public async Task<ApiResult<List<SliderDto>>> GetList()
         {

@@ -1,0 +1,10 @@
+2023-06-24 01:14:28.938 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executing
+2023-06-24 01:14:48.178 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executed
+2023-06-24 01:15:45.292 +03:30 [ERR] shop.Web.Controllers.Slider.SliderController.GetList (shop.Web) Executing
+2023-06-24 01:15:45.793 +03:30 [ERR] shop.Web.Controllers.Slider.SliderController.GetList (shop.Web) Executed
+2023-06-24 01:15:54.788 +03:30 [ERR] shop.Web.Controllers.Slider.SliderController.GetList (shop.Web) Executing
+2023-06-24 01:15:54.969 +03:30 [ERR] shop.Web.Controllers.Slider.SliderController.GetList (shop.Web) Executed
+2023-06-24 01:16:10.611 +03:30 [ERR] shop.Web.Controllers.Slider.SliderController.GetList (shop.Web) Executing
+2023-06-24 01:16:10.780 +03:30 [ERR] shop.Web.Controllers.Slider.SliderController.GetList (shop.Web) Executed
+2023-06-24 01:16:36.223 +03:30 [ERR] shop.Web.Controllers.Slider.SliderController.GetList (shop.Web) Executing
+2023-06-24 01:16:36.370 +03:30 [ERR] shop.Web.Controllers.Slider.SliderController.GetList (shop.Web) Executed

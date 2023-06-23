@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IkMEH5Xx/nvzJ7BUzsYiaVgGKp4RKGX44Zq127zMC5ABHsRIFMvL08vUmS8n4ZplGXAqwyf3suthSrfZsJZgoA==",
+  "dgSpecHash": "G/bfieWxVzoiG5QMW/XipA6awFYahJj6QDLiGYZWf6Wp4gwEfmYSqu7YeudFYe4auvKp6oy5SB97yr/NrabXSw==",
   "success": true,
-  "projectFilePath": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-13\\Eshop-Api\\shop.Data\\shop.Data.csproj",
+  "projectFilePath": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-14\\Eshop-Api\\shop.Data\\shop.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\acer\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\acer\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

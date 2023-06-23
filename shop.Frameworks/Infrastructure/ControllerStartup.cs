@@ -27,16 +27,7 @@ namespace shop.Framework.Infrastructure
                     return new BadRequestObjectResult(values);
                 };
             });
-
-            services.AddAuthentication("Bearer")
-                .AddJwtBearer("Bearer", options =>
-                {
-                    options.Authority = "http://localhost:6001";
-                    options.RequireHttpsMetadata = false;
-
-                    options.Audience = "shop.Web";
-                });
-            //
+            
             //Global
             services.AddMvc().AddMvcOptions(c => c.Filters.AddService(typeof(LogFilter)));
 
