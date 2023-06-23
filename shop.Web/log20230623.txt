@@ -1,63 +1,62 @@
-2023-06-23 00:03:23.340 +03:30 [ERR] An unhandled exception has occurred while executing the request.
-System.InvalidOperationException: Unable to resolve service for type 'shop.Service.Query.SellerQueryService' while attempting to activate 'shop.Web.Controllers.Seller.SellerController'.
-   at lambda_method10(Closure, IServiceProvider, Object[])
-   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
---- End of stack trace from previous location ---
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
---- End of stack trace from previous location ---
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
-   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
-   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
-2023-06-23 00:04:41.218 +03:30 [ERR] An unhandled exception has occurred while executing the request.
-System.InvalidOperationException: Unable to resolve service for type 'shop.Service.Query.SellerQueryService' while attempting to activate 'shop.Web.Controllers.Seller.SellerController'.
-   at lambda_method19(Closure, IServiceProvider, Object[])
-   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
---- End of stack trace from previous location ---
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
---- End of stack trace from previous location ---
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
-   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
-   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
-2023-06-23 00:06:03.483 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.AddSeller (shop.Web) Executing
-2023-06-23 00:07:02.970 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.AddSeller (shop.Web) Executing
-2023-06-23 00:07:13.650 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.AddSeller (shop.Web) Executed
-2023-06-23 00:10:27.499 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.AddSeller (shop.Web) Executing
-2023-06-23 00:10:56.373 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.AddSeller (shop.Web) Executed
-2023-06-23 00:13:15.791 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.UpdateSeller (shop.Web) Executing
-2023-06-23 00:15:04.594 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.UpdateSeller (shop.Web) Executed
-2023-06-23 00:16:22.948 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.UpdateSeller (shop.Web) Executing
-2023-06-23 00:16:48.654 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.UpdateSeller (shop.Web) Executed
-2023-06-23 00:17:10.788 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.UpdateSeller (shop.Web) Executing
-2023-06-23 00:18:45.449 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.UpdateSeller (shop.Web) Executed
-2023-06-23 00:20:05.156 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.UpdateSeller (shop.Web) Executing
-2023-06-23 00:20:37.477 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.UpdateSeller (shop.Web) Executed
-2023-06-23 00:21:08.355 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.UpdateSeller (shop.Web) Executing
-2023-06-23 00:21:45.030 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.UpdateSeller (shop.Web) Executed
-2023-06-23 00:22:17.776 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.UpdateSeller (shop.Web) Executing
-2023-06-23 00:23:19.072 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.UpdateSeller (shop.Web) Executed
-2023-06-23 00:26:11.762 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.GetSellerById (shop.Web) Executing
-2023-06-23 00:26:15.179 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.GetSellerById (shop.Web) Executed
-2023-06-23 00:30:43.669 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.AddInventory (shop.Web) Executing
-2023-06-23 00:31:31.766 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.AddInventory (shop.Web) Executed
-2023-06-23 00:37:16.703 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.EditInventory (shop.Web) Executing
-2023-06-23 00:38:15.886 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.EditInventory (shop.Web) Executed
-2023-06-23 00:39:47.423 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.RemoveInventory (shop.Web) Executing
-2023-06-23 00:39:47.489 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.RemoveInventory (shop.Web) Executed
-2023-06-23 00:45:23.627 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.GetSellerByFilter (shop.Web) Executing
-2023-06-23 00:46:02.451 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.GetSellerByFilter (shop.Web) Executed
+2023-06-23 02:34:04.381 +03:30 [FTL] Application startup exception
+System.InvalidOperationException: Scheme already exists: Bearer
+   at Microsoft.AspNetCore.Authentication.AuthenticationOptions.AddScheme(String name, Action`1 configureBuilder)
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.UnnamedOptionsManager`1.get_Value()
+   at Microsoft.AspNetCore.Authentication.AuthenticationSchemeProvider..ctor(IOptions`1 options, IDictionary`2 schemes)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.ConstructorInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(Type serviceType)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass5_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2023-06-23 02:34:20.272 +03:30 [FTL] Application startup exception
+System.InvalidOperationException: Scheme already exists: Bearer
+   at Microsoft.AspNetCore.Authentication.AuthenticationOptions.AddScheme(String name, Action`1 configureBuilder)
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.UnnamedOptionsManager`1.get_Value()
+   at Microsoft.AspNetCore.Authentication.AuthenticationSchemeProvider..ctor(IOptions`1 options, IDictionary`2 schemes)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.ConstructorInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(Type serviceType)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass5_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2023-06-23 02:48:27.532 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) Executing
+2023-06-23 02:48:31.737 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) Executed
+2023-06-23 09:10:18.544 +03:30 [ERR] Shop.Api.Controllers.AuthController.Register (shop.Web) Executing
+2023-06-23 09:10:58.373 +03:30 [ERR] Shop.Api.Controllers.AuthController.Register (shop.Web) Executed
+2023-06-23 09:12:06.814 +03:30 [ERR] Shop.Api.Controllers.AuthController.Login (shop.Web) Executing
+2023-06-23 09:14:56.670 +03:30 [ERR] Shop.Api.Controllers.AuthController.Login (shop.Web) Executed
+2023-06-23 09:20:03.684 +03:30 [ERR] Shop.Api.Controllers.AuthController.Register (shop.Web) Executing
+2023-06-23 09:20:08.947 +03:30 [ERR] Shop.Api.Controllers.AuthController.Register (shop.Web) Executed
+2023-06-23 09:22:22.883 +03:30 [ERR] Shop.Api.Controllers.AuthController.Login (shop.Web) Executing
+2023-06-23 09:22:24.860 +03:30 [ERR] Shop.Api.Controllers.AuthController.Login (shop.Web) Executed
+2023-06-23 09:26:47.381 +03:30 [ERR] shop.Web.Controllers.Product.ProductController.GetProductById (shop.Web) Executing
+2023-06-23 09:26:53.453 +03:30 [ERR] shop.Web.Controllers.Product.ProductController.GetProductById (shop.Web) Executed

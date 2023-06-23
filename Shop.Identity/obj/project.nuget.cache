@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MzcqLL+VbzH4TYa7TSKpP88EZ4vUaKuJKD3/kVz6MX5nGZUyP7SBWnoaGsgBvjctm+w+K8DQ1vK7+bULIMWdPQ==",
+  "dgSpecHash": "uO6b+LziRZNyXJe94p2ga14ZLG9DWmyPzm0CPw9X2dHZxM25iKqJwXVFVL5kAVuE4Qp3Fkl75510dgFH2mYs1g==",
   "success": true,
-  "projectFilePath": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-11\\Eshop-Api\\Shop.Identity\\Shop.Identity.csproj",
+  "projectFilePath": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-12\\Eshop-Api\\Shop.Identity\\Shop.Identity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\acer\\.nuget\\packages\\identitymodel\\4.4.0\\identitymodel.4.4.0.nupkg.sha512",
     "C:\\Users\\acer\\.nuget\\packages\\identityserver4\\4.1.2\\identityserver4.4.1.2.nupkg.sha512",

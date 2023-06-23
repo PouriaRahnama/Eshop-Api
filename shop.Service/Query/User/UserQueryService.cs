@@ -50,7 +50,7 @@ namespace shop.Service.Query
             return  result;
         }
 
-        public async Task<UserDto?> Handle(string PhoneNumber)
+        public async Task<UserDto?> GetUserByPhoneNumber(string PhoneNumber)
         {
             var user = await _context.Set<User>()
                 .FirstOrDefaultAsync(f => f.PhoneNumber == PhoneNumber);

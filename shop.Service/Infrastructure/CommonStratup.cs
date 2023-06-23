@@ -31,8 +31,10 @@ namespace shop.Service.Infrastructure
             services.AddScoped<CommentsQueryService, CommentsQueryService>();
             services.AddScoped<RoleQueryService, RoleQueryService>();
             services.AddScoped<SellerQueryService, SellerQueryService>();
+            services.AddScoped<SliderQueryService, SliderQueryService>();
+            services.AddScoped<UserQueryService, UserQueryService>();
         }
-
+        
         public void Configure(IApplicationBuilder app)
         {
             
