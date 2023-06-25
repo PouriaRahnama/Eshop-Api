@@ -19,7 +19,7 @@ namespace shop.Service.Command
         public async Task<OperationResult> AddInventory(AddInventoryDto AddInventoryDto)
         {
             var seller = await _repository.FindByIdAsync(AddInventoryDto.SellerId);
-            if (seller == null || seller.SellerStatus == SellerStatus.Rejected)
+            if (seller == null || seller.Status == SellerStatus.Rejected)
                 return OperationResult.NotFound();
 
             var inventory = new SellerInventory()
@@ -46,7 +46,7 @@ namespace shop.Service.Command
                     ShopName = AddSellerDto.ShopName,
                     NationalCode = AddSellerDto.NationalCode,
                     UserId = AddSellerDto.UserId,
-                    SellerStatus = SellerStatus.New
+                    Status = SellerStatus.New
                 };
             }
             else
@@ -96,7 +96,7 @@ namespace shop.Service.Command
                     return OperationResult.Error("کدملی متعلق به شخص دیگری است");
 
 
-            seller.SellerStatus = EditSellerDto.Status;
+            seller.Status = EditSellerDto.Status;
             seller.NationalCode = EditSellerDto.NationalCode;
             seller.ShopName = EditSellerDto.ShopName;
             seller.UpdateON = DateTime.Now;

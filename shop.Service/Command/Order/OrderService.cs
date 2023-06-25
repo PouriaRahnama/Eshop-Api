@@ -36,13 +36,13 @@ namespace shop.Service.Command
             if (inventory.Count <= CreateOrderItemDto.Count)
                 return OperationResult.Error("تعداد محصولات موجود کمتر از حد درخواستی است.");
 
-            var Order = await _OrderRepository.GetEntity(o => o.UserId == CreateOrderItemDto.userId && o.OrderStatusId == 10);
+            var Order = await _OrderRepository.GetEntity(o => o.UserId == CreateOrderItemDto.userId && o.Status == OrderStatus.Pending);
             if(Order == null)
             {
                  Order = new Order()
                 {
                     UserId = CreateOrderItemDto.userId,
-                    orderStatus = OrderStatus.Pending,
+                    Status = OrderStatus.Pending,
                 };
                 _OrderRepository.Add(Order);
             }
@@ -64,7 +64,7 @@ namespace shop.Service.Command
         public async Task<OperationResult> DecreaseOrderItem(DecreaseOrderItemCountDto DecreaseOrderItemCountDto)
         {
             var currentOrder = await _OrderRepository.GetEntity(f => f.UserId == DecreaseOrderItemCountDto.UserId
-            && f.OrderStatusId == 10);
+            && f.Status == OrderStatus.Pending);
             if (currentOrder == null)
                 return OperationResult.NotFound();
 
@@ -97,7 +97,7 @@ namespace shop.Service.Command
         public async Task<OperationResult> RemoveOrderItem(RemoveOrderItemDto RemoveOrderItemDto)
         {
             var currentOrder = await _OrderRepository.GetEntity(f => f.UserId == RemoveOrderItemDto.UserId
-               && f.OrderStatusId == 10);
+               && f.Status == OrderStatus.Pending);
             if (currentOrder == null)
                 return OperationResult.NotFound();
 

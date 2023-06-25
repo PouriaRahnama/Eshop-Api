@@ -37,7 +37,7 @@ namespace shop.Service.Query
             var result = _Context.Set<Core.Domain.Order.Order>().AsQueryable();
 
             if (@params.Status != null)
-                result = result.Where(r => r.OrderStatusId == (int)@params.Status);
+                result = result.Where(r => r.Status == @params.Status);
 
             if (@params.UserId != null)
                 result = result.Where(r => r.UserId == @params.UserId);

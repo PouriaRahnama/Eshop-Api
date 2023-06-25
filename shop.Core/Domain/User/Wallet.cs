@@ -9,12 +9,14 @@ namespace shop.Core.Domain.User
         public int UserId { get; set; }
         public int Price { get; set; }
         public string Desciption { get; set; }
-        public int StatusId { get; set; }
-        public WalletType Status
-        {
-            get => (WalletType)StatusId;
-            set => StatusId = (int)value;
-        }
+
+        public WalletType Status { get; set; }
+        //public int StatusId { get; set; }
+        //public WalletType Status
+        //{
+        //    get => (WalletType)StatusId;
+        //    set => StatusId = (int)value;
+        //}
 
         public bool IsFinally { get; set; }
         public DateTime? FinallyDate { get; set; }
@@ -23,7 +25,7 @@ namespace shop.Core.Domain.User
     }
     public enum WalletType
     {
-        Deposit = 0,
-        Withdrawal = 1
+        Deposit,
+        Withdrawal
     }
 }

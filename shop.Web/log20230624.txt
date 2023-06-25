@@ -8,3 +8,15 @@
 2023-06-24 01:16:10.780 +03:30 [ERR] shop.Web.Controllers.Slider.SliderController.GetList (shop.Web) Executed
 2023-06-24 01:16:36.223 +03:30 [ERR] shop.Web.Controllers.Slider.SliderController.GetList (shop.Web) Executing
 2023-06-24 01:16:36.370 +03:30 [ERR] shop.Web.Controllers.Slider.SliderController.GetList (shop.Web) Executed
+2023-06-24 22:12:43.767 +03:30 [ERR] shop.Web.Controllers.User.UserController.GetById (shop.Web) Executing
+2023-06-24 22:12:46.440 +03:30 [ERR] shop.Web.Controllers.User.UserController.GetById (shop.Web) Executed
+2023-06-24 22:13:10.664 +03:30 [ERR] shop.Web.Controllers.User.UserController.GetById (shop.Web) Executing
+2023-06-24 22:13:10.693 +03:30 [ERR] shop.Web.Controllers.User.UserController.GetById (shop.Web) Executed
+2023-06-24 22:13:16.044 +03:30 [ERR] shop.Web.Controllers.User.UserController.GetById (shop.Web) Executing
+2023-06-24 22:13:16.047 +03:30 [ERR] shop.Web.Controllers.User.UserController.GetById (shop.Web) Executed
+2023-06-24 22:13:18.557 +03:30 [ERR] shop.Web.Controllers.User.UserController.GetById (shop.Web) Executing
+2023-06-24 22:13:18.560 +03:30 [ERR] shop.Web.Controllers.User.UserController.GetById (shop.Web) Executed
+2023-06-24 22:13:22.377 +03:30 [ERR] shop.Web.Controllers.User.UserController.GetById (shop.Web) Executing
+2023-06-24 22:13:22.379 +03:30 [ERR] shop.Web.Controllers.User.UserController.GetById (shop.Web) Executed
+2023-06-24 22:13:25.580 +03:30 [ERR] shop.Web.Controllers.User.UserController.GetById (shop.Web) Executing
+2023-06-24 22:13:25.584 +03:30 [ERR] shop.Web.Controllers.User.UserController.GetById (shop.Web) Executed

@@ -1,6 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.EntityFrameworkCore;
 using shop.Core.Domain.Seller;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+using shop.Core.Domain.Comment;
 
 namespace shop.Data.Mapping
 {
@@ -8,7 +10,9 @@ namespace shop.Data.Mapping
     {
         public void Configure(EntityTypeBuilder<Seller> builder)
         {
-            builder.Ignore(c => c.SellerStatus);
+            //builder.Ignore(c => c.SellerStatus);
+            builder.Property(d => d.Status)
+                .HasConversion(new EnumToStringConverter<SellerStatus>());
         }
     }
 }

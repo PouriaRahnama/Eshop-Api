@@ -1,0 +1,71 @@
+2023-06-25 11:47:23.652 +03:30 [ERR] shop.Web.Controllers.Product.ProductController.AddProduct (shop.Web) Executing
+2023-06-25 11:47:27.115 +03:30 [ERR] shop.Web.Controllers.Product.ProductController.AddProduct (shop.Web) Executed
+2023-06-25 11:48:38.143 +03:30 [ERR] shop.Web.Controllers.Comments.CommentsController.AddComment (shop.Web) Executing
+2023-06-25 11:48:38.415 +03:30 [ERR] shop.Web.Controllers.Comments.CommentsController.AddComment (shop.Web) Executed
+2023-06-25 11:50:05.604 +03:30 [ERR] shop.Web.Controllers.Comments.CommentsController.ChangeCommentStatus (shop.Web) Executing
+2023-06-25 11:50:06.798 +03:30 [ERR] shop.Web.Controllers.Comments.CommentsController.ChangeCommentStatus (shop.Web) Executed
+2023-06-25 11:50:13.603 +03:30 [ERR] shop.Web.Controllers.Comments.CommentsController.ChangeCommentStatus (shop.Web) Executing
+2023-06-25 11:50:13.663 +03:30 [ERR] shop.Web.Controllers.Comments.CommentsController.ChangeCommentStatus (shop.Web) Executed
+2023-06-25 11:50:24.684 +03:30 [ERR] shop.Web.Controllers.Comments.CommentsController.ChangeCommentStatus (shop.Web) Executing
+2023-06-25 11:50:24.752 +03:30 [ERR] shop.Web.Controllers.Comments.CommentsController.ChangeCommentStatus (shop.Web) Executed
+2023-06-25 11:50:57.076 +03:30 [ERR] shop.Web.Controllers.Comments.CommentsController.GetCommentByFilter (shop.Web) Executing
+2023-06-25 11:50:57.588 +03:30 [ERR] shop.Web.Controllers.Comments.CommentsController.GetCommentByFilter (shop.Web) Executed
+2023-06-25 11:51:43.738 +03:30 [ERR] shop.Web.Controllers.Comments.CommentsController.ChangeCommentStatus (shop.Web) Executing
+2023-06-25 11:51:43.822 +03:30 [ERR] shop.Web.Controllers.Comments.CommentsController.ChangeCommentStatus (shop.Web) Executed
+2023-06-25 11:51:48.624 +03:30 [ERR] shop.Web.Controllers.Comments.CommentsController.GetCommentByFilter (shop.Web) Executing
+2023-06-25 11:51:48.697 +03:30 [ERR] shop.Web.Controllers.Comments.CommentsController.GetCommentByFilter (shop.Web) Executed
+2023-06-25 11:52:00.560 +03:30 [ERR] shop.Web.Controllers.Comments.CommentsController.GetCommentByFilter (shop.Web) Executing
+2023-06-25 11:52:00.693 +03:30 [ERR] shop.Web.Controllers.Comments.CommentsController.GetCommentByFilter (shop.Web) Executed
+2023-06-25 12:03:40.854 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.AddSeller (shop.Web) Executing
+2023-06-25 12:03:44.080 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.AddSeller (shop.Web) Executed
+2023-06-25 12:04:13.505 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.AddInventory (shop.Web) Executing
+2023-06-25 12:04:13.760 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.AddInventory (shop.Web) Executed
+2023-06-25 12:04:47.133 +03:30 [ERR] shop.Web.Controllers.Order.OrderController.AddOrderItem (shop.Web) Executing
+2023-06-25 12:04:47.433 +03:30 [ERR] shop.Web.Controllers.Order.OrderController.AddOrderItem (shop.Web) Executed
+2023-06-25 12:09:18.470 +03:30 [ERR] shop.Web.Controllers.Order.OrderController.GetOrderByFilter (shop.Web) Executing
+2023-06-25 12:09:18.984 +03:30 [ERR] shop.Web.Controllers.Order.OrderController.GetOrderByFilter (shop.Web) Executed
+2023-06-25 12:13:48.789 +03:30 [ERR] Failed executing DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Category].[Categories] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(350) NOT NULL,
+    [ParentID] int NULL,
+    [Deleted] bit NOT NULL,
+    [CreateON] datetime2 NOT NULL,
+    [UpdateON] datetime2 NULL,
+    CONSTRAINT [PK_Categories] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Categories_Categories_ParentID] FOREIGN KEY ([ParentID]) REFERENCES [Category].[Categories] ([Id])
+);
+2023-06-25 12:27:27.005 +03:30 [ERR] shop.Web.Controllers.Role.RoleController.AddRole (shop.Web) Executing
+2023-06-25 12:27:29.165 +03:30 [ERR] shop.Web.Controllers.Role.RoleController.AddRole (shop.Web) Executed
+2023-06-25 12:28:19.442 +03:30 [ERR] shop.Web.Controllers.Role.RoleController.AddRolePermission (shop.Web) Executing
+2023-06-25 12:28:20.601 +03:30 [ERR] shop.Web.Controllers.Role.RoleController.AddRolePermission (shop.Web) Executed
+2023-06-25 12:28:28.001 +03:30 [ERR] shop.Web.Controllers.Role.RoleController.AddRolePermission (shop.Web) Executing
+2023-06-25 12:28:28.080 +03:30 [ERR] shop.Web.Controllers.Role.RoleController.AddRolePermission (shop.Web) Executed
+2023-06-25 12:28:34.855 +03:30 [ERR] shop.Web.Controllers.Role.RoleController.AddRolePermission (shop.Web) Executing
+2023-06-25 12:28:34.940 +03:30 [ERR] shop.Web.Controllers.Role.RoleController.AddRolePermission (shop.Web) Executed
+2023-06-25 12:29:16.330 +03:30 [ERR] shop.Web.Controllers.Role.RoleController.AddRolePermission (shop.Web) Executing
+2023-06-25 12:29:16.475 +03:30 [ERR] shop.Web.Controllers.Role.RoleController.AddRolePermission (shop.Web) Executed
+2023-06-25 12:29:42.969 +03:30 [ERR] shop.Web.Controllers.Role.RoleController.GetAllRole (shop.Web) Executing
+2023-06-25 12:29:43.257 +03:30 [ERR] shop.Web.Controllers.Role.RoleController.GetAllRole (shop.Web) Executed
+2023-06-25 12:37:02.898 +03:30 [ERR] shop.Web.Controllers.User.UserController.AddUser (shop.Web) Executing
+2023-06-25 12:37:04.989 +03:30 [ERR] shop.Web.Controllers.User.UserController.AddUser (shop.Web) Executed
+2023-06-25 12:47:18.390 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.AddSeller (shop.Web) Executing
+2023-06-25 12:47:18.999 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.AddSeller (shop.Web) Executed
+2023-06-25 12:47:40.807 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.GetSellerById (shop.Web) Executing
+2023-06-25 12:47:40.923 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.GetSellerById (shop.Web) Executed
+2023-06-25 12:50:14.787 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.UpdateSeller (shop.Web) Executing
+2023-06-25 12:50:18.784 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.UpdateSeller (shop.Web) Executed
+2023-06-25 12:50:33.094 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.UpdateSeller (shop.Web) Executing
+2023-06-25 12:50:33.227 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.UpdateSeller (shop.Web) Executed
+2023-06-25 12:50:39.568 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.UpdateSeller (shop.Web) Executing
+2023-06-25 12:50:39.659 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.UpdateSeller (shop.Web) Executed
+2023-06-25 12:58:36.668 +03:30 [ERR] shop.Web.Controllers.User.UserController.ChangeWallet (shop.Web) Executing
+2023-06-25 12:58:40.210 +03:30 [ERR] shop.Web.Controllers.User.UserController.ChangeWallet (shop.Web) Executed
+2023-06-25 12:59:29.762 +03:30 [ERR] shop.Web.Controllers.User.UserController.ChangeWallet (shop.Web) Executing
+2023-06-25 12:59:29.862 +03:30 [ERR] shop.Web.Controllers.User.UserController.ChangeWallet (shop.Web) Executed
+2023-06-25 12:59:52.204 +03:30 [ERR] shop.Web.Controllers.User.UserController.GetUserByPhoneNumber (shop.Web) Executing
+2023-06-25 12:59:52.370 +03:30 [ERR] shop.Web.Controllers.User.UserController.GetUserByPhoneNumber (shop.Web) Executed
+2023-06-25 13:00:24.922 +03:30 [ERR] shop.Web.Controllers.User.UserController.AddUserRole (shop.Web) Executing
+2023-06-25 13:00:25.157 +03:30 [ERR] shop.Web.Controllers.User.UserController.AddUserRole (shop.Web) Executed
+2023-06-25 13:00:29.517 +03:30 [ERR] shop.Web.Controllers.User.UserController.GetUserByPhoneNumber (shop.Web) Executing
+2023-06-25 13:00:29.579 +03:30 [ERR] shop.Web.Controllers.User.UserController.GetUserByPhoneNumber (shop.Web) Executed

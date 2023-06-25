@@ -13,7 +13,7 @@ namespace shop.Service.Query
             {
                 Id = seller.Id,
                 CreationDate = seller.CreateON,
-                Status = seller.SellerStatus,
+                Status = seller.Status,
                 NationalCode = seller.NationalCode,
                 ShopName = seller.ShopName,
                 UserId = seller.UserId

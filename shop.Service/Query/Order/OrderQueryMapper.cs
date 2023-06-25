@@ -14,7 +14,7 @@ namespace shop.Service.Query
             {
                 CreationDate = order.CreateON,
                 Id = order.Id,
-                Status = order.orderStatus,
+                Status = order.Status,
                 Discount = order.Discount,
                 LastUpdate = order.UpdateON,
                 UserFullName = "",
@@ -58,7 +58,7 @@ namespace shop.Service.Query
         {
             return new OrderFilterData()
             {
-                Status = order.orderStatus,
+                Status = order.Status,
                 Id = order.Id,
                 CreationDate = order.CreateON,
                 City = order.Addresses?.City,

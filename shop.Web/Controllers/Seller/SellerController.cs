@@ -39,7 +39,7 @@ namespace shop.Web.Controllers.Seller
         }
 
         [HttpPut("UpdateSeller*")]
-        public async Task<ApiResult> UpdateSeller(EditSellerDto command)
+        public async Task<ApiResult> UpdateSeller([FromForm]EditSellerDto command)
         {
             var result = await _sellerService.UpdateSeller(command);
             return CommandResult(result);

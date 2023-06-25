@@ -8,12 +8,14 @@ namespace shop.Core.Domain.Seller
         public int UserId { get; set; }
         public string ShopName { get; set; }
         public string NationalCode { get; set; }
-        public int SellerStatusId { get; set; }
-        public SellerStatus SellerStatus
-        {
-            get => (SellerStatus)SellerStatusId;
-            set => SellerStatusId = (int)value;
-        }
+        public SellerStatus Status { get; set; }
+
+        //public int SellerStatusId { get; set; }
+        //public SellerStatus SellerStatus
+        //{
+        //    get => (SellerStatus)SellerStatusId;
+        //    set => SellerStatusId = (int)value;
+        //}
         public virtual ICollection<SellerInventory> Inventories { get; set; }
         public virtual shop.Core.Domain.User.User User { get; set; }
 

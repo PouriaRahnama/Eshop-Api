@@ -1,4 +1,5 @@
 using shop.Core.Commons;
+using shop.Core.Domain.Comment;
 using shop.Core.Domain.User;
 
 namespace shop.Core.Domain.Order
@@ -7,13 +8,15 @@ namespace shop.Core.Domain.Order
     {
         public int UserId { get; set; }
         public int? Discount { get;  set; }
-        public int OrderStatusId { get; set; }
+        public OrderStatus Status { get; set; }
 
-        public OrderStatus orderStatus
-        {
-            get => (OrderStatus)OrderStatusId;
-            set => OrderStatusId = (int)value;
-        }
+        //public int OrderStatusId { get; set; }
+
+        //public OrderStatus orderStatus
+        //{
+        //    get => (OrderStatus)OrderStatusId;
+        //    set => OrderStatusId = (int)value;
+        //}
 
         public int OrderTotal
         {
@@ -36,13 +39,14 @@ namespace shop.Core.Domain.Order
 
     public enum OrderStatus
     {
-        Pending = 10,
-        //! Processing
-        Processing = 20,
-        //! Completed
-        Completed = 30,
-        //! Failed
-        Failed = 40
+        //0
+        Pending,
+        //1
+        Processing,
+        //2
+        Completed,
+        //3
+        Failed
     }
 
 

@@ -6,19 +6,24 @@ namespace shop.Core.Domain.Role
     public class RolePermission : BaseEntity
     {
         public int RoleId { get; set; }
-        public int PermissionId { get; set; }
-        public Permission PermissionStatus
-        {
-            get => (Permission)PermissionId;
-            set => PermissionId = (int)value;
-        }
+        public Permission PermissionStatus { get; set; }
+        //public int PermissionId { get; set; }
+        //public Permission PermissionStatus
+        //{
+        //    get => (Permission)PermissionId;
+        //    set => PermissionId = (int)value;
+        //}
         public virtual Role Role { get; set; }
     }
     public enum Permission
     {
-        AdminPanel = 10 ,
-        UserPanel = 20,
-        EditProfile = 30 ,
-        ChangePassword = 40
+        //0
+        AdminPanel,
+        //1
+        UserPanel,
+        //2
+        EditProfile,
+        //3
+        ChangePassword
     }
 }

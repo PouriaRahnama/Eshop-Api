@@ -120,7 +120,7 @@ namespace shop.Service.Command
                 Price = ChargeWalletDto.Price,
                 IsFinally = ChargeWalletDto.IsFinally,
                 Desciption = ChargeWalletDto.Description,
-                StatusId = (int)ChargeWalletDto.Type,
+                Status = ChargeWalletDto.Type,
                 FinallyDate = DateTime.Now,
                 UserId = ChargeWalletDto.UserId             
             };
