@@ -1,0 +1,12 @@
+2023-06-26 20:26:24.574 +03:30 [ERR] shop.Web.Controllers.User.UserController.GetById (shop.Web) Executing
+2023-06-26 20:26:29.258 +03:30 [ERR] shop.Web.Controllers.User.UserController.GetById (shop.Web) Executed
+2023-06-26 20:28:15.530 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Register (shop.Web) Executing
+2023-06-26 20:28:17.718 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Register (shop.Web) Executed
+2023-06-26 21:09:20.210 +03:30 [ERR] shop.Web.Controllers.Product.ProductController.AddProduct (shop.Web) Executing
+2023-06-26 21:09:24.906 +03:30 [ERR] shop.Web.Controllers.Product.ProductController.AddProduct (shop.Web) Executed
+2023-06-26 21:10:20.493 +03:30 [ERR] shop.Web.Controllers.Product.ProductController.GetProductById (shop.Web) Executing
+2023-06-26 21:10:24.218 +03:30 [ERR] shop.Web.Controllers.Product.ProductController.GetProductById (shop.Web) Executed
+2023-06-26 21:42:48.448 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) Executing
+2023-06-26 21:42:50.448 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) Executed
+2023-06-26 23:00:58.908 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executing
+2023-06-26 23:01:04.516 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executed

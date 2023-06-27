@@ -10,5 +10,6 @@ namespace shop.Service.Command
         Task<OperationResult> AddUser(CreateUserDto CreateUserDto);
         Task<OperationResult> EditUser(EditUserDto EditUserDto);
         Task<OperationResult> RemoveUserRole(RemoveUserRoleDto RemoveUserRoleDto);
+        Task<OperationResult> AddToken(AddTokenDto request);
     }
 }

@@ -1,4 +1,5 @@
-﻿using shop.Core.Domain.Role;
+﻿using Newtonsoft.Json.Linq;
+using shop.Core.Domain.Role;
 using shop.Core.Domain.User;
 using shop.Data.Repository;
 using shop.Service.DTOs.UserCommand;
@@ -15,18 +16,21 @@ namespace shop.Service.Command
         private readonly IRepository<Role> _RoleRepository;
         private readonly IRepository<UserRole> _UserRoleRepository;
         private readonly IRepository<Wallet> _WalletRepository;
+        private readonly IRepository<UserToken> _TokenRepository;
 
         public UserService(IRepository<User> Repository,
             IRepository<Role> RoleRepository,
             IRepository<UserRole> UserRoleRepository,
             IFileService fileService,
-            IRepository<Wallet> WalletRepository)
+            IRepository<Wallet> WalletRepository,
+            IRepository<UserToken> tokenRepository)
         {
             _repository = Repository;
             _fileService = fileService;
             _RoleRepository = RoleRepository;
             _UserRoleRepository = UserRoleRepository;
             _WalletRepository = WalletRepository;
+            _TokenRepository = tokenRepository;
         }
 
         public async Task<OperationResult> AddUser(CreateUserDto CreateUserDto)
@@ -126,6 +130,30 @@ namespace shop.Service.Command
             };
 
             await _WalletRepository.AddAsync(wallet);
+            return OperationResult.Success();
+        }
+
+        public async Task<OperationResult> AddToken(AddTokenDto AddTokenDto)
+        {
+            var user = await _repository.FindByIdAsync(AddTokenDto.UserId);
+            if (user == null)
+                return OperationResult.NotFound();
+
+            var activeTokenCount = _TokenRepository.Table.Where(c => c.UserId == user.Id).Count();
+            if (activeTokenCount == 3)
+                return OperationResult.Error("امکان استفاده از 4 دستگاه همزمان وجود ندارد");
+
+            var Token = new UserToken()
+            {
+                Device = AddTokenDto.Device,
+                HashJwtToken = AddTokenDto.HashJwtToken,
+                HashRefreshToken = AddTokenDto.HashRefreshToken,
+                RefreshTokenExpireDate = AddTokenDto.RefreshTokenExpireDate,
+                TokenExpireDate = AddTokenDto.TokenExpireDate,
+                UserId = user.Id
+            };
+
+            await _TokenRepository.AddAsync(Token);
             return OperationResult.Success();
         }
     }

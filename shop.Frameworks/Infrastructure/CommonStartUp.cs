@@ -3,8 +3,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using shop.Core.Infrastructure;
-using shop.Service.Middleware;
 using Microsoft.Extensions.Hosting;
+using shop.Service.Middleware;
 
 namespace shop.Framework.Infrastructure
 {

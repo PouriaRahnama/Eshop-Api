@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace shop.Service.Middleware
 {
-    public class ErrorHandler:IErrorHandler
+    public class ErrorHandler: IErrorHandler
     {
         public string ErrorMessage { get; set; } = "خطا";
         public int StatusCode { get; set; } = 500;

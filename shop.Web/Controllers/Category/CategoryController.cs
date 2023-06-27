@@ -1,5 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using shop.Frameworks;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using shop.Frameworks.Commons;
 using shop.Service.Command;
 using shop.Service.DTOs.CategoryCommand;
@@ -17,6 +17,7 @@ namespace shop.Web.Controllers.Category
             _categoryQueryService = categoryQueryService;
         }
 
+        [Authorize]
         [HttpGet]
         public async Task<ApiResult<List<CategoryQueryDto>>> GetAllCategories()
         {

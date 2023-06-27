@@ -1,9 +1,9 @@
-﻿namespace shop.Frameworks;
+﻿namespace shop.Frameworks.Commons;
 
 public class ApiResult
 {
     public bool IsSuccess { get; set; }
-    public MetaData MetaData { get; set; }= new();
+    public MetaData MetaData { get; set; } = new();
 }
 public class ApiResult<TData>
 {
@@ -20,9 +20,9 @@ public class MetaData
 
 public enum AppStatusCode
 {
-    Success=1,
-    LogicError=2,
-    NotFound=3,
-    UnAuthorize=4,
+    Success = 1,
+    LogicError = 2,
+    NotFound = 3,
+    UnAuthorize = 4,
     BadRequest = 5,
 }

@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using shop.Frameworks;
 using shop.Frameworks.Commons;
 using shop.Service.Command;
 using shop.Service.DTOs.SliderCommand;

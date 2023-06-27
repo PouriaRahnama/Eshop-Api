@@ -15,6 +15,6 @@ namespace shop.Core.Domain.User
         public virtual ICollection<Wallet> Wallets { get; set; }
         public virtual ICollection<shop.Core.Domain.Order.Order> Orders { get; set; }
         public virtual ICollection<shop.Core.Domain.Comment.Comment> Comments { get; set; }
-
+        public virtual ICollection<UserToken> UserToken { get; set; }
     }
 }

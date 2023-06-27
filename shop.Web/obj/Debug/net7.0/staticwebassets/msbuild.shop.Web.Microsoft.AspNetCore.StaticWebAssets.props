@@ -1,5 +1,21 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\products\30529e5e-607a-4fe1-b61c-7c63fa2eb45c2128106706971.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>shop.Web</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/shop.Web</BasePath>
+      <RelativePath>images/products/30529e5e-607a-4fe1-b61c-7c63fa2eb45c2128106706971.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\products\30529e5e-607a-4fe1-b61c-7c63fa2eb45c2128106706971.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\products\34ec8dee-374d-4d93-8ac1-0a6330ddb6281147240042263.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>shop.Web</SourceId>

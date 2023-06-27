@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using shop.Core.Caching;
-using shop.Frameworks;
 using shop.Frameworks.Commons;
 using shop.Service.Command;
 using shop.Service.DTOs.ProductCommand;

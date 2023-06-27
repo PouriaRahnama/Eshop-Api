@@ -69,3 +69,11 @@ CREATE TABLE [Category].[Categories] (
 2023-06-25 13:00:25.157 +03:30 [ERR] shop.Web.Controllers.User.UserController.AddUserRole (shop.Web) Executed
 2023-06-25 13:00:29.517 +03:30 [ERR] shop.Web.Controllers.User.UserController.GetUserByPhoneNumber (shop.Web) Executing
 2023-06-25 13:00:29.579 +03:30 [ERR] shop.Web.Controllers.User.UserController.GetUserByPhoneNumber (shop.Web) Executed
+2023-06-25 13:03:30.138 +03:30 [ERR] shop.Web.Controllers.User.UserController.GetById (shop.Web) Executing
+2023-06-25 13:03:32.676 +03:30 [ERR] shop.Web.Controllers.User.UserController.GetById (shop.Web) Executed
+2023-06-25 23:33:11.008 +03:30 [ERR] shop.Web.Controllers.User.UserController.GetById (shop.Web) Executing
+2023-06-25 23:33:19.694 +03:30 [ERR] shop.Web.Controllers.User.UserController.GetById (shop.Web) Executed
+2023-06-25 23:34:18.822 +03:30 [ERR] shop.Web.Controllers.User.UserController.GetById (shop.Web) Executing
+2023-06-25 23:34:18.860 +03:30 [ERR] shop.Web.Controllers.User.UserController.GetById (shop.Web) Executed
+2023-06-25 23:34:42.758 +03:30 [ERR] shop.Web.Controllers.User.UserController.GetUserByFilter (shop.Web) Executing
+2023-06-25 23:34:42.955 +03:30 [ERR] shop.Web.Controllers.User.UserController.GetUserByFilter (shop.Web) Executed

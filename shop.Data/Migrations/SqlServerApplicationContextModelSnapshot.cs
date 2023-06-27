@@ -622,6 +622,54 @@ namespace shop.Data.Migrations
                     b.ToTable("UserRole");
                 });
 
+            modelBuilder.Entity("shop.Core.Domain.User.UserToken", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreateON")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("Deleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Device")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("HashJwtToken")
+                        .IsRequired()
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)");
+
+                    b.Property<string>("HashRefreshToken")
+                        .IsRequired()
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)");
+
+                    b.Property<DateTime>("RefreshTokenExpireDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("TokenExpireDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("UpdateON")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("UserToken");
+                });
+
             modelBuilder.Entity("shop.Core.Domain.User.Wallet", b =>
                 {
                     b.Property<int>("Id")
@@ -849,6 +897,17 @@ namespace shop.Data.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("shop.Core.Domain.User.UserToken", b =>
+                {
+                    b.HasOne("shop.Core.Domain.User.User", "User")
+                        .WithMany("UserToken")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("shop.Core.Domain.User.Wallet", b =>
                 {
                     b.HasOne("shop.Core.Domain.User.User", "User")
@@ -915,6 +974,8 @@ namespace shop.Data.Migrations
                     b.Navigation("Orders");
 
                     b.Navigation("Roles");
+
+                    b.Navigation("UserToken");
 
                     b.Navigation("Wallets");
                 });
