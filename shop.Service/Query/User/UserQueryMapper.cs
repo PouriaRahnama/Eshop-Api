@@ -8,6 +8,7 @@ namespace shop.Service.Query
         {
             return new UserDto()
             {
+                IsActive = user.IsActive,
                 Id = user.Id,
                 CreationDate = user.CreateON,
                 Family = user.Family,

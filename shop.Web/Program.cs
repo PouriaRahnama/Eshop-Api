@@ -10,6 +10,7 @@ builder.Services.ConfigureApplicationServices(builder.Configuration);
 
 builder.Services.AddTransient<IFileService, FileService>();
 builder.Services.AddJwtAuthentication(builder.Configuration);
+builder.Services.RegisterApiDependency();
 builder.Host.UseSerilog(((context, provider, logger) =>
 {
     logger.MinimumLevel.Information().WriteTo.File("log.txt",

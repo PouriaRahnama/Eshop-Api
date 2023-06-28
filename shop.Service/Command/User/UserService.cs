@@ -47,7 +47,8 @@ namespace shop.Service.Command
                 Family = CreateUserDto.Family,
                 PhoneNumber = CreateUserDto.PhoneNumber,
                 Email = CreateUserDto.Email,
-                Password = password
+                Password = password,
+                IsActive = true
             };
 
             await _repository.AddAsync(user);
@@ -73,6 +74,7 @@ namespace shop.Service.Command
             user.Family = EditUserDto.Family;
             user.Name = EditUserDto.Name;
             user.UpdateON = DateTime.Now;
+            user.IsActive = EditUserDto.IsActive;
 
 
             await _repository.UpdateAsync(user);

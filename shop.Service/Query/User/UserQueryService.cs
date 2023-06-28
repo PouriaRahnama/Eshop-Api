@@ -64,8 +64,11 @@ namespace shop.Service.Query
 
         public async Task<UserTokenDto> GetUserTokenByRefreshTokenQuery(string HashRefreshToken)
         {
-            var UserToken =await _context.Set<UserToken>()
+            var UserToken =await _context.Set<UserToken>().Where(u => u.Deleted == false)
                 .FirstOrDefaultAsync(ut => ut.HashRefreshToken == HashRefreshToken);
+
+            if (UserToken == null)
+                return null;
 
             var UserTokenDto = new UserTokenDto()
             {
@@ -83,8 +86,11 @@ namespace shop.Service.Query
 
         public async Task<UserTokenDto> GetUserTokenByJwtTokenQuery(string HashJwtToken)
         {
-            var UserToken = await _context.Set<UserToken>()
+            var UserToken = await _context.Set<UserToken>().Where(u => u.Deleted == false)
                 .FirstOrDefaultAsync(ut => ut.HashJwtToken == HashJwtToken);
+
+            if (UserToken == null)
+                    return null;
 
             var UserTokenDto = new UserTokenDto()
             {

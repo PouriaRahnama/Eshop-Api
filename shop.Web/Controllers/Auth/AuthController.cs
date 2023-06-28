@@ -44,6 +44,12 @@ public class AuthController : ShopController
             return CommandResult(result);
         }
 
+        if (user.IsActive == false)
+        {
+            var result = OperationResult<LoginResultDto>.Error("حساب کاربری شما غیرفعال است");
+            return CommandResult(result);
+        }
+
         var loginResult = await AddTokenAndGenerateJwt(user);
         return CommandResult(loginResult);
     }

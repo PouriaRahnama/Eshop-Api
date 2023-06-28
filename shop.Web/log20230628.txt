@@ -1,16 +1,58 @@
-2023-06-28 12:02:58.556 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executing
-2023-06-28 12:03:10.750 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executed
-2023-06-28 12:03:20.337 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executing
-2023-06-28 12:03:23.474 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executed
-2023-06-28 12:05:48.317 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.RefreshToken (shop.Web) Executing
-2023-06-28 12:08:48.553 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.RefreshToken (shop.Web) Executing
-2023-06-28 12:09:59.351 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.RefreshToken (shop.Web) Executing
-2023-06-28 12:10:59.529 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.RefreshToken (shop.Web) Executing
-2023-06-28 12:11:51.703 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.RefreshToken (shop.Web) Executed
-2023-06-28 12:11:51.732 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+2023-06-28 19:16:44.955 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executing
+2023-06-28 19:16:52.457 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executed
+2023-06-28 19:19:45.778 +03:30 [ERR] Exception occurred while processing message.
 System.NullReferenceException: Object reference not set to an instance of an object.
-   at shop.Service.Query.UserQueryService.GetUserTokenByRefreshTokenQuery(String HashRefreshToken) in D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-17\Eshop-Api\shop.Service\Query\User\UserQueryService.cs:line 70
-   at shop.Web.Controllers.Auth.AuthController.RefreshToken(String refreshToken) in D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-17\Eshop-Api\shop.Web\Controllers\Auth\AuthController.cs:line 71
+   at shop.Service.Query.UserQueryService.GetUserTokenByJwtTokenQuery(String HashJwtToken) in D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-19\Eshop-Api\shop.Service\Query\User\UserQueryService.cs:line 89
+   at Shop.Api.Infrastructure.JwtUtil.CustomJwtValidation.Validate(TokenValidatedContext context)
+   at Shop.Api.Infrastructure.JwtUtil.JwtAuthenticationConfig.<>c.<<AddJwtAuthentication>b__0_2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-06-28 19:19:47.539 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at shop.Service.Query.UserQueryService.GetUserTokenByJwtTokenQuery(String HashJwtToken) in D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-19\Eshop-Api\shop.Service\Query\User\UserQueryService.cs:line 89
+   at Shop.Api.Infrastructure.JwtUtil.CustomJwtValidation.Validate(TokenValidatedContext context)
+   at Shop.Api.Infrastructure.JwtUtil.JwtAuthenticationConfig.<>c.<<AddJwtAuthentication>b__0_2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-06-28 19:23:07.322 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) Executing
+2023-06-28 19:23:07.489 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) Executed
+2023-06-28 19:23:45.400 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Logout (shop.Web) Executing
+2023-06-28 19:23:45.531 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Logout (shop.Web) Executed
+2023-06-28 19:38:50.215 +03:30 [ERR] shop.Web.Controllers.User.UserController.AddUser (shop.Web) Executing
+2023-06-28 19:38:53.144 +03:30 [ERR] shop.Web.Controllers.User.UserController.AddUser (shop.Web) Executed
+2023-06-28 19:47:30.449 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - shop.Web.Controllers.User.UserController.EditUser (shop.Web). See inner exception
+ ---> System.Reflection.AmbiguousMatchException: Ambiguous match found.
+   at System.RuntimeType.GetPropertyImpl(String name, BindingFlags bindingAttr, Binder binder, Type returnType, Type[] types, ParameterModifier[] modifiers)
+   at System.Type.GetProperty(String name, BindingFlags bindingAttr)
+   at Swashbuckle.AspNetCore.SwaggerGen.ApiParameterDescriptionExtensions.PropertyInfo(ApiParameterDescription apiParameter)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateSchemaFromFormParameters(IEnumerable`1 formParameters, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateRequestBodyFromFormParameters(ApiDescription apiDescription, SchemaRepository schemaRepository, IEnumerable`1 formParameters)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateRequestBody(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-06-28 19:58:01.722 +03:30 [ERR] shop.Web.Controllers.User.UserController.EditUser (shop.Web) Executing
+2023-06-28 19:58:04.834 +03:30 [ERR] shop.Web.Controllers.User.UserController.EditUser (shop.Web) Executed
+2023-06-28 19:58:04.851 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: The key value at position 0 of the call to 'DbSet<User>.Find' was of type 'long', which does not match the property type of 'int'.
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindTracked(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindAsync(Object[] keyValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.FindAsync(Object[] keyValues)
+   at shop.Data.Repository.EFRepository`1.FindByIdAsync(Object[] ids) in D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-19\Eshop-Api\shop.Data\Repository\EFRepository.cs:line 54
+   at shop.Service.Command.UserService.EditUser(EditUserDto EditUserDto) in D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-19\Eshop-Api\shop.Service\Command\User\UserService.cs:line 60
+   at shop.Web.Controllers.User.UserController.EditUser(EditUserDto command) in D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-19\Eshop-Api\shop.Web\Controllers\User\UserController.cs:line 51
    at lambda_method6(Closure, Object)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
@@ -28,17 +70,16 @@ System.NullReferenceException: Object reference not set to an instance of an obj
    at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
-2023-06-28 12:12:22.418 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executing
-2023-06-28 12:12:24.925 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executed
-2023-06-28 12:12:56.919 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.RefreshToken (shop.Web) Executing
-2023-06-28 12:14:55.717 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.RefreshToken (shop.Web) Executed
-2023-06-28 12:15:23.647 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.RefreshToken (shop.Web) Executing
-2023-06-28 12:17:56.390 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.RefreshToken (shop.Web) Executed
-2023-06-28 12:17:56.395 +03:30 [ERR] An unhandled exception has occurred while executing the request.
-System.NullReferenceException: Object reference not set to an instance of an object.
-   at Shop.Web.Infrastructure.JwtUtil.JwtTokenBuilder.BuildToken(UserDto user, IConfiguration configuration) in D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-17\Eshop-Api\shop.Web\Infrastructure\JwtUtil\JwtTokenBuilder.cs:line 13
-   at shop.Web.Controllers.Auth.AuthController.AddTokenAndGenerateJwt(UserDto user) in D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-17\Eshop-Api\shop.Web\Controllers\Auth\AuthController.cs:line 105
-   at shop.Web.Controllers.Auth.AuthController.RefreshToken(String refreshToken) in D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-17\Eshop-Api\shop.Web\Controllers\Auth\AuthController.cs:line 95
+2023-06-28 19:58:28.568 +03:30 [ERR] shop.Web.Controllers.User.UserController.EditUser (shop.Web) Executing
+2023-06-28 19:59:00.167 +03:30 [ERR] shop.Web.Controllers.User.UserController.EditUser (shop.Web) Executed
+2023-06-28 19:59:00.171 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: The key value at position 0 of the call to 'DbSet<User>.Find' was of type 'long', which does not match the property type of 'int'.
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindTracked(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindAsync(Object[] keyValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.FindAsync(Object[] keyValues)
+   at shop.Data.Repository.EFRepository`1.FindByIdAsync(Object[] ids) in D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-19\Eshop-Api\shop.Data\Repository\EFRepository.cs:line 54
+   at shop.Service.Command.UserService.EditUser(EditUserDto EditUserDto) in D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-19\Eshop-Api\shop.Service\Command\User\UserService.cs:line 60
+   at shop.Web.Controllers.User.UserController.EditUser(EditUserDto command) in D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-19\Eshop-Api\shop.Web\Controllers\User\UserController.cs:line 51
    at lambda_method6(Closure, Object)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
@@ -56,46 +97,337 @@ System.NullReferenceException: Object reference not set to an instance of an obj
    at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
-2023-06-28 12:18:02.380 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.RefreshToken (shop.Web) Executing
-2023-06-28 12:20:27.790 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.RefreshToken (shop.Web) Executed
-2023-06-28 12:20:53.419 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executing
-2023-06-28 12:20:53.750 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executed
-2023-06-28 12:21:11.682 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.RefreshToken (shop.Web) Executing
-2023-06-28 12:24:27.237 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.RefreshToken (shop.Web) Executed
-2023-06-28 12:25:16.555 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.RefreshToken (shop.Web) Executing
-2023-06-28 12:30:39.617 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executing
-2023-06-28 12:30:51.515 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executed
-2023-06-28 12:31:20.460 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.RefreshToken (shop.Web) Executing
-2023-06-28 12:31:20.598 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.RefreshToken (shop.Web) Executed
-2023-06-28 12:32:00.266 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.RefreshToken (shop.Web) Executing
-2023-06-28 12:32:00.700 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.RefreshToken (shop.Web) Executed
-2023-06-28 12:37:19.510 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.RefreshToken (shop.Web) Executing
-2023-06-28 12:37:21.967 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.RefreshToken (shop.Web) Executed
-2023-06-28 12:38:18.464 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executing
-2023-06-28 12:38:19.392 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executed
-2023-06-28 12:39:28.019 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.RefreshToken (shop.Web) Executing
-2023-06-28 12:39:28.061 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.RefreshToken (shop.Web) Executed
-2023-06-28 13:01:41.761 +03:30 [ERR] shop.Web.Controllers.Comments.CommentsController.GetCommentById (shop.Web) Executing
-2023-06-28 13:01:45.173 +03:30 [ERR] shop.Web.Controllers.Comments.CommentsController.GetCommentById (shop.Web) Executed
-2023-06-28 13:03:11.074 +03:30 [ERR] shop.Web.Controllers.Product.ProductController.GetProductById (shop.Web) Executing
-2023-06-28 13:03:12.221 +03:30 [ERR] shop.Web.Controllers.Product.ProductController.GetProductById (shop.Web) Executed
-2023-06-28 17:19:43.069 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executing
-2023-06-28 17:19:58.233 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executed
-2023-06-28 17:21:45.727 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) Executing
-2023-06-28 17:21:46.170 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) Executed
-2023-06-28 17:21:57.085 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) Executing
-2023-06-28 17:21:57.221 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) Executed
-2023-06-28 17:21:58.987 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) Executing
-2023-06-28 17:21:59.141 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) Executed
-2023-06-28 17:22:08.737 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) Executing
-2023-06-28 17:22:08.851 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) Executed
-2023-06-28 17:24:45.350 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Logout (shop.Web) Executing
-2023-06-28 17:30:14.744 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Logout (shop.Web) Executed
-2023-06-28 17:30:30.495 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Logout (shop.Web) Executing
-2023-06-28 17:37:17.041 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Register (shop.Web) Executing
-2023-06-28 17:37:21.901 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Register (shop.Web) Executed
-2023-06-28 17:56:42.983 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Register (shop.Web) Executing
-2023-06-28 17:57:34.739 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Register (shop.Web) Executed
-2023-06-28 17:57:34.873 +03:30 [ERR] An error occurred using the connection to database 'ShopApp' on server '.'.
-2023-06-28 17:59:16.237 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Register (shop.Web) Executing
-2023-06-28 18:00:00.392 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Register (shop.Web) Executed
+2023-06-28 19:59:33.216 +03:30 [ERR] shop.Web.Controllers.User.UserController.EditUser (shop.Web) Executing
+2023-06-28 19:59:54.065 +03:30 [ERR] shop.Web.Controllers.User.UserController.EditUser (shop.Web) Executed
+2023-06-28 19:59:54.068 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: The key value at position 0 of the call to 'DbSet<User>.Find' was of type 'long', which does not match the property type of 'int'.
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindTracked(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindAsync(Object[] keyValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.FindAsync(Object[] keyValues)
+   at shop.Data.Repository.EFRepository`1.FindByIdAsync(Object[] ids) in D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-19\Eshop-Api\shop.Data\Repository\EFRepository.cs:line 54
+   at shop.Service.Command.UserService.EditUser(EditUserDto EditUserDto) in D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-19\Eshop-Api\shop.Service\Command\User\UserService.cs:line 60
+   at shop.Web.Controllers.User.UserController.EditUser(EditUserDto command) in D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-19\Eshop-Api\shop.Web\Controllers\User\UserController.cs:line 51
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-06-28 20:01:07.499 +03:30 [ERR] shop.Web.Controllers.User.UserController.EditUser (shop.Web) Executing
+2023-06-28 20:01:58.726 +03:30 [ERR] shop.Web.Controllers.User.UserController.EditUser (shop.Web) Executed
+2023-06-28 20:01:58.729 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: The key value at position 0 of the call to 'DbSet<User>.Find' was of type 'long', which does not match the property type of 'int'.
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindTracked(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindAsync(Object[] keyValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.FindAsync(Object[] keyValues)
+   at shop.Data.Repository.EFRepository`1.FindByIdAsync(Object[] ids) in D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-19\Eshop-Api\shop.Data\Repository\EFRepository.cs:line 54
+   at shop.Service.Command.UserService.EditUser(EditUserDto EditUserDto) in D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-19\Eshop-Api\shop.Service\Command\User\UserService.cs:line 60
+   at shop.Web.Controllers.User.UserController.EditUser(EditUserDto command) in D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-19\Eshop-Api\shop.Web\Controllers\User\UserController.cs:line 51
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-06-28 20:02:53.051 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - shop.Web.Controllers.User.UserController.EditUser (shop.Web). See inner exception
+ ---> System.Reflection.AmbiguousMatchException: Ambiguous match found.
+   at System.RuntimeType.GetPropertyImpl(String name, BindingFlags bindingAttr, Binder binder, Type returnType, Type[] types, ParameterModifier[] modifiers)
+   at System.Type.GetProperty(String name, BindingFlags bindingAttr)
+   at Swashbuckle.AspNetCore.SwaggerGen.ApiParameterDescriptionExtensions.PropertyInfo(ApiParameterDescription apiParameter)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateSchemaFromFormParameters(IEnumerable`1 formParameters, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateRequestBodyFromFormParameters(ApiDescription apiDescription, SchemaRepository schemaRepository, IEnumerable`1 formParameters)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateRequestBody(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-06-28 20:04:01.786 +03:30 [ERR] shop.Web.Controllers.User.UserController.EditUser (shop.Web) Executing
+2023-06-28 20:04:27.994 +03:30 [ERR] shop.Web.Controllers.User.UserController.EditUser (shop.Web) Executed
+2023-06-28 20:04:38.436 +03:30 [ERR] shop.Web.Controllers.User.UserController.EditUser (shop.Web) Executing
+2023-06-28 20:06:01.853 +03:30 [ERR] shop.Web.Controllers.User.UserController.EditUser (shop.Web) Executed
+2023-06-28 20:09:10.416 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executing
+2023-06-28 20:09:13.857 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executed
+2023-06-28 20:11:46.960 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executing
+2023-06-28 20:11:48.779 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executed
+2023-06-28 20:12:16.786 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executing
+2023-06-28 20:12:16.871 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executed
+2023-06-28 20:15:18.638 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executing
+2023-06-28 20:15:18.778 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executed
+2023-06-28 20:17:31.028 +03:30 [ERR] Exception occurred while processing message.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at shop.Service.Query.UserQueryService.GetUserTokenByJwtTokenQuery(String HashJwtToken) in D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-19\Eshop-Api\shop.Service\Query\User\UserQueryService.cs:line 89
+   at Shop.Api.Infrastructure.JwtUtil.CustomJwtValidation.Validate(TokenValidatedContext context)
+   at Shop.Api.Infrastructure.JwtUtil.JwtAuthenticationConfig.<>c.<<AddJwtAuthentication>b__0_2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-06-28 20:17:31.143 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at shop.Service.Query.UserQueryService.GetUserTokenByJwtTokenQuery(String HashJwtToken) in D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-19\Eshop-Api\shop.Service\Query\User\UserQueryService.cs:line 89
+   at Shop.Api.Infrastructure.JwtUtil.CustomJwtValidation.Validate(TokenValidatedContext context)
+   at Shop.Api.Infrastructure.JwtUtil.JwtAuthenticationConfig.<>c.<<AddJwtAuthentication>b__0_2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-06-28 20:21:41.988 +03:30 [ERR] Failed executing DbCommand (100ms) [Parameters=[@__HashJwtToken_0='?' (Size = 250)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreateON], [u].[Deleted], [u].[Device], [u].[HashJwtToken], [u].[HashRefreshToken], [u].[RefreshTokenExpireDate], [u].[TokenExpireDate], [u].[UpdateON], [u].[UserId]
+FROM [UserToken] AS [u]
+WHERE [u].[HashJwtToken] = @__HashJwtToken_0
+2023-06-28 20:21:42.014 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'shop.Data.ApplicationContext.SqlServerApplicationContext'.
+System.InvalidOperationException: Invalid operation. The connection is closed.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidOperationException: Invalid operation. The connection is closed.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2023-06-28 20:23:17.682 +03:30 [ERR] An error occurred using the connection to database 'ShopApp' on server '.'.
+2023-06-28 20:27:28.019 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executing
+2023-06-28 20:27:34.166 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executed
+2023-06-28 20:29:43.536 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executing
+2023-06-28 20:29:43.644 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executed
+2023-06-28 20:29:45.236 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executing
+2023-06-28 20:29:45.626 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executed
+2023-06-28 20:29:46.679 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executing
+2023-06-28 20:29:46.785 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executed
+2023-06-28 20:29:47.661 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executing
+2023-06-28 20:29:47.803 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executed
+2023-06-28 20:29:48.512 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executing
+2023-06-28 20:29:48.646 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executed
+2023-06-28 20:29:49.370 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executing
+2023-06-28 20:29:49.510 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executed
+2023-06-28 20:31:43.368 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executing
+2023-06-28 20:31:46.276 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executed
+2023-06-28 20:31:52.380 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executing
+2023-06-28 20:31:53.216 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executed
+2023-06-28 20:32:40.626 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) Executing
+2023-06-28 20:32:40.852 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) Executed
+2023-06-28 20:33:03.550 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) Executing
+2023-06-28 20:33:03.619 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) Executed
+2023-06-28 20:34:37.311 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) Executing
+2023-06-28 20:34:37.400 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) Executed
+2023-06-28 20:40:06.958 +03:30 [ERR] Exception occurred while processing message.
+System.InvalidOperationException: No service for type 'Shop.Api.Infrastructure.JwtUtil.CustomJwtValidation' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Shop.Api.Infrastructure.JwtUtil.JwtAuthenticationConfig.<>c.<<AddJwtAuthentication>b__0_2>d.MoveNext() in D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-19\Eshop-Api\shop.Web\Infrastructure\JwtUtil\AddJwtAuthentication.cs:line 34
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-06-28 20:40:07.430 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No service for type 'Shop.Api.Infrastructure.JwtUtil.CustomJwtValidation' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Shop.Api.Infrastructure.JwtUtil.JwtAuthenticationConfig.<>c.<<AddJwtAuthentication>b__0_2>d.MoveNext() in D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-19\Eshop-Api\shop.Web\Infrastructure\JwtUtil\AddJwtAuthentication.cs:line 34
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-06-28 20:40:18.065 +03:30 [ERR] Exception occurred while processing message.
+System.InvalidOperationException: No service for type 'Shop.Api.Infrastructure.JwtUtil.CustomJwtValidation' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Shop.Api.Infrastructure.JwtUtil.JwtAuthenticationConfig.<>c.<<AddJwtAuthentication>b__0_2>d.MoveNext() in D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-19\Eshop-Api\shop.Web\Infrastructure\JwtUtil\AddJwtAuthentication.cs:line 34
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-06-28 20:40:18.066 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No service for type 'Shop.Api.Infrastructure.JwtUtil.CustomJwtValidation' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Shop.Api.Infrastructure.JwtUtil.JwtAuthenticationConfig.<>c.<<AddJwtAuthentication>b__0_2>d.MoveNext() in D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-19\Eshop-Api\shop.Web\Infrastructure\JwtUtil\AddJwtAuthentication.cs:line 34
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-06-28 20:41:24.701 +03:30 [ERR] Exception occurred while processing message.
+System.InvalidOperationException: No service for type 'Shop.Api.Infrastructure.JwtUtil.CustomJwtValidation' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Shop.Api.Infrastructure.JwtUtil.JwtAuthenticationConfig.<>c.<<AddJwtAuthentication>b__0_2>d.MoveNext() in D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-19\Eshop-Api\shop.Web\Infrastructure\JwtUtil\AddJwtAuthentication.cs:line 34
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-06-28 20:41:24.713 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No service for type 'Shop.Api.Infrastructure.JwtUtil.CustomJwtValidation' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Shop.Api.Infrastructure.JwtUtil.JwtAuthenticationConfig.<>c.<<AddJwtAuthentication>b__0_2>d.MoveNext() in D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-19\Eshop-Api\shop.Web\Infrastructure\JwtUtil\AddJwtAuthentication.cs:line 34
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-06-28 20:41:43.690 +03:30 [ERR] Exception occurred while processing message.
+System.InvalidOperationException: No service for type 'Shop.Api.Infrastructure.JwtUtil.CustomJwtValidation' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Shop.Api.Infrastructure.JwtUtil.JwtAuthenticationConfig.<>c.<<AddJwtAuthentication>b__0_2>d.MoveNext() in D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-19\Eshop-Api\shop.Web\Infrastructure\JwtUtil\AddJwtAuthentication.cs:line 34
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-06-28 20:41:43.721 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No service for type 'Shop.Api.Infrastructure.JwtUtil.CustomJwtValidation' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Shop.Api.Infrastructure.JwtUtil.JwtAuthenticationConfig.<>c.<<AddJwtAuthentication>b__0_2>d.MoveNext() in D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-19\Eshop-Api\shop.Web\Infrastructure\JwtUtil\AddJwtAuthentication.cs:line 34
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-06-28 20:42:31.064 +03:30 [ERR] Exception occurred while processing message.
+System.InvalidOperationException: No service for type 'Shop.Api.Infrastructure.JwtUtil.CustomJwtValidation' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Shop.Api.Infrastructure.JwtUtil.JwtAuthenticationConfig.<>c.<<AddJwtAuthentication>b__0_2>d.MoveNext() in D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-19\Eshop-Api\shop.Web\Infrastructure\JwtUtil\AddJwtAuthentication.cs:line 34
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-06-28 20:42:31.066 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No service for type 'Shop.Api.Infrastructure.JwtUtil.CustomJwtValidation' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Shop.Api.Infrastructure.JwtUtil.JwtAuthenticationConfig.<>c.<<AddJwtAuthentication>b__0_2>d.MoveNext() in D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-19\Eshop-Api\shop.Web\Infrastructure\JwtUtil\AddJwtAuthentication.cs:line 34
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-06-28 20:42:46.197 +03:30 [ERR] Exception occurred while processing message.
+System.InvalidOperationException: No service for type 'Shop.Api.Infrastructure.JwtUtil.CustomJwtValidation' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Shop.Api.Infrastructure.JwtUtil.JwtAuthenticationConfig.<>c.<<AddJwtAuthentication>b__0_2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-06-28 20:42:46.208 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No service for type 'Shop.Api.Infrastructure.JwtUtil.CustomJwtValidation' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Shop.Api.Infrastructure.JwtUtil.JwtAuthenticationConfig.<>c.<<AddJwtAuthentication>b__0_2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-06-28 20:43:22.583 +03:30 [ERR] Exception occurred while processing message.
+System.InvalidOperationException: No service for type 'Shop.Api.Infrastructure.JwtUtil.CustomJwtValidation' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Shop.Api.Infrastructure.JwtUtil.JwtAuthenticationConfig.<>c.<<AddJwtAuthentication>b__0_2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-06-28 20:43:22.589 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No service for type 'Shop.Api.Infrastructure.JwtUtil.CustomJwtValidation' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Shop.Api.Infrastructure.JwtUtil.JwtAuthenticationConfig.<>c.<<AddJwtAuthentication>b__0_2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-06-28 20:44:20.821 +03:30 [ERR] Exception occurred while processing message.
+System.InvalidOperationException: No service for type 'Shop.Api.Infrastructure.JwtUtil.CustomJwtValidation' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Shop.Api.Infrastructure.JwtUtil.JwtAuthenticationConfig.<>c.<<AddJwtAuthentication>b__0_2>d.MoveNext() in D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-19\Eshop-Api\shop.Web\Infrastructure\JwtUtil\AddJwtAuthentication.cs:line 34
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-06-28 20:44:20.975 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No service for type 'Shop.Api.Infrastructure.JwtUtil.CustomJwtValidation' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Shop.Api.Infrastructure.JwtUtil.JwtAuthenticationConfig.<>c.<<AddJwtAuthentication>b__0_2>d.MoveNext() in D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-19\Eshop-Api\shop.Web\Infrastructure\JwtUtil\AddJwtAuthentication.cs:line 34
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-06-28 20:44:42.777 +03:30 [ERR] Exception occurred while processing message.
+System.InvalidOperationException: No service for type 'Shop.Api.Infrastructure.JwtUtil.CustomJwtValidation' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Shop.Api.Infrastructure.JwtUtil.JwtAuthenticationConfig.<>c.<<AddJwtAuthentication>b__0_2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-06-28 20:44:42.783 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No service for type 'Shop.Api.Infrastructure.JwtUtil.CustomJwtValidation' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Shop.Api.Infrastructure.JwtUtil.JwtAuthenticationConfig.<>c.<<AddJwtAuthentication>b__0_2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-06-28 20:48:44.268 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) Executing
+2023-06-28 20:48:44.785 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) Executed
+2023-06-28 20:50:10.353 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) Executing
+2023-06-28 20:50:10.844 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) Executed
