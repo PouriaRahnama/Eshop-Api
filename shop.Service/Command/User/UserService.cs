@@ -126,7 +126,7 @@ namespace shop.Service.Command
                 Desciption = ChargeWalletDto.Description,
                 Status = ChargeWalletDto.Type,
                 FinallyDate = DateTime.Now,
-                UserId = ChargeWalletDto.UserId             
+                UserId = ChargeWalletDto.UserId
             };
 
             await _WalletRepository.AddAsync(wallet);
@@ -139,7 +139,7 @@ namespace shop.Service.Command
             if (user == null)
                 return OperationResult.NotFound();
 
-            var activeTokenCount = _TokenRepository.Table.Where(c => c.UserId == user.Id).Count();
+            var activeTokenCount = _TokenRepository.Table.Where(c => c.UserId == user.Id && c.Deleted == false).Count();
             if (activeTokenCount == 3)
                 return OperationResult.Error("امکان استفاده از 4 دستگاه همزمان وجود ندارد");
 
@@ -156,5 +156,19 @@ namespace shop.Service.Command
             await _TokenRepository.AddAsync(Token);
             return OperationResult.Success();
         }
+
+
+        public async Task<OperationResult> RemoveUserToken(RemoveUserTokenDto RemoveUserTokenDto)
+        {
+
+            var UserToken = await _TokenRepository.FindByIdAsync(RemoveUserTokenDto.TokenId);
+            if (UserToken == null)
+                return OperationResult.Error("invalid TokenId");
+
+            await _TokenRepository.DeleteAsync(UserToken);
+            return OperationResult.Success();
+        }
+
+
     }
 }

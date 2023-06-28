@@ -1,0 +1,81 @@
+2023-06-28 12:02:58.556 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executing
+2023-06-28 12:03:10.750 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executed
+2023-06-28 12:03:20.337 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executing
+2023-06-28 12:03:23.474 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executed
+2023-06-28 12:05:48.317 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.RefreshToken (shop.Web) Executing
+2023-06-28 12:08:48.553 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.RefreshToken (shop.Web) Executing
+2023-06-28 12:09:59.351 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.RefreshToken (shop.Web) Executing
+2023-06-28 12:10:59.529 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.RefreshToken (shop.Web) Executing
+2023-06-28 12:11:51.703 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.RefreshToken (shop.Web) Executed
+2023-06-28 12:11:51.732 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at shop.Service.Query.UserQueryService.GetUserTokenByRefreshTokenQuery(String HashRefreshToken) in D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-17\Eshop-Api\shop.Service\Query\User\UserQueryService.cs:line 70
+   at shop.Web.Controllers.Auth.AuthController.RefreshToken(String refreshToken) in D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-17\Eshop-Api\shop.Web\Controllers\Auth\AuthController.cs:line 71
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-06-28 12:12:22.418 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executing
+2023-06-28 12:12:24.925 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executed
+2023-06-28 12:12:56.919 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.RefreshToken (shop.Web) Executing
+2023-06-28 12:14:55.717 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.RefreshToken (shop.Web) Executed
+2023-06-28 12:15:23.647 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.RefreshToken (shop.Web) Executing
+2023-06-28 12:17:56.390 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.RefreshToken (shop.Web) Executed
+2023-06-28 12:17:56.395 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Shop.Web.Infrastructure.JwtUtil.JwtTokenBuilder.BuildToken(UserDto user, IConfiguration configuration) in D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-17\Eshop-Api\shop.Web\Infrastructure\JwtUtil\JwtTokenBuilder.cs:line 13
+   at shop.Web.Controllers.Auth.AuthController.AddTokenAndGenerateJwt(UserDto user) in D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-17\Eshop-Api\shop.Web\Controllers\Auth\AuthController.cs:line 105
+   at shop.Web.Controllers.Auth.AuthController.RefreshToken(String refreshToken) in D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-17\Eshop-Api\shop.Web\Controllers\Auth\AuthController.cs:line 95
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-06-28 12:18:02.380 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.RefreshToken (shop.Web) Executing
+2023-06-28 12:20:27.790 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.RefreshToken (shop.Web) Executed
+2023-06-28 12:20:53.419 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executing
+2023-06-28 12:20:53.750 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executed
+2023-06-28 12:21:11.682 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.RefreshToken (shop.Web) Executing
+2023-06-28 12:24:27.237 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.RefreshToken (shop.Web) Executed
+2023-06-28 12:25:16.555 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.RefreshToken (shop.Web) Executing
+2023-06-28 12:30:39.617 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executing
+2023-06-28 12:30:51.515 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executed
+2023-06-28 12:31:20.460 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.RefreshToken (shop.Web) Executing
+2023-06-28 12:31:20.598 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.RefreshToken (shop.Web) Executed
+2023-06-28 12:32:00.266 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.RefreshToken (shop.Web) Executing
+2023-06-28 12:32:00.700 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.RefreshToken (shop.Web) Executed
+2023-06-28 12:37:19.510 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.RefreshToken (shop.Web) Executing
+2023-06-28 12:37:21.967 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.RefreshToken (shop.Web) Executed
+2023-06-28 12:38:18.464 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executing
+2023-06-28 12:38:19.392 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executed
+2023-06-28 12:39:28.019 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.RefreshToken (shop.Web) Executing
+2023-06-28 12:39:28.061 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.RefreshToken (shop.Web) Executed
+2023-06-28 13:01:41.761 +03:30 [ERR] shop.Web.Controllers.Comments.CommentsController.GetCommentById (shop.Web) Executing
+2023-06-28 13:01:45.173 +03:30 [ERR] shop.Web.Controllers.Comments.CommentsController.GetCommentById (shop.Web) Executed
+2023-06-28 13:03:11.074 +03:30 [ERR] shop.Web.Controllers.Product.ProductController.GetProductById (shop.Web) Executing
+2023-06-28 13:03:12.221 +03:30 [ERR] shop.Web.Controllers.Product.ProductController.GetProductById (shop.Web) Executed

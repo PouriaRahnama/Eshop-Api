@@ -178,3 +178,15 @@ D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-16\Eshop-Api\shop.Core\obj\D
 D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-16\Eshop-Api\shop.Core\obj\Debug\net7.0\refint\shop.Core.dll
 D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-16\Eshop-Api\shop.Core\obj\Debug\net7.0\shop.Core.pdb
 D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-16\Eshop-Api\shop.Core\obj\Debug\net7.0\ref\shop.Core.dll
+D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-17\Eshop-Api\shop.Core\bin\Debug\net7.0\shop.Core.deps.json
+D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-17\Eshop-Api\shop.Core\bin\Debug\net7.0\shop.Core.dll
+D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-17\Eshop-Api\shop.Core\bin\Debug\net7.0\shop.Core.pdb
+D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-17\Eshop-Api\shop.Core\obj\Debug\net7.0\shop.Core.csproj.AssemblyReference.cache
+D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-17\Eshop-Api\shop.Core\obj\Debug\net7.0\shop.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-17\Eshop-Api\shop.Core\obj\Debug\net7.0\shop.Core.AssemblyInfoInputs.cache
+D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-17\Eshop-Api\shop.Core\obj\Debug\net7.0\shop.Core.AssemblyInfo.cs
+D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-17\Eshop-Api\shop.Core\obj\Debug\net7.0\shop.Core.csproj.CoreCompileInputs.cache
+D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-17\Eshop-Api\shop.Core\obj\Debug\net7.0\shop.Core.dll
+D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-17\Eshop-Api\shop.Core\obj\Debug\net7.0\refint\shop.Core.dll
+D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-17\Eshop-Api\shop.Core\obj\Debug\net7.0\shop.Core.pdb
+D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-17\Eshop-Api\shop.Core\obj\Debug\net7.0\ref\shop.Core.dll

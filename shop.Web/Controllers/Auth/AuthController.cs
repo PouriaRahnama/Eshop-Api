@@ -64,6 +64,37 @@ public class AuthController : ShopController
     }
 
 
+    [HttpPost("RefreshToken")]
+    public async Task<ApiResult<LoginResultDto?>> RefreshToken(string refreshToken)
+    {
+        var hashRefreshToken = Sha256Hasher.Hash(refreshToken);
+        var result = await _userQueryService.GetUserTokenByRefreshTokenQuery(hashRefreshToken);
+
+        if (result == null)
+            return CommandResult(OperationResult<LoginResultDto?>.NotFound());
+
+        if (result.TokenExpireDate > DateTime.Now)
+        {
+            return CommandResult(OperationResult<LoginResultDto>.Error("توکن هنوز منقضی نشده است"));
+        }
+
+        if (result.RefreshTokenExpireDate < DateTime.Now)
+        {
+            return CommandResult(OperationResult<LoginResultDto>.Error("زمان رفرش توکن به پایان رسیده است"));
+        }
+
+        var user = await _userQueryService.GetUserById(result.UserId);
+
+        var removeUserToken = new RemoveUserTokenDto()
+        {
+            TokenId = result.Id,
+            UserId = result.UserId
+        };
+
+        await _userService.RemoveUserToken(removeUserToken);
+        var loginResult = await AddTokenAndGenerateJwt(user);
+        return CommandResult(loginResult);
+    }
 
     private async Task<OperationResult<LoginResultDto?>> AddTokenAndGenerateJwt(UserDto user)
     {

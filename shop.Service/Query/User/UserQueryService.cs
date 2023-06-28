@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using shop.Core.Domain.User;
 using shop.Data.ApplicationContext;
+using shop.Service.Extension.Util;
 
 namespace shop.Service.Query
 {
@@ -59,6 +60,25 @@ namespace shop.Service.Query
                 return null;
 
             return user.Map();
+        }
+
+        public async Task<UserTokenDto> GetUserTokenByRefreshTokenQuery(string HashRefreshToken)
+        {
+            var UserToken =await _context.Set<UserToken>()
+                .FirstOrDefaultAsync(ut => ut.HashRefreshToken == HashRefreshToken);
+
+            var UserTokenDto = new UserTokenDto()
+            {
+                HashRefreshToken = UserToken.HashRefreshToken,
+                HashJwtToken  = UserToken.HashJwtToken,
+                RefreshTokenExpireDate = UserToken.RefreshTokenExpireDate,
+                TokenExpireDate = UserToken.TokenExpireDate,
+                Device = UserToken.Device,
+                UserId = UserToken.UserId,
+                Id = UserToken.Id
+            };
+
+            return UserTokenDto;
         }
 
     }
