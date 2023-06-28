@@ -79,3 +79,23 @@ System.NullReferenceException: Object reference not set to an instance of an obj
 2023-06-28 13:01:45.173 +03:30 [ERR] shop.Web.Controllers.Comments.CommentsController.GetCommentById (shop.Web) Executed
 2023-06-28 13:03:11.074 +03:30 [ERR] shop.Web.Controllers.Product.ProductController.GetProductById (shop.Web) Executing
 2023-06-28 13:03:12.221 +03:30 [ERR] shop.Web.Controllers.Product.ProductController.GetProductById (shop.Web) Executed
+2023-06-28 17:19:43.069 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executing
+2023-06-28 17:19:58.233 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executed
+2023-06-28 17:21:45.727 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) Executing
+2023-06-28 17:21:46.170 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) Executed
+2023-06-28 17:21:57.085 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) Executing
+2023-06-28 17:21:57.221 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) Executed
+2023-06-28 17:21:58.987 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) Executing
+2023-06-28 17:21:59.141 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) Executed
+2023-06-28 17:22:08.737 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) Executing
+2023-06-28 17:22:08.851 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) Executed
+2023-06-28 17:24:45.350 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Logout (shop.Web) Executing
+2023-06-28 17:30:14.744 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Logout (shop.Web) Executed
+2023-06-28 17:30:30.495 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Logout (shop.Web) Executing
+2023-06-28 17:37:17.041 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Register (shop.Web) Executing
+2023-06-28 17:37:21.901 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Register (shop.Web) Executed
+2023-06-28 17:56:42.983 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Register (shop.Web) Executing
+2023-06-28 17:57:34.739 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Register (shop.Web) Executed
+2023-06-28 17:57:34.873 +03:30 [ERR] An error occurred using the connection to database 'ShopApp' on server '.'.
+2023-06-28 17:59:16.237 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Register (shop.Web) Executing
+2023-06-28 18:00:00.392 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Register (shop.Web) Executed

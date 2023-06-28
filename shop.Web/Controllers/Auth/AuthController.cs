@@ -1,5 +1,8 @@
 ﻿using AngleSharp.Browser;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json.Linq;
 using shop.Frameworks.Commons;
 using shop.Service.Command;
 using shop.Service.DTOs.UserCommand;
@@ -94,6 +97,26 @@ public class AuthController : ShopController
         await _userService.RemoveUserToken(removeUserToken);
         var loginResult = await AddTokenAndGenerateJwt(user);
         return CommandResult(loginResult);
+    }
+
+    [Authorize]
+    [HttpPost("logout")]
+    public async Task<ApiResult> Logout()
+    {
+        var token = await HttpContext.GetTokenAsync("access_token");
+        var hashJwtToken = Sha256Hasher.Hash(token);
+        var result = await _userQueryService.GetUserTokenByJwtTokenQuery(hashJwtToken);
+        if (result == null)
+            return CommandResult(OperationResult.NotFound());
+
+        var removeUserToken = new RemoveUserTokenDto()
+        {
+            TokenId = result.Id,
+            UserId = result.UserId
+        };
+
+        await _userService.RemoveUserToken(removeUserToken);
+        return CommandResult(OperationResult.Success());
     }
 
     private async Task<OperationResult<LoginResultDto?>> AddTokenAndGenerateJwt(UserDto user)

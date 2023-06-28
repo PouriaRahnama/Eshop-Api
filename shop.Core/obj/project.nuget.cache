@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "A8jApKg2OXO/CELJAPDNUnNeCGEVvhiugUdtUiaUaXcIRxGslemTahtbvzuN/XCfZ5hopzQou4tpBwMhFcCU5g==",
+  "dgSpecHash": "kZnJXRv0O7HzjJ6nfcIUqBUDfbcH4ku6mQsPqdHK9bvOPNcBzeFph20/xuRHY/6/AA+th4NF2XLh+DPTJnLD8Q==",
   "success": true,
-  "projectFilePath": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-17\\Eshop-Api\\shop.Core\\shop.Core.csproj",
+  "projectFilePath": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-18\\Eshop-Api\\shop.Core\\shop.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\acer\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.0.1\\microsoft.aspnetcore.http.abstractions.2.0.1.nupkg.sha512",
     "C:\\Users\\acer\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.0.1\\microsoft.aspnetcore.http.features.2.0.1.nupkg.sha512",

@@ -69,8 +69,27 @@ namespace shop.Service.Query
 
             var UserTokenDto = new UserTokenDto()
             {
-                HashRefreshToken = UserToken.HashRefreshToken,
+                HashRefreshToken = HashRefreshToken,
                 HashJwtToken  = UserToken.HashJwtToken,
+                RefreshTokenExpireDate = UserToken.RefreshTokenExpireDate,
+                TokenExpireDate = UserToken.TokenExpireDate,
+                Device = UserToken.Device,
+                UserId = UserToken.UserId,
+                Id = UserToken.Id
+            };
+
+            return UserTokenDto;
+        }
+
+        public async Task<UserTokenDto> GetUserTokenByJwtTokenQuery(string HashJwtToken)
+        {
+            var UserToken = await _context.Set<UserToken>()
+                .FirstOrDefaultAsync(ut => ut.HashJwtToken == HashJwtToken);
+
+            var UserTokenDto = new UserTokenDto()
+            {
+                HashRefreshToken = UserToken.HashRefreshToken,
+                HashJwtToken = HashJwtToken,
                 RefreshTokenExpireDate = UserToken.RefreshTokenExpireDate,
                 TokenExpireDate = UserToken.TokenExpireDate,
                 Device = UserToken.Device,

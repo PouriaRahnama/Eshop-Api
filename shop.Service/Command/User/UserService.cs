@@ -36,6 +36,10 @@ namespace shop.Service.Command
         public async Task<OperationResult> AddUser(CreateUserDto CreateUserDto)
         {
             var password = Sha256Hasher.Hash(CreateUserDto.Password);
+            var IsExistUser = await _repository.GetEntity(u => u.PhoneNumber == CreateUserDto.PhoneNumber ||
+                 u.Email == CreateUserDto.Email);
+            if (IsExistUser != null)
+                return OperationResult.Error(" !کاربری با مشخصات وارد شده وجود دارد");
 
             var user = new User()
             {
@@ -47,9 +51,9 @@ namespace shop.Service.Command
             };
 
             await _repository.AddAsync(user);
-
             return OperationResult.Success();
         }
+
         public async Task<OperationResult> EditUser(EditUserDto EditUserDto)
         {
             var user = await _repository.FindByIdAsync(EditUserDto.UserId);
