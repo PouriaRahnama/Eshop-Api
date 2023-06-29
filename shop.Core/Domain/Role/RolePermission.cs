@@ -7,12 +7,6 @@ namespace shop.Core.Domain.Role
     {
         public int RoleId { get; set; }
         public Permission PermissionStatus { get; set; }
-        //public int PermissionId { get; set; }
-        //public Permission PermissionStatus
-        //{
-        //    get => (Permission)PermissionId;
-        //    set => PermissionId = (int)value;
-        //}
         public virtual Role Role { get; set; }
     }
     public enum Permission
@@ -24,6 +18,30 @@ namespace shop.Core.Domain.Role
         //2
         EditProfile,
         //3
-        ChangePassword
+        ChangePassword,
+        //4
+        CRUD_Banner,
+        //5
+        CRUD_Slider,
+        //6
+        CURD_User,
+        //7
+        CRUD_Product,
+        //8
+        Seller_Management,
+        //9
+        Order_Management,
+        //10
+        Role_Management,
+        //11
+        Comment_Management,
+        //12
+        Category_Management,
+        //13
+        Add_Inventory,
+        //14
+        Edit_Inventory,
+        //15
+        User_Management
     }
 }

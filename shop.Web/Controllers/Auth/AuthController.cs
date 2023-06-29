@@ -1,8 +1,6 @@
-﻿using AngleSharp.Browser;
-using Microsoft.AspNetCore.Authentication;
+﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json.Linq;
 using shop.Frameworks.Commons;
 using shop.Service.Command;
 using shop.Service.DTOs.UserCommand;
@@ -27,10 +25,11 @@ public class AuthController : ShopController
         _userQueryService = userQueryService;
     }
 
+
+
     [HttpPost("login")]
     public async Task<ApiResult<LoginResultDto?>> Login(LoginViewModel loginViewModel)
     { 
-
         var user = await _userQueryService.GetUserByPhoneNumber(loginViewModel.PhoneNumber);
         if (user == null)
         {
@@ -56,10 +55,10 @@ public class AuthController : ShopController
 
 
 
+
     [HttpPost("register")]
     public async Task<ApiResult> Register(RegisterViewModel register)
-    {
-        
+    {      
         var command = new CreateUserDto()
         {
             PhoneNumber = register.PhoneNumber,
@@ -71,6 +70,8 @@ public class AuthController : ShopController
         var result = await _userService.AddUser(command);
         return CommandResult(result);
     }
+
+
 
 
     [HttpPost("RefreshToken")]
@@ -105,6 +106,9 @@ public class AuthController : ShopController
         return CommandResult(loginResult);
     }
 
+
+
+
     [Authorize]
     [HttpPost("logout")]
     public async Task<ApiResult> Logout()
@@ -124,6 +128,9 @@ public class AuthController : ShopController
         await _userService.RemoveUserToken(removeUserToken);
         return CommandResult(OperationResult.Success());
     }
+
+
+
 
     private async Task<OperationResult<LoginResultDto?>> AddTokenAndGenerateJwt(UserDto user)
     {
@@ -158,5 +165,9 @@ public class AuthController : ShopController
             RefreshToken = refreshToken
         });
     }
+
+
+
+
 
 }

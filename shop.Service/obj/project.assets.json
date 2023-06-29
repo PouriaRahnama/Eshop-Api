@@ -7995,11 +7995,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-19\\Eshop-Api\\shop.Service\\shop.Service.csproj",
+      "projectUniqueName": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-20\\Eshop-Api\\shop.Service\\shop.Service.csproj",
       "projectName": "shop.Service",
-      "projectPath": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-19\\Eshop-Api\\shop.Service\\shop.Service.csproj",
+      "projectPath": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-20\\Eshop-Api\\shop.Service\\shop.Service.csproj",
       "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
-      "outputPath": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-19\\Eshop-Api\\shop.Service\\obj\\",
+      "outputPath": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-20\\Eshop-Api\\shop.Service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8016,11 +8016,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-19\\Eshop-Api\\shop.Core\\shop.Core.csproj": {
-              "projectPath": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-19\\Eshop-Api\\shop.Core\\shop.Core.csproj"
+            "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-20\\Eshop-Api\\shop.Core\\shop.Core.csproj": {
+              "projectPath": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-20\\Eshop-Api\\shop.Core\\shop.Core.csproj"
             },
-            "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-19\\Eshop-Api\\shop.Data\\shop.Data.csproj": {
-              "projectPath": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-19\\Eshop-Api\\shop.Data\\shop.Data.csproj"
+            "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-20\\Eshop-Api\\shop.Data\\shop.Data.csproj": {
+              "projectPath": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-20\\Eshop-Api\\shop.Data\\shop.Data.csproj"
             }
           }
         }
