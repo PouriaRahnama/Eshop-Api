@@ -5,7 +5,7 @@
         //0
         New,
         //1
-        Acceped,
+        Accepted,
         //2
         InActive,
         //3

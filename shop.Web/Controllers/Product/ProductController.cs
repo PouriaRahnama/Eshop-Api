@@ -7,6 +7,8 @@ using shop.Service.Command;
 using shop.Service.DTOs.ProductCommand;
 using shop.Service.Query;
 using Shop.Api.Infrastructure.JwtUtil;
+using Shop.Query.Products.DTOs;
+using Shop.Query.Products.GetForShop;
 
 namespace shop.Web.Controllers.Product;
 
@@ -15,12 +17,17 @@ public class ProductController : ShopController
 {
     private readonly IProductService _productService;
     private readonly ProductQueryService _productQueryService;
+    private readonly GetProductsForShopQuery _getProductsForShopQuery;
     private readonly ICacheManager _cacheManager;
-    public ProductController(IProductService productService, ProductQueryService productQueryService, ICacheManager cacheManager)
+    public ProductController(IProductService productService,
+        ProductQueryService productQueryService,
+        ICacheManager cacheManager,
+        GetProductsForShopQuery getProductsForShopQuery)
     {
         _productService = productService;
         _productQueryService = productQueryService;
         _cacheManager = cacheManager;
+        _getProductsForShopQuery = getProductsForShopQuery;
     }
 
     [HttpPost("AddProductCategory*")]
@@ -106,6 +113,13 @@ public class ProductController : ShopController
     {
         var result = await _productService.RemoveProductSpecification(command);
         return CommandResult(result);
+    }
+
+    [AllowAnonymous]
+    [HttpGet("Shop")]
+    public async Task<ApiResult<ProductShopResult>> GetProductForShopFilter([FromQuery] ProductShopFilterParam filterParams)
+    {
+        return QueryResult(await _getProductsForShopQuery.Handle(filterParams));
     }
 }
 

@@ -1,14 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "3zpeK7EtF0DGI48S0QWxJV1cPsMwLXCcww+xH1scpMuGkXRtYxVWhuqvg88/Ahw0DKvIwYrjWV/coeHSMoei3w==",
+  "dgSpecHash": "Vg9b208KF+m19LZjfCUmIyOqt2rABPRhUQSb4vXl7jZkcF5zeNwvBATUFt9GSYc4g2gZdQScMNZKiTKJEO94ug==",
   "success": true,
-  "projectFilePath": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-21\\Eshop-Api\\shop.Service\\shop.Service.csproj",
+  "projectFilePath": "D:\\انتقالی\\Project Eshop-WebApi\\Eshop-WebApi-22\\Eshop-Api\\shop.Service\\shop.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\acer\\.nuget\\packages\\anglesharp\\0.17.1\\anglesharp.0.17.1.nupkg.sha512",
     "C:\\Users\\acer\\.nuget\\packages\\anglesharp.css\\0.17.0\\anglesharp.css.0.17.0.nupkg.sha512",
     "C:\\Users\\acer\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\acer\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
     "C:\\Users\\acer\\.nuget\\packages\\castle.core\\5.1.0\\castle.core.5.1.0.nupkg.sha512",
+    "C:\\Users\\acer\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\acer\\.nuget\\packages\\fluentvalidation\\11.5.2\\fluentvalidation.11.5.2.nupkg.sha512",
     "C:\\Users\\acer\\.nuget\\packages\\htmlsanitizer\\8.0.645\\htmlsanitizer.8.0.645.nupkg.sha512",
     "C:\\Users\\acer\\.nuget\\packages\\mapster\\7.3.0\\mapster.7.3.0.nupkg.sha512",
