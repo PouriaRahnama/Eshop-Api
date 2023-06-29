@@ -8,11 +8,12 @@
     ".NETCoreApp,Version=v7.0": {
       "shop.Service/1.0.0": {
         "dependencies": {
-          "FluentValidation": "11.5.2",
+          "FluentValidation.AspNetCore": "11.0.0",
           "HtmlSanitizer": "8.0.645",
           "Mapster": "7.3.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.7",
           "Microsoft.AspNetCore.Diagnostics.Abstractions": "2.2.0",
+          "Microsoft.Extensions.Configuration.UserSecrets": "6.0.1",
           "System.Drawing.Common": "6.0.0",
           "shop.Core": "1.0.0",
           "shop.Data": "1.0.0"
@@ -51,7 +52,7 @@
           "System.Memory.Data": "1.0.2",
           "System.Numerics.Vectors": "4.5.0",
           "System.Text.Encodings.Web": "6.0.0",
-          "System.Text.Json": "4.7.2",
+          "System.Text.Json": "6.0.0",
           "System.Threading.Tasks.Extensions": "4.5.4"
         },
         "runtime": {
@@ -68,7 +69,7 @@
           "Microsoft.Identity.Client.Extensions.Msal": "2.19.3",
           "System.Memory": "4.5.4",
           "System.Security.Cryptography.ProtectedData": "6.0.0",
-          "System.Text.Json": "4.7.2",
+          "System.Text.Json": "6.0.0",
           "System.Threading.Tasks.Extensions": "4.5.4"
         },
         "runtime": {
@@ -97,11 +98,35 @@
           }
         }
       },
-      "FluentValidation/11.5.2": {
+      "FluentValidation/11.0.0": {
         "runtime": {
-          "lib/net7.0/FluentValidation.dll": {
+          "lib/net6.0/FluentValidation.dll": {
             "assemblyVersion": "11.0.0.0",
-            "fileVersion": "11.5.2.0"
+            "fileVersion": "11.0.0.0"
+          }
+        }
+      },
+      "FluentValidation.AspNetCore/11.0.0": {
+        "dependencies": {
+          "FluentValidation": "11.0.0",
+          "FluentValidation.DependencyInjectionExtensions": "11.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/FluentValidation.AspNetCore.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.0.0.0"
+          }
+        }
+      },
+      "FluentValidation.DependencyInjectionExtensions/11.0.0": {
+        "dependencies": {
+          "FluentValidation": "11.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0-preview.3.23174.8"
+        },
+        "runtime": {
+          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.0.0.0"
           }
         }
       },
@@ -331,6 +356,12 @@
           }
         }
       },
+      "Microsoft.Extensions.Configuration/6.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0-preview.3.23174.8",
+          "Microsoft.Extensions.Primitives": "8.0.0-preview.3.23174.8"
+        }
+      },
       "Microsoft.Extensions.Configuration.Abstractions/8.0.0-preview.3.23174.8": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "8.0.0-preview.3.23174.8"
@@ -340,6 +371,32 @@
             "assemblyVersion": "8.0.0.0",
             "fileVersion": "8.0.23.17408"
           }
+        }
+      },
+      "Microsoft.Extensions.Configuration.FileExtensions/6.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "6.0.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0-preview.3.23174.8",
+          "Microsoft.Extensions.FileProviders.Abstractions": "6.0.0",
+          "Microsoft.Extensions.FileProviders.Physical": "6.0.0",
+          "Microsoft.Extensions.Primitives": "8.0.0-preview.3.23174.8"
+        }
+      },
+      "Microsoft.Extensions.Configuration.Json/6.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "6.0.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0-preview.3.23174.8",
+          "Microsoft.Extensions.Configuration.FileExtensions": "6.0.0",
+          "Microsoft.Extensions.FileProviders.Abstractions": "6.0.0",
+          "System.Text.Json": "6.0.0"
+        }
+      },
+      "Microsoft.Extensions.Configuration.UserSecrets/6.0.1": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0-preview.3.23174.8",
+          "Microsoft.Extensions.Configuration.Json": "6.0.0",
+          "Microsoft.Extensions.FileProviders.Abstractions": "6.0.0",
+          "Microsoft.Extensions.FileProviders.Physical": "6.0.0"
         }
       },
       "Microsoft.Extensions.DependencyInjection/8.0.0-preview.3.23174.8": {
@@ -361,6 +418,19 @@
           }
         }
       },
+      "Microsoft.Extensions.FileProviders.Abstractions/6.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "8.0.0-preview.3.23174.8"
+        }
+      },
+      "Microsoft.Extensions.FileProviders.Physical/6.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.FileProviders.Abstractions": "6.0.0",
+          "Microsoft.Extensions.FileSystemGlobbing": "6.0.0",
+          "Microsoft.Extensions.Primitives": "8.0.0-preview.3.23174.8"
+        }
+      },
+      "Microsoft.Extensions.FileSystemGlobbing/6.0.0": {},
       "Microsoft.Extensions.Logging/8.0.0-preview.3.23174.8": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "8.0.0-preview.3.23174.8",
@@ -438,7 +508,7 @@
         "dependencies": {
           "Microsoft.IdentityModel.Tokens": "6.24.0",
           "System.Text.Encoding": "4.3.0",
-          "System.Text.Json": "4.7.2"
+          "System.Text.Json": "6.0.0"
         },
         "runtime": {
           "lib/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll": {
@@ -912,7 +982,7 @@
       "System.Memory.Data/1.0.2": {
         "dependencies": {
           "System.Text.Encodings.Web": "6.0.0",
-          "System.Text.Json": "4.7.2"
+          "System.Text.Json": "6.0.0"
         },
         "runtime": {
           "lib/netstandard2.0/System.Memory.Data.dll": {
@@ -1345,7 +1415,12 @@
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         }
       },
-      "System.Text.Json/4.7.2": {},
+      "System.Text.Json/6.0.0": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0",
+          "System.Text.Encodings.Web": "6.0.0"
+        }
+      },
       "System.Text.RegularExpressions/4.3.0": {
         "dependencies": {
           "System.Runtime": "4.3.0"
@@ -1512,12 +1587,26 @@
       "path": "dapper/2.0.123",
       "hashPath": "dapper.2.0.123.nupkg.sha512"
     },
-    "FluentValidation/11.5.2": {
+    "FluentValidation/11.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-kj/hW/iusp2zq1Vt1YPLgDj6UG0DhoJXGkLwjLwm3j7vUtRF8DVA5vHJfItG3BxDjLWJUR2pvw8fK7rnuysZNA==",
-      "path": "fluentvalidation/11.5.2",
-      "hashPath": "fluentvalidation.11.5.2.nupkg.sha512"
+      "sha512": "sha512-cD0VaOQfVZGxp3UFBDET5KztMe1W0QUgk7vP/e1zus0ofALqab5/B5S319+XEFvhw0KEStS3yfCDGpvQM10C6A==",
+      "path": "fluentvalidation/11.0.0",
+      "hashPath": "fluentvalidation.11.0.0.nupkg.sha512"
+    },
+    "FluentValidation.AspNetCore/11.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Ld0kH/0BJXxF4vHlZRtpjghGA8eElOn/imgqYcFPJ602gVQcSDmsENxjHZx4kx/U89fNWwTA6Z2bcJcewm3DrQ==",
+      "path": "fluentvalidation.aspnetcore/11.0.0",
+      "hashPath": "fluentvalidation.aspnetcore.11.0.0.nupkg.sha512"
+    },
+    "FluentValidation.DependencyInjectionExtensions/11.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jBQjbAxpXWnoalvGKTLyUoArNJ1dnIpxOknENxa7XuXHMy80Gc+VNJk5OoOpVX8JfhpZkLQOaPozycGVtUo7Tg==",
+      "path": "fluentvalidation.dependencyinjectionextensions/11.0.0",
+      "hashPath": "fluentvalidation.dependencyinjectionextensions.11.0.0.nupkg.sha512"
     },
     "HtmlSanitizer/8.0.645": {
       "type": "package",
@@ -1659,12 +1748,40 @@
       "path": "microsoft.extensions.caching.redis/2.2.0",
       "hashPath": "microsoft.extensions.caching.redis.2.2.0.nupkg.sha512"
     },
+    "Microsoft.Extensions.Configuration/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tq2wXyh3fL17EMF2bXgRhU7JrbO3on93MRKYxzz4JzzvuGSA1l0W3GI9/tl8EO89TH+KWEymP7bcFway6z9fXg==",
+      "path": "microsoft.extensions.configuration/6.0.0",
+      "hashPath": "microsoft.extensions.configuration.6.0.0.nupkg.sha512"
+    },
     "Microsoft.Extensions.Configuration.Abstractions/8.0.0-preview.3.23174.8": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-MWHtyuSmaspZcGbOQxdWEmUW9VAYpD+pN4YtApbE3tu1NFiWb7ooQNBPV/g6JgGhMAo3FSmTmaK8Cirg+8hxdw==",
       "path": "microsoft.extensions.configuration.abstractions/8.0.0-preview.3.23174.8",
       "hashPath": "microsoft.extensions.configuration.abstractions.8.0.0-preview.3.23174.8.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration.FileExtensions/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-V4Dth2cYMZpw3HhGw9XUDIijpI6gN+22LDt0AhufIgOppCUfpWX4483OmN+dFXRJkJLc8Tv0Q8QK+1ingT2+KQ==",
+      "path": "microsoft.extensions.configuration.fileextensions/6.0.0",
+      "hashPath": "microsoft.extensions.configuration.fileextensions.6.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration.Json/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GJGery6QytCzS/BxJ96klgG9in3uH26KcUBbiVG/coNDXCRq6LGVVlUT4vXq34KPuM+R2av+LeYdX9h4IZOCUg==",
+      "path": "microsoft.extensions.configuration.json/6.0.0",
+      "hashPath": "microsoft.extensions.configuration.json.6.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration.UserSecrets/6.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Fy8yr4V6obi7ZxvKYI1i85jqtwMq8tqyxQVZpRSkgeA8enqy/KvBIMdcuNdznlxQMZa72mvbHqb7vbg4Pyx95w==",
+      "path": "microsoft.extensions.configuration.usersecrets/6.0.1",
+      "hashPath": "microsoft.extensions.configuration.usersecrets.6.0.1.nupkg.sha512"
     },
     "Microsoft.Extensions.DependencyInjection/8.0.0-preview.3.23174.8": {
       "type": "package",
@@ -1679,6 +1796,27 @@
       "sha512": "sha512-y66q3RrLqAw7G8Zn3M/C/eCeFUdhwNtyzh1cAiMWUu+I0rIGFKHSTLZKTzmQ3rOP894OamvknmN46sY8uWzRag==",
       "path": "microsoft.extensions.dependencyinjection.abstractions/8.0.0-preview.3.23174.8",
       "hashPath": "microsoft.extensions.dependencyinjection.abstractions.8.0.0-preview.3.23174.8.nupkg.sha512"
+    },
+    "Microsoft.Extensions.FileProviders.Abstractions/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0pd4/fho0gC12rQswaGQxbU34jOS1TPS8lZPpkFCH68ppQjHNHYle9iRuHeev1LhrJ94YPvzcRd8UmIuFk23Qw==",
+      "path": "microsoft.extensions.fileproviders.abstractions/6.0.0",
+      "hashPath": "microsoft.extensions.fileproviders.abstractions.6.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.FileProviders.Physical/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QvkL7l0nM8udt3gfyu0Vw8bbCXblxaKOl7c2oBfgGy4LCURRaL9XWZX1FWJrQc43oMokVneVxH38iz+bY1sbhg==",
+      "path": "microsoft.extensions.fileproviders.physical/6.0.0",
+      "hashPath": "microsoft.extensions.fileproviders.physical.6.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.FileSystemGlobbing/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ip8jnL1aPiaPeKINCqaTEbvBFDmVx9dXQEBZ2HOBRXPD1eabGNqP/bKlsIcp7U2lGxiXd5xIhoFcmY8nM4Hdiw==",
+      "path": "microsoft.extensions.filesystemglobbing/6.0.0",
+      "hashPath": "microsoft.extensions.filesystemglobbing.6.0.0.nupkg.sha512"
     },
     "Microsoft.Extensions.Logging/8.0.0-preview.3.23174.8": {
       "type": "package",
@@ -2415,12 +2553,12 @@
       "path": "system.text.encodings.web/6.0.0",
       "hashPath": "system.text.encodings.web.6.0.0.nupkg.sha512"
     },
-    "System.Text.Json/4.7.2": {
+    "System.Text.Json/6.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-TcMd95wcrubm9nHvJEQs70rC0H/8omiSGGpU4FQ/ZA1URIqD4pjmFJh2Mfv1yH1eHgJDWTi2hMDXwTET+zOOyg==",
-      "path": "system.text.json/4.7.2",
-      "hashPath": "system.text.json.4.7.2.nupkg.sha512"
+      "sha512": "sha512-zaJsHfESQvJ11vbXnNlkrR46IaMULk/gHxYsJphzSF+07kTjPHv+Oc14w6QEOfo3Q4hqLJgStUaYB9DBl0TmWg==",
+      "path": "system.text.json/6.0.0",
+      "hashPath": "system.text.json.6.0.0.nupkg.sha512"
     },
     "System.Text.RegularExpressions/4.3.0": {
       "type": "package",

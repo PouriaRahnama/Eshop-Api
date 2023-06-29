@@ -464,7 +464,6 @@ namespace shop.Data.Migrations
                     OrderId = table.Column<int>(type: "int", nullable: false),
                     Price = table.Column<int>(type: "int", nullable: false),
                     Count = table.Column<int>(type: "int", nullable: false),
-                    ProductId = table.Column<int>(type: "int", nullable: true),
                     Deleted = table.Column<bool>(type: "bit", nullable: false),
                     CreateON = table.Column<DateTime>(type: "datetime2", nullable: false),
                     UpdateON = table.Column<DateTime>(type: "datetime2", nullable: true)
@@ -478,11 +477,6 @@ namespace shop.Data.Migrations
                         principalTable: "Order",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_OrderItem_Product_ProductId",
-                        column: x => x.ProductId,
-                        principalTable: "Product",
-                        principalColumn: "Id");
                     table.ForeignKey(
                         name: "FK_OrderItem_SellerInventory_InventoryId",
                         column: x => x.InventoryId,
@@ -526,11 +520,6 @@ namespace shop.Data.Migrations
                 name: "IX_OrderItem_OrderId",
                 table: "OrderItem",
                 column: "OrderId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_OrderItem_ProductId",
-                table: "OrderItem",
-                column: "ProductId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_ProductCategory_CategoryID",

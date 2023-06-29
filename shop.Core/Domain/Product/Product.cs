@@ -9,7 +9,6 @@ namespace shop.Core.Domain.Product
         public string ImageName { get; set; }
         public string Description { get; set; }
 
-        public virtual ICollection<OrderItem> OrderItems { get; set; }
         public virtual ICollection<ProductCategory> ProductCategories { get; set; }
         public virtual ICollection<ProductPicture> ProductPictures { get; set; }
         public virtual ICollection<shop.Core.Domain.Comment.Comment> Comments { get; set; }

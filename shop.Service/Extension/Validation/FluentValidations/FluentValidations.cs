@@ -7,6 +7,7 @@ namespace Common.Application.Validation.FluentValidations
 {
     public static class FluentValidations
     {
+
         public static IRuleBuilderOptionsConditions<T, TProperty> JustImageFile<T, TProperty>(this IRuleBuilder<T, TProperty> ruleBuilder, string errorMessage = "شما فقط قادر به وارد کردن عکس میباشید") where TProperty : IFormFile?
         {
             return ruleBuilder.Custom((file, context) =>
@@ -18,6 +19,15 @@ namespace Common.Application.Validation.FluentValidations
                 {
                     context.AddFailure(errorMessage);
                 }
+            });
+        }
+
+        public static IRuleBuilderOptionsConditions<T, string> ValidNationalId<T>(this IRuleBuilder<T, string> ruleBuilder, string errorMessage = "کدملی نامعتبر است")
+        {
+            return ruleBuilder.Custom((nationalCode, context) =>
+            {
+                if (IranianNationalIdChecker.IsValid(nationalCode) == false)
+                    context.AddFailure(errorMessage);
             });
         }
 

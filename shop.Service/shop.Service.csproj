@@ -4,13 +4,15 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <UserSecretsId>faaf1aa8-3980-4527-9e57-c4c5cd20fd5c</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="FluentValidation" Version="11.5.2" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.0.0" />
     <PackageReference Include="HtmlSanitizer" Version="8.0.645" />
     <PackageReference Include="Mapster" Version="7.3.0" />
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="6.0.1" />
 	<PackageReference Include="System.Drawing.Common" Version="6.0.0" />
   </ItemGroup>
 

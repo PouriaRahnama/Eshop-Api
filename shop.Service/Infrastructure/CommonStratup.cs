@@ -8,6 +8,9 @@ using shop.Service.Infrastructure.Filter;
 using shop.Service.Query;
 using shop.Service.Query.Comments;
 using Shop.Query.Products.GetForShop;
+using FluentValidation.AspNetCore;
+using System.Reflection;
+using FluentValidation;
 
 namespace shop.Service.Infrastructure
 {
@@ -35,6 +38,14 @@ namespace shop.Service.Infrastructure
             services.AddScoped<SliderQueryService, SliderQueryService>();
             services.AddScoped<UserQueryService, UserQueryService>();
             services.AddScoped<GetProductsForShopQuery, GetProductsForShopQuery>();
+
+            services.AddFluentValidation(options =>
+                {
+                    options.ImplicitlyValidateChildProperties = true;
+                    options.ImplicitlyValidateRootCollectionElements = true;
+
+                    options.RegisterValidatorsFromAssembly(Assembly.GetExecutingAssembly());
+                });
         }
         
         public void Configure(IApplicationBuilder app)

@@ -8,6 +8,7 @@ using Shop.Api.Infrastructure.JwtUtil;
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.ConfigureApplicationServices(builder.Configuration);
 
+
 builder.Services.AddTransient<IFileService, FileService>();
 builder.Services.AddJwtAuthentication(builder.Configuration);
 builder.Services.RegisterApiDependency();

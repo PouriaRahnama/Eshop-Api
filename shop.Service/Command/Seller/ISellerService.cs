@@ -1,5 +1,4 @@
-﻿using shop.Service.DTOs.CategoryCommand;
-using shop.Service.DTOs.SellerCommand;
+﻿using shop.Service.DTOs.SellerCommand;
 using shop.Service.Extension.Util;
 
 namespace shop.Service.Command

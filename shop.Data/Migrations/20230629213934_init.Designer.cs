@@ -12,7 +12,7 @@ using shop.Data.ApplicationContext;
 namespace shop.Data.Migrations
 {
     [DbContext(typeof(SqlServerApplicationContext))]
-    [Migration("20230629115004_init")]
+    [Migration("20230629213934_init")]
     partial class init
     {
         /// <inheritdoc />
@@ -221,9 +221,6 @@ namespace shop.Data.Migrations
                     b.Property<int>("Price")
                         .HasColumnType("int");
 
-                    b.Property<int?>("ProductId")
-                        .HasColumnType("int");
-
                     b.Property<DateTime?>("UpdateON")
                         .HasColumnType("datetime2");
 
@@ -232,8 +229,6 @@ namespace shop.Data.Migrations
                     b.HasIndex("InventoryId");
 
                     b.HasIndex("OrderId");
-
-                    b.HasIndex("ProductId");
 
                     b.ToTable("OrderItem");
                 });
@@ -786,10 +781,6 @@ namespace shop.Data.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("shop.Core.Domain.Product.Product", null)
-                        .WithMany("OrderItems")
-                        .HasForeignKey("ProductId");
-
                     b.Navigation("Inventory");
 
                     b.Navigation("Order");
@@ -949,8 +940,6 @@ namespace shop.Data.Migrations
             modelBuilder.Entity("shop.Core.Domain.Product.Product", b =>
                 {
                     b.Navigation("Comments");
-
-                    b.Navigation("OrderItems");
 
                     b.Navigation("ProductCategories");
 
