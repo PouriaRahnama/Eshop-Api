@@ -9,6 +9,7 @@ namespace shop.Data.Mapping
     {
         public void Configure(EntityTypeBuilder<SellerInventory> builder)
         {
+            builder.HasKey(x => x.Id);
             builder.HasMany(p => p.OrderItems)
                 .WithOne(p => p.Inventory)
                 .HasForeignKey(p => p.InventoryId)

@@ -9,7 +9,7 @@ namespace shop.Data.Mapping
     {
         public void Configure(EntityTypeBuilder<ProductSpecification> builder)
         {
-
+            builder.HasKey(x => x.Id);
         }
     }
 }

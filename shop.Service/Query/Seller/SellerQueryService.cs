@@ -43,7 +43,26 @@ namespace shop.Service.Query
             sellerResult.GeneratePaging(result, @params.Take, @params.PageId);
             return sellerResult;
         }
+      
+        public async Task<SellerDto?> GetSellerByUserId(int UserId)
+        {
+            var seller = await _Context.Set<Seller>().FirstOrDefaultAsync(f => f.UserId == UserId);
+            return seller.Map();
+        }
 
+        public async Task<InventoryDto?> GetSellerInventoryById(int InventoryId)
+        {
+            var inventory = await _Context.Set<SellerInventory>().FirstOrDefaultAsync(i => i.Id == InventoryId);
+   
+            return inventory.InventoryMap();
+        }
+
+        public async Task<List<InventoryDto>> GetAllInventories(int SellerId)
+        {
+            var inventory = await _Context.Set<SellerInventory>().Where(i => i.SellerId == SellerId).ToListAsync();
+
+            return inventory.GetAllInventoryMap();         
+        }
 
     }
 }

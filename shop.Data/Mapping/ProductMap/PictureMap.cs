@@ -9,7 +9,7 @@ namespace shop.Data.Mapping
 
         public void Configure(EntityTypeBuilder<Picture> builder)
         {
-
+            builder.HasKey(x => x.Id);
         }
     }
 }

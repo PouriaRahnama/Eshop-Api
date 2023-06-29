@@ -28,3 +28,379 @@
 2023-06-29 11:36:05.903 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executed
 2023-06-29 11:37:32.499 +03:30 [ERR] shop.Web.Controllers.Order.OrderController.GetOrderByFilter (shop.Web) Executing
 2023-06-29 11:37:32.581 +03:30 [ERR] shop.Web.Controllers.Order.OrderController.GetOrderByFilter (shop.Web) Executed
+2023-06-29 14:06:09.909 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.GetSellerInventoryById (shop.Web) Executing
+2023-06-29 14:06:14.434 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'shop.Data.ApplicationContext.SqlServerApplicationContext'.
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method100(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method100(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2023-06-29 14:06:14.445 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.GetSellerInventoryById (shop.Web) Executed
+2023-06-29 14:06:14.460 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method100(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method101(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Load(INavigation navigation, InternalEntityEntry entry, Boolean forceIdentityResolution)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.ReferenceEntry.Load()
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.LazyLoader.Load(Object entity, String navigationName)
+   at Microsoft.EntityFrameworkCore.Proxies.Internal.LazyLoadingInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.SellerInventoryProxy.get_Seller()
+   at shop.Service.Query.SellerQueryMapper.InventoryMap(SellerInventory Inventory) in D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-21\Eshop-Api\shop.Service\Query\Seller\SellerQueryMapper.cs:line 28
+   at shop.Service.Query.SellerQueryService.GetSellerInventoryById(Int32 InventoryId) in D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-21\Eshop-Api\shop.Service\Query\Seller\SellerQueryService.cs:line 57
+   at shop.Web.Controllers.Seller.SellerController.GetSellerInventoryById(Int32 inventoryId) in D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-21\Eshop-Api\shop.Web\Controllers\Seller\SellerController.cs:line 79
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-06-29 14:07:07.012 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.GetSellerInventoryById (shop.Web) Executing
+2023-06-29 14:07:36.183 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'shop.Data.ApplicationContext.SqlServerApplicationContext'.
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2023-06-29 14:07:48.177 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'shop.Data.ApplicationContext.SqlServerApplicationContext'.
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2023-06-29 14:07:54.078 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'shop.Data.ApplicationContext.SqlServerApplicationContext'.
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2023-06-29 14:08:11.925 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'shop.Data.ApplicationContext.SqlServerApplicationContext'.
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2023-06-29 14:08:14.599 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'shop.Data.ApplicationContext.SqlServerApplicationContext'.
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2023-06-29 14:08:25.391 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'shop.Data.ApplicationContext.SqlServerApplicationContext'.
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2023-06-29 14:08:30.475 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'shop.Data.ApplicationContext.SqlServerApplicationContext'.
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2023-06-29 14:09:40.610 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'shop.Data.ApplicationContext.SqlServerApplicationContext'.
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2023-06-29 14:10:12.570 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'shop.Data.ApplicationContext.SqlServerApplicationContext'.
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2023-06-29 14:10:13.091 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'shop.Data.ApplicationContext.SqlServerApplicationContext'.
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2023-06-29 14:10:14.484 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'shop.Data.ApplicationContext.SqlServerApplicationContext'.
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2023-06-29 14:10:22.037 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'shop.Data.ApplicationContext.SqlServerApplicationContext'.
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2023-06-29 14:10:23.600 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'shop.Data.ApplicationContext.SqlServerApplicationContext'.
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2023-06-29 14:10:34.694 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'shop.Data.ApplicationContext.SqlServerApplicationContext'.
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2023-06-29 14:10:40.790 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'shop.Data.ApplicationContext.SqlServerApplicationContext'.
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2023-06-29 14:12:06.171 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'shop.Data.ApplicationContext.SqlServerApplicationContext'.
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2023-06-29 14:12:14.512 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'shop.Data.ApplicationContext.SqlServerApplicationContext'.
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2023-06-29 14:12:15.622 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'shop.Data.ApplicationContext.SqlServerApplicationContext'.
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2023-06-29 14:12:18.956 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'shop.Data.ApplicationContext.SqlServerApplicationContext'.
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2023-06-29 14:12:20.612 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'shop.Data.ApplicationContext.SqlServerApplicationContext'.
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2023-06-29 14:12:28.310 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'shop.Data.ApplicationContext.SqlServerApplicationContext'.
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2023-06-29 14:12:49.807 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'shop.Data.ApplicationContext.SqlServerApplicationContext'.
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2023-06-29 14:15:37.225 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.GetSellerInventoryById (shop.Web) Executing
+2023-06-29 14:16:11.942 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.GetSellerInventoryById (shop.Web) Executing
+2023-06-29 14:16:26.946 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'shop.Data.ApplicationContext.SqlServerApplicationContext'.
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2023-06-29 14:16:39.397 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'shop.Data.ApplicationContext.SqlServerApplicationContext'.
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2023-06-29 14:16:53.648 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'shop.Data.ApplicationContext.SqlServerApplicationContext'.
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2023-06-29 14:17:10.402 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'shop.Data.ApplicationContext.SqlServerApplicationContext'.
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2023-06-29 14:18:21.850 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'shop.Data.ApplicationContext.SqlServerApplicationContext'.
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2023-06-29 14:18:22.062 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.GetSellerInventoryById (shop.Web) Executed
+2023-06-29 14:18:22.084 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Cannot convert string value 'Active' from the database to any value in the mapped 'SellerStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method198(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method199(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Load(INavigation navigation, InternalEntityEntry entry, Boolean forceIdentityResolution)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.ReferenceEntry.Load()
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.LazyLoader.Load(Object entity, String navigationName)
+   at Microsoft.EntityFrameworkCore.Proxies.Internal.LazyLoadingInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.SellerInventoryProxy.get_Seller()
+   at shop.Service.Query.SellerQueryMapper.InventoryMap(SellerInventory Inventory) in D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-21\Eshop-Api\shop.Service\Query\Seller\SellerQueryMapper.cs:line 28
+   at shop.Service.Query.SellerQueryService.GetSellerInventoryById(Int32 InventoryId) in D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-21\Eshop-Api\shop.Service\Query\Seller\SellerQueryService.cs:line 57
+   at shop.Web.Controllers.Seller.SellerController.GetSellerInventoryById(Int32 inventoryId) in D:\انتقالی\Project Eshop-WebApi\Eshop-WebApi-21\Eshop-Api\shop.Web\Controllers\Seller\SellerController.cs:line 79
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-06-29 14:21:30.218 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.AddSeller (shop.Web) Executing
+2023-06-29 14:21:33.839 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.AddSeller (shop.Web) Executed
+2023-06-29 14:24:54.661 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.AddInventory (shop.Web) Executing
+2023-06-29 14:24:58.842 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.AddInventory (shop.Web) Executed
+2023-06-29 14:26:14.312 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.GetSellerInventoryById (shop.Web) Executing
+2023-06-29 14:26:49.798 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.GetSellerInventoryById (shop.Web) Executed
+2023-06-29 14:28:02.987 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.GetAllSellerInventory (shop.Web) Executing
+2023-06-29 14:28:03.088 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.GetAllSellerInventory (shop.Web) Executed
+2023-06-29 14:28:17.831 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.GetAllSellerInventory (shop.Web) Executing
+2023-06-29 14:28:17.923 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.GetAllSellerInventory (shop.Web) Executed
+2023-06-29 14:28:18.255 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.GetAllSellerInventory (shop.Web) Executing
+2023-06-29 14:28:18.400 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.GetAllSellerInventory (shop.Web) Executed
+2023-06-29 14:29:08.612 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.GetAllSellerInventory (shop.Web) Executing
+2023-06-29 14:29:34.693 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.GetAllSellerInventory (shop.Web) Executed
+2023-06-29 14:56:24.496 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executing
+2023-06-29 14:56:31.261 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executed
+2023-06-29 14:57:49.244 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.GetSellerInventoryById (shop.Web) Executing
+2023-06-29 14:58:54.622 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.GetSellerInventoryById (shop.Web) Executed
+2023-06-29 14:59:28.594 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.GetAllSellerInventory (shop.Web) Executing
+2023-06-29 14:59:58.723 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.GetAllSellerInventory (shop.Web) Executed
+2023-06-29 15:02:01.628 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.GetAllSellerInventory (shop.Web) Executing
+2023-06-29 15:02:16.844 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.GetAllSellerInventory (shop.Web) Executed
+2023-06-29 15:03:07.934 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Logout (shop.Web) Executing
+2023-06-29 15:03:08.280 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Logout (shop.Web) Executed
+2023-06-29 15:03:23.757 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) Executing
+2023-06-29 15:03:23.965 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) Executed
+2023-06-29 15:03:58.778 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.GetSellerById (shop.Web) Executing
+2023-06-29 15:03:58.889 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.GetSellerById (shop.Web) Executed
+2023-06-29 16:42:26.591 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Register (shop.Web) Executing
+2023-06-29 16:42:29.021 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Register (shop.Web) Executed
+2023-06-29 16:42:42.487 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executing
+2023-06-29 16:42:43.621 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executed
+2023-06-29 16:43:23.837 +03:30 [ERR] shop.Web.Controllers.User.UserController.GetCurrentUser (shop.Web) Executing
+2023-06-29 16:43:25.141 +03:30 [ERR] shop.Web.Controllers.User.UserController.GetCurrentUser (shop.Web) Executed
+2023-06-29 16:47:26.477 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.AddSeller (shop.Web) Executing
+2023-06-29 16:47:28.526 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.AddSeller (shop.Web) Executed
+2023-06-29 16:49:44.661 +03:30 [ERR] shop.Web.Controllers.Product.ProductController.AddProduct (shop.Web) Executing
+2023-06-29 16:49:47.799 +03:30 [ERR] shop.Web.Controllers.Product.ProductController.AddProduct (shop.Web) Executed
+2023-06-29 16:50:21.577 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.AddInventory (shop.Web) Executing
+2023-06-29 16:50:22.483 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.AddInventory (shop.Web) Executed
+2023-06-29 16:50:41.653 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.GetSellerInventoryById (shop.Web) Executing
+2023-06-29 16:50:41.690 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.GetSellerInventoryById (shop.Web) Executed
+2023-06-29 16:51:10.749 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.GetSellerInventoryById (shop.Web) Executing
+2023-06-29 16:51:10.852 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.GetSellerInventoryById (shop.Web) Executed
+2023-06-29 16:51:19.454 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.GetAllSellerInventory (shop.Web) Executing
+2023-06-29 16:51:19.501 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.GetAllSellerInventory (shop.Web) Executed
+2023-06-29 16:53:55.061 +03:30 [ERR] shop.Web.Controllers.Order.OrderController.AddOrderItem (shop.Web) Executing
+2023-06-29 16:53:55.499 +03:30 [ERR] shop.Web.Controllers.Order.OrderController.AddOrderItem (shop.Web) Executed

@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using IntelliTect.Coalesce.Utilities;
+using Microsoft.AspNetCore.Mvc;
 using shop.Core.Domain.Role;
 using shop.Frameworks.Commons;
 using shop.Service.Command;
 using shop.Service.DTOs.SellerCommand;
 using shop.Service.Query;
 using Shop.Api.Infrastructure.JwtUtil;
+using System.Security.Claims;
 
 namespace shop.Web.Controllers.Seller;
 
@@ -71,6 +73,37 @@ public class SellerController : ShopController
     {
         var result = await _sellerService.RemoveInventory(command);
         return CommandResult(result);
+    }
+
+    [PermissionChecker(Permission.Seller_Panel)]
+    [HttpGet("GetSellerInventoryById/{inventoryId}*")]
+    public async Task<ApiResult<InventoryDto?>> GetSellerInventoryById(int inventoryId)
+    {
+        var userId = Convert.ToInt32(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
+        var seller = await _sellerQueryService.GetSellerByUserId(userId);
+        if (seller == null)
+            return QueryResult(new InventoryDto());
+
+        var result = await _sellerQueryService.GetSellerInventoryById(inventoryId);
+
+        if (result == null || result.SellerId != seller.Id)
+            return QueryResult(new InventoryDto());
+
+        return QueryResult(result);
+
+    }
+
+    [PermissionChecker(Permission.Seller_Panel)]
+    [HttpGet("GetAllSellerInventory")]
+    public async Task<ApiResult<List<InventoryDto?>>> GetAllSellerInventory()
+    {
+        var userId = Convert.ToInt32(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
+        var seller = await _sellerQueryService.GetSellerByUserId(userId);
+        if (seller == null)
+            return QueryResult(new List<InventoryDto>());
+
+        var result = await _sellerQueryService.GetAllInventories(seller.Id);
+        return QueryResult(result);
     }
 }
 

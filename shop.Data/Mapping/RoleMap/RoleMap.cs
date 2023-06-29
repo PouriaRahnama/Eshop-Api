@@ -8,8 +8,7 @@ namespace shop.Data.Mapping.RoleMap
     {
         public void Configure(EntityTypeBuilder<Role> builder)
         {
-
-
+            builder.HasKey(x => x.Id);
         }
     }
 }

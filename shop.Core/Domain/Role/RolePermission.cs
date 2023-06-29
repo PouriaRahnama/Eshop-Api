@@ -42,6 +42,8 @@ namespace shop.Core.Domain.Role
         //14
         Edit_Inventory,
         //15
-        User_Management
+        User_Management,
+        //16
+        Seller_Panel
     }
 }

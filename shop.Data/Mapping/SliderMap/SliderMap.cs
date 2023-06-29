@@ -8,8 +8,7 @@ namespace shop.Data.Mapping.SliderMap
     {
         public void Configure(EntityTypeBuilder<Slider> builder)
         {
-
-
+            builder.HasKey(x => x.Id);
         }
     }
 }

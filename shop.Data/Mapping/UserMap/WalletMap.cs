@@ -12,7 +12,7 @@ namespace shop.Data.Mapping.UserMap
         {
             //builder.Ignore(c => c.Status);
 
-
+            builder.HasKey(x => x.Id);
             builder.Property(d => d.Status)
                  .HasConversion(new EnumToStringConverter<WalletType>());
         }

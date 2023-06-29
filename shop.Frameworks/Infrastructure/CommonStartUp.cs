@@ -5,6 +5,8 @@ using Microsoft.Extensions.DependencyInjection;
 using shop.Core.Infrastructure;
 using Microsoft.Extensions.Hosting;
 using shop.Service.Middleware;
+using Microsoft.OpenApi.Models;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 namespace shop.Framework.Infrastructure
 {
@@ -13,8 +15,31 @@ namespace shop.Framework.Infrastructure
         public MiddleWarePriority Priority => MiddleWarePriority.Normal;
         public void ConfigureServices(IServiceCollection services, IConfiguration configuration)
         {           
-            services.AddSwaggerGen();
+            services.AddSwaggerGen(option =>
+            {
+                var jwtSecurityScheme = new OpenApiSecurityScheme
+                {
+                    Scheme = "bearer",
+                    BearerFormat = "JWT",
+                    Name = "JWT Authentication",
+                    In = ParameterLocation.Header,
+                    Type = SecuritySchemeType.Http,
+                    Description = "Enter Token",
 
+                    Reference = new OpenApiReference
+                    {
+                        Id = JwtBearerDefaults.AuthenticationScheme,
+                        Type = ReferenceType.SecurityScheme
+                    }
+                };
+
+                option.AddSecurityDefinition(jwtSecurityScheme.Reference.Id, jwtSecurityScheme);
+
+                option.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        { jwtSecurityScheme, Array.Empty<string>() }
+    });
+            });
             services.AddScoped<IErrorHandler, ErrorHandler>();
         }
 
@@ -24,6 +49,7 @@ namespace shop.Framework.Infrastructure
             if (env.IsDevelopment())
             {
                 app.UseSwagger();
+
                 app.UseSwaggerUI(c =>
 
                         c.SwaggerEndpoint("/swagger/v1/swagger.json", "Shop API V1")

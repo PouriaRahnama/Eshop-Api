@@ -469,7 +469,8 @@ namespace shop.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex("UserId")
+                        .IsUnique();
 
                     b.ToTable("Seller");
                 });
@@ -854,8 +855,8 @@ namespace shop.Data.Migrations
             modelBuilder.Entity("shop.Core.Domain.Seller.Seller", b =>
                 {
                     b.HasOne("shop.Core.Domain.User.User", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId")
+                        .WithOne("Seller")
+                        .HasForeignKey("shop.Core.Domain.Seller.Seller", "UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -977,6 +978,9 @@ namespace shop.Data.Migrations
                     b.Navigation("Orders");
 
                     b.Navigation("Roles");
+
+                    b.Navigation("Seller")
+                        .IsRequired();
 
                     b.Navigation("UserToken");
 
