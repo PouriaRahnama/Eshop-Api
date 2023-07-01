@@ -7,25 +7,25 @@ namespace shop.Service.Query
     public class OrderQueryDto : BaseDto
     {
         public int UserId { get; set; }
-        public string UserFullName { get; set; }
+        public string? UserFullName { get; set; }
         public OrderStatus Status { get; set; }
         public int? Discount { get; set; }
         public DateTime? LastUpdate { get; set; }
         public List<OrderItemDto> OrderItem { get; set; }
         public int OrderTotal { get; set; }
-        public string Shire { get; set; }
-        public string City { get; set; }
-        public string PostalCode { get; set; }
-        public string PostalAddress { get; set; }
-        public string PhoneNumber { get; set; }
-        public string NationalCode { get; set; }
+        public string? Shire { get; set; }
+        public string? City { get; set; }
+        public string? PostalCode { get; set; }
+        public string? PostalAddress { get; set; }
+        public string? PhoneNumber { get; set; }
+        public string? NationalCode { get; set; }
     }
 
     public class OrderItemDto : BaseDto
     {
-        public string ProductName { get; set; }
-        public string ProductImageName { get; set; }
-        public string ShopName { get; set; }
+        public string? ProductName { get; set; }
+        public string? ProductImageName { get; set; }
+        public string? ShopName { get; set; }
         public long OrderId { get; set; }
         public long InventoryId { get; set; }
         public int Count { get; set; }
@@ -36,8 +36,8 @@ namespace shop.Service.Query
     public class OrderFilterData : BaseDto
     {
         public long UserId { get; set; }
-        public string Name { get; set; }
-        public string Family { get; set; }
+        public string? Name { get; set; }
+        public string? Family { get; set; }
         public OrderStatus Status { get; set; }
         public string? Shire { get; set; }
         public string? City { get; set; }

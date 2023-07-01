@@ -1,2 +1,6 @@
 2023-07-01 16:40:14.746 +03:30 [ERR] shop.Web.Controllers.Product.ProductController.GetProductForShopFilter (shop.Web) Executing
 2023-07-01 16:40:17.407 +03:30 [ERR] shop.Web.Controllers.Product.ProductController.GetProductForShopFilter (shop.Web) Executed
+2023-07-01 23:01:52.129 +03:30 [ERR] shop.Web.Controllers.Order.OrderController.GetOrderById (shop.Web) Executing
+2023-07-01 23:01:52.465 +03:30 [ERR] shop.Web.Controllers.Order.OrderController.GetOrderById (shop.Web) Executed
+2023-07-01 23:02:50.056 +03:30 [ERR] shop.Web.Controllers.Order.OrderController.GetOrderById (shop.Web) Executing
+2023-07-01 23:02:50.086 +03:30 [ERR] shop.Web.Controllers.Order.OrderController.GetOrderById (shop.Web) Executed

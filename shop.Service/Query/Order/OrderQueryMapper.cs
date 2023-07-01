@@ -15,16 +15,16 @@ namespace shop.Service.Query
                 CreationDate = order.CreateON,
                 Id = order.Id,
                 Status = order.Status,
-                Discount = order.Discount,
-                LastUpdate = order.UpdateON,
+                Discount = order?.Discount,
+                LastUpdate = order?.UpdateON,
                 UserFullName = "",
                 UserId = order.UserId,
-                City = order.Addresses.City,
-                NationalCode = order.Addresses.NationalCode,
-                PhoneNumber = order.Addresses.PhoneNumber,
-                PostalAddress = order.Addresses.PostalAddress,
-                PostalCode = order.Addresses.PostalCode,
-                Shire = order.Addresses.Shire,
+                City = order.Addresses?.City,
+                NationalCode = order.Addresses?.NationalCode,
+                PhoneNumber = order.Addresses?.PhoneNumber,
+                PostalAddress = order.Addresses?.PostalAddress,
+                PostalCode = order.Addresses?.PostalCode,
+                Shire = order.Addresses?.Shire,
                 OrderTotal = order.OrderTotal,
                 OrderItem = new()
             };
@@ -48,7 +48,9 @@ namespace shop.Service.Query
                     Id = orderItem.Id,
                     Price = orderItem.Price,
                     OrderId = orderItem.OrderId,
-                    ProductName = orderItem.Inventory.Product.Name
+                    ProductName = orderItem.Inventory.Product.Name,
+                    ProductImageName = orderItem.Inventory.Product.ImageName
+
                 });               
             });
             return list;
