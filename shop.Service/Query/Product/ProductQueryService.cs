@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using shop.Core.Domain.Product;
 using shop.Data.ApplicationContext;
 
 namespace shop.Service.Query
@@ -15,7 +14,7 @@ namespace shop.Service.Query
 
         public async Task<ProductQueryDto?> GetProductById(int productId)
         {
-            var product = await _Context.Set<Product>().Where(s => s.Deleted == false)
+            var product = await _Context.Set<shop.Core.Domain.Product.Product>().Where(s => s.Deleted == false)
                 .FirstOrDefaultAsync(f => f.Id == productId);
 
             var model = product.Map();
@@ -28,7 +27,7 @@ namespace shop.Service.Query
         public async Task<ProductFilterResult> GetProductByFilter(ProductFilterParams request)
         {
             var @params = request;
-            var result = _Context.Set<Product>().OrderByDescending(d => d.Id).AsQueryable();
+            var result = _Context.Set<shop.Core.Domain.Product.Product>().OrderByDescending(d => d.Id).AsQueryable();
 
             if (!string.IsNullOrWhiteSpace(@params.Title))
                 result = result.Where(r => r.Name.Contains(@params.Title));

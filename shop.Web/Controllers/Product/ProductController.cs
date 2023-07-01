@@ -6,9 +6,8 @@ using shop.Frameworks.Commons;
 using shop.Service.Command;
 using shop.Service.DTOs.ProductCommand;
 using shop.Service.Query;
+using shop.Service.Query.Product.GetForShop;
 using Shop.Api.Infrastructure.JwtUtil;
-using Shop.Query.Products.DTOs;
-using Shop.Query.Products.GetForShop;
 
 namespace shop.Web.Controllers.Product;
 

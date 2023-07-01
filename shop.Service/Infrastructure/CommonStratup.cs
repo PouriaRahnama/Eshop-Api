@@ -7,10 +7,10 @@ using shop.Service.Command;
 using shop.Service.Infrastructure.Filter;
 using shop.Service.Query;
 using shop.Service.Query.Comments;
-using Shop.Query.Products.GetForShop;
 using FluentValidation.AspNetCore;
 using System.Reflection;
 using FluentValidation;
+using shop.Service.Query.Product.GetForShop;
 
 namespace shop.Service.Infrastructure
 {

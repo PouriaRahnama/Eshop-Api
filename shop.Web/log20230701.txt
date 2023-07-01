@@ -1,0 +1,2 @@
+2023-07-01 16:40:14.746 +03:30 [ERR] shop.Web.Controllers.Product.ProductController.GetProductForShopFilter (shop.Web) Executing
+2023-07-01 16:40:17.407 +03:30 [ERR] shop.Web.Controllers.Product.ProductController.GetProductForShopFilter (shop.Web) Executed
