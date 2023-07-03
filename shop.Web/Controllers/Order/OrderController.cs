@@ -21,56 +21,56 @@ public class OrderController : ShopController
     }
 
     [PermissionChecker(Permission.Order_Management)]
-    [HttpGet("GetOrderByFilter*")]
+    [HttpGet("OrderFilter")]
     public async Task<ApiResult<OrderFilterResult>> GetOrderByFilter([FromQuery] OrderFilterParams filterParams)
     {
         var result = await _orderQueryService.GetOrderByFilter(filterParams);
         return QueryResult(result);
     }
 
-    [HttpGet("{orderId}*")]
-    public async Task<ApiResult<OrderQueryDto?>> GetOrderById(int orderId)
+    [HttpGet("{Id}")]
+    public async Task<ApiResult<OrderQueryDto?>> GetOrderById(int Id)
     {
-        var result = await _orderQueryService.GetOrderById(orderId);
+        var result = await _orderQueryService.GetOrderById(Id);
         return QueryResult(result);
     }
 
-    [HttpPost("AddOrderItem*")]
+    [HttpPost("OrderItem")]
     public async Task<ApiResult> AddOrderItem(CreateOrderItemDto command)
     {
         var result = await _orderService.AddOrderItem(command);
         return CreatedResult(result, null);
     }
 
-    [HttpPost("AddOrderAddress*")]
+    [HttpPost("OrderAddress")]
     public async Task<ApiResult> AddOrderAddress(AddOrderAddressDto command)
     {
         var result = await _orderService.AddOrderAddress(command);
         return CommandResult(result);
     }
 
-    [HttpDelete("RemoveOrderAddress*")]
+    [HttpDelete("OrderAddress")]
     public async Task<ApiResult> RemoveOrderAddress(RemoveOrderAddressDto command)
     {
         var result = await _orderService.RemoveOrderAddress(command);
         return CommandResult(result);
     }
 
-    [HttpPut("orderItem/IncreaseCount*")]
+    [HttpPut("orderItem/IncreaseCount")]
     public async Task<ApiResult> IncreaseOrderItem(IncreaseOrderItemCountDto command)
     {
         var result = await _orderService.IncreaseOrderItem(command);
         return CommandResult(result);
     }
 
-    [HttpPut("orderItem/DecreaseCount*")]
+    [HttpPut("orderItem/DecreaseCount")]
     public async Task<ApiResult> DecreaseOrderItemCount(DecreaseOrderItemCountDto command)
     {
         var result = await _orderService.DecreaseOrderItem(command);
         return CommandResult(result);
     }
 
-    [HttpDelete("orderItem*")]
+    [HttpDelete("orderItem")]
     public async Task<ApiResult> RemoveOrderItem(RemoveOrderItemDto command)
     {
         var result = await _orderService.RemoveOrderItem(command);

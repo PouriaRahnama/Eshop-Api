@@ -33,7 +33,7 @@ public class UserController : ShopController
     }
 
     [PermissionChecker(Permission.User_Management)]
-    [HttpGet("GetUserByFilter")]
+    [HttpGet("UserFilter")]
     public async Task<ApiResult<UserFilterResult>> GetUserByFilter([FromQuery] UserFilterParams filterParams)
     {
         var result = await _userQueryService.GetUserByFilter(filterParams);
@@ -41,15 +41,15 @@ public class UserController : ShopController
     }
 
     [PermissionChecker(Permission.User_Management)]
-    [HttpGet("{userId}")]
-    public async Task<ApiResult<UserDto?>> GetById(int userId)
+    [HttpGet("{Id}")]
+    public async Task<ApiResult<UserDto?>> GetById(int Id)
     {
-        var result = await _userQueryService.GetUserById(userId);
+        var result = await _userQueryService.GetUserById(Id);
         return QueryResult(result);
     }
 
     [PermissionChecker(Permission.User_Management)]
-    [HttpGet("GetUserByPhoneNumber")]
+    [HttpGet("UserByPhoneNumber")]
     public async Task<ApiResult<UserDto?>> GetUserByPhoneNumber(string PhoneNumber)
     {
         var result = await _userQueryService.GetUserByPhoneNumber(PhoneNumber);
@@ -57,7 +57,7 @@ public class UserController : ShopController
     }
 
     [PermissionChecker(Permission.User_Management)]
-    [HttpPost("AddUser")]
+    [HttpPost]
     public async Task<ApiResult> AddUser(CreateUserDto command)
     {
         var result = await _userService.AddUser(command);
@@ -65,7 +65,7 @@ public class UserController : ShopController
     }
 
     [PermissionChecker(Permission.User_Management)]
-    [HttpPut("EditUser")]
+    [HttpPut]
     public async Task<ApiResult> EditUser([FromForm] EditUserDto command)
     {
         var result = await _userService.EditUser(command);
@@ -73,7 +73,7 @@ public class UserController : ShopController
     }
 
     [PermissionChecker(Permission.User_Management)]
-    [HttpPost("AddUserRole")]
+    [HttpPost("UserRole")]
     public async Task<ApiResult> AddUserRole(AddUserRoleDto command)
     {
         var result = await _userService.AddUserRole(command);
@@ -81,7 +81,7 @@ public class UserController : ShopController
     }
 
     [PermissionChecker(Permission.User_Management)]
-    [HttpDelete("RemoveUserRole")]
+    [HttpDelete("UserRole")]
     public async Task<ApiResult> RemoveUserRole(RemoveUserRoleDto command)
     {
         var result = await _userService.RemoveUserRole(command);

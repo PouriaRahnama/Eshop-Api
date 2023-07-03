@@ -29,42 +29,42 @@ public class ProductController : ShopController
         _getProductsForShopQuery = getProductsForShopQuery;
     }
 
-    [HttpPost("AddProductCategory*")]
+    [HttpPost("ProductCategory")]
     public async Task<ApiResult> AddProductCategory(AddProductCategoryDto command)
     {
         var result = await _productService.AddProductCategory(command);
         return CreatedResult(result, null);
     }
 
-    [HttpPost("AddProductPicture*")]
+    [HttpPost("ProductPicture")]
     public async Task<ApiResult> AddProductPicture(AddProductPictureDto command)
     {
         var result = await _productService.AddProductPicture(command);
         return CommandResult(result);
     }
 
-    [HttpPost("AddProductSpecification*")]
+    [HttpPost("ProductSpecification")]
     public async Task<ApiResult> AddProductSpecification(AddProductSpecificationDto command)
     {
         var result = await _productService.AddProductSpecification(command);
         return CommandResult(result);
     }
 
-    [HttpPost("AddPicture*")]
+    [HttpPost("Picture")]
     public async Task<ApiResult> AddPicture([FromForm] CreatePictureDto command)
     {
         var result = await _productService.AddPicture(command);
         return CommandResult(result);
     }
 
-    [HttpPost("AddProduct*")]
+    [HttpPost]
     public async Task<ApiResult> AddProduct([FromForm] CreateProductDto command)
     {
         var result = await _productService.AddProduct(command);
         return CommandResult(result);
     }
 
-    [HttpGet("{productId}*")]
+    [HttpGet("{productId}")]
     public async Task<ApiResult<ProductQueryDto?>> GetProductById(int productId)
     {
         var product = await _productQueryService.GetProductById(productId);
@@ -72,7 +72,7 @@ public class ProductController : ShopController
         return QueryResult(product);
     }
 
-    [HttpPut("UpdateProduct*")]
+    [HttpPut]
     public async Task<ApiResult> UpdateProduct([FromForm] EditProductDto command)
     {
         var result = await _productService.UpdateProduct(command);
@@ -80,34 +80,34 @@ public class ProductController : ShopController
     }
 
     [AllowAnonymous]
-    [HttpGet("GetProductByFilter*")]
+    [HttpGet("ProductFilter")]
     public async Task<ApiResult<ProductFilterResult>> GetProductByFilter([FromQuery] ProductFilterParams filterParams)
     {
         return QueryResult(await _productQueryService.GetProductByFilter(filterParams));
     }
 
-    [HttpDelete("RemovePicture*")]
+    [HttpDelete]
     public async Task<ApiResult> RemovePicture([FromForm] RemovePictureDto command)
     {
         var result = await _productService.RemovePicture(command);
         return CommandResult(result);
     }
 
-    [HttpDelete("RemoveProductCategory*")]
+    [HttpDelete("ProductCategory")]
     public async Task<ApiResult> RemoveProductCategory(RemoveProductCategoryDto command)
     {
         var result = await _productService.RemoveProductCategory(command);
         return CommandResult(result);
     }
 
-    [HttpDelete("RemoveProductPicture*")]
+    [HttpDelete("ProductPicture")]
     public async Task<ApiResult> RemoveProductPicture(RemoveProductPictureDto command)
     {
         var result = await _productService.RemoveProductPicture(command);
         return CommandResult(result);
     }
 
-    [HttpDelete("RemoveProductSpecification*")]
+    [HttpDelete("ProductSpecification")]
     public async Task<ApiResult> RemoveProductSpecification(RemoveProductSpecificationDto command)
     {
         var result = await _productService.RemoveProductSpecification(command);

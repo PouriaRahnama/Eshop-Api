@@ -30,14 +30,14 @@ public class CategoryController : ShopController
     }
 
     [AllowAnonymous]
-    [HttpGet("{id}")]
-    public async Task<ApiResult<CategoryQueryDto>> GetCategoryById(int id)
+    [HttpGet("{Id}")]
+    public async Task<ApiResult<CategoryQueryDto>> GetCategoryById(int Id)
     {
-        var result = await _categoryQueryService.GetbyId(id);
+        var result = await _categoryQueryService.GetbyId(Id);
         return QueryResult(result);
     }
 
-    [HttpGet("getChild/{parentId}")]
+    [HttpGet("Child/{parentId}")]
     public async Task<ApiResult<List<ChildCategoriesDto>>> GetCategoriesByParentId(int parentId)
     {
         var result = await _categoryQueryService.GetByParentId(parentId);
@@ -51,7 +51,7 @@ public class CategoryController : ShopController
         return CreatedResult(result, null);
     }
 
-    [HttpPost("AddChild(1 Child)")]
+    [HttpPost("Child")] //(1 Child)
     public async Task<ApiResult> CreateCategory(CreateChildCategoryDto CreateChildCategoryDto)
     {
         var result = await _categoryService.AddChildCategory(CreateChildCategoryDto);
@@ -65,10 +65,10 @@ public class CategoryController : ShopController
         return CommandResult(result);
     }
 
-    [HttpDelete("{categoryId}")]
-    public async Task<ApiResult> RemoveCategory(int categoryId)
+    [HttpDelete("{Id}")]
+    public async Task<ApiResult> RemoveCategory(int Id)
     {
-        var result = await _categoryService.RemoveCategory(categoryId);
+        var result = await _categoryService.RemoveCategory(Id);
         return CommandResult(result);
     }
 }

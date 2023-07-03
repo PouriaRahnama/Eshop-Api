@@ -20,7 +20,7 @@ public class CommentsController : ShopController
     }
 
     [PermissionChecker(Permission.Comment_Management)]
-    [HttpGet("GetCommentByFilter*")]
+    [HttpGet("CommentFilter")]
     public async Task<ApiResult<CommentFilterResult>> GetCommentByFilter([FromQuery] CommentFilterParams filterParams)
     {
         var result = await _commentsQueryService.GetCommentByFilter(filterParams);
@@ -28,15 +28,15 @@ public class CommentsController : ShopController
     }
 
     [PermissionChecker(Permission.Comment_Management)]
-    [HttpGet("{commentId}*")]
-    public async Task<ApiResult<CommentsQueryDto?>> GetCommentById(int commentId)
+    [HttpGet("{Id}")]
+    public async Task<ApiResult<CommentsQueryDto?>> GetCommentById(int Id)
     {
-        var result = await _commentsQueryService.GetCommentById(commentId);
+        var result = await _commentsQueryService.GetCommentById(Id);
         return QueryResult(result);
     }
 
     [Authorize]
-    [HttpPut("EditComment*")]
+    [HttpPut]
     public async Task<ApiResult> EditComment(EditCommentDto command)
     {
         var result = await _commentsService.UpdateComments(command);
@@ -44,7 +44,7 @@ public class CommentsController : ShopController
     }
 
     [Authorize]
-    [HttpPost("AddComment*")]
+    [HttpPost]
     public async Task<ApiResult> AddComment(CreateCommentDto command)
     {
         var result = await _commentsService.AddComments(command);
@@ -52,7 +52,7 @@ public class CommentsController : ShopController
     }
 
     [PermissionChecker(Permission.Comment_Management)]
-    [HttpPut("changeStatus*")]
+    [HttpPut("Status")]
     public async Task<ApiResult> ChangeCommentStatus([FromForm] ChangeStatusDto command)
     {
         var result = await _commentsService.ChangeStatus(command);

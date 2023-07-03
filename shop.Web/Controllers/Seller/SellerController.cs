@@ -21,14 +21,14 @@ public class SellerController : ShopController
     }
 
     [PermissionChecker(Permission.Seller_Management)]
-    [HttpGet("GetSellerByFilter*")]
+    [HttpGet("SellerFilter")]
     public async Task<ApiResult<SellerFilterResult>> GetSellerByFilter([FromQuery] SellerFilterParams filterParams)
     {
         var result = await _sellerQueryService.GetSellerByFilter(filterParams);
         return QueryResult(result);
     }
 
-    [HttpGet("{id}*")]
+    [HttpGet("{id}")]
     public async Task<ApiResult<SellerDto?>> GetSellerById(int id)
     {
         var result = await _sellerQueryService.GetSellerById(id);
@@ -36,7 +36,7 @@ public class SellerController : ShopController
     }
 
     [PermissionChecker(Permission.Seller_Management)]
-    [HttpPost("AddSeller*")]
+    [HttpPost]
     public async Task<ApiResult> AddSeller(AddSellerDto command)
     {
         var result = await _sellerService.AddSeller(command);
@@ -44,7 +44,7 @@ public class SellerController : ShopController
     }
 
     [PermissionChecker(Permission.Seller_Management)]
-    [HttpPut("UpdateSeller*")]
+    [HttpPut]
     public async Task<ApiResult> UpdateSeller([FromForm] EditSellerDto command)
     {
         var result = await _sellerService.UpdateSeller(command);
@@ -52,7 +52,7 @@ public class SellerController : ShopController
     }
 
     [PermissionChecker(Permission.Add_Inventory)]
-    [HttpPost("AddInventory*")]
+    [HttpPost("Inventory")]
     public async Task<ApiResult> AddInventory(AddInventoryDto command)
     {
         var result = await _sellerService.AddInventory(command);
@@ -60,7 +60,7 @@ public class SellerController : ShopController
     }
 
     [PermissionChecker(Permission.Add_Inventory)]
-    [HttpPut("UpdateInventory*")]
+    [HttpPut("Inventory")]
     public async Task<ApiResult> EditInventory(EditInventoryDto command)
     {
         var result = await _sellerService.UpdateInventory(command);
@@ -68,7 +68,7 @@ public class SellerController : ShopController
     }
 
     [PermissionChecker(Permission.Add_Inventory)]
-    [HttpDelete("RemoveInventory*")]
+    [HttpDelete("Inventory")]
     public async Task<ApiResult> RemoveInventory(RemoveInventoryDto command)
     {
         var result = await _sellerService.RemoveInventory(command);
@@ -76,15 +76,15 @@ public class SellerController : ShopController
     }
 
     [PermissionChecker(Permission.Seller_Panel)]
-    [HttpGet("GetSellerInventoryById/{inventoryId}*")]
-    public async Task<ApiResult<InventoryDto?>> GetSellerInventoryById(int inventoryId)
+    [HttpGet("SellerInventory/{Id}")]
+    public async Task<ApiResult<InventoryDto?>> GetSellerInventoryById(int Id)
     {
         var userId = Convert.ToInt32(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
         var seller = await _sellerQueryService.GetSellerByUserId(userId);
         if (seller == null)
             return QueryResult(new InventoryDto());
 
-        var result = await _sellerQueryService.GetSellerInventoryById(inventoryId);
+        var result = await _sellerQueryService.GetSellerInventoryById(Id);
 
         if (result == null || result.SellerId != seller.Id)
             return QueryResult(new InventoryDto());
@@ -94,7 +94,7 @@ public class SellerController : ShopController
     }
 
     [PermissionChecker(Permission.Seller_Panel)]
-    [HttpGet("GetAllSellerInventory")]
+    [HttpGet("AllSellerInventory")]
     public async Task<ApiResult<List<InventoryDto?>>> GetAllSellerInventory()
     {
         var userId = Convert.ToInt32(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
