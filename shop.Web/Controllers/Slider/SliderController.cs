@@ -19,7 +19,7 @@ public class SliderController : ShopController
     }
 
     [Authorize]
-    [HttpGet("GetList")]
+    [HttpGet]
     public async Task<ApiResult<List<SliderDto>>> GetList()
     {
         var result = await _sliderQueryService.GetAllSlider();

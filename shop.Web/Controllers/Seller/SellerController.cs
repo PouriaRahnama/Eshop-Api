@@ -94,7 +94,7 @@ public class SellerController : ShopController
     }
 
     [PermissionChecker(Permission.Seller_Panel)]
-    [HttpGet("AllSellerInventory")]
+    [HttpGet("SellerInventory")]
     public async Task<ApiResult<List<InventoryDto?>>> GetAllSellerInventory()
     {
         var userId = Convert.ToInt32(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);

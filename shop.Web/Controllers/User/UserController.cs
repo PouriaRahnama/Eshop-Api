@@ -2,11 +2,13 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using shop.Core.Domain.Role;
+using shop.Core.Domain.User;
 using shop.Frameworks.Commons;
 using shop.Service.Command;
 using shop.Service.DTOs.UserCommand;
 using shop.Service.Query;
 using Shop.Api.Infrastructure.JwtUtil;
+using Shop.Web.ViewModels.Users;
 using System.Security.Claims;
 
 namespace shop.Web.Controllers.User;
@@ -85,6 +87,21 @@ public class UserController : ShopController
     public async Task<ApiResult> RemoveUserRole(RemoveUserRoleDto command)
     {
         var result = await _userService.RemoveUserRole(command);
+        return CommandResult(result);
+    }
+
+    [HttpPut("ChangePassword")]
+    public async Task<ApiResult> ChangePassword(ChangePasswordViewModel ChangePasswordViewModel)
+    {
+        var UserId = Convert.ToInt32(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
+        var Command = new ChangePasswordDto()
+        {
+            Password = ChangePasswordViewModel.Password,
+            CurrentPassword = ChangePasswordViewModel.CurrentPassword
+        };
+
+        Command.UserId = UserId;
+        var result = await _userService.ChangePassword(Command);
         return CommandResult(result);
     }
 

@@ -175,6 +175,24 @@ namespace shop.Service.Command
             return OperationResult.Success();
         }
 
+        public async Task<OperationResult> ChangePassword(ChangePasswordDto ChangePasswordDto)
+        {
+            var user = await _repository.FindByIdAsync(ChangePasswordDto.UserId);
+            if (user == null)
+                return OperationResult.NotFound("کاربر یافت نشد");
 
+            var currentPasswordHash = Sha256Hasher.Hash(ChangePasswordDto.CurrentPassword);
+            if (user.Password != currentPasswordHash)
+            {
+                return OperationResult.Error("کلمه عبور فعلی نامعتبر است");
+            }
+
+            var newPasswordHash = Sha256Hasher.Hash(ChangePasswordDto.Password);
+            user.Password = newPasswordHash;
+            await _repository.UpdateAsync(user);
+
+            return OperationResult.Success();
+
+        }
     }
 }
