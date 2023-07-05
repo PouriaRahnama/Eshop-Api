@@ -1,5 +1,4 @@
-﻿using Newtonsoft.Json.Linq;
-using shop.Core.Domain.Role;
+﻿using shop.Core.Domain.Role;
 using shop.Core.Domain.User;
 using shop.Data.Repository;
 using shop.Service.DTOs.UserCommand;
@@ -13,24 +12,27 @@ namespace shop.Service.Command
     {
         private readonly IFileService _fileService;
         private readonly IRepository<User> _repository;
-        private readonly IRepository<Role> _RoleRepository;
-        private readonly IRepository<UserRole> _UserRoleRepository;
-        private readonly IRepository<Wallet> _WalletRepository;
-        private readonly IRepository<UserToken> _TokenRepository;
+        private readonly IRepository<Role> _roleRepository;
+        private readonly IRepository<UserRole> _userRoleRepository;
+        private readonly IRepository<Wallet> _walletRepository;
+        private readonly IRepository<UserToken> _tokenRepository;
+        private readonly IRepository<UserAddress> _userAddressRepository;
 
         public UserService(IRepository<User> Repository,
             IRepository<Role> RoleRepository,
             IRepository<UserRole> UserRoleRepository,
             IFileService fileService,
             IRepository<Wallet> WalletRepository,
-            IRepository<UserToken> tokenRepository)
+            IRepository<UserToken> tokenRepository,
+            IRepository<UserAddress> userAddressRepository)
         {
             _repository = Repository;
             _fileService = fileService;
-            _RoleRepository = RoleRepository;
-            _UserRoleRepository = UserRoleRepository;
-            _WalletRepository = WalletRepository;
-            _TokenRepository = tokenRepository;
+            _roleRepository = RoleRepository;
+            _userRoleRepository = UserRoleRepository;
+            _walletRepository = WalletRepository;
+            _tokenRepository = tokenRepository;
+            _userAddressRepository = userAddressRepository;
         }
 
         public async Task<OperationResult> AddUser(CreateUserDto CreateUserDto)
@@ -68,13 +70,11 @@ namespace shop.Service.Command
                 .SaveFileAndGenerateName(EditUserDto.Avatar, Directories.UserAvatars);
 
             user.AvatarName = NewAvatarName;
-            user.Password = Sha256Hasher.Hash(EditUserDto.Password);
             user.Email = EditUserDto.Email;
             user.PhoneNumber = EditUserDto.PhoneNumber;
             user.Family = EditUserDto.Family;
             user.Name = EditUserDto.Name;
             user.UpdateON = DateTime.Now;
-            user.IsActive = EditUserDto.IsActive;
 
 
             await _repository.UpdateAsync(user);
@@ -89,7 +89,7 @@ namespace shop.Service.Command
             if (User == null)
                 return OperationResult.NotFound("!کاربر مورد نظر یافت نشد");
 
-            var Role = _RoleRepository.FindByIdAsync(AddUserRoleDto.RoleId);
+            var Role = _roleRepository.FindByIdAsync(AddUserRoleDto.RoleId);
             if (Role == null)
                 return OperationResult.NotFound("!نقش مورد نظر یافت نشد");
 
@@ -98,7 +98,7 @@ namespace shop.Service.Command
                 RoleId = AddUserRoleDto.RoleId,
                 UserId = AddUserRoleDto.UserId
             };
-            await _UserRoleRepository.AddAsync(UserRole);
+            await _userRoleRepository.AddAsync(UserRole);
             return OperationResult.Success();
         }
         public async Task<OperationResult> RemoveUserRole(RemoveUserRoleDto RemoveUserRoleDto)
@@ -107,7 +107,7 @@ namespace shop.Service.Command
             if (User == null)
                 return OperationResult.NotFound("!کاربر مورد نظر یافت نشد");
 
-            var Role = await _RoleRepository.FindByIdAsync(RemoveUserRoleDto.RoleId);
+            var Role = await _roleRepository.FindByIdAsync(RemoveUserRoleDto.RoleId);
             if (Role == null)
                 return OperationResult.NotFound("!نقش مورد نظر یافت نشد");
 
@@ -116,7 +116,7 @@ namespace shop.Service.Command
                 RoleId = RemoveUserRoleDto.RoleId,
                 UserId = RemoveUserRoleDto.UserId
             };
-            await _UserRoleRepository.DeleteAsync(UserRole);
+            await _userRoleRepository.DeleteAsync(UserRole);
             return OperationResult.Success();
         }
         public async Task<OperationResult> ChangeWallet(ChargeWalletDto ChargeWalletDto)
@@ -135,7 +135,7 @@ namespace shop.Service.Command
                 UserId = ChargeWalletDto.UserId
             };
 
-            await _WalletRepository.AddAsync(wallet);
+            await _walletRepository.AddAsync(wallet);
             return OperationResult.Success();
         }
 
@@ -145,7 +145,7 @@ namespace shop.Service.Command
             if (user == null)
                 return OperationResult.NotFound();
 
-            var activeTokenCount = _TokenRepository.Table.Where(c => c.UserId == user.Id && c.Deleted == false).Count();
+            var activeTokenCount = _tokenRepository.Table.Where(c => c.UserId == user.Id && c.Deleted == false).Count();
             if (activeTokenCount == 3)
                 return OperationResult.Error("امکان استفاده از 4 دستگاه همزمان وجود ندارد");
 
@@ -159,7 +159,7 @@ namespace shop.Service.Command
                 UserId = user.Id
             };
 
-            await _TokenRepository.AddAsync(Token);
+            await _tokenRepository.AddAsync(Token);
             return OperationResult.Success();
         }
 
@@ -167,11 +167,11 @@ namespace shop.Service.Command
         public async Task<OperationResult> RemoveUserToken(RemoveUserTokenDto RemoveUserTokenDto)
         {
 
-            var UserToken = await _TokenRepository.FindByIdAsync(RemoveUserTokenDto.TokenId);
+            var UserToken = await _tokenRepository.FindByIdAsync(RemoveUserTokenDto.TokenId);
             if (UserToken == null)
                 return OperationResult.Error("invalid TokenId");
 
-            await _TokenRepository.DeleteAsync(UserToken);
+            await _tokenRepository.DeleteAsync(UserToken);
             return OperationResult.Success();
         }
 
@@ -192,7 +192,89 @@ namespace shop.Service.Command
             await _repository.UpdateAsync(user);
 
             return OperationResult.Success();
+        }
 
+        
+        public async Task<OperationResult> AddUserAddress(AddUserAddressDto AddUserAddressDto)
+        {
+            var user = await _repository.FindByIdAsync(AddUserAddressDto.UserId);
+            if (user == null)
+                return OperationResult.NotFound("کاربر یافت نشد");
+
+            var address = new UserAddress()
+            {
+                UserId = user.Id,
+                Name = AddUserAddressDto.Name,
+                NationalCode = AddUserAddressDto.NationalCode,
+                PhoneNumber = AddUserAddressDto.PhoneNumber,
+                PostalAddress= AddUserAddressDto.PostalCode,
+                PostalCode = AddUserAddressDto.PostalCode,
+                Shire = AddUserAddressDto.Shire,
+                Family = AddUserAddressDto.Family,
+                City = AddUserAddressDto.City,
+                ActiveAddress = false
+            };
+            
+            await _userAddressRepository.AddAsync(address);
+            return OperationResult.Success();
+        }
+        //
+        public async Task<OperationResult> RemoveUserAddress(RemoveUserAddressDto RemoveUserAddressDto)
+        {
+            var user = await _repository.FindByIdAsync(RemoveUserAddressDto.UserId);
+            if (user == null)
+                return OperationResult.NotFound("کاربر یافت نشد");
+
+            var Address = await _userAddressRepository.FindByIdAsync(RemoveUserAddressDto.AddressId);
+
+            await _userAddressRepository.DeleteAsync(Address);
+            return OperationResult.Success();
+        }
+        
+        public async Task<OperationResult> EditUserAddress(EditUserAddressDto EditUserAddressDto)
+        {
+            var user = await _repository.FindByIdAsync(EditUserAddressDto.UserId);
+            if (user == null)
+                return OperationResult.NotFound("کاربر یافت نشد");
+
+            var Address = await _userAddressRepository.FindByIdAsync(EditUserAddressDto.Id);
+            if (Address == null)
+                return OperationResult.NotFound("Address Not found");
+
+            Address.UpdateON = DateTime.Now;
+            Address.Shire = EditUserAddressDto.Shire;
+            Address.PhoneNumber = EditUserAddressDto.PhoneNumber;
+            Address.Family = EditUserAddressDto.Family;
+            Address.NationalCode = EditUserAddressDto.NationalCode;
+            Address.PostalCode = EditUserAddressDto.PostalCode;
+            Address.Name = EditUserAddressDto.Name;
+            Address.PostalAddress = EditUserAddressDto.PostalAddress;
+            Address.City = EditUserAddressDto.City;
+
+            await _userAddressRepository.UpdateAsync(Address);
+            return OperationResult.Success();
+        }
+        
+        public async Task<OperationResult> SetActiveUserAddress(SetActiveUserAddressDto SetActiveUserAddressDto)
+        {
+            var user = await _repository.FindByIdAsync(SetActiveUserAddressDto.UserId);
+            if (user == null)
+                return OperationResult.NotFound("کاربر یافت نشد");
+
+            var currentAddress = await _userAddressRepository.FindByIdAsync(SetActiveUserAddressDto.AddressId);
+            if (currentAddress == null)
+                return OperationResult.NotFound("Address Not found");
+
+            var Addresses = _userAddressRepository.Get(ad => ad.UserId == user.Id).ToList();
+
+            foreach (var address in Addresses)
+            {
+                address.ActiveAddress = false;
+            }
+            currentAddress.ActiveAddress=true;
+
+            await _userAddressRepository.UpdateAsync(currentAddress);
+            return OperationResult.Success();
         }
     }
 }

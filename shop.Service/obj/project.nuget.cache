@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MForRNESsy91rZWiN+hvP4meTFLjg2GkZLKwSj2Un1F2iWXDMzPMQkrwTTYoTb7YTjCSgzuP5LYV6eggV/9cJw==",
+  "dgSpecHash": "lt3WHq0wxLZUZsAkO6VlNcxwfYz9pqaux3Q5wV8hIPl1uwQf36TxE2FdOPgXlsHZ4oo5KFn8zm9gI33XDZKcmg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\acer\\Desktop\\eshop\\shop.Service\\shop.Service.csproj",
+  "projectFilePath": "C:\\Users\\acer\\Desktop\\project\\shop.Service\\shop.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\acer\\.nuget\\packages\\anglesharp\\0.17.1\\anglesharp.0.17.1.nupkg.sha512",
     "C:\\Users\\acer\\.nuget\\packages\\anglesharp.css\\0.17.0\\anglesharp.css.0.17.0.nupkg.sha512",

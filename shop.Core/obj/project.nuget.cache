@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QuFm2ABSn5a0JNGiGgPfDtNAxcRbzqV9UQIJD69OlohP+nwCm9trzsVpYGPKMGcO83sWTYEhSiXbQw+3dskjFA==",
+  "dgSpecHash": "Y+n/KNRYM5DBNl3CA2l5M174bra95yTZFTEompbuyJqpIhrJ6CKXb6blZivw9lBKWK7Jz0Vk1rcSn9C1PV+Qvw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\acer\\Desktop\\eshop\\shop.Core\\shop.Core.csproj",
+  "projectFilePath": "C:\\Users\\acer\\Desktop\\project\\shop.Core\\shop.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\acer\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.0.1\\microsoft.aspnetcore.http.abstractions.2.0.1.nupkg.sha512",
     "C:\\Users\\acer\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.0.1\\microsoft.aspnetcore.http.features.2.0.1.nupkg.sha512",

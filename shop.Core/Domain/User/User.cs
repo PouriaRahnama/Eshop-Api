@@ -12,6 +12,8 @@ namespace shop.Core.Domain.User
         public string Password { get; set; }
         public string AvatarName { get; set; } = "avatar.png";
 
+
+        public virtual ICollection<UserAddress> UserAddress { get; set; }
         public virtual shop.Core.Domain.Seller.Seller Seller { get; set; }
         public virtual ICollection<UserRole> Roles { get; set; }
         public virtual ICollection<Wallet> Wallets { get; set; }

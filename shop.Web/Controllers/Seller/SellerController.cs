@@ -1,10 +1,10 @@
-﻿using IntelliTect.Coalesce.Utilities;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using shop.Core.Domain.Role;
 using shop.Frameworks.Commons;
 using shop.Service.Command;
 using shop.Service.DTOs.SellerCommand;
 using shop.Service.Query;
+using shop.Web.Infrastructure;
 using Shop.Api.Infrastructure.JwtUtil;
 using System.Security.Claims;
 
@@ -79,7 +79,7 @@ public class SellerController : ShopController
     [HttpGet("SellerInventory/{Id}")]
     public async Task<ApiResult<InventoryDto?>> GetSellerInventoryById(int Id)
     {
-        var userId = Convert.ToInt32(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
+        var userId = User.GetUserId();
         var seller = await _sellerQueryService.GetSellerByUserId(userId);
         if (seller == null)
             return QueryResult(new InventoryDto());
@@ -97,7 +97,7 @@ public class SellerController : ShopController
     [HttpGet("SellerInventory")]
     public async Task<ApiResult<List<InventoryDto?>>> GetAllSellerInventory()
     {
-        var userId = Convert.ToInt32(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
+        var userId = User.GetUserId();
         var seller = await _sellerQueryService.GetSellerByUserId(userId);
         if (seller == null)
             return QueryResult(new List<InventoryDto>());

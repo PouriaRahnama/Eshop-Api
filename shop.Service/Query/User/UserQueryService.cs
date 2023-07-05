@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using shop.Core.Domain.User;
 using shop.Data.ApplicationContext;
+using shop.Data.Persistent.Dapper;
 using shop.Service.Extension.Util;
 
 namespace shop.Service.Query
@@ -48,7 +49,7 @@ namespace shop.Service.Query
 
             var result = user.Map();
 
-            return  result;
+            return result;
         }
 
         public async Task<UserDto?> GetUserByPhoneNumber(string PhoneNumber)
@@ -64,7 +65,7 @@ namespace shop.Service.Query
 
         public async Task<UserTokenDto> GetUserTokenByRefreshTokenQuery(string HashRefreshToken)
         {
-            var UserToken =await _context.Set<UserToken>().Where(u => u.Deleted == false)
+            var UserToken = await _context.Set<UserToken>().Where(u => u.Deleted == false)
                 .FirstOrDefaultAsync(ut => ut.HashRefreshToken == HashRefreshToken);
 
             if (UserToken == null)
@@ -73,7 +74,7 @@ namespace shop.Service.Query
             var UserTokenDto = new UserTokenDto()
             {
                 HashRefreshToken = HashRefreshToken,
-                HashJwtToken  = UserToken.HashJwtToken,
+                HashJwtToken = UserToken.HashJwtToken,
                 RefreshTokenExpireDate = UserToken.RefreshTokenExpireDate,
                 TokenExpireDate = UserToken.TokenExpireDate,
                 Device = UserToken.Device,
@@ -90,7 +91,7 @@ namespace shop.Service.Query
                 .FirstOrDefaultAsync(ut => ut.HashJwtToken == HashJwtToken);
 
             if (UserToken == null)
-                    return null;
+                return null;
 
             var UserTokenDto = new UserTokenDto()
             {
@@ -105,6 +106,30 @@ namespace shop.Service.Query
 
             return UserTokenDto;
         }
+        
+        public async Task<AddressDto?> GetUserAddressById(int AddressId)
+        {
+            var Address = await _context.Set<UserAddress>()
+                .FirstOrDefaultAsync(f => f.Id == AddressId);
 
+            if (Address == null)
+                return null;
+
+            var result = Address.MapUserAddress();
+            return result;
+        }
+
+        
+        public async Task<List<AddressDto?>> GetUserAddress(int UserId)
+        {
+            var Addresses = await _context.Set<UserAddress>()
+                .Where(f => f.UserId == UserId).ToListAsync();
+
+            if (Addresses == null)
+                return null;
+
+            var result = Addresses.MapUserAddress();
+            return result;
+        }
     }
 }

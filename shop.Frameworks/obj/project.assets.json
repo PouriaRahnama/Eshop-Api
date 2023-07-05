@@ -11225,11 +11225,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\acer\\Desktop\\eshop\\shop.Frameworks\\shop.Frameworks.csproj",
+      "projectUniqueName": "C:\\Users\\acer\\Desktop\\project\\shop.Frameworks\\shop.Frameworks.csproj",
       "projectName": "shop.Frameworks",
-      "projectPath": "C:\\Users\\acer\\Desktop\\eshop\\shop.Frameworks\\shop.Frameworks.csproj",
+      "projectPath": "C:\\Users\\acer\\Desktop\\project\\shop.Frameworks\\shop.Frameworks.csproj",
       "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\acer\\Desktop\\eshop\\shop.Frameworks\\obj\\",
+      "outputPath": "C:\\Users\\acer\\Desktop\\project\\shop.Frameworks\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -11246,11 +11246,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\acer\\Desktop\\eshop\\shop.Core\\shop.Core.csproj": {
-              "projectPath": "C:\\Users\\acer\\Desktop\\eshop\\shop.Core\\shop.Core.csproj"
+            "C:\\Users\\acer\\Desktop\\project\\shop.Core\\shop.Core.csproj": {
+              "projectPath": "C:\\Users\\acer\\Desktop\\project\\shop.Core\\shop.Core.csproj"
             },
-            "C:\\Users\\acer\\Desktop\\eshop\\shop.Service\\shop.Service.csproj": {
-              "projectPath": "C:\\Users\\acer\\Desktop\\eshop\\shop.Service\\shop.Service.csproj"
+            "C:\\Users\\acer\\Desktop\\project\\shop.Service\\shop.Service.csproj": {
+              "projectPath": "C:\\Users\\acer\\Desktop\\project\\shop.Service\\shop.Service.csproj"
             }
           }
         }

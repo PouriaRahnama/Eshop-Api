@@ -597,6 +597,68 @@ namespace shop.Data.Migrations
                     b.ToTable("User");
                 });
 
+            modelBuilder.Entity("shop.Core.Domain.User.UserAddress", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<bool>("ActiveAddress")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("City")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreateON")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("Deleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Family")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NationalCode")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PostalAddress")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PostalCode")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Shire")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("UpdateON")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("UserAddress");
+                });
+
             modelBuilder.Entity("shop.Core.Domain.User.UserRole", b =>
                 {
                     b.Property<int>("UserId")
@@ -873,6 +935,17 @@ namespace shop.Data.Migrations
                     b.Navigation("Seller");
                 });
 
+            modelBuilder.Entity("shop.Core.Domain.User.UserAddress", b =>
+                {
+                    b.HasOne("shop.Core.Domain.User.User", "User")
+                        .WithMany("UserAddress")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("shop.Core.Domain.User.UserRole", b =>
                 {
                     b.HasOne("shop.Core.Domain.Role.Role", "Role")
@@ -970,6 +1043,8 @@ namespace shop.Data.Migrations
 
                     b.Navigation("Seller")
                         .IsRequired();
+
+                    b.Navigation("UserAddress");
 
                     b.Navigation("UserToken");
 

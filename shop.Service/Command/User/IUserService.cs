@@ -13,5 +13,9 @@ namespace shop.Service.Command
         Task<OperationResult> AddToken(AddTokenDto request);
         Task<OperationResult> RemoveUserToken(RemoveUserTokenDto RemoveUserTokenDto);
         Task<OperationResult> ChangePassword(ChangePasswordDto ChangePasswordDto);
+        Task<OperationResult> AddUserAddress(AddUserAddressDto AddUserAddressDto);
+        Task<OperationResult> RemoveUserAddress(RemoveUserAddressDto RemoveUserAddressDto);//
+        Task<OperationResult> EditUserAddress(EditUserAddressDto EditUserAddressDto);
+        Task<OperationResult> SetActiveUserAddress(SetActiveUserAddressDto SetActiveUserAddressDto);//
     }
 }

@@ -39,6 +39,51 @@ namespace shop.Service.Query
             };
         }
 
+        public static AddressDto MapUserAddress(this UserAddress address)
+        {
+            return new AddressDto()
+            {
+                Name = address.Name,
+                Id = address.Id,
+                ActiveAddress = address.ActiveAddress,
+                City = address.City,
+                CreationDate = address.CreateON,
+                Family = address.Family,
+                PhoneNumber = address.PhoneNumber,
+                NationalCode = address.NationalCode,
+                PostalAddress = address.PostalAddress,
+                PostalCode = address.PostalCode,
+                Shire = address.Shire,
+                UserId = address.UserId
+            };
+        }
+
+        public static List<AddressDto> MapUserAddress(this List<UserAddress> addresses)
+        {
+            var AddressDto = new List<AddressDto>();
+            foreach (var address in addresses)
+            {
+                AddressDto.Add(new AddressDto()
+                {
+                    Name = address.Name,
+                    Id = address.Id,
+                    ActiveAddress = address.ActiveAddress,
+                    City = address.City,
+                    CreationDate = address.CreateON,
+                    Family = address.Family,
+                    PhoneNumber = address.PhoneNumber,
+                    NationalCode = address.NationalCode,
+                    PostalAddress = address.PostalAddress,
+                    PostalCode = address.PostalCode,
+                    Shire = address.Shire,
+                    UserId = address.UserId
+                });
+            }
+
+            return AddressDto;
+
+        }
+
 
 
     }
