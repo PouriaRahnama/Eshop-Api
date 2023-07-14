@@ -63,6 +63,13 @@ namespace shop.Service.Query
 
             return inventory.GetAllInventoryMap();         
         }
+        
+        public async Task<List<InventoryDto>> GetInventoriesByProductId(int ProductId)
+        {
+            var inventory = await _Context.Set<SellerInventory>().Where(i => i.ProductId == ProductId).ToListAsync();
+
+            return inventory.GetAllInventoryMap();
+        }
 
     }
 }

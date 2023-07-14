@@ -26,8 +26,8 @@ namespace shop.Service.Query
         public string? ProductName { get; set; }
         public string? ProductImageName { get; set; }
         public string? ShopName { get; set; }
-        public long OrderId { get; set; }
-        public long InventoryId { get; set; }
+        public int OrderId { get; set; }
+        public int InventoryId { get; set; }
         public int Count { get; set; }
         public int Price { get; set; }
         public int TotalPrice => Price * Count;
@@ -35,7 +35,7 @@ namespace shop.Service.Query
 
     public class OrderFilterData : BaseDto
     {
-        public long UserId { get; set; }
+        public int UserId { get; set; }
         public string? Name { get; set; }
         public string? Family { get; set; }
         public OrderStatus Status { get; set; }
@@ -47,7 +47,7 @@ namespace shop.Service.Query
 
     public class OrderFilterParams : BaseFilterParam
     {
-        public long? UserId { get; set; }
+        public int? UserId { get; set; }
         public DateTime? StartDate { get; set; }
         public DateTime? EndDate { get; set; }
         public OrderStatus? Status { get; set; }

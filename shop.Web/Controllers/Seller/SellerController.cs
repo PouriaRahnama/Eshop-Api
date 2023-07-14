@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using shop.Core.Domain.Role;
 using shop.Frameworks.Commons;
 using shop.Service.Command;
@@ -14,10 +15,12 @@ public class SellerController : ShopController
 {
     private readonly ISellerService _sellerService;
     private readonly SellerQueryService _sellerQueryService;
-    public SellerController(ISellerService sellerService, SellerQueryService sellerQueryService)
+    private readonly ProductQueryService _productQueryService;
+    public SellerController(ISellerService sellerService, SellerQueryService sellerQueryService, ProductQueryService productQueryService)
     {
         _sellerService = sellerService;
         _sellerQueryService = sellerQueryService;
+        _productQueryService = productQueryService;
     }
 
     [PermissionChecker(Permission.Seller_Management)]
@@ -104,6 +107,25 @@ public class SellerController : ShopController
 
         var result = await _sellerQueryService.GetAllInventories(seller.Id);
         return QueryResult(result);
+    }
+    
+    [AllowAnonymous]
+    [HttpGet("Inventory/{ProductId}")]
+    public async Task<ApiResult<SingleProductDto?>> GetSellerInventoryByProductId(int ProductId)
+    {
+        var product = await _productQueryService.GetProductById(ProductId);
+        if (product == null)
+            return null;
+
+        var inventories = await _sellerQueryService.GetInventoriesByProductId(product.Id);
+
+        var model = new SingleProductDto()
+        {
+            Inventories = inventories,
+            ProductDto = product
+        };
+        return QueryResult(model);
+
     }
 }
 

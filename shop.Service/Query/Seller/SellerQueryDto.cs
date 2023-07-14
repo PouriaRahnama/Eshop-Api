@@ -4,6 +4,12 @@ using shop.Service.Query.Commons;
 
 namespace shop.Service.Query
 {
+    public class SingleProductDto
+    {
+        public ProductQueryDto ProductDto { get; set; }
+        public List<InventoryDto> Inventories { get; set; }
+    }
+
     public class SellerDto : BaseDto
     {
         public int UserId { get; set; }
@@ -16,7 +22,7 @@ namespace shop.Service.Query
     {
         public int SellerId { get; set; }
         public string ShopName { get; set; }
-        public long ProductId { get; set; }
+        public int ProductId { get; set; }
         public string ProductTitle { get; set; }
         public string ProductImage { get; set; }
         public int Count { get; set; }

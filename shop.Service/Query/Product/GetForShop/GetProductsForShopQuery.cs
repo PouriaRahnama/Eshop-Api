@@ -112,7 +112,7 @@ public class GetProductsForShopQuery
             Data = result.ToList(),
             CategoryDto = selectedCategory
         };
-        model.GeneratePaging(@params.Take, @params.PageId, count);
+        model.GeneratePaging(count, @params.Take, @params.PageId);
         return model;
     }
 }

@@ -21,6 +21,9 @@ namespace shop.Service.Query.Comments
             if (@params.CommentStatus != null)
                 result = result.Where(r => r.Status == @params.CommentStatus);
 
+            if (@params.ProductId != null)
+                result = result.Where(r => r.ProductId == @params.ProductId);
+
             if (@params.UserId != null)
                 result = result.Where(r => r.UserId == @params.UserId);
 

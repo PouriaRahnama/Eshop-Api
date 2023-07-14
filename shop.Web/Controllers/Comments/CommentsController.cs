@@ -19,10 +19,10 @@ public class CommentsController : ShopController
         _commentsQueryService = commentsQueryService;
     }
 
-    [PermissionChecker(Permission.Comment_Management)]
+   [PermissionChecker(Permission.Comment_Management)]
     [HttpGet("CommentFilter")]
-    public async Task<ApiResult<CommentFilterResult>> GetCommentByFilter([FromQuery] CommentFilterParams filterParams)
-    {
+    public async Task<ApiResult<CommentFilterResult?>> GetCommentByFilter([FromQuery] CommentFilterParams filterParams)
+     {
         var result = await _commentsQueryService.GetCommentByFilter(filterParams);
         return QueryResult(result);
     }

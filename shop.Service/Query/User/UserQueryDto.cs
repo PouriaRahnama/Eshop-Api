@@ -31,7 +31,7 @@ namespace shop.Service.Query
 
     public class UserRoleDto
     {
-        public long RoleId { get; set; }
+        public int RoleId { get; set; }
         public string RoleTitle { get; set; }
     }
 
@@ -59,7 +59,7 @@ namespace shop.Service.Query
     {
         public string? PhoneNumber { get; set; }
         public string? Email { get; set; }
-        public long? Id { get; set; }
+        public int? Id { get; set; }
     }
     public class UserFilterResult : BaseFilter<UserFilterData, UserFilterParams>
     {

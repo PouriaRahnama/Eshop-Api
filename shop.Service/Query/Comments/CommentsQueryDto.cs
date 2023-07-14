@@ -15,7 +15,8 @@ namespace shop.Service.Query.Comments
     }
     public class CommentFilterParams : BaseFilterParam
     {
-        public long? UserId { get; set; }
+        public int? ProductId { get; set; }
+        public int? UserId { get; set; }
         public DateTime? StartDate { get; set; }
         public DateTime? EndDate { get; set; }
         public CommentStatus? CommentStatus { get; set; }

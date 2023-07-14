@@ -12,7 +12,7 @@ public class ProductShopResult : BaseFilter<ProductShopDto, ProductShopFilterPar
 public class ProductShopDto : BaseDto
 {
     public string Name { get; set; }
-    public long InventoryId { get; set; }
+    public int InventoryId { get; set; }
     public int Price { get; set; }
     public int DiscountPercentage { get; set; }
     public string ImageName { get; set; }

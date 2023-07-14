@@ -36,7 +36,7 @@ namespace shop.Service.Query
     public class ProductFilterParams : BaseFilterParam
     {
         public string? Title { get; set; }
-        public long? Id { get; set; }
+        public int? Id { get; set; }
     }
     public class ProductFilterResult : BaseFilter<ProductFilterData, ProductFilterParams>
     {
