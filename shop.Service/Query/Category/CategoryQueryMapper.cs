@@ -13,6 +13,8 @@ namespace shop.Service.Query
             return new CategoryQueryDto()
             {
                 Name = category.Name,
+                ChildCount = category.ChildCategories.Count,
+                ProductCount = category.productCategories.Count,
                 Id = category.Id,
                 CreationDate = category.CreateON,
                 ChildCategories = category.ChildCategories.ToList().MapChildren(),
@@ -29,6 +31,8 @@ namespace shop.Service.Query
                 {
                     Name = category.Name,
                     Id = category.Id,
+                    ChildCount = category.ChildCategories.Count,
+                    ProductCount = category.productCategories.Count,
                     CreationDate = category.CreateON,
                     ChildCategories = category.ChildCategories.ToList().MapChildren()
                 }) ;
@@ -47,6 +51,8 @@ namespace shop.Service.Query
                     Name = c.Name,
                     Id = c.Id,
                     CreationDate = c.CreateON,
+                    ChildCount = c.ChildCategories.Count,
+                    ProductCount = c.productCategories.Count,
                     ParentId = (int?)c.ParentID,
                     ParentName = c.PatentCategory.Name
 

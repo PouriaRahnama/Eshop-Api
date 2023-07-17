@@ -7968,11 +7968,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\acer\\Desktop\\Shop\\shop.Data\\shop.Data.csproj",
+      "projectUniqueName": "C:\\Users\\acer\\Desktop\\eshop\\shop.Data\\shop.Data.csproj",
       "projectName": "shop.Data",
-      "projectPath": "C:\\Users\\acer\\Desktop\\Shop\\shop.Data\\shop.Data.csproj",
+      "projectPath": "C:\\Users\\acer\\Desktop\\eshop\\shop.Data\\shop.Data.csproj",
       "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\acer\\Desktop\\Shop\\shop.Data\\obj\\",
+      "outputPath": "C:\\Users\\acer\\Desktop\\eshop\\shop.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7989,8 +7989,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\acer\\Desktop\\Shop\\shop.Core\\shop.Core.csproj": {
-              "projectPath": "C:\\Users\\acer\\Desktop\\Shop\\shop.Core\\shop.Core.csproj"
+            "C:\\Users\\acer\\Desktop\\eshop\\shop.Core\\shop.Core.csproj": {
+              "projectPath": "C:\\Users\\acer\\Desktop\\eshop\\shop.Core\\shop.Core.csproj"
             }
           }
         }

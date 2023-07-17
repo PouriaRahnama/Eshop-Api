@@ -21,6 +21,7 @@ public class GetProductsForShopQuery
 
     public async Task<ProductShopResult> Handle(ProductShopFilterParam request)
     {
+        var A_RN = 1;
         var @params = request;
         string conditions = "";
         string orderBy = "";
@@ -34,6 +35,7 @@ public class GetProductsForShopQuery
             if (category != null)
             {
                 conditions += @$" and (A.CategoryId={category.Id})";
+                A_RN = category.Id;
                 selectedCategory = category.Map();
             }
         }
@@ -90,7 +92,7 @@ public class GetProductsForShopQuery
 
 
 
-        var resultSql = @$"SELECT A.Id ,A.Name,A.Price,A.InventoryId,A.DiscountPercentage,A.ImageName,A.CategoryId
+        var resultSql = @$"SELECT A.Id ,A.Name,A.Price,A.InventoryId,A.DiscountPercentage,A.ImageName
             FROM (Select p.Name , i.Price  , i.Id as InventoryId , i.DiscountPercentage,p.ImageName , i.Count,
                     p.Id as Id , s.Status,pc.CategoryId
                             ,ROW_NUMBER() OVER(PARTITION BY p.Id ORDER BY {inventoryOrderBy}) AS RN
@@ -98,7 +100,8 @@ public class GetProductsForShopQuery
             left join {_dapperContext.Inventories} as i on p.Id=i.ProductId
             left join {_dapperContext.Sellers} as s on i.SellerId=s.Id
             left join {_dapperContext.ProductCategory} as pc on pc.ProductID = p.Id)A
-            WHERE  A.RN = 1 and A.Status='Accepted'  {conditions} order By {orderBy} offset @skip ROWS FETCH NEXT @take ROWS ONLY";
+            WHERE A.RN = {A_RN}  and A.Status='Accepted'  
+            {conditions} order By {orderBy} offset @skip ROWS FETCH NEXT @take ROWS ONLY";
 
 
 

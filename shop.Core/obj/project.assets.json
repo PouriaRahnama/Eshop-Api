@@ -5720,11 +5720,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\acer\\Desktop\\Shop\\shop.Core\\shop.Core.csproj",
+      "projectUniqueName": "C:\\Users\\acer\\Desktop\\eshop\\shop.Core\\shop.Core.csproj",
       "projectName": "shop.Core",
-      "projectPath": "C:\\Users\\acer\\Desktop\\Shop\\shop.Core\\shop.Core.csproj",
+      "projectPath": "C:\\Users\\acer\\Desktop\\eshop\\shop.Core\\shop.Core.csproj",
       "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\acer\\Desktop\\Shop\\shop.Core\\obj\\",
+      "outputPath": "C:\\Users\\acer\\Desktop\\eshop\\shop.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
