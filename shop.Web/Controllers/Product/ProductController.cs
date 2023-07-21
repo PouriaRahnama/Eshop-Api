@@ -67,14 +67,15 @@ public class ProductController : ShopController
     [HttpGet("{productId}")]
     public async Task<ApiResult<ProductQueryDto?>> GetProductById(int productId)
     {
-        var product = await _productQueryService.GetProductById(productId);
-        await _cacheManager.GetAsync("GetProductById", 60, async () => _productQueryService.GetProductById(productId).Result);
+        var product = await _cacheManager.GetAsync($"productId{productId}", 30000,
+            async () => _productQueryService.GetProductById(productId).Result);
         return QueryResult(product);
     }
 
     [HttpPut]
     public async Task<ApiResult> UpdateProduct([FromForm] EditProductDto command)
     {
+        _cacheManager.Remove($"productId{command.ProductId}");
         var result = await _productService.UpdateProduct(command);
         return CommandResult(result);
     }
