@@ -8424,11 +8424,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\acer\\Desktop\\Eshop-Api\\shop.Service\\shop.Service.csproj",
+      "projectUniqueName": "C:\\Users\\acer\\Desktop\\shop\\shop.Service\\shop.Service.csproj",
       "projectName": "shop.Service",
-      "projectPath": "C:\\Users\\acer\\Desktop\\Eshop-Api\\shop.Service\\shop.Service.csproj",
+      "projectPath": "C:\\Users\\acer\\Desktop\\shop\\shop.Service\\shop.Service.csproj",
       "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\acer\\Desktop\\Eshop-Api\\shop.Service\\obj\\",
+      "outputPath": "C:\\Users\\acer\\Desktop\\shop\\shop.Service\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -8450,11 +8450,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\acer\\Desktop\\Eshop-Api\\shop.Core\\shop.Core.csproj": {
-              "projectPath": "C:\\Users\\acer\\Desktop\\Eshop-Api\\shop.Core\\shop.Core.csproj"
+            "C:\\Users\\acer\\Desktop\\shop\\shop.Core\\shop.Core.csproj": {
+              "projectPath": "C:\\Users\\acer\\Desktop\\shop\\shop.Core\\shop.Core.csproj"
             },
-            "C:\\Users\\acer\\Desktop\\Eshop-Api\\shop.Data\\shop.Data.csproj": {
-              "projectPath": "C:\\Users\\acer\\Desktop\\Eshop-Api\\shop.Data\\shop.Data.csproj"
+            "C:\\Users\\acer\\Desktop\\shop\\shop.Data\\shop.Data.csproj": {
+              "projectPath": "C:\\Users\\acer\\Desktop\\shop\\shop.Data\\shop.Data.csproj"
             }
           }
         }
