@@ -11,16 +11,16 @@ using shop.Data.Repository;
 
 namespace shop.Data.Infrastructure
 {
-    public class DataBaseStartUp:IApplicationStartup
+    public class DataBaseStartUp : IApplicationStartup
     {
         public MiddleWarePriority Priority => MiddleWarePriority.AboveNormal;
         public void ConfigureServices(IServiceCollection services, IConfiguration configuration)
         {
             string connectionString = "Data Source=.;Initial Catalog=ShopApp;Integrated Security=true;Encrypt=false;MultipleActiveResultSets=true";
             services.AddScoped(typeof(IRepository<>), typeof(EFRepository<>));
-            services.AddDbContextPool<IApplicationContext,SqlServerApplicationContext>((options) =>
+            services.AddDbContextPool<IApplicationContext, SqlServerApplicationContext>((options) =>
             {
-                
+
                 options.UseSqlServer(connectionString).UseLazyLoadingProxies();
             }, poolSize: 16);
 

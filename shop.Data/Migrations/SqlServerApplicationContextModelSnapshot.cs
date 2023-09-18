@@ -227,7 +227,7 @@ namespace shop.Data.Migrations
 
                     b.HasIndex("OrderId");
 
-                    b.ToTable("OrderItem");
+                    b.ToTable("OrderItems");
                 });
 
             modelBuilder.Entity("shop.Core.Domain.Product.Picture", b =>

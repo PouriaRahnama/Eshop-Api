@@ -21,8 +21,8 @@ namespace shop.Core.Domain.User
         public bool IsFinally { get; set; }
         public DateTime? FinallyDate { get; set; }
         public virtual User User { get; set; }
-
     }
+
     public enum WalletType
     {
         Deposit,

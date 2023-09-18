@@ -310,3 +310,15 @@ C:\Users\acer\Desktop\project\shop.Core\obj\Debug\net7.0\shop.Core.dll
 C:\Users\acer\Desktop\project\shop.Core\obj\Debug\net7.0\refint\shop.Core.dll
 C:\Users\acer\Desktop\project\shop.Core\obj\Debug\net7.0\shop.Core.pdb
 C:\Users\acer\Desktop\project\shop.Core\obj\Debug\net7.0\ref\shop.Core.dll
+C:\Users\acer\Desktop\Eshop-Api\shop.Core\bin\Debug\net7.0\shop.Core.deps.json
+C:\Users\acer\Desktop\Eshop-Api\shop.Core\bin\Debug\net7.0\shop.Core.dll
+C:\Users\acer\Desktop\Eshop-Api\shop.Core\bin\Debug\net7.0\shop.Core.pdb
+C:\Users\acer\Desktop\Eshop-Api\shop.Core\obj\Debug\net7.0\shop.Core.csproj.AssemblyReference.cache
+C:\Users\acer\Desktop\Eshop-Api\shop.Core\obj\Debug\net7.0\shop.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\acer\Desktop\Eshop-Api\shop.Core\obj\Debug\net7.0\shop.Core.AssemblyInfoInputs.cache
+C:\Users\acer\Desktop\Eshop-Api\shop.Core\obj\Debug\net7.0\shop.Core.AssemblyInfo.cs
+C:\Users\acer\Desktop\Eshop-Api\shop.Core\obj\Debug\net7.0\shop.Core.csproj.CoreCompileInputs.cache
+C:\Users\acer\Desktop\Eshop-Api\shop.Core\obj\Debug\net7.0\shop.Core.dll
+C:\Users\acer\Desktop\Eshop-Api\shop.Core\obj\Debug\net7.0\refint\shop.Core.dll
+C:\Users\acer\Desktop\Eshop-Api\shop.Core\obj\Debug\net7.0\shop.Core.pdb
+C:\Users\acer\Desktop\Eshop-Api\shop.Core\obj\Debug\net7.0\ref\shop.Core.dll

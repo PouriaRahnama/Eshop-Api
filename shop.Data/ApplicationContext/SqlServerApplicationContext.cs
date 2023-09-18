@@ -5,6 +5,14 @@ using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using shop.Data.Extension;
 using Microsoft.Extensions.Options;
+using shop.Core.Domain.Category;
+using shop.Core.Domain.Comment;
+using shop.Core.Domain.Order;
+using shop.Core.Domain.Product;
+using shop.Core.Domain.Role;
+using shop.Core.Domain.Seller;
+using shop.Core.Domain.Slider;
+using shop.Core.Domain.User;
 
 namespace shop.Data.ApplicationContext
 {
@@ -21,7 +29,26 @@ namespace shop.Data.ApplicationContext
             base.OnModelCreating(modelBuilder);
         }
 
-
+        public DbSet<Category> Category { get; set; }
+        public DbSet<Comment> Comment { get; set; }
+        public DbSet<Order> Order { get; set; }
+        public DbSet<OrderItem> OrderItems { get; set; }
+        public DbSet<OrderAddress> OrderAddress { get; set; }
+        public DbSet<Product> Product { get; set; }
+        public DbSet<Picture> Picture { get; set; }
+        public DbSet<ProductCategory> ProductCategory { get; set; }
+        public DbSet<ProductPicture> ProductPicture { get; set; }
+        public DbSet<ProductSpecification> ProductSpecification { get; set; }
+        public DbSet<Role> Role { get; set; }
+        public DbSet<RolePermission> RolePermission { get; set; }
+        public DbSet<Seller> Seller { get; set; }
+        public DbSet<SellerInventory> SellerInventory { get; set; }
+        public DbSet<Slider> Slider { get; set; }
+        public DbSet<User> User { get; set; }
+        public DbSet<UserAddress> UserAddress { get; set; }
+        public DbSet<UserRole> UserRole { get; set; }
+        public DbSet<UserToken> UserToken { get; set; }
+        public DbSet<Wallet> Wallet { get; set; }
         //Store Procedure
         public List<T> RunSp<T>(string StoreName, List<DbParamter> ListParamert) where T : new()
         {
@@ -81,7 +108,6 @@ namespace shop.Data.ApplicationContext
             }
         }
 
-        
         private void CleanContext()
         {
             if (ChangeTracker.HasChanges())
