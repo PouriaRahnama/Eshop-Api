@@ -1,0 +1,10 @@
+2023-09-19 20:36:58.272 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executing
+2023-09-19 20:36:59.491 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executed
+2023-09-19 20:38:34.558 +03:30 [ERR] shop.Web.Controllers.Order.OrderController.AddOrderItem (shop.Web) Executing
+2023-09-19 20:38:34.900 +03:30 [ERR] shop.Web.Controllers.Order.OrderController.AddOrderItem (shop.Web) Executed
+2023-09-19 20:38:53.620 +03:30 [ERR] shop.Web.Controllers.Order.OrderController.AddOrderItem (shop.Web) Executing
+2023-09-19 20:38:53.800 +03:30 [ERR] shop.Web.Controllers.Order.OrderController.AddOrderItem (shop.Web) Executed
+2023-09-19 20:39:07.622 +03:30 [ERR] shop.Web.Controllers.Order.OrderController.AddOrderItem (shop.Web) Executing
+2023-09-19 20:39:07.658 +03:30 [ERR] shop.Web.Controllers.Order.OrderController.AddOrderItem (shop.Web) Executed
+2023-09-19 20:39:09.366 +03:30 [ERR] shop.Web.Controllers.Order.OrderController.AddOrderItem (shop.Web) Executing
+2023-09-19 20:39:09.379 +03:30 [ERR] shop.Web.Controllers.Order.OrderController.AddOrderItem (shop.Web) Executed

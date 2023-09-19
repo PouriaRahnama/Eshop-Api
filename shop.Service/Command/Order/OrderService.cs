@@ -37,28 +37,42 @@ namespace shop.Service.Command
                 return OperationResult.Error("تعداد محصولات موجود کمتر از حد درخواستی است.");
 
             var Order = await _OrderRepository.GetEntity(o => o.UserId == CreateOrderItemDto.userId && o.Status == OrderStatus.Pending);
-            if(Order == null)
+            OrderItem? OrderItem = null;
+            if (Order == null)
             {
-                 Order = new Order()
+                Order = new Order()
                 {
                     UserId = CreateOrderItemDto.userId,
                     Status = OrderStatus.Pending,
                 };
+
                 _OrderRepository.Add(Order);
+
+                OrderItem = new OrderItem()
+                {
+                    Count = CreateOrderItemDto.Count,
+                    InventoryId = CreateOrderItemDto.inventoryId,
+                    OrderId = Order.Id,
+                    Price = inventory.Price
+                };
+                if (ItemCountBeggerThanInventoryCount(inventory, OrderItem))
+                    return OperationResult.Error("تعداد محصولات موجود کمتر از حد درخواستی است.");
+                _OrderItemRepository.Add(OrderItem);
             }
-                
-            var OrderItem = new OrderItem()
+            else if (Order != null)
             {
-                Count = CreateOrderItemDto.Count,
-                InventoryId = CreateOrderItemDto.inventoryId,
-                OrderId = Order.Id,
-                Price = inventory.Price
-            };
+                OrderItem = _OrderItemRepository.GetEntity(f => f.InventoryId == CreateOrderItemDto.inventoryId).Result;
+                if (OrderItem != null)
+                {
+                    OrderItem.Count += CreateOrderItemDto.Count;
+                    OrderItem.UpdateON = DateTime.Now;
+                }
+                if (ItemCountBeggerThanInventoryCount(inventory, OrderItem))
+                    return OperationResult.Error("تعداد محصولات موجود کمتر از حد درخواستی است.");
 
-            if (OrderItem.Count > inventory.Count)
-                return OperationResult.Error("تعداد محصولات موجود کمتر از حد درخواستی است.");
+                _OrderItemRepository.Update(OrderItem);
+            }
 
-            _OrderItemRepository.Add(OrderItem);
             return OperationResult.Success();
         }
         public async Task<OperationResult> DecreaseOrderItem(DecreaseOrderItemCountDto DecreaseOrderItemCountDto)
@@ -107,7 +121,6 @@ namespace shop.Service.Command
 
             return OperationResult.Success();
         }
-
         public async Task<OperationResult> AddOrderAddress(AddOrderAddressDto AddOrderAddressDto)
         {
             var currentUser = await _userRepository.FindByIdAsync(AddOrderAddressDto.UserId);
@@ -135,7 +148,6 @@ namespace shop.Service.Command
             await _OrderAddressRepository.AddAsync(address);
             return OperationResult.Success();
         }
-
         public async Task<OperationResult> RemoveOrderAddress(RemoveOrderAddressDto RemoveOrderAddressDto)
         {
             var currentOrder = await _OrderRepository.FindByIdAsync(RemoveOrderAddressDto.OrderId);
@@ -151,5 +163,12 @@ namespace shop.Service.Command
 
         }
 
+
+        private bool ItemCountBeggerThanInventoryCount(SellerInventory inventory, OrderItem orderItem)
+        {
+            if (orderItem.Count > inventory.Count)
+                return true;
+            return false;
+        }
     }
 }
