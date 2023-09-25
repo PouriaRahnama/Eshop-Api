@@ -1,4 +1,5 @@
-﻿using shop.Core.Domain.Comment;
+﻿using shop.Core.Domain.Category;
+using shop.Core.Domain.Comment;
 using shop.Data.Repository;
 using shop.Service.DTOs.CommentsCommand;
 using shop.Service.Extension.Util;
@@ -35,7 +36,7 @@ public class CommentsService : ICommentsService
         Comment.Text = EditCommentDto.Text;
         Comment.UpdateON = DateTime.Now;
 
-        await _repository.UpdateAsync(Comment);
+        _repository.Update(Comment);
         return OperationResult.Success();
     }
     public async Task<OperationResult> ChangeStatus(ChangeStatusDto ChangeStatusDto)
@@ -46,7 +47,7 @@ public class CommentsService : ICommentsService
 
         Comment.Status = ChangeStatusDto.Status;
 
-        await _repository.UpdateAsync(Comment);
+        _repository.Update(Comment);
         return OperationResult.Success();
     }
 }

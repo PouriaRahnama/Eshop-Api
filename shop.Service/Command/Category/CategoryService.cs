@@ -55,9 +55,13 @@ public class CategoryService : ICategoryService
         var ChildCategories = _repository.Get(c => c.ParentID == Id).ToList();
         if (ChildCategories != null)
             foreach (var childCategory in ChildCategories)
-                await _repository.DeleteAsync(childCategory);
+            {
+                childCategory.Deleted = true;
+                _repository.Update(childCategory);
+            }
 
-        await _repository.DeleteAsync(category);
+        category.Deleted = true;
+        _repository.Update(category);
         return OperationResult.Success();
     }
 
@@ -70,7 +74,7 @@ public class CategoryService : ICategoryService
         category.Name = EditCategoryDto.Name;
         category.UpdateON = DateTime.Now;
 
-        await _repository.UpdateAsync(category);
+        _repository.Update(category);
         return OperationResult.Success();
 
     }

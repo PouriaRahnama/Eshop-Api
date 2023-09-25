@@ -46,7 +46,7 @@ namespace shop.Service.Command
                     Status = OrderStatus.Pending,
                 };
 
-                _OrderRepository.Add(Order);
+                await _OrderRepository.AddAsync(Order);
 
                 OrderItem = new OrderItem()
                 {
@@ -57,7 +57,7 @@ namespace shop.Service.Command
                 };
                 if (ItemCountBeggerThanInventoryCount(inventory, OrderItem))
                     return OperationResult.Error("تعداد محصولات موجود کمتر از حد درخواستی است.");
-                _OrderItemRepository.Add(OrderItem);
+                _OrderItemRepository.AddAsync(OrderItem);
             }
             else if (Order != null)
             {
@@ -82,13 +82,13 @@ namespace shop.Service.Command
             if (currentOrder == null)
                 return OperationResult.NotFound();
 
-            var currentItem = _OrderItemRepository.FindById(DecreaseOrderItemCountDto.OrderItemId);
+            var currentItem = await _OrderItemRepository.FindByIdAsync(DecreaseOrderItemCountDto.OrderItemId);
             if (currentItem == null)
                 return OperationResult.NotFound();
 
             currentItem.Count += DecreaseOrderItemCountDto.Count;
 
-            await _OrderItemRepository.UpdateAsync(currentItem);
+            _OrderItemRepository.Update(currentItem);
             return OperationResult.Success();
         }
         public async Task<OperationResult> IncreaseOrderItem(IncreaseOrderItemCountDto IncreaseOrderItemCountDto)
@@ -97,7 +97,7 @@ namespace shop.Service.Command
             if (currentOrder == null)
                 return OperationResult.NotFound();
 
-            var currentItem = _OrderItemRepository.FindById(IncreaseOrderItemCountDto.OrderItemId);
+            var currentItem = await _OrderItemRepository.FindByIdAsync(IncreaseOrderItemCountDto.OrderItemId);
             if (currentItem == null)
                 return OperationResult.NotFound();
 
@@ -105,7 +105,7 @@ namespace shop.Service.Command
             if (currentItem.Count <= 0)
                 currentItem.Count = 0;
 
-            await _OrderItemRepository.UpdateAsync(currentItem);
+            _OrderItemRepository.Update(currentItem);
             return OperationResult.Success();
         }
         public async Task<OperationResult> RemoveOrderItem(RemoveOrderItemDto RemoveOrderItemDto)
@@ -117,7 +117,11 @@ namespace shop.Service.Command
 
             var currentItem = await _OrderItemRepository.GetEntity(f => f.Id == RemoveOrderItemDto.OrderItemId);
             if (currentItem != null)
-                await _OrderItemRepository.DeleteAsync(currentItem);
+            {
+                currentItem.Deleted = true;
+                _OrderItemRepository.Update(currentItem);
+            }
+
 
             return OperationResult.Success();
         }
@@ -154,11 +158,12 @@ namespace shop.Service.Command
             if (currentOrder == null)
                 return OperationResult.NotFound();
 
-            var Address = _OrderAddressRepository.FindById(RemoveOrderAddressDto.AddressId);
+            var Address = await _OrderAddressRepository.FindByIdAsync(RemoveOrderAddressDto.AddressId);
             if (Address == null)
                 return OperationResult.NotFound();
 
-            await _OrderAddressRepository.DeleteAsync(Address);
+            Address.Deleted = true;
+            _OrderAddressRepository.Update(Address);
             return OperationResult.Success();
 
         }

@@ -87,7 +87,7 @@ public class ProductController : ShopController
         return QueryResult(await _productQueryService.GetProductByFilter(filterParams));
     }
 
-    [HttpDelete]
+    [HttpDelete("RemovePicture")]
     public async Task<ApiResult> RemovePicture([FromForm] RemovePictureDto command)
     {
         var result = await _productService.RemovePicture(command);

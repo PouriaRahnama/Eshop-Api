@@ -5138,3 +5138,4 @@ C:\Users\acer\Desktop\shop-webapi-git\shop.Web\obj\Debug\net7.0\refint\shop.Web.
 C:\Users\acer\Desktop\shop-webapi-git\shop.Web\obj\Debug\net7.0\shop.Web.pdb
 C:\Users\acer\Desktop\shop-webapi-git\shop.Web\obj\Debug\net7.0\shop.Web.genruntimeconfig.cache
 C:\Users\acer\Desktop\shop-webapi-git\shop.Web\obj\Debug\net7.0\ref\shop.Web.dll
+C:\Users\acer\Desktop\Eshop\shop.Web\bin\Debug\net7.0\AspNetCoreRateLimit.dll

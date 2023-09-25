@@ -46,7 +46,8 @@ namespace shop.Service.Command
             if (RolePermission == null || RolePermission.RoleId != RemoveRolePermissionDto.RoleId)
                 return OperationResult.NotFound();
 
-            await _RolePermissionRepository.DeleteAsync(RolePermission);
+            RolePermission.Deleted = true;
+            _RolePermissionRepository.Update(RolePermission);
             return OperationResult.Success();
         }
         public async Task<OperationResult> UpdateRole(EditRoleDto EditRoleDto)
@@ -59,7 +60,7 @@ namespace shop.Service.Command
             Role.UpdateON = DateTime.Now;
 
 
-            await _RoleRepository.UpdateAsync(Role);
+            _RoleRepository.Update(Role);
             return OperationResult.Success();
         }
     }

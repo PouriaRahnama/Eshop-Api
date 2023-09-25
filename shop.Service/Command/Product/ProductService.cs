@@ -33,7 +33,7 @@ namespace shop.Service.Command
             _caegoryRepository = caegoryRepository;
             _ProductPictureRepository = productPictureRepository;
             _ProductSpecificationRepository = productSpecificationRepository;
-        }                                                                                                                                                                                                                                                                                                                                                                                                                                         
+        }
 
         public async Task<OperationResult> AddPicture(CreatePictureDto CreatePictureDto)
         {
@@ -123,7 +123,8 @@ namespace shop.Service.Command
             if (OldImageName == null)
                 return OperationResult.NotFound("!عکس مورد نظر یافت نشد");
 
-            await _PictureRepository.DeleteAsync(OldImageName);
+            OldImageName.Deleted = true;
+            _PictureRepository.Update(OldImageName);
             _fileService.DeleteFile(Directories.ProductGalleryImage, OldImageName.ImageName);
 
             return OperationResult.Success();
@@ -138,7 +139,7 @@ namespace shop.Service.Command
             var category = await _caegoryRepository.FindByIdAsync(RemoveProductCategoryDto.CategoryID);
             if (category == null)
                 return OperationResult.NotFound();
-                               
+
             var productCategory = new ProductCategory()
             {
                 CategoryID = RemoveProductCategoryDto.CategoryID,
@@ -146,7 +147,8 @@ namespace shop.Service.Command
                 UpdateON = DateTime.Now
             };
 
-            await _ProductCategoryRepository.DeleteAsync(productCategory);
+            productCategory.Deleted = true;
+            _ProductCategoryRepository.Update(productCategory);
             return OperationResult.Success();
         }
 
@@ -163,10 +165,11 @@ namespace shop.Service.Command
             var productPicure = new ProductPicture()
             {
                 PictureID = RemoveProductPicture.PictureID,
-                ProductID = RemoveProductPicture.ProductID                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+                ProductID = RemoveProductPicture.ProductID
             };
 
-            await _ProductPictureRepository.DeleteAsync(productPicure);
+            productPicure.Deleted = true;
+            _ProductPictureRepository.Update(productPicure);
             return OperationResult.Success();
         }
 
@@ -182,10 +185,11 @@ namespace shop.Service.Command
             if (productSpecification == null)
                 return OperationResult.NotFound("!ویژگی مورد نظر یافت نشد");
 
-            await _ProductSpecificationRepository.DeleteAsync(productSpecification);
+            productSpecification.Deleted = true;
+            _ProductSpecificationRepository.Update(productSpecification);
             return OperationResult.Success();
         }
-                                     
+
         public async Task<OperationResult> UpdateProduct(EditProductDto EditProductDto)
         {
             var Product = await _repository.FindByIdAsync(EditProductDto.ProductId);
@@ -206,8 +210,8 @@ namespace shop.Service.Command
             Product.ImageName = NewImageName;
             Product.UpdateON = DateTime.Now;
 
-           
-            await _repository.UpdateAsync(Product);
+
+            _repository.Update(Product);
 
             if (EditProductDto.ImageFile != null)
             {

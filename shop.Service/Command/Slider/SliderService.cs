@@ -54,7 +54,7 @@ namespace shop.Service.Command
                 UpdateON = DateTime.Now
             };
 
-            await _repository.UpdateAsync(Newslider);
+            _repository.Update(Newslider);
 
             if (EditSliderDto.ImageFile != null)
                 _fileService.DeleteFile(Directories.SliderImages, oldImage);
@@ -67,7 +67,8 @@ namespace shop.Service.Command
             if (slider == null)
                 return OperationResult.NotFound();
 
-            await _repository.DeleteAsync(slider);
+            slider.Deleted = true;
+            _repository.Update(slider);
 
             if (slider.ImageName != null)
                 _fileService.DeleteFile(Directories.SliderImages, slider.ImageName);

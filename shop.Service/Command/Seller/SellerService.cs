@@ -61,7 +61,8 @@ namespace shop.Service.Command
             if (Inventory == null)
                 return OperationResult.NotFound();
 
-            await _SellerInventoryRepository.DeleteAsync(Inventory);
+            Inventory.Deleted = true;
+            _SellerInventoryRepository.Update(Inventory);
             return OperationResult.Success();
         }
         public async Task<OperationResult> UpdateInventory(EditInventoryDto EditInventoryDto)
@@ -80,7 +81,7 @@ namespace shop.Service.Command
             Inventory.DiscountPercentage = EditInventoryDto.DiscountPercentage;
             Inventory.UpdateON = DateTime.Now;
 
-             await _SellerInventoryRepository.UpdateAsync(Inventory);
+            _SellerInventoryRepository.Update(Inventory);
             return OperationResult.Success();
         }
         public async Task<OperationResult> UpdateSeller(EditSellerDto EditSellerDto)
@@ -90,6 +91,7 @@ namespace shop.Service.Command
                 return OperationResult.NotFound();
 
             var NationalCodeExistInDataBase = _repository.Table.Where(s => s.NationalCode == EditSellerDto.NationalCode).FirstOrDefault();
+            //var NationalCodeExistInDataBase2 = _repository.Get(s => s.NationalCode == EditSellerDto.NationalCode).Count();
 
             if (EditSellerDto.NationalCode != seller.NationalCode)
                 if (NationalCodeExistInDataBase != null)
@@ -103,7 +105,7 @@ namespace shop.Service.Command
 
 
 
-            await _repository.UpdateAsync(seller);
+            _repository.Update(seller);
             return OperationResult.Success();
         }
     }

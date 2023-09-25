@@ -77,7 +77,7 @@ namespace shop.Service.Command
             user.UpdateON = DateTime.Now;
 
 
-            await _repository.UpdateAsync(user);
+            _repository.Update(user);
             if (EditUserDto.Avatar != null || oldAvatarName != "avatar.png")
                 _fileService.DeleteFile(Directories.UserAvatars, oldAvatarName);
 
@@ -111,12 +111,13 @@ namespace shop.Service.Command
             if (Role == null)
                 return OperationResult.NotFound("!نقش مورد نظر یافت نشد");
 
-            var UserRole = new UserRole()
-            {
-                RoleId = RemoveUserRoleDto.RoleId,
-                UserId = RemoveUserRoleDto.UserId
-            };
-            await _userRoleRepository.DeleteAsync(UserRole);
+            var UserRole = await _userRoleRepository.GetEntity(u => u.RoleId == RemoveUserRoleDto.RoleId && u.UserId == RemoveUserRoleDto.UserId);
+            if (UserRole == null)
+                return OperationResult.NotFound();
+
+            UserRole.Deleted = true;
+            
+            _userRoleRepository.Update(UserRole);
             return OperationResult.Success();
         }
         public async Task<OperationResult> ChangeWallet(ChargeWalletDto ChargeWalletDto)
@@ -146,6 +147,8 @@ namespace shop.Service.Command
                 return OperationResult.NotFound();
 
             var activeTokenCount = _tokenRepository.Table.Where(c => c.UserId == user.Id && c.Deleted == false).Count();
+            //var activeTokenCount2 = _tokenRepository.Get(c => c.UserId == user.Id && c.Deleted == false).Count();
+
             if (activeTokenCount == 3)
                 return OperationResult.Error("امکان استفاده از 4 دستگاه همزمان وجود ندارد");
 
@@ -171,7 +174,8 @@ namespace shop.Service.Command
             if (UserToken == null)
                 return OperationResult.Error("invalid TokenId");
 
-            await _tokenRepository.DeleteAsync(UserToken);
+            UserToken.Deleted = true;
+            _tokenRepository.Update(UserToken);
             return OperationResult.Success();
         }
 
@@ -189,12 +193,12 @@ namespace shop.Service.Command
 
             var newPasswordHash = Sha256Hasher.Hash(ChangePasswordDto.Password);
             user.Password = newPasswordHash;
-            await _repository.UpdateAsync(user);
+            _repository.Update(user);
 
             return OperationResult.Success();
         }
 
-        
+
         public async Task<OperationResult> AddUserAddress(AddUserAddressDto AddUserAddressDto)
         {
             var user = await _repository.FindByIdAsync(AddUserAddressDto.UserId);
@@ -207,14 +211,14 @@ namespace shop.Service.Command
                 Name = AddUserAddressDto.Name,
                 NationalCode = AddUserAddressDto.NationalCode,
                 PhoneNumber = AddUserAddressDto.PhoneNumber,
-                PostalAddress= AddUserAddressDto.PostalCode,
+                PostalAddress = AddUserAddressDto.PostalCode,
                 PostalCode = AddUserAddressDto.PostalCode,
                 Shire = AddUserAddressDto.Shire,
                 Family = AddUserAddressDto.Family,
                 City = AddUserAddressDto.City,
                 ActiveAddress = false
             };
-            
+
             await _userAddressRepository.AddAsync(address);
             return OperationResult.Success();
         }
@@ -227,10 +231,14 @@ namespace shop.Service.Command
 
             var Address = await _userAddressRepository.FindByIdAsync(RemoveUserAddressDto.AddressId);
 
-            await _userAddressRepository.DeleteAsync(Address);
+            if (Address == null)
+                return OperationResult.NotFound();
+
+            Address.Deleted = true;
+            _userAddressRepository.Update(Address);
             return OperationResult.Success();
         }
-        
+
         public async Task<OperationResult> EditUserAddress(EditUserAddressDto EditUserAddressDto)
         {
             var user = await _repository.FindByIdAsync(EditUserAddressDto.UserId);
@@ -251,10 +259,10 @@ namespace shop.Service.Command
             Address.PostalAddress = EditUserAddressDto.PostalAddress;
             Address.City = EditUserAddressDto.City;
 
-            await _userAddressRepository.UpdateAsync(Address);
+            _userAddressRepository.Update(Address);
             return OperationResult.Success();
         }
-        
+
         public async Task<OperationResult> SetActiveUserAddress(SetActiveUserAddressDto SetActiveUserAddressDto)
         {
             var user = await _repository.FindByIdAsync(SetActiveUserAddressDto.UserId);
@@ -271,9 +279,9 @@ namespace shop.Service.Command
             {
                 address.ActiveAddress = false;
             }
-            currentAddress.ActiveAddress=true;
+            currentAddress.ActiveAddress = true;
 
-            await _userAddressRepository.UpdateAsync(currentAddress);
+            _userAddressRepository.Update(currentAddress);
             return OperationResult.Success();
         }
     }
