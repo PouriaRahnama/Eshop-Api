@@ -16,38 +16,6 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\users\avatar\529544b8-ae47-446e-bc00-47be6a4193a30035142152695.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\users\avatar\a867f4c9-d118-4e3d-848e-c7f30d87db5c2005063917523.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>shop.Web</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/shop.Web</BasePath>
-      <RelativePath>images/users/avatar/a867f4c9-d118-4e3d-848e-c7f30d87db5c2005063917523.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\users\avatar\a867f4c9-d118-4e3d-848e-c7f30d87db5c2005063917523.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\users\avatar\c276cc04-76bf-45e5-adf9-a525b3b4f7f30011163362892.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>shop.Web</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/shop.Web</BasePath>
-      <RelativePath>images/users/avatar/c276cc04-76bf-45e5-adf9-a525b3b4f7f30011163362892.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\users\avatar\c276cc04-76bf-45e5-adf9-a525b3b4f7f30011163362892.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\users\avatar\f7cb650b-4e76-4108-af2b-02694fe5fe8f0037084523197.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>shop.Web</SourceId>
