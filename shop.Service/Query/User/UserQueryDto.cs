@@ -1,5 +1,4 @@
 ﻿using shop.Service.Extension.Util;
-using shop.Service.Query.Commons;
 
 namespace shop.Service.Query
 {

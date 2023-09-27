@@ -5,7 +5,7 @@ using shop.Data.ApplicationContext;
 
 namespace shop.Service.Query
 {
-    public class SliderQueryService
+    public class SliderQueryService : ISliderQueryService
     {
         private readonly IApplicationContext _context;
 
@@ -43,8 +43,5 @@ namespace shop.Service.Query
                     Title = slider.Title
                 }).ToListAsync();
         }
-
-
-
     }
 }

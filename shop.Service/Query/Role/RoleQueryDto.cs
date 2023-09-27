@@ -1,5 +1,4 @@
 ﻿using shop.Core.Domain.Role;
-using shop.Service.Query.Commons;
 
 namespace shop.Service.Query
 {

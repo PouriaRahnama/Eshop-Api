@@ -12,8 +12,8 @@ public class PermissionChecker : AuthorizeAttribute, IAsyncAuthorizationFilter
 {
     private IUserService _userService;
     private IRoleService _roleService;
-    private RoleQueryService _roleQueryService;
-    private UserQueryService _userQueryService;
+    private IRoleQueryService _roleQueryService;
+    private IUserQueryService _userQueryService;
     private readonly Permission _permission;
 
     public PermissionChecker(Permission permission)
@@ -30,8 +30,8 @@ public class PermissionChecker : AuthorizeAttribute, IAsyncAuthorizationFilter
 
         _userService = context.HttpContext.RequestServices.GetRequiredService<IUserService>();
         _roleService = context.HttpContext.RequestServices.GetRequiredService<IRoleService>();
-        _roleQueryService = context.HttpContext.RequestServices.GetRequiredService<RoleQueryService>();
-        _userQueryService = context.HttpContext.RequestServices.GetRequiredService<UserQueryService>();
+        _roleQueryService = context.HttpContext.RequestServices.GetRequiredService<IRoleQueryService>();
+        _userQueryService = context.HttpContext.RequestServices.GetRequiredService<IUserQueryService>();
         if (context.HttpContext.User.Identity.IsAuthenticated)
         {
             if (await UserHasPermission(context) == false)

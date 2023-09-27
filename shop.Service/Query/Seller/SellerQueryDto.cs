@@ -1,6 +1,5 @@
 ﻿using shop.Core.Domain.Seller;
 using shop.Service.Extension.Util;
-using shop.Service.Query.Commons;
 
 namespace shop.Service.Query
 {

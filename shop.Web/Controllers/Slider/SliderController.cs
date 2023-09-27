@@ -11,8 +11,8 @@ public class SliderController : ShopController
 {
 
     private readonly ISliderService _sliderService;
-    private readonly SliderQueryService _sliderQueryService;
-    public SliderController(ISliderService sliderService, SliderQueryService sliderQueryService)
+    private readonly ISliderQueryService _sliderQueryService;
+    public SliderController(ISliderService sliderService, ISliderQueryService sliderQueryService)
     {
         _sliderService = sliderService;
         _sliderQueryService = sliderQueryService;

@@ -1,4 +1,4 @@
-﻿namespace shop.Service.Query.Commons
+﻿namespace shop.Service.Query
 {
     public class BaseDto
     {

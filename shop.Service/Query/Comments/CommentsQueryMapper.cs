@@ -1,6 +1,6 @@
 ﻿using shop.Core.Domain.Comment;
 
-namespace shop.Service.Query.Comments
+namespace shop.Service.Query
 {
     public static class CommentsQueryMapper
     {

@@ -14,8 +14,8 @@ namespace shop.Web.Controllers.Category;
 public class CategoryController : ShopController
 {
     private readonly ICategoryService _categoryService;
-    private readonly CategoryQueryService _categoryQueryService;
-    public CategoryController(ICategoryService categoryService, CategoryQueryService categoryQueryService)
+    private readonly ICategoryQueryService _categoryQueryService;
+    public CategoryController(ICategoryService categoryService, ICategoryQueryService categoryQueryService)
     {
         _categoryService = categoryService;
         _categoryQueryService = categoryQueryService;

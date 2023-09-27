@@ -4,7 +4,7 @@ using shop.Data.ApplicationContext;
 
 namespace shop.Service.Query
 {
-    public class SellerQueryService
+    public class SellerQueryService : ISellerQueryService
     {
         private readonly IApplicationContext _Context;
 
@@ -43,7 +43,7 @@ namespace shop.Service.Query
             sellerResult.GeneratePaging(result, @params.Take, @params.PageId);
             return sellerResult;
         }
-      
+
         public async Task<SellerDto?> GetSellerByUserId(int UserId)
         {
             var seller = await _Context.Set<Seller>().FirstOrDefaultAsync(f => f.UserId == UserId);
@@ -53,7 +53,7 @@ namespace shop.Service.Query
         public async Task<InventoryDto?> GetSellerInventoryById(int InventoryId)
         {
             var inventory = await _Context.Set<SellerInventory>().FirstOrDefaultAsync(i => i.Id == InventoryId);
-   
+
             return inventory.InventoryMap();
         }
 
@@ -61,9 +61,9 @@ namespace shop.Service.Query
         {
             var inventory = await _Context.Set<SellerInventory>().Where(i => i.SellerId == SellerId).ToListAsync();
 
-            return inventory.GetAllInventoryMap();         
+            return inventory.GetAllInventoryMap();
         }
-        
+
         public async Task<List<InventoryDto>> GetInventoriesByProductId(int ProductId)
         {
             var inventory = await _Context.Set<SellerInventory>().Where(i => i.ProductId == ProductId).ToListAsync();

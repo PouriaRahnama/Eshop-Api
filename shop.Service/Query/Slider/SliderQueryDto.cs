@@ -1,6 +1,4 @@
-﻿using shop.Service.Query.Commons;
-
-namespace shop.Service.Query
+﻿namespace shop.Service.Query
 {
     public class SliderDto : BaseDto
     {

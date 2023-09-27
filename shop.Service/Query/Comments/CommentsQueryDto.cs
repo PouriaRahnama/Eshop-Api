@@ -1,8 +1,7 @@
 ﻿using shop.Core.Domain.Comment;
 using shop.Service.Extension.Util;
-using shop.Service.Query.Commons;
 
-namespace shop.Service.Query.Comments
+namespace shop.Service.Query
 {
     public class CommentsQueryDto: BaseDto
     {

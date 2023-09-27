@@ -7,9 +7,9 @@ namespace Shop.Api.Infrastructure.JwtUtil;
 
 public class CustomJwtValidation
 {
-    private readonly UserQueryService _userQueryService;
+    private readonly IUserQueryService _userQueryService;
 
-    public CustomJwtValidation(UserQueryService userQueryService)
+    public CustomJwtValidation(IUserQueryService userQueryService)
     {
         _userQueryService = userQueryService;
     }

@@ -4,7 +4,7 @@ using shop.Data.ApplicationContext;
 
 namespace shop.Service.Query
 {
-    public class CategoryQueryService
+    public class CategoryQueryService: ICategoryQueryService
     {
         private readonly IApplicationContext _context;
         public CategoryQueryService(IApplicationContext context)

@@ -14,9 +14,9 @@ namespace shop.Web.Controllers.Seller;
 public class SellerController : ShopController
 {
     private readonly ISellerService _sellerService;
-    private readonly SellerQueryService _sellerQueryService;
-    private readonly ProductQueryService _productQueryService;
-    public SellerController(ISellerService sellerService, SellerQueryService sellerQueryService, ProductQueryService productQueryService)
+    private readonly ISellerQueryService _sellerQueryService;
+    private readonly IProductQueryService _productQueryService;
+    public SellerController(ISellerService sellerService, ISellerQueryService sellerQueryService, IProductQueryService productQueryService)
     {
         _sellerService = sellerService;
         _sellerQueryService = sellerQueryService;

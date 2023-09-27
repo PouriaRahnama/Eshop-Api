@@ -12,8 +12,8 @@ namespace shop.Web.Controllers.Role;
 public class RoleController : ShopController
 {
     private readonly IRoleService _roleService;
-    private readonly RoleQueryService _roleQueryService;
-    public RoleController(IRoleService roleService, RoleQueryService roleQueryService)
+    private readonly IRoleQueryService _roleQueryService;
+    public RoleController(IRoleService roleService, IRoleQueryService roleQueryService)
     {
         _roleService = roleService;
         _roleQueryService = roleQueryService;

@@ -3,7 +3,7 @@ using shop.Data.ApplicationContext;
 
 namespace shop.Service.Query
 {
-    public class OrderQueryService
+    public class OrderQueryService: IOrderQueryService
     {
        private readonly IApplicationContext _Context;
 

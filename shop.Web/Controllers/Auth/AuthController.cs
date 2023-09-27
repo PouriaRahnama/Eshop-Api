@@ -16,9 +16,9 @@ namespace shop.Web.Controllers.Auth;
 public class AuthController : ShopController
 {
     private readonly IUserService _userService;
-    private readonly UserQueryService _userQueryService;
+    private readonly IUserQueryService _userQueryService;
     private readonly IConfiguration _configuration;
-    public AuthController(IUserService userService, IConfiguration configuration, UserQueryService userQueryService)
+    public AuthController(IUserService userService, IConfiguration configuration, IUserQueryService userQueryService)
     {
         _userService = userService;
         _configuration = configuration;

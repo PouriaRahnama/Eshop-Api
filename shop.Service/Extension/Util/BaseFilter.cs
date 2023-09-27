@@ -1,4 +1,4 @@
-﻿using shop.Service.Query.Commons;
+﻿using shop.Service.Query;
 
 namespace shop.Service.Extension.Util;
 

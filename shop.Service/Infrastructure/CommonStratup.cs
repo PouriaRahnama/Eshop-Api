@@ -6,7 +6,6 @@ using shop.Core.Infrastructure;
 using shop.Service.Command;
 using shop.Service.Infrastructure.Filter;
 using shop.Service.Query;
-using shop.Service.Query.Comments;
 using FluentValidation.AspNetCore;
 using System.Reflection;
 using FluentValidation;
@@ -29,15 +28,15 @@ namespace shop.Service.Infrastructure
             services.AddScoped<IProductService, ProductService>();
             services.AddScoped<IRoleService, RoleService>();
             //
-            services.AddScoped<CategoryQueryService, CategoryQueryService>();
-            services.AddScoped<ProductQueryService, ProductQueryService>();
-            services.AddScoped<OrderQueryService, OrderQueryService>();
-            services.AddScoped<CommentsQueryService, CommentsQueryService>();
-            services.AddScoped<RoleQueryService, RoleQueryService>();
-            services.AddScoped<SellerQueryService, SellerQueryService>();
-            services.AddScoped<SliderQueryService, SliderQueryService>();
-            services.AddScoped<UserQueryService, UserQueryService>();
-            services.AddScoped<GetProductsForShopQuery, GetProductsForShopQuery>();
+            services.AddScoped<ICategoryQueryService, CategoryQueryService>();
+            services.AddScoped<IProductQueryService, ProductQueryService>();
+            services.AddScoped<IOrderQueryService, OrderQueryService>();
+            services.AddScoped<ICommentsQueryService, CommentsQueryService>();
+            services.AddScoped<IRoleQueryService, RoleQueryService>();
+            services.AddScoped<ISellerQueryService, SellerQueryService>();
+            services.AddScoped<ISliderQueryService, SliderQueryService>();
+            services.AddScoped<IUserQueryService, UserQueryService>();
+            services.AddScoped<IGetProductsForShopQuery, GetProductsForShopQuery>();
 
             services.AddFluentValidation(options =>
                 {

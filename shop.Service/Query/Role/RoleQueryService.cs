@@ -4,7 +4,7 @@ using shop.Data.ApplicationContext;
 
 namespace shop.Service.Query
 {
-    public class RoleQueryService
+    public class RoleQueryService : IRoleQueryService
     {
         private readonly IApplicationContext _Context;
 
@@ -38,7 +38,5 @@ namespace shop.Service.Query
                 Title = role.Title
             }).ToListAsync();
         }
-
-
     }
 }

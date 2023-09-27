@@ -3,7 +3,7 @@ using shop.Data.ApplicationContext;
 
 namespace shop.Service.Query
 {
-    public class ProductQueryService
+    public class ProductQueryService : IProductQueryService
     {
         private readonly IApplicationContext _Context;
 
@@ -44,7 +44,5 @@ namespace shop.Service.Query
             model.GeneratePaging(result, @params.Take, @params.PageId);
             return model;
         }
-
-
     }
 }

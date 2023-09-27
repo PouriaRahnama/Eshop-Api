@@ -7,7 +7,7 @@ using shop.Service.Query;
 
 namespace shop.Service.Query.Product.GetForShop;
 
-public class GetProductsForShopQuery
+public class GetProductsForShopQuery : IGetProductsForShopQuery
 {
     private readonly DapperContext _dapperContext;
     private readonly IApplicationContext _context;

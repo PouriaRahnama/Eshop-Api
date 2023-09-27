@@ -8,7 +8,6 @@ using shop.Service.Query;
 using shop.Web.Infrastructure;
 using Shop.Api.Infrastructure.JwtUtil;
 using Shop.Web.ViewModels.Users;
-using System.Security.Claims;
 
 namespace shop.Web.Controllers.User;
 
@@ -17,9 +16,9 @@ namespace shop.Web.Controllers.User;
 public class UserController : ShopController
 {
     private readonly IUserService _userService;
-    private readonly UserQueryService _userQueryService;
+    private readonly IUserQueryService _userQueryService;
 
-    public UserController(IUserService userService, UserQueryService userQueryService)
+    public UserController(IUserService userService, IUserQueryService userQueryService)
     {
         _userService = userService;
         _userQueryService = userQueryService;

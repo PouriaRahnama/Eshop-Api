@@ -1,12 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using shop.Core.Domain.User;
 using shop.Data.ApplicationContext;
-using shop.Data.Persistent.Dapper;
-using shop.Service.Extension.Util;
 
 namespace shop.Service.Query
 {
-    public class UserQueryService
+    public class UserQueryService : IUserQueryService
     {
         private readonly IApplicationContext _context;
         public UserQueryService(IApplicationContext context)
@@ -106,7 +104,7 @@ namespace shop.Service.Query
 
             return UserTokenDto;
         }
-        
+
         public async Task<AddressDto?> GetUserAddressById(int AddressId)
         {
             var Address = await _context.Set<UserAddress>()
@@ -119,7 +117,6 @@ namespace shop.Service.Query
             return result;
         }
 
-        
         public async Task<List<AddressDto?>> GetUserAddress(int UserId)
         {
             var Addresses = await _context.Set<UserAddress>()

@@ -2,9 +2,9 @@
 using shop.Core.Domain.Comment;
 using shop.Data.ApplicationContext;
 
-namespace shop.Service.Query.Comments
+namespace shop.Service.Query
 {
-    public class CommentsQueryService
+    public class CommentsQueryService: ICommentsQueryService
     {
         private readonly IApplicationContext _context;
         public CommentsQueryService(IApplicationContext context)

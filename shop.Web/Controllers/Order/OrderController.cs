@@ -13,8 +13,8 @@ namespace shop.Web.Controllers.Order;
 public class OrderController : ShopController
 {
     private readonly IOrderService _orderService;
-    private readonly OrderQueryService _orderQueryService;
-    public OrderController(IOrderService orderService, OrderQueryService orderQueryService)
+    private readonly IOrderQueryService _orderQueryService;
+    public OrderController(IOrderService orderService, IOrderQueryService orderQueryService)
     {
         _orderService = orderService;
         _orderQueryService = orderQueryService;

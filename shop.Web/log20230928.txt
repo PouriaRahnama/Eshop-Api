@@ -1,0 +1,117 @@
+2023-09-28 00:37:19.501 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executing
+2023-09-28 00:37:25.158 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executed
+2023-09-28 00:37:43.126 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executing
+2023-09-28 00:37:43.600 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executed
+2023-09-28 00:38:14.906 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No service for type 'shop.Service.Query.RoleQueryService' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Shop.Api.Infrastructure.JwtUtil.PermissionChecker.OnAuthorizationAsync(AuthorizationFilterContext context) in C:\Users\acer\Desktop\Eshop\shop.Web\Infrastructure\Security\PermissionChecker.cs:line 33
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-09-28 00:38:26.288 +03:30 [ERR] shop.Web.Controllers.User.UserController.GetCurrentUser (shop.Web) Executing
+2023-09-28 00:38:26.333 +03:30 [ERR] shop.Web.Controllers.User.UserController.GetCurrentUser (shop.Web) Executed
+2023-09-28 00:38:40.699 +03:30 [ERR] shop.Web.Controllers.Product.ProductController.GetProductForShopFilter (shop.Web) Executing
+2023-09-28 00:38:41.096 +03:30 [ERR] shop.Web.Controllers.Product.ProductController.GetProductForShopFilter (shop.Web) Executed
+2023-09-28 00:39:14.066 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No service for type 'shop.Service.Query.RoleQueryService' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Shop.Api.Infrastructure.JwtUtil.PermissionChecker.OnAuthorizationAsync(AuthorizationFilterContext context) in C:\Users\acer\Desktop\Eshop\shop.Web\Infrastructure\Security\PermissionChecker.cs:line 33
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-09-28 00:42:23.806 +03:30 [ERR] shop.Web.Controllers.Product.ProductController.GetProductById (shop.Web) Executing
+2023-09-28 00:42:30.657 +03:30 [ERR] shop.Web.Controllers.Product.ProductController.GetProductById (shop.Web) Executed
+2023-09-28 00:42:30.718 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s); to create a disconnected multiplexer, disable AbortOnConnectFail. SocketFailure on PING
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImpl(Func`1 multiplexerFactory, TextWriter log) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\ConnectionMultiplexer.cs:line 888
+   at StackExchange.Redis.ConnectionMultiplexer.Connect(String configuration, TextWriter log) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\ConnectionMultiplexer.cs:line 855
+   at Microsoft.Extensions.Caching.Redis.RedisCache.Connect()
+   at Microsoft.Extensions.Caching.Redis.RedisCache.GetAndRefresh(String key, Boolean getData)
+   at Microsoft.Extensions.Caching.Redis.RedisCache.Get(String key)
+   at shop.Core.Caching.RedisCachManager.IsSet(String key) in C:\Users\acer\Desktop\Eshop\shop.Core\Caching\RedisCachManager.cs:line 50
+   at shop.Core.Caching.Extension.GetAsync[T](ICacheManager cacheManager, String key, Int32 cacheTime, Func`1 GetFromDb) in C:\Users\acer\Desktop\Eshop\shop.Core\Caching\Extension.cs:line 24
+   at shop.Web.Controllers.Product.ProductController.GetProductById(Int32 productId) in C:\Users\acer\Desktop\Eshop\shop.Web\Controllers\Product\ProductController.cs:line 70
+   at lambda_method309(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-09-28 00:43:57.705 +03:30 [ERR] shop.Web.Controllers.Product.ProductController.GetProductById (shop.Web) Executing
+2023-09-28 00:43:58.449 +03:30 [ERR] shop.Web.Controllers.Product.ProductController.GetProductById (shop.Web) Executed
+2023-09-28 01:01:14.786 +03:30 [ERR] shop.Web.Controllers.Product.ProductController.GetProductById (shop.Web) Executing
+2023-09-28 01:01:14.840 +03:30 [ERR] shop.Web.Controllers.Product.ProductController.GetProductById (shop.Web) Executed
+2023-09-28 01:01:27.180 +03:30 [ERR] shop.Web.Controllers.User.UserController.GetCurrentUser (shop.Web) Executing
+2023-09-28 01:01:27.190 +03:30 [ERR] shop.Web.Controllers.User.UserController.GetCurrentUser (shop.Web) Executed
+2023-09-28 01:01:40.256 +03:30 [ERR] shop.Web.Controllers.Slider.SliderController.GetList (shop.Web) Executing
+2023-09-28 01:01:40.281 +03:30 [ERR] shop.Web.Controllers.Slider.SliderController.GetList (shop.Web) Executed
+2023-09-28 01:03:02.390 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.GetAllSellerInventory (shop.Web) Executing
+2023-09-28 01:03:02.510 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.GetAllSellerInventory (shop.Web) Executed
+2023-09-28 01:03:18.782 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.GetSellerById (shop.Web) Executing
+2023-09-28 01:03:18.804 +03:30 [ERR] shop.Web.Controllers.Seller.SellerController.GetSellerById (shop.Web) Executed
+2023-09-28 01:03:29.297 +03:30 [ERR] shop.Web.Controllers.Role.RoleController.GetRoleById (shop.Web) Executing
+2023-09-28 01:03:29.384 +03:30 [ERR] shop.Web.Controllers.Role.RoleController.GetRoleById (shop.Web) Executed
+2023-09-28 01:04:45.505 +03:30 [ERR] shop.Web.Controllers.User.UserController.GetUserByPhoneNumber (shop.Web) Executing
+2023-09-28 01:04:45.523 +03:30 [ERR] shop.Web.Controllers.User.UserController.GetUserByPhoneNumber (shop.Web) Executed
+2023-09-28 01:08:05.526 +03:30 [ERR] shop.Web.Controllers.Role.RoleController.AddRolePermission (shop.Web) Executing
+2023-09-28 01:08:05.776 +03:30 [ERR] shop.Web.Controllers.Role.RoleController.AddRolePermission (shop.Web) Executed
+2023-09-28 01:08:28.797 +03:30 [ERR] shop.Web.Controllers.Product.ProductController.GetProductForShopFilter (shop.Web) Executing
+2023-09-28 01:08:29.257 +03:30 [ERR] shop.Web.Controllers.Product.ProductController.GetProductForShopFilter (shop.Web) Executed
+2023-09-28 01:08:39.007 +03:30 [ERR] shop.Web.Controllers.Product.ProductController.GetProductByFilter (shop.Web) Executing
+2023-09-28 01:08:39.066 +03:30 [ERR] shop.Web.Controllers.Product.ProductController.GetProductByFilter (shop.Web) Executed
+2023-09-28 01:08:44.900 +03:30 [ERR] shop.Web.Controllers.Product.ProductController.GetProductByFilter (shop.Web) Executing
+2023-09-28 01:08:44.974 +03:30 [ERR] shop.Web.Controllers.Product.ProductController.GetProductByFilter (shop.Web) Executed
+2023-09-28 01:08:50.751 +03:30 [ERR] shop.Web.Controllers.Product.ProductController.GetProductByFilter (shop.Web) Executing
+2023-09-28 01:08:50.753 +03:30 [ERR] shop.Web.Controllers.Product.ProductController.GetProductByFilter (shop.Web) Executed
+2023-09-28 01:09:21.445 +03:30 [ERR] shop.Web.Controllers.Product.ProductController.AddProductCategory (shop.Web) Executing
+2023-09-28 01:09:21.471 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'shop.Data.ApplicationContext.SqlServerApplicationContext'.
+System.InvalidOperationException: A second operation was started on this context instance before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidOperationException: A second operation was started on this context instance before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2023-09-28 01:09:21.530 +03:30 [ERR] shop.Web.Controllers.Product.ProductController.AddProductCategory (shop.Web) Executed
+2023-09-28 01:09:35.127 +03:30 [ERR] shop.Web.Controllers.Order.OrderController.GetOrderById (shop.Web) Executing
+2023-09-28 01:09:35.153 +03:30 [ERR] shop.Web.Controllers.Order.OrderController.GetOrderById (shop.Web) Executed
+2023-09-28 01:09:38.655 +03:30 [ERR] shop.Web.Controllers.Order.OrderController.GetOrderById (shop.Web) Executing
+2023-09-28 01:09:38.722 +03:30 [ERR] shop.Web.Controllers.Order.OrderController.GetOrderById (shop.Web) Executed
+2023-09-28 01:09:40.359 +03:30 [ERR] shop.Web.Controllers.Order.OrderController.GetOrderById (shop.Web) Executing
+2023-09-28 01:09:40.362 +03:30 [ERR] shop.Web.Controllers.Order.OrderController.GetOrderById (shop.Web) Executed
+2023-09-28 01:09:41.908 +03:30 [ERR] shop.Web.Controllers.Order.OrderController.GetOrderById (shop.Web) Executing
+2023-09-28 01:09:41.909 +03:30 [ERR] shop.Web.Controllers.Order.OrderController.GetOrderById (shop.Web) Executed
+2023-09-28 01:09:43.626 +03:30 [ERR] shop.Web.Controllers.Order.OrderController.GetOrderById (shop.Web) Executing
+2023-09-28 01:09:43.627 +03:30 [ERR] shop.Web.Controllers.Order.OrderController.GetOrderById (shop.Web) Executed
+2023-09-28 01:09:45.838 +03:30 [ERR] shop.Web.Controllers.Order.OrderController.GetOrderById (shop.Web) Executing
+2023-09-28 01:09:45.839 +03:30 [ERR] shop.Web.Controllers.Order.OrderController.GetOrderById (shop.Web) Executed
+2023-09-28 01:09:47.683 +03:30 [ERR] shop.Web.Controllers.Order.OrderController.GetOrderById (shop.Web) Executing
+2023-09-28 01:09:47.858 +03:30 [ERR] shop.Web.Controllers.Order.OrderController.GetOrderById (shop.Web) Executed
+2023-09-28 01:10:17.284 +03:30 [ERR] shop.Web.Controllers.Comments.CommentsController.AddComment (shop.Web) Executing
+2023-09-28 01:10:17.375 +03:30 [ERR] shop.Web.Controllers.Comments.CommentsController.AddComment (shop.Web) Executed
+2023-09-28 01:10:30.193 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) Executing
+2023-09-28 01:10:30.222 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) Executed
+2023-09-28 01:10:54.899 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) Executing
+2023-09-28 01:10:54.981 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) Executed

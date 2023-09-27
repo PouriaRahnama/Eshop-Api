@@ -15,13 +15,13 @@ namespace shop.Web.Controllers.Product;
 public class ProductController : ShopController
 {
     private readonly IProductService _productService;
-    private readonly ProductQueryService _productQueryService;
-    private readonly GetProductsForShopQuery _getProductsForShopQuery;
+    private readonly IProductQueryService _productQueryService;
+    private readonly IGetProductsForShopQuery _getProductsForShopQuery;
     private readonly ICacheManager _cacheManager;
     public ProductController(IProductService productService,
-        ProductQueryService productQueryService,
+        IProductQueryService productQueryService,
         ICacheManager cacheManager,
-        GetProductsForShopQuery getProductsForShopQuery)
+        IGetProductsForShopQuery getProductsForShopQuery)
     {
         _productService = productService;
         _productQueryService = productQueryService;

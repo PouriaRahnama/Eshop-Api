@@ -4,7 +4,7 @@ using shop.Core.Domain.Role;
 using shop.Frameworks.Commons;
 using shop.Service.Command;
 using shop.Service.DTOs.CommentsCommand;
-using shop.Service.Query.Comments;
+using shop.Service.Query;
 using Shop.Api.Infrastructure.JwtUtil;
 
 namespace shop.Web.Controllers.Comments;
@@ -12,8 +12,8 @@ namespace shop.Web.Controllers.Comments;
 public class CommentsController : ShopController
 {
     private readonly ICommentsService _commentsService;
-    private readonly CommentsQueryService _commentsQueryService;
-    public CommentsController(ICommentsService commentsService, CommentsQueryService commentsQueryService)
+    private readonly ICommentsQueryService _commentsQueryService;
+    public CommentsController(ICommentsService commentsService, ICommentsQueryService commentsQueryService)
     {
         _commentsService = commentsService;
         _commentsQueryService = commentsQueryService;
