@@ -1,0 +1,6 @@
+2023-10-13 19:30:29.641 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executing
+2023-10-13 19:30:40.611 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executed
+2023-10-13 19:32:33.325 +03:30 [ERR] shop.Web.Controllers.User.UserController.RemoveUserRole (shop.Web) Executing
+2023-10-13 19:32:33.668 +03:30 [ERR] shop.Web.Controllers.User.UserController.RemoveUserRole (shop.Web) Executed
+2023-10-13 19:32:49.902 +03:30 [ERR] shop.Web.Controllers.User.UserController.AddUserRole (shop.Web) Executing
+2023-10-13 19:32:50.033 +03:30 [ERR] shop.Web.Controllers.User.UserController.AddUserRole (shop.Web) Executed

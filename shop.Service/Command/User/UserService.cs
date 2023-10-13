@@ -85,11 +85,11 @@ namespace shop.Service.Command
         }
         public async Task<OperationResult> AddUserRole(AddUserRoleDto AddUserRoleDto)
         {
-            var User = _repository.FindByIdAsync(AddUserRoleDto.UserId);
+            var User = await _repository.FindByIdAsync(AddUserRoleDto.UserId);
             if (User == null)
                 return OperationResult.NotFound("!کاربر مورد نظر یافت نشد");
 
-            var Role = _roleRepository.FindByIdAsync(AddUserRoleDto.RoleId);
+            var Role = await _roleRepository.FindByIdAsync(AddUserRoleDto.RoleId);
             if (Role == null)
                 return OperationResult.NotFound("!نقش مورد نظر یافت نشد");
 
@@ -114,10 +114,8 @@ namespace shop.Service.Command
             var UserRole = await _userRoleRepository.GetEntity(u => u.RoleId == RemoveUserRoleDto.RoleId && u.UserId == RemoveUserRoleDto.UserId);
             if (UserRole == null)
                 return OperationResult.NotFound();
-
-            UserRole.Deleted = true;
             
-            _userRoleRepository.Update(UserRole);
+            _userRoleRepository.Delete(UserRole);
             return OperationResult.Success();
         }
         public async Task<OperationResult> ChangeWallet(ChargeWalletDto ChargeWalletDto)

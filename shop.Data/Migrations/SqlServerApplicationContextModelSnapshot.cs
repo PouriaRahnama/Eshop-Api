@@ -301,9 +301,6 @@ namespace shop.Data.Migrations
                     b.Property<DateTime>("CreateON")
                         .HasColumnType("datetime2");
 
-                    b.Property<bool>("Deleted")
-                        .HasColumnType("bit");
-
                     b.Property<DateTime?>("UpdateON")
                         .HasColumnType("datetime2");
 
@@ -324,9 +321,6 @@ namespace shop.Data.Migrations
 
                     b.Property<DateTime>("CreateON")
                         .HasColumnType("datetime2");
-
-                    b.Property<bool>("Deleted")
-                        .HasColumnType("bit");
 
                     b.Property<DateTime?>("UpdateON")
                         .HasColumnType("datetime2");
@@ -669,9 +663,6 @@ namespace shop.Data.Migrations
 
                     b.Property<DateTime>("CreateON")
                         .HasColumnType("datetime2");
-
-                    b.Property<bool>("Deleted")
-                        .HasColumnType("bit");
 
                     b.Property<DateTime?>("UpdateON")
                         .HasColumnType("datetime2");

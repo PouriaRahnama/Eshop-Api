@@ -23,14 +23,14 @@
 
                 }).ToList(),
 
-                Images = product.ProductPictures.Where(s => s.Deleted == false).Select(s => new ProductImageDto()
+                Images = product.ProductPictures.Select(s => new ProductImageDto()
                 {
                     ProductID = s.ProductID,
                     PictureID = s.PictureID,
 
                 }).ToList(),
 
-                Category = product.ProductCategories.Where(s => s.Deleted == false).Select(s => new ProductCategoryDto()
+                Category = product.ProductCategories.Select(s => new ProductCategoryDto()
                 {
                     Id = s.CategoryID,
                     CreationDate = s.CreateON,

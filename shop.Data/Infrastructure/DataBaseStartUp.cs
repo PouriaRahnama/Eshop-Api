@@ -2,7 +2,6 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Options;
 using shop.Core.Infrastructure;
 using shop.Data.ApplicationContext;
 using shop.Data.Persistent.Dapper;
@@ -16,7 +15,7 @@ namespace shop.Data.Infrastructure
         public MiddleWarePriority Priority => MiddleWarePriority.AboveNormal;
         public void ConfigureServices(IServiceCollection services, IConfiguration configuration)
         {
-            string connectionString = "Data Source=.;Initial Catalog=ShopApp;Integrated Security=true;Encrypt=false;MultipleActiveResultSets=true";
+            string connectionString = "Data Source=.;Initial Catalog=EShopApp;Integrated Security=true;Encrypt=false;MultipleActiveResultSets=true";
             services.AddScoped(typeof(IRepository<>), typeof(EFRepository<>));
             services.AddDbContextPool<IApplicationContext, SqlServerApplicationContext>((options) =>
             {

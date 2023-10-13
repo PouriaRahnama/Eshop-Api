@@ -64,11 +64,11 @@ namespace shop.Service.Command
 
         public async Task<OperationResult> AddProductCategory(AddProductCategoryDto AddProductCategoryDto)
         {
-            var product = _repository.FindByIdAsync(AddProductCategoryDto.ProductID);
+            var product = await _repository.FindByIdAsync(AddProductCategoryDto.ProductID);
             if (product == null)
                 return OperationResult.NotFound();
 
-            var category = _repository.FindByIdAsync(AddProductCategoryDto.CategoryID);
+            var category = await _repository.FindByIdAsync(AddProductCategoryDto.CategoryID);
             if (category == null)
                 return OperationResult.NotFound();
 
@@ -88,7 +88,7 @@ namespace shop.Service.Command
             if (product == null)
                 return OperationResult.NotFound("!محصول مورد نظر یافت نشد");
 
-            var picture = _PictureRepository.FindByIdAsync(AddProductPictureDto.PictureID);
+            var picture = await _PictureRepository.FindByIdAsync(AddProductPictureDto.PictureID);
             if (picture == null)
                 return OperationResult.NotFound("!عکس مورد نظر یافت نشد");
 
@@ -147,8 +147,7 @@ namespace shop.Service.Command
                 UpdateON = DateTime.Now
             };
 
-            productCategory.Deleted = true;
-            _ProductCategoryRepository.Update(productCategory);
+            _ProductCategoryRepository.Delete(productCategory);
             return OperationResult.Success();
         }
 
@@ -158,7 +157,7 @@ namespace shop.Service.Command
             if (product == null)
                 return OperationResult.NotFound("!محصول مورد نظر یافت نشد");
 
-            var picture = _PictureRepository.FindByIdAsync(RemoveProductPicture.PictureID);
+            var picture = await _PictureRepository.FindByIdAsync(RemoveProductPicture.PictureID);
             if (picture == null)
                 return OperationResult.NotFound("!عکس مورد نظر یافت نشد");
 
@@ -168,8 +167,7 @@ namespace shop.Service.Command
                 ProductID = RemoveProductPicture.ProductID
             };
 
-            productPicure.Deleted = true;
-            _ProductPictureRepository.Update(productPicure);
+            _ProductPictureRepository.Delete(productPicure);
             return OperationResult.Success();
         }
 
@@ -210,14 +208,12 @@ namespace shop.Service.Command
             Product.ImageName = NewImageName;
             Product.UpdateON = DateTime.Now;
 
-
             _repository.Update(Product);
 
             if (EditProductDto.ImageFile != null)
             {
                 _fileService.DeleteFile(Directories.ProductImages, oldImage);
             }
-
             return OperationResult.Success();
         }
 

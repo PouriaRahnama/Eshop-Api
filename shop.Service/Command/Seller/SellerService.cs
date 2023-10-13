@@ -75,7 +75,6 @@ namespace shop.Service.Command
             if(Inventory == null)
                 return OperationResult.NotFound();
 
-
             Inventory.Count = EditInventoryDto.Count;
             Inventory.Price = EditInventoryDto.Price;
             Inventory.DiscountPercentage = EditInventoryDto.DiscountPercentage;
@@ -97,13 +96,10 @@ namespace shop.Service.Command
                 if (NationalCodeExistInDataBase != null)
                     return OperationResult.Error("کدملی متعلق به شخص دیگری است");
 
-
             seller.Status = EditSellerDto.Status;
             seller.NationalCode = EditSellerDto.NationalCode;
             seller.ShopName = EditSellerDto.ShopName;
             seller.UpdateON = DateTime.Now;
-
-
 
             _repository.Update(seller);
             return OperationResult.Success();
