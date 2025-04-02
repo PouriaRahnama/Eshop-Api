@@ -1,11 +1,11 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\acer\\Desktop\\shop\\shop.Web\\wwwroot\\images\\users\\avatar\\529544b8-ae47-446e-bc00-47be6a4193a30035142152695.jpg",
+      "Id": "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Web\\wwwroot\\images\\users\\avatar\\529544b8-ae47-446e-bc00-47be6a4193a30035142152695.jpg",
       "PackagePath": "staticwebassets\\images\\users\\avatar\\529544b8-ae47-446e-bc00-47be6a4193a30035142152695.jpg"
     },
     {
-      "Id": "C:\\Users\\acer\\Desktop\\shop\\shop.Web\\wwwroot\\images\\users\\avatar\\f7cb650b-4e76-4108-af2b-02694fe5fe8f0037084523197.jpg",
+      "Id": "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Web\\wwwroot\\images\\users\\avatar\\f7cb650b-4e76-4108-af2b-02694fe5fe8f0037084523197.jpg",
       "PackagePath": "staticwebassets\\images\\users\\avatar\\f7cb650b-4e76-4108-af2b-02694fe5fe8f0037084523197.jpg"
     },
     {
@@ -19,6 +19,10 @@
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.shop.Web.props",
       "PackagePath": "buildTransitive\\shop.Web.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.shop.Web.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.shop.Web.Microsoft.AspNetCore.StaticWebAssets.props",

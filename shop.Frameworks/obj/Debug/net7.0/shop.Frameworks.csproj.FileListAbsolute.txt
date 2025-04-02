@@ -492,3 +492,23 @@ C:\Users\acer\Desktop\shop-webapi-git\shop.Frameworks\obj\Debug\net7.0\shop.Fram
 C:\Users\acer\Desktop\shop-webapi-git\shop.Frameworks\obj\Debug\net7.0\refint\shop.Frameworks.dll
 C:\Users\acer\Desktop\shop-webapi-git\shop.Frameworks\obj\Debug\net7.0\shop.Frameworks.pdb
 C:\Users\acer\Desktop\shop-webapi-git\shop.Frameworks\obj\Debug\net7.0\ref\shop.Frameworks.dll
+D:\Project Asp.Net\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Frameworks\bin\Debug\net7.0\shop.Frameworks.deps.json
+D:\Project Asp.Net\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Frameworks\bin\Debug\net7.0\shop.Frameworks.dll
+D:\Project Asp.Net\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Frameworks\bin\Debug\net7.0\shop.Frameworks.pdb
+D:\Project Asp.Net\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Frameworks\bin\Debug\net7.0\shop.Core.dll
+D:\Project Asp.Net\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Frameworks\bin\Debug\net7.0\shop.Data.dll
+D:\Project Asp.Net\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Frameworks\bin\Debug\net7.0\shop.Service.dll
+D:\Project Asp.Net\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Frameworks\bin\Debug\net7.0\shop.Core.pdb
+D:\Project Asp.Net\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Frameworks\bin\Debug\net7.0\shop.Service.pdb
+D:\Project Asp.Net\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Frameworks\bin\Debug\net7.0\shop.Data.pdb
+D:\Project Asp.Net\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Frameworks\obj\Debug\net7.0\shop.Frameworks.csproj.AssemblyReference.cache
+D:\Project Asp.Net\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Frameworks\obj\Debug\net7.0\shop.Frameworks.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project Asp.Net\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Frameworks\obj\Debug\net7.0\shop.Frameworks.AssemblyInfoInputs.cache
+D:\Project Asp.Net\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Frameworks\obj\Debug\net7.0\shop.Frameworks.AssemblyInfo.cs
+D:\Project Asp.Net\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Frameworks\obj\Debug\net7.0\shop.Frameworks.csproj.CoreCompileInputs.cache
+D:\Project Asp.Net\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Frameworks\obj\Debug\net7.0\shop.Frameworks.sourcelink.json
+D:\Project Asp.Net\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Frameworks\obj\Debug\net7.0\shop.Fra.8CAEB4FE.Up2Date
+D:\Project Asp.Net\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Frameworks\obj\Debug\net7.0\shop.Frameworks.dll
+D:\Project Asp.Net\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Frameworks\obj\Debug\net7.0\refint\shop.Frameworks.dll
+D:\Project Asp.Net\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Frameworks\obj\Debug\net7.0\shop.Frameworks.pdb
+D:\Project Asp.Net\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Frameworks\obj\Debug\net7.0\ref\shop.Frameworks.dll

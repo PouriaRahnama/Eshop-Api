@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bTgFlP7Vhy8vZpui38XMLMVSt/DssajLzIDwRktxGl8tiEUopuPAvPT2KtI0LpI/QKx3EgcY2DiZ8g/MN/Q/fw==",
+  "dgSpecHash": "PdikM+Lcr3M=",
   "success": true,
-  "projectFilePath": "C:\\Users\\acer\\Desktop\\shop\\shop.Data\\shop.Data.csproj",
+  "projectFilePath": "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Data\\shop.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\acer\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\acer\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

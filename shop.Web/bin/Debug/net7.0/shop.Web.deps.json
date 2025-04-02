@@ -2367,7 +2367,10 @@
           "Newtonsoft.Json": "13.0.3"
         },
         "runtime": {
-          "shop.Core.dll": {}
+          "shop.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "shop.Data/1.0.0": {
@@ -2379,7 +2382,10 @@
           "shop.Core": "1.0.0"
         },
         "runtime": {
-          "shop.Data.dll": {}
+          "shop.Data.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "shop.Frameworks/1.0.0": {
@@ -2393,7 +2399,10 @@
           "shop.Service": "1.0.0"
         },
         "runtime": {
-          "shop.Frameworks.dll": {}
+          "shop.Frameworks.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "shop.Service/1.0.0": {
@@ -2409,7 +2418,10 @@
           "shop.Data": "1.0.0"
         },
         "runtime": {
-          "shop.Service.dll": {}
+          "shop.Service.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

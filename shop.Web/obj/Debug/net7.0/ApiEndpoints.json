@@ -1,0 +1,2195 @@
+[
+  {
+    "ContainingType": "shop.Web.Controllers.Auth.AuthController",
+    "Method": "Login",
+    "RelativePath": "Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginViewModel",
+        "Type": "Shop.Api.ViewModels.Auth.LoginViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult\u00601[[Shop.Api.ViewModels.Auth.LoginResultDto, shop.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Auth.AuthController",
+    "Method": "Logout",
+    "RelativePath": "Auth/logout",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Auth.AuthController",
+    "Method": "RefreshToken",
+    "RelativePath": "Auth/RefreshToken",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "refreshToken",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult\u00601[[Shop.Api.ViewModels.Auth.LoginResultDto, shop.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Auth.AuthController",
+    "Method": "Register",
+    "RelativePath": "Auth/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "register",
+        "Type": "Shop.Api.ViewModels.Auth.RegisterViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Category.CategoryController",
+    "Method": "GetAllCategories",
+    "RelativePath": "Category",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult\u00601[[System.Collections.Generic.List\u00601[[shop.Service.Query.CategoryQueryDto, shop.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Category.CategoryController",
+    "Method": "CreateCategory",
+    "RelativePath": "Category",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CreateCategoryDto",
+        "Type": "shop.Service.DTOs.CategoryCommand.CreateCategoryDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Category.CategoryController",
+    "Method": "EditCategory",
+    "RelativePath": "Category",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EditCategoryDto",
+        "Type": "shop.Service.DTOs.CategoryCommand.EditCategoryDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Category.CategoryController",
+    "Method": "GetCategoryById",
+    "RelativePath": "Category/{Id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult\u00601[[shop.Service.Query.CategoryQueryDto, shop.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Category.CategoryController",
+    "Method": "RemoveCategory",
+    "RelativePath": "Category/{Id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Category.CategoryController",
+    "Method": "CreateCategory",
+    "RelativePath": "Category/Child",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CreateChildCategoryDto",
+        "Type": "shop.Service.DTOs.CategoryCommand.CreateChildCategoryDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Category.CategoryController",
+    "Method": "GetCategoriesByParentId",
+    "RelativePath": "Category/Child/{parentId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "parentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult\u00601[[System.Collections.Generic.List\u00601[[shop.Service.Query.ChildCategoriesDto, shop.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Comments.CommentsController",
+    "Method": "EditComment",
+    "RelativePath": "Comments",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "shop.Service.DTOs.CommentsCommand.EditCommentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Comments.CommentsController",
+    "Method": "AddComment",
+    "RelativePath": "Comments",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "shop.Service.DTOs.CommentsCommand.CreateCommentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Comments.CommentsController",
+    "Method": "GetCommentById",
+    "RelativePath": "Comments/{Id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult\u00601[[shop.Service.Query.CommentsQueryDto, shop.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Comments.CommentsController",
+    "Method": "GetCommentByFilter",
+    "RelativePath": "Comments/CommentFilter",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ProductId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "StartDate",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "EndDate",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "CommentStatus",
+        "Type": "System.Nullable\u00601[[shop.Core.Domain.Comment.CommentStatus, shop.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Take",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult\u00601[[shop.Service.Query.CommentFilterResult, shop.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Comments.CommentsController",
+    "Method": "ChangeCommentStatus",
+    "RelativePath": "Comments/Status",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Status",
+        "Type": "shop.Core.Domain.Comment.CommentStatus",
+        "IsRequired": false
+      },
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Order.OrderController",
+    "Method": "GetOrderById",
+    "RelativePath": "Order/{Id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult\u00601[[shop.Service.Query.OrderQueryDto, shop.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Order.OrderController",
+    "Method": "AddOrderAddress",
+    "RelativePath": "Order/OrderAddress",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "shop.Service.DTOs.OrderCommand.AddOrderAddressDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Order.OrderController",
+    "Method": "RemoveOrderAddress",
+    "RelativePath": "Order/OrderAddress",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "shop.Service.DTOs.OrderCommand.RemoveOrderAddressDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Order.OrderController",
+    "Method": "GetOrderByFilter",
+    "RelativePath": "Order/OrderFilter",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UserId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "StartDate",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "EndDate",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Status",
+        "Type": "System.Nullable\u00601[[shop.Core.Domain.Order.OrderStatus, shop.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Take",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult\u00601[[shop.Service.Query.OrderFilterResult, shop.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Order.OrderController",
+    "Method": "RemoveOrderItem",
+    "RelativePath": "Order/orderItem",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "shop.Service.DTOs.OrderCommand.RemoveOrderItemDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Order.OrderController",
+    "Method": "AddOrderItem",
+    "RelativePath": "Order/OrderItem",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "shop.Service.DTOs.OrderCommand.CreateOrderItemDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Order.OrderController",
+    "Method": "DecreaseOrderItemCount",
+    "RelativePath": "Order/orderItem/DecreaseCount",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "shop.Service.DTOs.OrderCommand.DecreaseOrderItemCountDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Order.OrderController",
+    "Method": "IncreaseOrderItem",
+    "RelativePath": "Order/orderItem/IncreaseCount",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "shop.Service.DTOs.OrderCommand.IncreaseOrderItemCountDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Product.ProductController",
+    "Method": "AddProduct",
+    "RelativePath": "Product",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Title",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ImageFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "Description",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Product.ProductController",
+    "Method": "UpdateProduct",
+    "RelativePath": "Product",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ProductId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Title",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ImageFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "Description",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Product.ProductController",
+    "Method": "GetProductById",
+    "RelativePath": "Product/{productId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult\u00601[[shop.Service.Query.ProductQueryDto, shop.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Product.ProductController",
+    "Method": "AddPicture",
+    "RelativePath": "Product/Picture",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ImageFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Product.ProductController",
+    "Method": "AddProductCategory",
+    "RelativePath": "Product/ProductCategory",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "shop.Service.DTOs.ProductCommand.AddProductCategoryDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Product.ProductController",
+    "Method": "RemoveProductCategory",
+    "RelativePath": "Product/ProductCategory",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "shop.Service.DTOs.ProductCommand.RemoveProductCategoryDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Product.ProductController",
+    "Method": "GetProductByFilter",
+    "RelativePath": "Product/ProductFilter",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Title",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Id",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Take",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult\u00601[[shop.Service.Query.ProductFilterResult, shop.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Product.ProductController",
+    "Method": "AddProductPicture",
+    "RelativePath": "Product/ProductPicture",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "shop.Service.DTOs.ProductCommand.AddProductPictureDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Product.ProductController",
+    "Method": "RemoveProductPicture",
+    "RelativePath": "Product/ProductPicture",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "shop.Service.DTOs.ProductCommand.RemoveProductPictureDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Product.ProductController",
+    "Method": "AddProductSpecification",
+    "RelativePath": "Product/ProductSpecification",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "shop.Service.DTOs.ProductCommand.AddProductSpecificationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Product.ProductController",
+    "Method": "RemoveProductSpecification",
+    "RelativePath": "Product/ProductSpecification",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "shop.Service.DTOs.ProductCommand.RemoveProductSpecificationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Product.ProductController",
+    "Method": "RemovePicture",
+    "RelativePath": "Product/RemovePicture",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PictureId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Product.ProductController",
+    "Method": "GetProductForShopFilter",
+    "RelativePath": "Product/Shop",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Category",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Search",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "OnlyAvailableProducts",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "JustHasDiscount",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "SearchOrderBy",
+        "Type": "shop.Service.Query.Product.GetForShop.ProductSearchOrderBy",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Take",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult\u00601[[shop.Service.Query.Product.GetForShop.ProductShopResult, shop.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Role.RoleController",
+    "Method": "AddRole",
+    "RelativePath": "Role",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Command",
+        "Type": "shop.Service.DTOs.RoleCommand.CreateRoleDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Role.RoleController",
+    "Method": "UpdateRole",
+    "RelativePath": "Role",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Command",
+        "Type": "shop.Service.DTOs.RoleCommand.EditRoleDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Role.RoleController",
+    "Method": "GetRoleById",
+    "RelativePath": "Role/{Id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult\u00601[[shop.Service.Query.RoleQueryDto, shop.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Role.RoleController",
+    "Method": "GetAllRole",
+    "RelativePath": "Role/AllRole",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult\u00601[[System.Collections.Generic.List\u00601[[shop.Service.Query.RoleQueryDto, shop.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Role.RoleController",
+    "Method": "AddRolePermission",
+    "RelativePath": "Role/RolePermission",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "RoleId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PermissionStatus",
+        "Type": "shop.Core.Domain.Role.Permission",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Role.RoleController",
+    "Method": "RemoveRolePermission",
+    "RelativePath": "Role/RolePermission",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Command",
+        "Type": "shop.Service.DTOs.RoleCommand.RemoveRolePermissionDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Seller.SellerController",
+    "Method": "AddSeller",
+    "RelativePath": "Seller",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "shop.Service.DTOs.SellerCommand.AddSellerDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Seller.SellerController",
+    "Method": "UpdateSeller",
+    "RelativePath": "Seller",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "SellerId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "ShopName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NationalCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Status",
+        "Type": "shop.Core.Domain.Seller.SellerStatus",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Seller.SellerController",
+    "Method": "GetSellerById",
+    "RelativePath": "Seller/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult\u00601[[shop.Service.Query.SellerDto, shop.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Seller.SellerController",
+    "Method": "AddInventory",
+    "RelativePath": "Seller/Inventory",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "shop.Service.DTOs.SellerCommand.AddInventoryDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Seller.SellerController",
+    "Method": "EditInventory",
+    "RelativePath": "Seller/Inventory",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "shop.Service.DTOs.SellerCommand.EditInventoryDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Seller.SellerController",
+    "Method": "RemoveInventory",
+    "RelativePath": "Seller/Inventory",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "shop.Service.DTOs.SellerCommand.RemoveInventoryDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Seller.SellerController",
+    "Method": "GetSellerInventoryByProductId",
+    "RelativePath": "Seller/Inventory/{ProductId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ProductId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult\u00601[[shop.Service.Query.SingleProductDto, shop.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Seller.SellerController",
+    "Method": "GetSellerByFilter",
+    "RelativePath": "Seller/SellerFilter",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ShopName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NationalCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Take",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult\u00601[[shop.Service.Query.SellerFilterResult, shop.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Seller.SellerController",
+    "Method": "GetAllSellerInventory",
+    "RelativePath": "Seller/SellerInventory",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult\u00601[[System.Collections.Generic.List\u00601[[shop.Service.Query.InventoryDto, shop.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Seller.SellerController",
+    "Method": "GetSellerInventoryById",
+    "RelativePath": "Seller/SellerInventory/{Id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult\u00601[[shop.Service.Query.InventoryDto, shop.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Slider.SliderController",
+    "Method": "GetList",
+    "RelativePath": "Slider",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult\u00601[[System.Collections.Generic.List\u00601[[shop.Service.Query.SliderDto, shop.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Slider.SliderController",
+    "Method": "AddSlider",
+    "RelativePath": "Slider",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Link",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ImageFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "Title",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Slider.SliderController",
+    "Method": "EditSlider",
+    "RelativePath": "Slider",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "SliderId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Link",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ImageFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "Title",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "IsActive",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Slider.SliderController",
+    "Method": "RemoveSlider",
+    "RelativePath": "Slider",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "shop.Service.DTOs.SliderCommand.RemoveSliderDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Slider.SliderController",
+    "Method": "GetById",
+    "RelativePath": "Slider/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult\u00601[[shop.Service.Query.SliderDto, shop.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.User.UserController",
+    "Method": "AddUser",
+    "RelativePath": "User",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "shop.Service.DTOs.UserCommand.CreateUserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.User.UserController",
+    "Method": "Edit",
+    "RelativePath": "User",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Avatar",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Family",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PhoneNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Password",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.User.UserController",
+    "Method": "Delete",
+    "RelativePath": "User/{addressId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "addressId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.User.UserController",
+    "Method": "GetById",
+    "RelativePath": "User/{Id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult\u00601[[shop.Service.Query.UserDto, shop.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.User.UserController",
+    "Method": "GetUserAddress",
+    "RelativePath": "User/Address",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult\u00601[[System.Collections.Generic.List\u00601[[shop.Service.Query.AddressDto, shop.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.User.UserController",
+    "Method": "GetUserAddressById",
+    "RelativePath": "User/Address/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult\u00601[[shop.Service.Query.AddressDto, shop.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.User.UserController",
+    "Method": "ChangePassword",
+    "RelativePath": "User/ChangePassword",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ChangePasswordViewModel",
+        "Type": "Shop.Web.ViewModels.Users.ChangePasswordViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.User.UserController",
+    "Method": "ChangeWallet",
+    "RelativePath": "User/ChangeWallet",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Price",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Description",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "IsFinally",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Type",
+        "Type": "shop.Core.Domain.User.WalletType",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.User.UserController",
+    "Method": "GetCurrentUser",
+    "RelativePath": "User/Current",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult\u00601[[shop.Service.Query.UserDto, shop.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.User.UserController",
+    "Method": "EditUser",
+    "RelativePath": "User/Current",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Avatar",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Family",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PhoneNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.User.UserController",
+    "Method": "SetAddressActive",
+    "RelativePath": "User/SetActiveAddress/{addressId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "addressId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.User.UserController",
+    "Method": "AddUserAddress",
+    "RelativePath": "User/UserAddress",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Shop.Web.ViewModels.Users.AddUserAddressViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.User.UserController",
+    "Method": "EditUserAddress",
+    "RelativePath": "User/UserAddress",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Shop.Web.ViewModels.Users.EditUserAddressViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.User.UserController",
+    "Method": "GetUserByPhoneNumber",
+    "RelativePath": "User/UserByPhoneNumber",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PhoneNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult\u00601[[shop.Service.Query.UserDto, shop.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.User.UserController",
+    "Method": "GetUserByFilter",
+    "RelativePath": "User/UserFilter",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PhoneNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Id",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Take",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult\u00601[[shop.Service.Query.UserFilterResult, shop.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.User.UserController",
+    "Method": "AddUserRole",
+    "RelativePath": "User/UserRole",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "shop.Service.DTOs.UserCommand.AddUserRoleDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.User.UserController",
+    "Method": "RemoveUserRole",
+    "RelativePath": "User/UserRole",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "shop.Service.DTOs.UserCommand.RemoveUserRoleDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

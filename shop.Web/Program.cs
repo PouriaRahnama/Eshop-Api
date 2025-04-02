@@ -15,6 +15,8 @@ builder.Services.AddJwtAuthentication(builder.Configuration);
 builder.Services.RegisterApiDependency(builder.Configuration);
 builder.Host.UseSerilog(((context, provider, logger) =>
 {
+    logger.MinimumLevel.Information()
+        .WriteTo.Console(); // «÷«›Â ò—œ‰ ·«ê »Â ò‰”Ê·
     logger.MinimumLevel.Information().WriteTo.File("log.txt",
         rollingInterval: RollingInterval.Day,
         rollOnFileSizeLimit: true, restrictedToMinimumLevel: Serilog.Events.LogEventLevel.Error

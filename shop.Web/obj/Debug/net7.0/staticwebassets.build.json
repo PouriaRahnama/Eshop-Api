@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Uf5z2bHtnf2zL6FijF2ti2Q2kaePTlIzUGDbBuzsrf0=",
+  "Hash": "dEHMf+EswtEi226oa1pTJk/5x9xlOyD869L8pz0Gi58=",
   "Source": "shop.Web",
   "BasePath": "_content/shop.Web",
   "Mode": "Default",
@@ -10,45 +10,219 @@
     {
       "Name": "shop.Web\\wwwroot",
       "Source": "shop.Web",
-      "ContentRoot": "C:\\Users\\acer\\Desktop\\shop\\shop.Web\\wwwroot\\",
+      "ContentRoot": "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Web\\wwwroot\\",
       "BasePath": "_content/shop.Web",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\acer\\Desktop\\shop\\shop.Web\\wwwroot\\images\\users\\avatar\\529544b8-ae47-446e-bc00-47be6a4193a30035142152695.jpg",
+      "Identity": "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Web\\wwwroot\\images\\users\\avatar\\529544b8-ae47-446e-bc00-47be6a4193a30035142152695.jpg",
       "SourceId": "shop.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\Desktop\\shop\\shop.Web\\wwwroot\\",
+      "ContentRoot": "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Web\\wwwroot\\",
       "BasePath": "_content/shop.Web",
-      "RelativePath": "images/users/avatar/529544b8-ae47-446e-bc00-47be6a4193a30035142152695.jpg",
+      "RelativePath": "images/users/avatar/529544b8-ae47-446e-bc00-47be6a4193a30035142152695#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "q7q2o0r10i",
+      "Integrity": "NvnFtdanCVgTZ8uSzCznKM9gH5nhoCwAog2lNIGXgtg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\users\\avatar\\529544b8-ae47-446e-bc00-47be6a4193a30035142152695.jpg"
     },
     {
-      "Identity": "C:\\Users\\acer\\Desktop\\shop\\shop.Web\\wwwroot\\images\\users\\avatar\\f7cb650b-4e76-4108-af2b-02694fe5fe8f0037084523197.jpg",
+      "Identity": "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Web\\wwwroot\\images\\users\\avatar\\f7cb650b-4e76-4108-af2b-02694fe5fe8f0037084523197.jpg",
       "SourceId": "shop.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\Desktop\\shop\\shop.Web\\wwwroot\\",
+      "ContentRoot": "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Web\\wwwroot\\",
       "BasePath": "_content/shop.Web",
-      "RelativePath": "images/users/avatar/f7cb650b-4e76-4108-af2b-02694fe5fe8f0037084523197.jpg",
+      "RelativePath": "images/users/avatar/f7cb650b-4e76-4108-af2b-02694fe5fe8f0037084523197#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "q7q2o0r10i",
+      "Integrity": "NvnFtdanCVgTZ8uSzCznKM9gH5nhoCwAog2lNIGXgtg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\users\\avatar\\f7cb650b-4e76-4108-af2b-02694fe5fe8f0037084523197.jpg"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "images/users/avatar/529544b8-ae47-446e-bc00-47be6a4193a30035142152695.jpg",
+      "AssetFile": "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Web\\wwwroot\\images\\users\\avatar\\529544b8-ae47-446e-bc00-47be6a4193a30035142152695.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23785"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NvnFtdanCVgTZ8uSzCznKM9gH5nhoCwAog2lNIGXgtg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Apr 2025 17:16:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NvnFtdanCVgTZ8uSzCznKM9gH5nhoCwAog2lNIGXgtg="
+        }
+      ]
+    },
+    {
+      "Route": "images/users/avatar/529544b8-ae47-446e-bc00-47be6a4193a30035142152695.q7q2o0r10i.jpg",
+      "AssetFile": "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Web\\wwwroot\\images\\users\\avatar\\529544b8-ae47-446e-bc00-47be6a4193a30035142152695.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23785"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NvnFtdanCVgTZ8uSzCznKM9gH5nhoCwAog2lNIGXgtg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Apr 2025 17:16:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "q7q2o0r10i"
+        },
+        {
+          "Name": "label",
+          "Value": "images/users/avatar/529544b8-ae47-446e-bc00-47be6a4193a30035142152695.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NvnFtdanCVgTZ8uSzCznKM9gH5nhoCwAog2lNIGXgtg="
+        }
+      ]
+    },
+    {
+      "Route": "images/users/avatar/f7cb650b-4e76-4108-af2b-02694fe5fe8f0037084523197.jpg",
+      "AssetFile": "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Web\\wwwroot\\images\\users\\avatar\\f7cb650b-4e76-4108-af2b-02694fe5fe8f0037084523197.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23785"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NvnFtdanCVgTZ8uSzCznKM9gH5nhoCwAog2lNIGXgtg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Apr 2025 17:16:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NvnFtdanCVgTZ8uSzCznKM9gH5nhoCwAog2lNIGXgtg="
+        }
+      ]
+    },
+    {
+      "Route": "images/users/avatar/f7cb650b-4e76-4108-af2b-02694fe5fe8f0037084523197.q7q2o0r10i.jpg",
+      "AssetFile": "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Web\\wwwroot\\images\\users\\avatar\\f7cb650b-4e76-4108-af2b-02694fe5fe8f0037084523197.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23785"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NvnFtdanCVgTZ8uSzCznKM9gH5nhoCwAog2lNIGXgtg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Apr 2025 17:16:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "q7q2o0r10i"
+        },
+        {
+          "Name": "label",
+          "Value": "images/users/avatar/f7cb650b-4e76-4108-af2b-02694fe5fe8f0037084523197.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NvnFtdanCVgTZ8uSzCznKM9gH5nhoCwAog2lNIGXgtg="
+        }
+      ]
     }
   ]
 }

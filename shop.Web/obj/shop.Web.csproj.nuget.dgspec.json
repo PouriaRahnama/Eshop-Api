@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\acer\\Desktop\\shop\\shop.Web\\shop.Web.csproj": {}
+    "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Web\\shop.Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\acer\\Desktop\\shop\\shop.Core\\shop.Core.csproj": {
+    "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Core\\shop.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\acer\\Desktop\\shop\\shop.Core\\shop.Core.csproj",
+        "projectUniqueName": "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Core\\shop.Core.csproj",
         "projectName": "shop.Core",
-        "projectPath": "C:\\Users\\acer\\Desktop\\shop\\shop.Core\\shop.Core.csproj",
+        "projectPath": "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Core\\shop.Core.csproj",
         "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\acer\\Desktop\\shop\\shop.Core\\obj\\",
+        "outputPath": "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -39,7 +39,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net7.0": {
@@ -86,18 +92,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\acer\\Desktop\\shop\\shop.Data\\shop.Data.csproj": {
+    "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Data\\shop.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\acer\\Desktop\\shop\\shop.Data\\shop.Data.csproj",
+        "projectUniqueName": "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Data\\shop.Data.csproj",
         "projectName": "shop.Data",
-        "projectPath": "C:\\Users\\acer\\Desktop\\shop\\shop.Data\\shop.Data.csproj",
+        "projectPath": "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Data\\shop.Data.csproj",
         "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\acer\\Desktop\\shop\\shop.Data\\obj\\",
+        "outputPath": "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -119,8 +125,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\acer\\Desktop\\shop\\shop.Core\\shop.Core.csproj": {
-                "projectPath": "C:\\Users\\acer\\Desktop\\shop\\shop.Core\\shop.Core.csproj"
+              "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Core\\shop.Core.csproj": {
+                "projectPath": "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Core\\shop.Core.csproj"
               }
             }
           }
@@ -129,7 +135,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net7.0": {
@@ -180,18 +192,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\acer\\Desktop\\shop\\shop.Frameworks\\shop.Frameworks.csproj": {
+    "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Frameworks\\shop.Frameworks.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\acer\\Desktop\\shop\\shop.Frameworks\\shop.Frameworks.csproj",
+        "projectUniqueName": "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Frameworks\\shop.Frameworks.csproj",
         "projectName": "shop.Frameworks",
-        "projectPath": "C:\\Users\\acer\\Desktop\\shop\\shop.Frameworks\\shop.Frameworks.csproj",
+        "projectPath": "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Frameworks\\shop.Frameworks.csproj",
         "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\acer\\Desktop\\shop\\shop.Frameworks\\obj\\",
+        "outputPath": "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Frameworks\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -213,11 +225,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\acer\\Desktop\\shop\\shop.Core\\shop.Core.csproj": {
-                "projectPath": "C:\\Users\\acer\\Desktop\\shop\\shop.Core\\shop.Core.csproj"
+              "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Core\\shop.Core.csproj": {
+                "projectPath": "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Core\\shop.Core.csproj"
               },
-              "C:\\Users\\acer\\Desktop\\shop\\shop.Service\\shop.Service.csproj": {
-                "projectPath": "C:\\Users\\acer\\Desktop\\shop\\shop.Service\\shop.Service.csproj"
+              "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Service\\shop.Service.csproj": {
+                "projectPath": "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Service\\shop.Service.csproj"
               }
             }
           }
@@ -226,7 +238,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net7.0": {
@@ -269,18 +287,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\acer\\Desktop\\shop\\shop.Service\\shop.Service.csproj": {
+    "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Service\\shop.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\acer\\Desktop\\shop\\shop.Service\\shop.Service.csproj",
+        "projectUniqueName": "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Service\\shop.Service.csproj",
         "projectName": "shop.Service",
-        "projectPath": "C:\\Users\\acer\\Desktop\\shop\\shop.Service\\shop.Service.csproj",
+        "projectPath": "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Service\\shop.Service.csproj",
         "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\acer\\Desktop\\shop\\shop.Service\\obj\\",
+        "outputPath": "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -302,11 +320,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\acer\\Desktop\\shop\\shop.Core\\shop.Core.csproj": {
-                "projectPath": "C:\\Users\\acer\\Desktop\\shop\\shop.Core\\shop.Core.csproj"
+              "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Core\\shop.Core.csproj": {
+                "projectPath": "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Core\\shop.Core.csproj"
               },
-              "C:\\Users\\acer\\Desktop\\shop\\shop.Data\\shop.Data.csproj": {
-                "projectPath": "C:\\Users\\acer\\Desktop\\shop\\shop.Data\\shop.Data.csproj"
+              "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Data\\shop.Data.csproj": {
+                "projectPath": "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Data\\shop.Data.csproj"
               }
             }
           }
@@ -315,7 +333,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net7.0": {
@@ -366,18 +390,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\acer\\Desktop\\shop\\shop.Web\\shop.Web.csproj": {
+    "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Web\\shop.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\acer\\Desktop\\shop\\shop.Web\\shop.Web.csproj",
+        "projectUniqueName": "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Web\\shop.Web.csproj",
         "projectName": "shop.Web",
-        "projectPath": "C:\\Users\\acer\\Desktop\\shop\\shop.Web\\shop.Web.csproj",
+        "projectPath": "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Web\\shop.Web.csproj",
         "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\acer\\Desktop\\shop\\shop.Web\\obj\\",
+        "outputPath": "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -393,24 +417,23 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\acer\\Desktop\\shop\\shop.Core\\shop.Core.csproj": {
-                "projectPath": "C:\\Users\\acer\\Desktop\\shop\\shop.Core\\shop.Core.csproj"
+              "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Core\\shop.Core.csproj": {
+                "projectPath": "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Core\\shop.Core.csproj"
               },
-              "C:\\Users\\acer\\Desktop\\shop\\shop.Data\\shop.Data.csproj": {
-                "projectPath": "C:\\Users\\acer\\Desktop\\shop\\shop.Data\\shop.Data.csproj"
+              "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Data\\shop.Data.csproj": {
+                "projectPath": "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Data\\shop.Data.csproj"
               },
-              "C:\\Users\\acer\\Desktop\\shop\\shop.Frameworks\\shop.Frameworks.csproj": {
-                "projectPath": "C:\\Users\\acer\\Desktop\\shop\\shop.Frameworks\\shop.Frameworks.csproj"
+              "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Frameworks\\shop.Frameworks.csproj": {
+                "projectPath": "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Frameworks\\shop.Frameworks.csproj"
               },
-              "C:\\Users\\acer\\Desktop\\shop\\shop.Service\\shop.Service.csproj": {
-                "projectPath": "C:\\Users\\acer\\Desktop\\shop\\shop.Service\\shop.Service.csproj"
+              "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Service\\shop.Service.csproj": {
+                "projectPath": "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Service\\shop.Service.csproj"
               }
             }
           }
@@ -419,7 +442,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net7.0": {
@@ -489,7 +518,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

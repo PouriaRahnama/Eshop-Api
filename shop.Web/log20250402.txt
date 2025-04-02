@@ -1,0 +1,6 @@
+2025-04-02 21:07:57.030 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executing
+2025-04-02 21:08:05.842 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executed
+2025-04-02 21:08:40.349 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executing
+2025-04-02 21:08:41.309 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executed
+2025-04-02 21:08:58.467 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) Executing
+2025-04-02 21:08:59.231 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) Executed
