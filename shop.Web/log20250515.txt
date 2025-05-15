@@ -1,0 +1,8 @@
+2025-05-15 19:02:29.402 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories2 (shop.Web) Executing
+2025-05-15 19:02:38.272 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories2 (shop.Web) Executed
+2025-05-15 19:03:29.568 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories3 (shop.Web) Executing
+2025-05-15 19:03:36.707 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories3 (shop.Web) Executed
+2025-05-15 19:03:43.938 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories3 (shop.Web) Executing
+2025-05-15 19:03:45.298 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories3 (shop.Web) Executed
+2025-05-15 19:03:59.544 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories2 (shop.Web) Executing
+2025-05-15 19:04:04.726 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories2 (shop.Web) Executed

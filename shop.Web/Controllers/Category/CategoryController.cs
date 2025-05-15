@@ -30,6 +30,22 @@ public class CategoryController : ShopController
     }
 
     [AllowAnonymous]
+    [HttpGet("/test")]
+    public async Task<ApiResult<List<CategoryQueryDto>>> GetAllCategories2()
+    {
+        var result = await _categoryQueryService.GetAllCategory();
+        return QueryResult(result);
+    }
+
+    [AllowAnonymous]
+    [HttpGet("test")]
+    public async Task<ApiResult<List<CategoryQueryDto>>> GetAllCategories3()
+    {
+        var result = await _categoryQueryService.GetAllCategory();
+        return QueryResult(result);
+    }
+
+    [AllowAnonymous]
     [HttpGet("{Id}")]
     public async Task<ApiResult<CategoryQueryDto>> GetCategoryById(int Id)
     {
