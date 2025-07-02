@@ -87,7 +87,7 @@ public class GetProductsForShopQuery : IGetProductsForShopQuery
             left join {_dapperContext.Inventories} i on p.Id=i.ProductId
             left join {_dapperContext.Sellers} s on i.SellerId=s.Id
             left join {_dapperContext.ProductCategory} pc on pc.ProductID=p.Id ) as A
-            WHERE  A.RN = 1 and A.Status='Accepted'  {conditions}";
+            WHERE  A.RN = 1 and A.Status=1  {conditions}";
 
 
 
@@ -100,7 +100,7 @@ public class GetProductsForShopQuery : IGetProductsForShopQuery
             left join {_dapperContext.Inventories} as i on p.Id=i.ProductId
             left join {_dapperContext.Sellers} as s on i.SellerId=s.Id
             left join {_dapperContext.ProductCategory} as pc on pc.ProductID = p.Id)A
-            WHERE A.RN = {A_RN}  and A.Status='Accepted'  
+            WHERE A.RN = {A_RN}  and A.Status=1  
             {conditions} order By {orderBy} offset @skip ROWS FETCH NEXT @take ROWS ONLY";
 
 

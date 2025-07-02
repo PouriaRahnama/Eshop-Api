@@ -492,3 +492,21 @@ D:\Project Asp.Net\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Data\obj\Debug\net7
 D:\Project Asp.Net\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Data\obj\Debug\net7.0\shop.Data.pdb
 D:\Project Asp.Net\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Data\obj\Debug\net7.0\shop.Data.genruntimeconfig.cache
 D:\Project Asp.Net\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Data\obj\Debug\net7.0\ref\shop.Data.dll
+D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Data\obj\Debug\net7.0\shop.Data.dll
+D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Data\obj\Debug\net7.0\refint\shop.Data.dll
+D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Data\obj\Debug\net7.0\shop.Data.pdb
+D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Data\bin\Debug\net7.0\shop.Data.deps.json
+D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Data\bin\Debug\net7.0\shop.Data.runtimeconfig.json
+D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Data\bin\Debug\net7.0\shop.Data.dll
+D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Data\bin\Debug\net7.0\shop.Data.pdb
+D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Data\bin\Debug\net7.0\shop.Core.dll
+D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Data\bin\Debug\net7.0\shop.Core.pdb
+D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Data\obj\Debug\net7.0\shop.Data.csproj.AssemblyReference.cache
+D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Data\obj\Debug\net7.0\shop.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Data\obj\Debug\net7.0\shop.Data.AssemblyInfoInputs.cache
+D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Data\obj\Debug\net7.0\shop.Data.AssemblyInfo.cs
+D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Data\obj\Debug\net7.0\shop.Data.csproj.CoreCompileInputs.cache
+D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Data\obj\Debug\net7.0\shop.Data.sourcelink.json
+D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Data\obj\Debug\net7.0\shop.Data.csproj.Up2Date
+D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Data\obj\Debug\net7.0\shop.Data.genruntimeconfig.cache
+D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Data\obj\Debug\net7.0\ref\shop.Data.dll

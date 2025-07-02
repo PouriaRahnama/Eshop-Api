@@ -347,3 +347,16 @@ D:\Project Asp.Net\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Core\obj\Debug\net7
 D:\Project Asp.Net\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Core\obj\Debug\net7.0\refint\shop.Core.dll
 D:\Project Asp.Net\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Core\obj\Debug\net7.0\shop.Core.pdb
 D:\Project Asp.Net\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Core\obj\Debug\net7.0\ref\shop.Core.dll
+D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Core\obj\Debug\net7.0\shop.Core.dll
+D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Core\obj\Debug\net7.0\refint\shop.Core.dll
+D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Core\obj\Debug\net7.0\shop.Core.pdb
+D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Core\bin\Debug\net7.0\shop.Core.deps.json
+D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Core\bin\Debug\net7.0\shop.Core.dll
+D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Core\bin\Debug\net7.0\shop.Core.pdb
+D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Core\obj\Debug\net7.0\shop.Core.csproj.AssemblyReference.cache
+D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Core\obj\Debug\net7.0\shop.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Core\obj\Debug\net7.0\shop.Core.AssemblyInfoInputs.cache
+D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Core\obj\Debug\net7.0\shop.Core.AssemblyInfo.cs
+D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Core\obj\Debug\net7.0\shop.Core.csproj.CoreCompileInputs.cache
+D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Core\obj\Debug\net7.0\shop.Core.sourcelink.json
+D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Core\obj\Debug\net7.0\ref\shop.Core.dll

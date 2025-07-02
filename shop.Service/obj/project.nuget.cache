@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8J+Bww7P5mM=",
+  "dgSpecHash": "M/ZIyIgTbpg=",
   "success": true,
-  "projectFilePath": "D:\\Project Asp.Net\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Service\\shop.Service.csproj",
+  "projectFilePath": "D:\\Project\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Service\\shop.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\acer\\.nuget\\packages\\anglesharp\\0.17.1\\anglesharp.0.17.1.nupkg.sha512",
     "C:\\Users\\acer\\.nuget\\packages\\anglesharp.css\\0.17.0\\anglesharp.css.0.17.0.nupkg.sha512",
@@ -164,8 +164,10 @@
     {
       "code": "NU1902",
       "level": "Warning",
-      "warningLevel": 1,
       "message": "Package 'HtmlSanitizer' 8.0.645 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-43cp-6p3q-2pc4",
+      "projectPath": "D:\\Project\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Service\\shop.Service.csproj",
+      "warningLevel": 1,
+      "filePath": "D:\\Project\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Service\\shop.Service.csproj",
       "libraryId": "HtmlSanitizer",
       "targetGraphs": [
         "net7.0"
