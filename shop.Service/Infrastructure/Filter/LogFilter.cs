@@ -14,11 +14,11 @@ namespace shop.Service.Infrastructure.Filter
 
         public async Task OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
         {
-            _logger.LogError(context.ActionDescriptor.DisplayName + " Executing");
+            _logger.LogInformation(context.ActionDescriptor.DisplayName + " Executing");
 
             var result =  await next();
 
-            _logger.LogError(context.ActionDescriptor.DisplayName + " Executed");
+            _logger.LogInformation(context.ActionDescriptor.DisplayName + " Executed");
         }
     }
 }

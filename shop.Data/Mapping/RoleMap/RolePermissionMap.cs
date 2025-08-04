@@ -13,8 +13,8 @@ namespace shop.Data.Mapping.RoleMap
 
             //builder.Ignore(r => r.PermissionStatus);
 
-            builder.Property(d => d.PermissionStatus)
-                 .HasConversion(new EnumToStringConverter<Permission>());
+            //builder.Property(d => d.PermissionStatus)
+            //     .HasConversion(new EnumToStringConverter<Permission>());
         }
     }
 }

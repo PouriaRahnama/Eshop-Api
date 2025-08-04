@@ -1,0 +1,475 @@
+2025-08-04 13:57:51.299 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) Executing
+2025-08-04 13:57:56.851 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) Executed
+2025-08-04 13:58:44.171 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executing
+2025-08-04 13:58:45.684 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executed
+2025-08-04 14:00:17.577 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executing
+2025-08-04 14:00:18.145 +03:30 [ERR] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executed
+2025-08-04 14:00:54.443 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'shop.Data.ApplicationContext.SqlServerApplicationContext'.
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method473(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.<PopulateCollection>g__ProcessCurrentElementRow|29_1[TCollection,TElement,TRelatedEntity](<>c__DisplayClass29_0`3&)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.PopulateCollection[TCollection,TElement,TRelatedEntity](Int32 collectionId, QueryContext queryContext, DbDataReader dbDataReader, SingleQueryResultCoordinator resultCoordinator, Func`3 parentIdentifier, Func`3 outerIdentifier, Func`3 selfIdentifier, IReadOnlyList`1 parentIdentifierValueComparers, IReadOnlyList`1 outerIdentifierValueComparers, IReadOnlyList`1 selfIdentifierValueComparers, Func`5 innerShaper)
+   at lambda_method474(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method473(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.<PopulateCollection>g__ProcessCurrentElementRow|29_1[TCollection,TElement,TRelatedEntity](<>c__DisplayClass29_0`3&)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.PopulateCollection[TCollection,TElement,TRelatedEntity](Int32 collectionId, QueryContext queryContext, DbDataReader dbDataReader, SingleQueryResultCoordinator resultCoordinator, Func`3 parentIdentifier, Func`3 outerIdentifier, Func`3 selfIdentifier, IReadOnlyList`1 parentIdentifierValueComparers, IReadOnlyList`1 outerIdentifierValueComparers, IReadOnlyList`1 selfIdentifierValueComparers, Func`5 innerShaper)
+   at lambda_method474(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-08-04 14:00:54.479 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method473(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.<PopulateCollection>g__ProcessCurrentElementRow|29_1[TCollection,TElement,TRelatedEntity](<>c__DisplayClass29_0`3&)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.PopulateCollection[TCollection,TElement,TRelatedEntity](Int32 collectionId, QueryContext queryContext, DbDataReader dbDataReader, SingleQueryResultCoordinator resultCoordinator, Func`3 parentIdentifier, Func`3 outerIdentifier, Func`3 selfIdentifier, IReadOnlyList`1 parentIdentifierValueComparers, IReadOnlyList`1 outerIdentifierValueComparers, IReadOnlyList`1 selfIdentifierValueComparers, Func`5 innerShaper)
+   at lambda_method474(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at shop.Service.Query.RoleQueryService.GetAllRole() in D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Service\Query\Role\RoleQueryService.cs:line 33
+   at Shop.Api.Infrastructure.JwtUtil.PermissionChecker.UserHasPermission(AuthorizationFilterContext context) in D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Web\Infrastructure\Security\PermissionChecker.cs:line 81
+   at Shop.Api.Infrastructure.JwtUtil.PermissionChecker.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Web\Infrastructure\Security\PermissionChecker.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-08-04 14:01:22.288 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'shop.Data.ApplicationContext.SqlServerApplicationContext'.
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method473(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.<PopulateCollection>g__ProcessCurrentElementRow|29_1[TCollection,TElement,TRelatedEntity](<>c__DisplayClass29_0`3&)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.PopulateCollection[TCollection,TElement,TRelatedEntity](Int32 collectionId, QueryContext queryContext, DbDataReader dbDataReader, SingleQueryResultCoordinator resultCoordinator, Func`3 parentIdentifier, Func`3 outerIdentifier, Func`3 selfIdentifier, IReadOnlyList`1 parentIdentifierValueComparers, IReadOnlyList`1 outerIdentifierValueComparers, IReadOnlyList`1 selfIdentifierValueComparers, Func`5 innerShaper)
+   at lambda_method474(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method473(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.<PopulateCollection>g__ProcessCurrentElementRow|29_1[TCollection,TElement,TRelatedEntity](<>c__DisplayClass29_0`3&)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.PopulateCollection[TCollection,TElement,TRelatedEntity](Int32 collectionId, QueryContext queryContext, DbDataReader dbDataReader, SingleQueryResultCoordinator resultCoordinator, Func`3 parentIdentifier, Func`3 outerIdentifier, Func`3 selfIdentifier, IReadOnlyList`1 parentIdentifierValueComparers, IReadOnlyList`1 outerIdentifierValueComparers, IReadOnlyList`1 selfIdentifierValueComparers, Func`5 innerShaper)
+   at lambda_method474(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-08-04 14:01:22.304 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method473(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.<PopulateCollection>g__ProcessCurrentElementRow|29_1[TCollection,TElement,TRelatedEntity](<>c__DisplayClass29_0`3&)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.PopulateCollection[TCollection,TElement,TRelatedEntity](Int32 collectionId, QueryContext queryContext, DbDataReader dbDataReader, SingleQueryResultCoordinator resultCoordinator, Func`3 parentIdentifier, Func`3 outerIdentifier, Func`3 selfIdentifier, IReadOnlyList`1 parentIdentifierValueComparers, IReadOnlyList`1 outerIdentifierValueComparers, IReadOnlyList`1 selfIdentifierValueComparers, Func`5 innerShaper)
+   at lambda_method474(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at shop.Service.Query.RoleQueryService.GetAllRole() in D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Service\Query\Role\RoleQueryService.cs:line 33
+   at Shop.Api.Infrastructure.JwtUtil.PermissionChecker.UserHasPermission(AuthorizationFilterContext context) in D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Web\Infrastructure\Security\PermissionChecker.cs:line 81
+   at Shop.Api.Infrastructure.JwtUtil.PermissionChecker.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Web\Infrastructure\Security\PermissionChecker.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-08-04 14:01:55.875 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'shop.Data.ApplicationContext.SqlServerApplicationContext'.
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at lambda_method473(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.<PopulateCollection>g__ProcessCurrentElementRow|29_1[TCollection,TElement,TRelatedEntity](<>c__DisplayClass29_0`3&)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.PopulateCollection[TCollection,TElement,TRelatedEntity](Int32 collectionId, QueryContext queryContext, DbDataReader dbDataReader, SingleQueryResultCoordinator resultCoordinator, Func`3 parentIdentifier, Func`3 outerIdentifier, Func`3 selfIdentifier, IReadOnlyList`1 parentIdentifierValueComparers, IReadOnlyList`1 outerIdentifierValueComparers, IReadOnlyList`1 selfIdentifierValueComparers, Func`5 innerShaper)
+   at lambda_method474(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at lambda_method473(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.<PopulateCollection>g__ProcessCurrentElementRow|29_1[TCollection,TElement,TRelatedEntity](<>c__DisplayClass29_0`3&)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.PopulateCollection[TCollection,TElement,TRelatedEntity](Int32 collectionId, QueryContext queryContext, DbDataReader dbDataReader, SingleQueryResultCoordinator resultCoordinator, Func`3 parentIdentifier, Func`3 outerIdentifier, Func`3 selfIdentifier, IReadOnlyList`1 parentIdentifierValueComparers, IReadOnlyList`1 outerIdentifierValueComparers, IReadOnlyList`1 selfIdentifierValueComparers, Func`5 innerShaper)
+   at lambda_method474(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-08-04 14:01:55.892 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at lambda_method473(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.<PopulateCollection>g__ProcessCurrentElementRow|29_1[TCollection,TElement,TRelatedEntity](<>c__DisplayClass29_0`3&)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.PopulateCollection[TCollection,TElement,TRelatedEntity](Int32 collectionId, QueryContext queryContext, DbDataReader dbDataReader, SingleQueryResultCoordinator resultCoordinator, Func`3 parentIdentifier, Func`3 outerIdentifier, Func`3 selfIdentifier, IReadOnlyList`1 parentIdentifierValueComparers, IReadOnlyList`1 outerIdentifierValueComparers, IReadOnlyList`1 selfIdentifierValueComparers, Func`5 innerShaper)
+   at lambda_method474(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at shop.Service.Query.RoleQueryService.GetAllRole() in D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Service\Query\Role\RoleQueryService.cs:line 33
+   at Shop.Api.Infrastructure.JwtUtil.PermissionChecker.UserHasPermission(AuthorizationFilterContext context) in D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Web\Infrastructure\Security\PermissionChecker.cs:line 81
+   at Shop.Api.Infrastructure.JwtUtil.PermissionChecker.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Web\Infrastructure\Security\PermissionChecker.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-08-04 14:02:58.905 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'shop.Data.ApplicationContext.SqlServerApplicationContext'.
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method325(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.<PopulateCollection>g__ProcessCurrentElementRow|29_1[TCollection,TElement,TRelatedEntity](<>c__DisplayClass29_0`3&)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.PopulateCollection[TCollection,TElement,TRelatedEntity](Int32 collectionId, QueryContext queryContext, DbDataReader dbDataReader, SingleQueryResultCoordinator resultCoordinator, Func`3 parentIdentifier, Func`3 outerIdentifier, Func`3 selfIdentifier, IReadOnlyList`1 parentIdentifierValueComparers, IReadOnlyList`1 outerIdentifierValueComparers, IReadOnlyList`1 selfIdentifierValueComparers, Func`5 innerShaper)
+   at lambda_method326(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method325(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.<PopulateCollection>g__ProcessCurrentElementRow|29_1[TCollection,TElement,TRelatedEntity](<>c__DisplayClass29_0`3&)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.PopulateCollection[TCollection,TElement,TRelatedEntity](Int32 collectionId, QueryContext queryContext, DbDataReader dbDataReader, SingleQueryResultCoordinator resultCoordinator, Func`3 parentIdentifier, Func`3 outerIdentifier, Func`3 selfIdentifier, IReadOnlyList`1 parentIdentifierValueComparers, IReadOnlyList`1 outerIdentifierValueComparers, IReadOnlyList`1 selfIdentifierValueComparers, Func`5 innerShaper)
+   at lambda_method326(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-08-04 14:02:59.662 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method325(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.<PopulateCollection>g__ProcessCurrentElementRow|29_1[TCollection,TElement,TRelatedEntity](<>c__DisplayClass29_0`3&)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.PopulateCollection[TCollection,TElement,TRelatedEntity](Int32 collectionId, QueryContext queryContext, DbDataReader dbDataReader, SingleQueryResultCoordinator resultCoordinator, Func`3 parentIdentifier, Func`3 outerIdentifier, Func`3 selfIdentifier, IReadOnlyList`1 parentIdentifierValueComparers, IReadOnlyList`1 outerIdentifierValueComparers, IReadOnlyList`1 selfIdentifierValueComparers, Func`5 innerShaper)
+   at lambda_method326(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at shop.Service.Query.RoleQueryService.GetAllRole() in D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Service\Query\Role\RoleQueryService.cs:line 33
+   at Shop.Api.Infrastructure.JwtUtil.PermissionChecker.UserHasPermission(AuthorizationFilterContext context) in D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Web\Infrastructure\Security\PermissionChecker.cs:line 81
+   at Shop.Api.Infrastructure.JwtUtil.PermissionChecker.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Web\Infrastructure\Security\PermissionChecker.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-08-04 14:03:07.639 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'shop.Data.ApplicationContext.SqlServerApplicationContext'.
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method325(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.<PopulateCollection>g__ProcessCurrentElementRow|29_1[TCollection,TElement,TRelatedEntity](<>c__DisplayClass29_0`3&)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.PopulateCollection[TCollection,TElement,TRelatedEntity](Int32 collectionId, QueryContext queryContext, DbDataReader dbDataReader, SingleQueryResultCoordinator resultCoordinator, Func`3 parentIdentifier, Func`3 outerIdentifier, Func`3 selfIdentifier, IReadOnlyList`1 parentIdentifierValueComparers, IReadOnlyList`1 outerIdentifierValueComparers, IReadOnlyList`1 selfIdentifierValueComparers, Func`5 innerShaper)
+   at lambda_method326(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method325(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.<PopulateCollection>g__ProcessCurrentElementRow|29_1[TCollection,TElement,TRelatedEntity](<>c__DisplayClass29_0`3&)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.PopulateCollection[TCollection,TElement,TRelatedEntity](Int32 collectionId, QueryContext queryContext, DbDataReader dbDataReader, SingleQueryResultCoordinator resultCoordinator, Func`3 parentIdentifier, Func`3 outerIdentifier, Func`3 selfIdentifier, IReadOnlyList`1 parentIdentifierValueComparers, IReadOnlyList`1 outerIdentifierValueComparers, IReadOnlyList`1 selfIdentifierValueComparers, Func`5 innerShaper)
+   at lambda_method326(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-08-04 14:03:08.028 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method325(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.<PopulateCollection>g__ProcessCurrentElementRow|29_1[TCollection,TElement,TRelatedEntity](<>c__DisplayClass29_0`3&)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.PopulateCollection[TCollection,TElement,TRelatedEntity](Int32 collectionId, QueryContext queryContext, DbDataReader dbDataReader, SingleQueryResultCoordinator resultCoordinator, Func`3 parentIdentifier, Func`3 outerIdentifier, Func`3 selfIdentifier, IReadOnlyList`1 parentIdentifierValueComparers, IReadOnlyList`1 outerIdentifierValueComparers, IReadOnlyList`1 selfIdentifierValueComparers, Func`5 innerShaper)
+   at lambda_method326(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at shop.Service.Query.RoleQueryService.GetAllRole() in D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Service\Query\Role\RoleQueryService.cs:line 33
+   at Shop.Api.Infrastructure.JwtUtil.PermissionChecker.UserHasPermission(AuthorizationFilterContext context) in D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Web\Infrastructure\Security\PermissionChecker.cs:line 81
+   at Shop.Api.Infrastructure.JwtUtil.PermissionChecker.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Web\Infrastructure\Security\PermissionChecker.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-08-04 14:03:20.548 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'shop.Data.ApplicationContext.SqlServerApplicationContext'.
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method325(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.<PopulateCollection>g__ProcessCurrentElementRow|29_1[TCollection,TElement,TRelatedEntity](<>c__DisplayClass29_0`3&)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.PopulateCollection[TCollection,TElement,TRelatedEntity](Int32 collectionId, QueryContext queryContext, DbDataReader dbDataReader, SingleQueryResultCoordinator resultCoordinator, Func`3 parentIdentifier, Func`3 outerIdentifier, Func`3 selfIdentifier, IReadOnlyList`1 parentIdentifierValueComparers, IReadOnlyList`1 outerIdentifierValueComparers, IReadOnlyList`1 selfIdentifierValueComparers, Func`5 innerShaper)
+   at lambda_method326(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method325(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.<PopulateCollection>g__ProcessCurrentElementRow|29_1[TCollection,TElement,TRelatedEntity](<>c__DisplayClass29_0`3&)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.PopulateCollection[TCollection,TElement,TRelatedEntity](Int32 collectionId, QueryContext queryContext, DbDataReader dbDataReader, SingleQueryResultCoordinator resultCoordinator, Func`3 parentIdentifier, Func`3 outerIdentifier, Func`3 selfIdentifier, IReadOnlyList`1 parentIdentifierValueComparers, IReadOnlyList`1 outerIdentifierValueComparers, IReadOnlyList`1 selfIdentifierValueComparers, Func`5 innerShaper)
+   at lambda_method326(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-08-04 14:03:21.175 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method325(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.<PopulateCollection>g__ProcessCurrentElementRow|29_1[TCollection,TElement,TRelatedEntity](<>c__DisplayClass29_0`3&)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.PopulateCollection[TCollection,TElement,TRelatedEntity](Int32 collectionId, QueryContext queryContext, DbDataReader dbDataReader, SingleQueryResultCoordinator resultCoordinator, Func`3 parentIdentifier, Func`3 outerIdentifier, Func`3 selfIdentifier, IReadOnlyList`1 parentIdentifierValueComparers, IReadOnlyList`1 outerIdentifierValueComparers, IReadOnlyList`1 selfIdentifierValueComparers, Func`5 innerShaper)
+   at lambda_method326(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at shop.Service.Query.RoleQueryService.GetAllRole() in D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Service\Query\Role\RoleQueryService.cs:line 33
+   at Shop.Api.Infrastructure.JwtUtil.PermissionChecker.UserHasPermission(AuthorizationFilterContext context) in D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Web\Infrastructure\Security\PermissionChecker.cs:line 81
+   at Shop.Api.Infrastructure.JwtUtil.PermissionChecker.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Web\Infrastructure\Security\PermissionChecker.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-08-04 14:05:36.189 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'shop.Data.ApplicationContext.SqlServerApplicationContext'.
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method325(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.<PopulateCollection>g__ProcessCurrentElementRow|29_1[TCollection,TElement,TRelatedEntity](<>c__DisplayClass29_0`3&)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.PopulateCollection[TCollection,TElement,TRelatedEntity](Int32 collectionId, QueryContext queryContext, DbDataReader dbDataReader, SingleQueryResultCoordinator resultCoordinator, Func`3 parentIdentifier, Func`3 outerIdentifier, Func`3 selfIdentifier, IReadOnlyList`1 parentIdentifierValueComparers, IReadOnlyList`1 outerIdentifierValueComparers, IReadOnlyList`1 selfIdentifierValueComparers, Func`5 innerShaper)
+   at lambda_method326(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method325(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.<PopulateCollection>g__ProcessCurrentElementRow|29_1[TCollection,TElement,TRelatedEntity](<>c__DisplayClass29_0`3&)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.PopulateCollection[TCollection,TElement,TRelatedEntity](Int32 collectionId, QueryContext queryContext, DbDataReader dbDataReader, SingleQueryResultCoordinator resultCoordinator, Func`3 parentIdentifier, Func`3 outerIdentifier, Func`3 selfIdentifier, IReadOnlyList`1 parentIdentifierValueComparers, IReadOnlyList`1 outerIdentifierValueComparers, IReadOnlyList`1 selfIdentifierValueComparers, Func`5 innerShaper)
+   at lambda_method326(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-08-04 14:05:36.713 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method325(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.<PopulateCollection>g__ProcessCurrentElementRow|29_1[TCollection,TElement,TRelatedEntity](<>c__DisplayClass29_0`3&)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.PopulateCollection[TCollection,TElement,TRelatedEntity](Int32 collectionId, QueryContext queryContext, DbDataReader dbDataReader, SingleQueryResultCoordinator resultCoordinator, Func`3 parentIdentifier, Func`3 outerIdentifier, Func`3 selfIdentifier, IReadOnlyList`1 parentIdentifierValueComparers, IReadOnlyList`1 outerIdentifierValueComparers, IReadOnlyList`1 selfIdentifierValueComparers, Func`5 innerShaper)
+   at lambda_method326(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at shop.Service.Query.RoleQueryService.GetAllRole() in D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Service\Query\Role\RoleQueryService.cs:line 33
+   at Shop.Api.Infrastructure.JwtUtil.PermissionChecker.UserHasPermission(AuthorizationFilterContext context) in D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Web\Infrastructure\Security\PermissionChecker.cs:line 81
+   at Shop.Api.Infrastructure.JwtUtil.PermissionChecker.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Web\Infrastructure\Security\PermissionChecker.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-08-04 14:06:03.586 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'shop.Data.ApplicationContext.SqlServerApplicationContext'.
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at lambda_method325(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.<PopulateCollection>g__ProcessCurrentElementRow|29_1[TCollection,TElement,TRelatedEntity](<>c__DisplayClass29_0`3&)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.PopulateCollection[TCollection,TElement,TRelatedEntity](Int32 collectionId, QueryContext queryContext, DbDataReader dbDataReader, SingleQueryResultCoordinator resultCoordinator, Func`3 parentIdentifier, Func`3 outerIdentifier, Func`3 selfIdentifier, IReadOnlyList`1 parentIdentifierValueComparers, IReadOnlyList`1 outerIdentifierValueComparers, IReadOnlyList`1 selfIdentifierValueComparers, Func`5 innerShaper)
+   at lambda_method326(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at lambda_method325(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.<PopulateCollection>g__ProcessCurrentElementRow|29_1[TCollection,TElement,TRelatedEntity](<>c__DisplayClass29_0`3&)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.PopulateCollection[TCollection,TElement,TRelatedEntity](Int32 collectionId, QueryContext queryContext, DbDataReader dbDataReader, SingleQueryResultCoordinator resultCoordinator, Func`3 parentIdentifier, Func`3 outerIdentifier, Func`3 selfIdentifier, IReadOnlyList`1 parentIdentifierValueComparers, IReadOnlyList`1 outerIdentifierValueComparers, IReadOnlyList`1 selfIdentifierValueComparers, Func`5 innerShaper)
+   at lambda_method326(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-08-04 14:06:04.448 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at lambda_method325(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.<PopulateCollection>g__ProcessCurrentElementRow|29_1[TCollection,TElement,TRelatedEntity](<>c__DisplayClass29_0`3&)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.PopulateCollection[TCollection,TElement,TRelatedEntity](Int32 collectionId, QueryContext queryContext, DbDataReader dbDataReader, SingleQueryResultCoordinator resultCoordinator, Func`3 parentIdentifier, Func`3 outerIdentifier, Func`3 selfIdentifier, IReadOnlyList`1 parentIdentifierValueComparers, IReadOnlyList`1 outerIdentifierValueComparers, IReadOnlyList`1 selfIdentifierValueComparers, Func`5 innerShaper)
+   at lambda_method326(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at shop.Service.Query.RoleQueryService.GetAllRole() in D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Service\Query\Role\RoleQueryService.cs:line 33
+   at Shop.Api.Infrastructure.JwtUtil.PermissionChecker.UserHasPermission(AuthorizationFilterContext context) in D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Web\Infrastructure\Security\PermissionChecker.cs:line 81
+   at Shop.Api.Infrastructure.JwtUtil.PermissionChecker.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Web\Infrastructure\Security\PermissionChecker.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-08-04 14:09:19.627 +03:30 [ERR] An exception occurred while iterating over the results of a query for context type 'shop.Data.ApplicationContext.SqlServerApplicationContext'.
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method340(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method340(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2025-08-04 14:09:38.809 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidCastException: Unable to cast object of type 'SelectListIterator`2[shop.Core.Domain.Role.Role,shop.Service.Query.RoleQueryDto]' to type 'System.Collections.Generic.List`1[shop.Service.Query.RoleQueryDto]'.
+   at shop.Service.Query.RoleQueryService.GetAllRole() in D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Service\Query\Role\RoleQueryService.cs:line 35
+   at Shop.Api.Infrastructure.JwtUtil.PermissionChecker.UserHasPermission(AuthorizationFilterContext context) in D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Web\Infrastructure\Security\PermissionChecker.cs:line 81
+   at Shop.Api.Infrastructure.JwtUtil.PermissionChecker.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Web\Infrastructure\Security\PermissionChecker.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-08-04 14:14:22.617 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidCastException: Unable to cast object of type 'SelectListIterator`2[shop.Core.Domain.Role.Role,shop.Service.Query.RoleQueryDto]' to type 'System.Collections.Generic.List`1[shop.Service.Query.RoleQueryDto]'.
+   at shop.Service.Query.RoleQueryService.GetAllRole() in D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Service\Query\Role\RoleQueryService.cs:line 35
+   at Shop.Api.Infrastructure.JwtUtil.PermissionChecker.UserHasPermission(AuthorizationFilterContext context) in D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Web\Infrastructure\Security\PermissionChecker.cs:line 81
+   at Shop.Api.Infrastructure.JwtUtil.PermissionChecker.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Web\Infrastructure\Security\PermissionChecker.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-08-04 14:16:16.545 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.CreateCategory (shop.Web) Executing
+2025-08-04 14:16:17.213 +03:30 [ERR] shop.Web.Controllers.Category.CategoryController.CreateCategory (shop.Web) Executed
+2025-08-04 14:23:04.640 +03:30 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-04 14:23:05.028 +03:30 [INF] Now listening on: https://localhost:7050
+2025-08-04 14:23:05.031 +03:30 [INF] Now listening on: http://localhost:5179
+2025-08-04 14:23:05.198 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-04 14:23:05.201 +03:30 [INF] Hosting environment: Development
+2025-08-04 14:23:05.203 +03:30 [INF] Content root path: D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Web
+2025-08-04 14:23:06.020 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7050/swagger/index.html - -
+2025-08-04 14:23:06.463 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7050/swagger/index.html - - - 200 - text/html;charset=utf-8 446.8417ms
+2025-08-04 14:23:06.845 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7050/_framework/aspnetcore-browser-refresh.js - -
+2025-08-04 14:23:06.845 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7050/_vs/browserLink - -
+2025-08-04 14:23:06.866 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7050/_framework/aspnetcore-browser-refresh.js - - - 200 16501 application/javascript;+charset=utf-8 20.9800ms
+2025-08-04 14:23:06.985 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7050/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 139.2690ms
+2025-08-04 14:23:08.099 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7050/swagger/v1/swagger.json - -
+2025-08-04 14:23:08.307 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7050/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 206.9707ms
+2025-08-04 14:23:13.393 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7050/_framework/aspnetcore-browser-refresh.js - -
+2025-08-04 14:23:13.393 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7050/_vs/browserLink - -
+2025-08-04 14:23:13.397 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7050/_framework/aspnetcore-browser-refresh.js - - - 200 16501 application/javascript;+charset=utf-8 4.5009ms
+2025-08-04 14:23:13.410 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7050/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 16.9219ms
+2025-08-04 14:23:46.409 +03:30 [INF] Request starting HTTP/2 POST https://localhost:7050/Category application/json 34
+2025-08-04 14:23:46.428 +03:30 [INF] CORS policy execution successful.
+2025-08-04 14:23:49.460 +03:30 [INF] Executed DbCommand (71ms) [Parameters=[@__HashJwtToken_0='?' (Size = 250)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreateON], [u].[Deleted], [u].[Device], [u].[HashJwtToken], [u].[HashRefreshToken], [u].[RefreshTokenExpireDate], [u].[TokenExpireDate], [u].[UpdateON], [u].[UserId]
+FROM [UserToken] AS [u]
+WHERE [u].[Deleted] = CAST(0 AS bit) AND [u].[HashJwtToken] = @__HashJwtToken_0
+2025-08-04 14:23:49.710 +03:30 [INF] Executed DbCommand (9ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AvatarName], [u].[CreateON], [u].[Deleted], [u].[Email], [u].[Family], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[UpdateON]
+FROM [User] AS [u]
+WHERE [u].[Id] = @__userId_0
+2025-08-04 14:23:50.015 +03:30 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserId], [u].[RoleId], [u].[CreateON], [u].[UpdateON]
+FROM [UserRole] AS [u]
+WHERE [u].[UserId] = @__p_0
+2025-08-04 14:23:50.109 +03:30 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[CreateON], [r].[Deleted], [r].[Title], [r].[UpdateON]
+FROM [Role] AS [r]
+WHERE [r].[Id] = @__p_0
+2025-08-04 14:23:50.159 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[CreateON], [r].[Deleted], [r].[Title], [r].[UpdateON]
+FROM [Role] AS [r]
+WHERE [r].[Id] = @__p_0
+2025-08-04 14:23:50.186 +03:30 [INF] Executing endpoint 'shop.Web.Controllers.Category.CategoryController.CreateCategory (shop.Web)'
+2025-08-04 14:23:50.218 +03:30 [INF] Route matched with {action = "CreateCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[shop.Frameworks.Commons.ApiResult] CreateCategory(shop.Service.DTOs.CategoryCommand.CreateCategoryDto) on controller shop.Web.Controllers.Category.CategoryController (shop.Web).
+2025-08-04 14:23:50.306 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AvatarName], [u].[CreateON], [u].[Deleted], [u].[Email], [u].[Family], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[UpdateON]
+FROM [User] AS [u]
+WHERE [u].[Id] = @__userId_0
+2025-08-04 14:23:50.434 +03:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[CreateON], [t].[PermissionStatus], [t].[Id], [r].[Title]
+FROM [Role] AS [r]
+LEFT JOIN (
+    SELECT [r0].[PermissionStatus], [r0].[Id], [r0].[RoleId]
+    FROM [RolePermission] AS [r0]
+    WHERE [r0].[Deleted] = CAST(0 AS bit)
+) AS [t] ON [r].[Id] = [t].[RoleId]
+ORDER BY [r].[Id]
+2025-08-04 14:23:50.511 +03:30 [INF] shop.Web.Controllers.Category.CategoryController.CreateCategory (shop.Web) Executing
+2025-08-04 14:23:50.777 +03:30 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = Boolean), @p2='?' (Size = 350), @p3='?' (DbType = Int32), @p4='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Category].[Categories] ([CreateON], [Deleted], [Name], [ParentID], [UpdateON])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-08-04 14:23:50.823 +03:30 [INF] shop.Web.Controllers.Category.CategoryController.CreateCategory (shop.Web) Executed
+2025-08-04 14:23:50.836 +03:30 [INF] Executing ObjectResult, writing value of type 'shop.Frameworks.Commons.ApiResult'.
+2025-08-04 14:23:50.856 +03:30 [INF] Executed action shop.Web.Controllers.Category.CategoryController.CreateCategory (shop.Web) in 628.6638ms
+2025-08-04 14:23:50.861 +03:30 [INF] Executed endpoint 'shop.Web.Controllers.Category.CategoryController.CreateCategory (shop.Web)'
+2025-08-04 14:23:50.899 +03:30 [INF] Request finished HTTP/2 POST https://localhost:7050/Category application/json 34 - 201 - application/json;+charset=utf-8 4489.9971ms
+2025-08-04 14:25:40.828 +03:30 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-04 14:25:41.291 +03:30 [INF] Now listening on: https://localhost:7050
+2025-08-04 14:25:41.294 +03:30 [INF] Now listening on: http://localhost:5179
+2025-08-04 14:25:41.512 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-04 14:25:41.563 +03:30 [INF] Hosting environment: Development
+2025-08-04 14:25:41.565 +03:30 [INF] Content root path: D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Web
+2025-08-04 14:25:42.010 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7050/swagger/index.html - -
+2025-08-04 14:25:43.012 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7050/swagger/index.html - - - 200 - text/html;charset=utf-8 1003.0598ms
+2025-08-04 14:25:43.034 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7050/_framework/aspnetcore-browser-refresh.js - -
+2025-08-04 14:25:43.046 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7050/_framework/aspnetcore-browser-refresh.js - - - 200 16501 application/javascript;+charset=utf-8 11.0165ms
+2025-08-04 14:25:43.096 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7050/_framework/aspnetcore-browser-refresh.js - -
+2025-08-04 14:25:43.098 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7050/_framework/aspnetcore-browser-refresh.js - - - 200 16501 application/javascript;+charset=utf-8 2.2787ms
+2025-08-04 14:25:43.282 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7050/_vs/browserLink - -
+2025-08-04 14:25:43.372 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7050/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 89.3111ms
+2025-08-04 14:25:44.158 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7050/swagger/v1/swagger.json - -
+2025-08-04 14:25:44.346 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7050/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 187.2741ms
+2025-08-04 14:25:49.388 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7050/_vs/browserLink - -
+2025-08-04 14:25:49.418 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7050/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 31.0034ms
+2025-08-04 14:25:55.324 +03:30 [INF] Request starting HTTP/2 POST https://localhost:7050/Category application/json 34
+2025-08-04 14:25:55.339 +03:30 [INF] CORS policy execution successful.
+2025-08-04 14:25:58.667 +03:30 [INF] Executed DbCommand (79ms) [Parameters=[@__HashJwtToken_0='?' (Size = 250)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreateON], [u].[Deleted], [u].[Device], [u].[HashJwtToken], [u].[HashRefreshToken], [u].[RefreshTokenExpireDate], [u].[TokenExpireDate], [u].[UpdateON], [u].[UserId]
+FROM [UserToken] AS [u]
+WHERE [u].[Deleted] = CAST(0 AS bit) AND [u].[HashJwtToken] = @__HashJwtToken_0
+2025-08-04 14:25:58.960 +03:30 [INF] Executed DbCommand (12ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AvatarName], [u].[CreateON], [u].[Deleted], [u].[Email], [u].[Family], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[UpdateON]
+FROM [User] AS [u]
+WHERE [u].[Id] = @__userId_0
+2025-08-04 14:25:59.349 +03:30 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserId], [u].[RoleId], [u].[CreateON], [u].[UpdateON]
+FROM [UserRole] AS [u]
+WHERE [u].[UserId] = @__p_0
+2025-08-04 14:25:59.455 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[CreateON], [r].[Deleted], [r].[Title], [r].[UpdateON]
+FROM [Role] AS [r]
+WHERE [r].[Id] = @__p_0
+2025-08-04 14:25:59.484 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[CreateON], [r].[Deleted], [r].[Title], [r].[UpdateON]
+FROM [Role] AS [r]
+WHERE [r].[Id] = @__p_0
+2025-08-04 14:25:59.502 +03:30 [INF] Executing endpoint 'shop.Web.Controllers.Category.CategoryController.CreateCategory (shop.Web)'
+2025-08-04 14:25:59.532 +03:30 [INF] Route matched with {action = "CreateCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[shop.Frameworks.Commons.ApiResult] CreateCategory(shop.Service.DTOs.CategoryCommand.CreateCategoryDto) on controller shop.Web.Controllers.Category.CategoryController (shop.Web).
+2025-08-04 14:25:59.635 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AvatarName], [u].[CreateON], [u].[Deleted], [u].[Email], [u].[Family], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[UpdateON]
+FROM [User] AS [u]
+WHERE [u].[Id] = @__userId_0
+2025-08-04 14:25:59.847 +03:30 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[CreateON], [t].[PermissionStatus], [t].[Id], [r].[Title]
+FROM [Role] AS [r]
+LEFT JOIN (
+    SELECT [r0].[PermissionStatus], [r0].[Id], [r0].[RoleId]
+    FROM [RolePermission] AS [r0]
+    WHERE [r0].[Deleted] = CAST(0 AS bit)
+) AS [t] ON [r].[Id] = [t].[RoleId]
+ORDER BY [r].[Id]
+2025-08-04 14:25:59.946 +03:30 [INF] shop.Web.Controllers.Category.CategoryController.CreateCategory (shop.Web) Executing
+2025-08-04 14:26:00.215 +03:30 [INF] Executed DbCommand (8ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = Boolean), @p2='?' (Size = 350), @p3='?' (DbType = Int32), @p4='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Category].[Categories] ([CreateON], [Deleted], [Name], [ParentID], [UpdateON])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-08-04 14:26:00.273 +03:30 [INF] shop.Web.Controllers.Category.CategoryController.CreateCategory (shop.Web) Executed
+2025-08-04 14:26:00.302 +03:30 [INF] Executing ObjectResult, writing value of type 'shop.Frameworks.Commons.ApiResult'.
+2025-08-04 14:26:00.326 +03:30 [INF] Executed action shop.Web.Controllers.Category.CategoryController.CreateCategory (shop.Web) in 785.3299ms
+2025-08-04 14:26:00.330 +03:30 [INF] Executed endpoint 'shop.Web.Controllers.Category.CategoryController.CreateCategory (shop.Web)'
+2025-08-04 14:26:00.355 +03:30 [INF] Request finished HTTP/2 POST https://localhost:7050/Category application/json 34 - 201 - application/json;+charset=utf-8 5030.5826ms

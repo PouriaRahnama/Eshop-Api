@@ -19,7 +19,7 @@ builder.Host.UseSerilog(((context, provider, logger) =>
         .WriteTo.Console(); // «÷«›Â ò—œ‰ ·«ê »Â ò‰”Ê·
     logger.MinimumLevel.Information().WriteTo.File("log.txt",
         rollingInterval: RollingInterval.Day,
-        rollOnFileSizeLimit: true, restrictedToMinimumLevel: Serilog.Events.LogEventLevel.Error
+        rollOnFileSizeLimit: true, restrictedToMinimumLevel: Serilog.Events.LogEventLevel.Information
     ).WriteTo.File(new RenderedCompactJsonFormatter(), "log.ndjson", restrictedToMinimumLevel: Serilog.Events.LogEventLevel.Warning);
 }));
 var app = builder.Build();
