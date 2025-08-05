@@ -1,0 +1,962 @@
+2025-08-05 11:51:14.711 +03:30 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-05 11:51:15.499 +03:30 [INF] Now listening on: https://localhost:7050
+2025-08-05 11:51:15.507 +03:30 [INF] Now listening on: http://localhost:5179
+2025-08-05 11:51:15.741 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-05 11:51:15.811 +03:30 [INF] Hosting environment: Development
+2025-08-05 11:51:15.813 +03:30 [INF] Content root path: D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Web
+2025-08-05 11:51:17.366 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7050/swagger/index.html - -
+2025-08-05 11:51:17.814 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7050/swagger/index.html - - - 200 - text/html;charset=utf-8 453.3978ms
+2025-08-05 11:51:17.853 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7050/_vs/browserLink - -
+2025-08-05 11:51:17.854 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7050/_framework/aspnetcore-browser-refresh.js - -
+2025-08-05 11:51:17.864 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7050/_framework/aspnetcore-browser-refresh.js - - - 200 16501 application/javascript;+charset=utf-8 9.3114ms
+2025-08-05 11:51:17.929 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7050/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 76.0721ms
+2025-08-05 11:51:18.202 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7050/swagger/v1/swagger.json - -
+2025-08-05 11:51:18.335 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7050/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 133.0786ms
+2025-08-05 11:52:04.313 +03:30 [INF] Request starting HTTP/2 POST https://localhost:7050/Auth/login application/json 64
+2025-08-05 11:52:04.318 +03:30 [INF] CORS policy execution successful.
+2025-08-05 11:52:05.196 +03:30 [INF] Executing endpoint 'shop.Web.Controllers.Auth.AuthController.Login (shop.Web)'
+2025-08-05 11:52:05.237 +03:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[shop.Frameworks.Commons.ApiResult`1[Shop.Api.ViewModels.Auth.LoginResultDto]] Login(Shop.Api.ViewModels.Auth.LoginViewModel) on controller shop.Web.Controllers.Auth.AuthController (shop.Web).
+2025-08-05 11:52:05.969 +03:30 [INF] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executing
+2025-08-05 11:52:08.466 +03:30 [INF] Executed DbCommand (132ms) [Parameters=[@__PhoneNumber_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AvatarName], [u].[CreateON], [u].[Deleted], [u].[Email], [u].[Family], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[UpdateON]
+FROM [User] AS [u]
+WHERE [u].[PhoneNumber] = @__PhoneNumber_0
+2025-08-05 11:52:08.667 +03:30 [INF] Executed DbCommand (7ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserId], [u].[RoleId], [u].[CreateON], [u].[UpdateON]
+FROM [UserRole] AS [u]
+WHERE [u].[UserId] = @__p_0
+2025-08-05 11:52:08.718 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[CreateON], [r].[Deleted], [r].[Title], [r].[UpdateON]
+FROM [Role] AS [r]
+WHERE [r].[Id] = @__p_0
+2025-08-05 11:52:08.745 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[CreateON], [r].[Deleted], [r].[Title], [r].[UpdateON]
+FROM [Role] AS [r]
+WHERE [r].[Id] = @__p_0
+2025-08-05 11:52:09.436 +03:30 [INF] Executed DbCommand (4ms) [Parameters=[@__user_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [UserToken] AS [u]
+WHERE [u].[UserId] = @__user_Id_0 AND [u].[Deleted] = CAST(0 AS bit)
+2025-08-05 11:52:09.572 +03:30 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = Boolean), @p2='?' (Size = 100), @p3='?' (Size = 250), @p4='?' (Size = 250), @p5='?' (DbType = DateTime2), @p6='?' (DbType = DateTime2), @p7='?' (DbType = DateTime2), @p8='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [UserToken] ([CreateON], [Deleted], [Device], [HashJwtToken], [HashRefreshToken], [RefreshTokenExpireDate], [TokenExpireDate], [UpdateON], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+2025-08-05 11:52:09.602 +03:30 [INF] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executed
+2025-08-05 11:52:09.610 +03:30 [INF] Executing ObjectResult, writing value of type 'shop.Frameworks.Commons.ApiResult`1[[Shop.Api.ViewModels.Auth.LoginResultDto, shop.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-05 11:52:09.624 +03:30 [INF] Executed action shop.Web.Controllers.Auth.AuthController.Login (shop.Web) in 4380.2501ms
+2025-08-05 11:52:09.627 +03:30 [INF] Executed endpoint 'shop.Web.Controllers.Auth.AuthController.Login (shop.Web)'
+2025-08-05 11:52:09.655 +03:30 [INF] Request finished HTTP/2 POST https://localhost:7050/Auth/login application/json 64 - 200 - application/json;+charset=utf-8 5341.7181ms
+2025-08-05 11:53:37.795 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7050/Category - -
+2025-08-05 11:53:37.868 +03:30 [INF] Executed DbCommand (3ms) [Parameters=[@__HashJwtToken_0='?' (Size = 250)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreateON], [u].[Deleted], [u].[Device], [u].[HashJwtToken], [u].[HashRefreshToken], [u].[RefreshTokenExpireDate], [u].[TokenExpireDate], [u].[UpdateON], [u].[UserId]
+FROM [UserToken] AS [u]
+WHERE [u].[Deleted] = CAST(0 AS bit) AND [u].[HashJwtToken] = @__HashJwtToken_0
+2025-08-05 11:53:37.882 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AvatarName], [u].[CreateON], [u].[Deleted], [u].[Email], [u].[Family], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[UpdateON]
+FROM [User] AS [u]
+WHERE [u].[Id] = @__userId_0
+2025-08-05 11:53:37.890 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserId], [u].[RoleId], [u].[CreateON], [u].[UpdateON]
+FROM [UserRole] AS [u]
+WHERE [u].[UserId] = @__p_0
+2025-08-05 11:53:37.898 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[CreateON], [r].[Deleted], [r].[Title], [r].[UpdateON]
+FROM [Role] AS [r]
+WHERE [r].[Id] = @__p_0
+2025-08-05 11:53:37.903 +03:30 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[CreateON], [r].[Deleted], [r].[Title], [r].[UpdateON]
+FROM [Role] AS [r]
+WHERE [r].[Id] = @__p_0
+2025-08-05 11:53:37.911 +03:30 [INF] Executing endpoint 'shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web)'
+2025-08-05 11:53:37.918 +03:30 [INF] Route matched with {action = "GetAllCategories", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[shop.Frameworks.Commons.ApiResult`1[System.Collections.Generic.List`1[shop.Service.Query.CategoryQueryDto]]] GetAllCategories() on controller shop.Web.Controllers.Category.CategoryController (shop.Web).
+2025-08-05 11:53:38.006 +03:30 [INF] shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) Executing
+2025-08-05 11:53:38.033 +03:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreateON], [c].[Deleted], [c].[Name], [c].[ParentID], [c].[UpdateON]
+FROM [Category].[Categories] AS [c]
+WHERE [c].[ParentID] IS NULL AND [c].[Deleted] = CAST(0 AS bit)
+ORDER BY [c].[Id] DESC
+2025-08-05 11:53:38.073 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreateON], [c].[Deleted], [c].[Name], [c].[ParentID], [c].[UpdateON]
+FROM [Category].[Categories] AS [c]
+WHERE [c].[ParentID] = @__p_0
+2025-08-05 11:53:38.091 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductID], [p].[CategoryID], [p].[CreateON], [p].[UpdateON]
+FROM [ProductCategory] AS [p]
+WHERE [p].[CategoryID] = @__p_0
+2025-08-05 11:53:38.099 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreateON], [c].[Deleted], [c].[Name], [c].[ParentID], [c].[UpdateON]
+FROM [Category].[Categories] AS [c]
+WHERE [c].[ParentID] = @__p_0
+2025-08-05 11:53:38.104 +03:30 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductID], [p].[CategoryID], [p].[CreateON], [p].[UpdateON]
+FROM [ProductCategory] AS [p]
+WHERE [p].[CategoryID] = @__p_0
+2025-08-05 11:53:38.108 +03:30 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreateON], [c].[Deleted], [c].[Name], [c].[ParentID], [c].[UpdateON]
+FROM [Category].[Categories] AS [c]
+WHERE [c].[ParentID] = @__p_0
+2025-08-05 11:53:38.112 +03:30 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductID], [p].[CategoryID], [p].[CreateON], [p].[UpdateON]
+FROM [ProductCategory] AS [p]
+WHERE [p].[CategoryID] = @__p_0
+2025-08-05 11:53:38.118 +03:30 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreateON], [c].[Deleted], [c].[Name], [c].[ParentID], [c].[UpdateON]
+FROM [Category].[Categories] AS [c]
+WHERE [c].[ParentID] = @__p_0
+2025-08-05 11:53:38.122 +03:30 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductID], [p].[CategoryID], [p].[CreateON], [p].[UpdateON]
+FROM [ProductCategory] AS [p]
+WHERE [p].[CategoryID] = @__p_0
+2025-08-05 11:53:38.126 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreateON], [c].[Deleted], [c].[Name], [c].[ParentID], [c].[UpdateON]
+FROM [Category].[Categories] AS [c]
+WHERE [c].[ParentID] = @__p_0
+2025-08-05 11:53:38.132 +03:30 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductID], [p].[CategoryID], [p].[CreateON], [p].[UpdateON]
+FROM [ProductCategory] AS [p]
+WHERE [p].[CategoryID] = @__p_0
+2025-08-05 11:53:38.136 +03:30 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreateON], [c].[Deleted], [c].[Name], [c].[ParentID], [c].[UpdateON]
+FROM [Category].[Categories] AS [c]
+WHERE [c].[ParentID] = @__p_0
+2025-08-05 11:53:38.140 +03:30 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductID], [p].[CategoryID], [p].[CreateON], [p].[UpdateON]
+FROM [ProductCategory] AS [p]
+WHERE [p].[CategoryID] = @__p_0
+2025-08-05 11:53:38.145 +03:30 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreateON], [c].[Deleted], [c].[Name], [c].[ParentID], [c].[UpdateON]
+FROM [Category].[Categories] AS [c]
+WHERE [c].[ParentID] = @__p_0
+2025-08-05 11:53:38.148 +03:30 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductID], [p].[CategoryID], [p].[CreateON], [p].[UpdateON]
+FROM [ProductCategory] AS [p]
+WHERE [p].[CategoryID] = @__p_0
+2025-08-05 11:53:38.154 +03:30 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreateON], [c].[Deleted], [c].[Name], [c].[ParentID], [c].[UpdateON]
+FROM [Category].[Categories] AS [c]
+WHERE [c].[ParentID] = @__p_0
+2025-08-05 11:53:38.158 +03:30 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductID], [p].[CategoryID], [p].[CreateON], [p].[UpdateON]
+FROM [ProductCategory] AS [p]
+WHERE [p].[CategoryID] = @__p_0
+2025-08-05 11:53:38.163 +03:30 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreateON], [c].[Deleted], [c].[Name], [c].[ParentID], [c].[UpdateON]
+FROM [Category].[Categories] AS [c]
+WHERE [c].[ParentID] = @__p_0
+2025-08-05 11:53:38.167 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductID], [p].[CategoryID], [p].[CreateON], [p].[UpdateON]
+FROM [ProductCategory] AS [p]
+WHERE [p].[CategoryID] = @__p_0
+2025-08-05 11:53:38.172 +03:30 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreateON], [c].[Deleted], [c].[Name], [c].[ParentID], [c].[UpdateON]
+FROM [Category].[Categories] AS [c]
+WHERE [c].[ParentID] = @__p_0
+2025-08-05 11:53:38.178 +03:30 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductID], [p].[CategoryID], [p].[CreateON], [p].[UpdateON]
+FROM [ProductCategory] AS [p]
+WHERE [p].[CategoryID] = @__p_0
+2025-08-05 11:53:38.186 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreateON], [c].[Deleted], [c].[Name], [c].[ParentID], [c].[UpdateON]
+FROM [Category].[Categories] AS [c]
+WHERE [c].[ParentID] = @__p_0
+2025-08-05 11:53:38.192 +03:30 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductID], [p].[CategoryID], [p].[CreateON], [p].[UpdateON]
+FROM [ProductCategory] AS [p]
+WHERE [p].[CategoryID] = @__p_0
+2025-08-05 11:53:38.197 +03:30 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreateON], [c].[Deleted], [c].[Name], [c].[ParentID], [c].[UpdateON]
+FROM [Category].[Categories] AS [c]
+WHERE [c].[ParentID] = @__p_0
+2025-08-05 11:53:38.202 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductID], [p].[CategoryID], [p].[CreateON], [p].[UpdateON]
+FROM [ProductCategory] AS [p]
+WHERE [p].[CategoryID] = @__p_0
+2025-08-05 11:53:38.207 +03:30 [INF] shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) Executed
+2025-08-05 11:53:38.208 +03:30 [INF] Executing ObjectResult, writing value of type 'shop.Frameworks.Commons.ApiResult`1[[System.Collections.Generic.List`1[[shop.Service.Query.CategoryQueryDto, shop.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-05 11:53:38.223 +03:30 [INF] Executed action shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) in 301.2875ms
+2025-08-05 11:53:38.227 +03:30 [INF] Executed endpoint 'shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web)'
+2025-08-05 11:53:38.231 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7050/Category - - - 200 - application/json;+charset=utf-8 436.0102ms
+2025-08-05 11:55:27.690 +03:30 [INF] Request starting HTTP/2 POST https://localhost:7050/Category application/json 16
+2025-08-05 11:55:27.693 +03:30 [INF] CORS policy execution successful.
+2025-08-05 11:55:27.706 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[@__HashJwtToken_0='?' (Size = 250)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreateON], [u].[Deleted], [u].[Device], [u].[HashJwtToken], [u].[HashRefreshToken], [u].[RefreshTokenExpireDate], [u].[TokenExpireDate], [u].[UpdateON], [u].[UserId]
+FROM [UserToken] AS [u]
+WHERE [u].[Deleted] = CAST(0 AS bit) AND [u].[HashJwtToken] = @__HashJwtToken_0
+2025-08-05 11:55:27.714 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AvatarName], [u].[CreateON], [u].[Deleted], [u].[Email], [u].[Family], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[UpdateON]
+FROM [User] AS [u]
+WHERE [u].[Id] = @__userId_0
+2025-08-05 11:55:27.723 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserId], [u].[RoleId], [u].[CreateON], [u].[UpdateON]
+FROM [UserRole] AS [u]
+WHERE [u].[UserId] = @__p_0
+2025-08-05 11:55:27.728 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[CreateON], [r].[Deleted], [r].[Title], [r].[UpdateON]
+FROM [Role] AS [r]
+WHERE [r].[Id] = @__p_0
+2025-08-05 11:55:27.733 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[CreateON], [r].[Deleted], [r].[Title], [r].[UpdateON]
+FROM [Role] AS [r]
+WHERE [r].[Id] = @__p_0
+2025-08-05 11:55:27.741 +03:30 [INF] Executing endpoint 'shop.Web.Controllers.Category.CategoryController.CreateCategory (shop.Web)'
+2025-08-05 11:55:27.748 +03:30 [INF] Route matched with {action = "CreateCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[shop.Frameworks.Commons.ApiResult] CreateCategory(shop.Service.DTOs.CategoryCommand.CreateCategoryDto) on controller shop.Web.Controllers.Category.CategoryController (shop.Web).
+2025-08-05 11:55:27.763 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AvatarName], [u].[CreateON], [u].[Deleted], [u].[Email], [u].[Family], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[UpdateON]
+FROM [User] AS [u]
+WHERE [u].[Id] = @__userId_0
+2025-08-05 11:55:27.842 +03:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[CreateON], [t].[PermissionStatus], [t].[Id], [r].[Title]
+FROM [Role] AS [r]
+LEFT JOIN (
+    SELECT [r0].[PermissionStatus], [r0].[Id], [r0].[RoleId]
+    FROM [RolePermission] AS [r0]
+    WHERE [r0].[Deleted] = CAST(0 AS bit)
+) AS [t] ON [r].[Id] = [t].[RoleId]
+ORDER BY [r].[Id]
+2025-08-05 11:55:27.861 +03:30 [INF] Executing BadRequestObjectResult, writing value of type 'System.Linq.Enumerable+WhereSelectEnumerableIterator`2[[Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateEntry, Microsoft.AspNetCore.Mvc.Abstractions, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60],[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], shop.Frameworks, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-05 11:55:27.870 +03:30 [INF] Executed action shop.Web.Controllers.Category.CategoryController.CreateCategory (shop.Web) in 116.6862ms
+2025-08-05 11:55:27.872 +03:30 [INF] Executed endpoint 'shop.Web.Controllers.Category.CategoryController.CreateCategory (shop.Web)'
+2025-08-05 11:55:27.874 +03:30 [INF] Request finished HTTP/2 POST https://localhost:7050/Category application/json 16 - 400 - application/json;+charset=utf-8 184.1066ms
+2025-08-05 11:58:24.623 +03:30 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-05 11:58:25.150 +03:30 [INF] Now listening on: https://localhost:7050
+2025-08-05 11:58:25.211 +03:30 [INF] Now listening on: http://localhost:5179
+2025-08-05 11:58:25.484 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-05 11:58:25.774 +03:30 [INF] Hosting environment: Development
+2025-08-05 11:58:25.775 +03:30 [INF] Content root path: D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Web
+2025-08-05 11:58:26.199 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7050/swagger/index.html - -
+2025-08-05 11:58:26.791 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7050/swagger/index.html - - - 200 - text/html;charset=utf-8 593.1962ms
+2025-08-05 11:58:27.190 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7050/_vs/browserLink - -
+2025-08-05 11:58:27.225 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7050/_framework/aspnetcore-browser-refresh.js - -
+2025-08-05 11:58:27.284 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7050/_framework/aspnetcore-browser-refresh.js - - - 200 16501 application/javascript;+charset=utf-8 58.9647ms
+2025-08-05 11:58:27.334 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7050/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 144.3933ms
+2025-08-05 11:58:27.928 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7050/swagger/v1/swagger.json - -
+2025-08-05 11:58:28.054 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7050/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 126.0718ms
+2025-08-05 11:58:35.639 +03:30 [INF] Request starting HTTP/2 POST https://localhost:7050/Category application/json 16
+2025-08-05 11:58:35.645 +03:30 [INF] CORS policy execution successful.
+2025-08-05 11:58:38.476 +03:30 [INF] Executed DbCommand (77ms) [Parameters=[@__HashJwtToken_0='?' (Size = 250)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreateON], [u].[Deleted], [u].[Device], [u].[HashJwtToken], [u].[HashRefreshToken], [u].[RefreshTokenExpireDate], [u].[TokenExpireDate], [u].[UpdateON], [u].[UserId]
+FROM [UserToken] AS [u]
+WHERE [u].[Deleted] = CAST(0 AS bit) AND [u].[HashJwtToken] = @__HashJwtToken_0
+2025-08-05 11:58:38.700 +03:30 [INF] Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AvatarName], [u].[CreateON], [u].[Deleted], [u].[Email], [u].[Family], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[UpdateON]
+FROM [User] AS [u]
+WHERE [u].[Id] = @__userId_0
+2025-08-05 11:58:38.915 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserId], [u].[RoleId], [u].[CreateON], [u].[UpdateON]
+FROM [UserRole] AS [u]
+WHERE [u].[UserId] = @__p_0
+2025-08-05 11:58:38.979 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[CreateON], [r].[Deleted], [r].[Title], [r].[UpdateON]
+FROM [Role] AS [r]
+WHERE [r].[Id] = @__p_0
+2025-08-05 11:58:39.004 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[CreateON], [r].[Deleted], [r].[Title], [r].[UpdateON]
+FROM [Role] AS [r]
+WHERE [r].[Id] = @__p_0
+2025-08-05 11:58:39.025 +03:30 [INF] Executing endpoint 'shop.Web.Controllers.Category.CategoryController.CreateCategory (shop.Web)'
+2025-08-05 11:58:39.073 +03:30 [INF] Route matched with {action = "CreateCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[shop.Frameworks.Commons.ApiResult] CreateCategory(shop.Service.DTOs.CategoryCommand.CreateCategoryDto) on controller shop.Web.Controllers.Category.CategoryController (shop.Web).
+2025-08-05 11:58:39.382 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AvatarName], [u].[CreateON], [u].[Deleted], [u].[Email], [u].[Family], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[UpdateON]
+FROM [User] AS [u]
+WHERE [u].[Id] = @__userId_0
+2025-08-05 11:58:39.528 +03:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[CreateON], [t].[PermissionStatus], [t].[Id], [r].[Title]
+FROM [Role] AS [r]
+LEFT JOIN (
+    SELECT [r0].[PermissionStatus], [r0].[Id], [r0].[RoleId]
+    FROM [RolePermission] AS [r0]
+    WHERE [r0].[Deleted] = CAST(0 AS bit)
+) AS [t] ON [r].[Id] = [t].[RoleId]
+ORDER BY [r].[Id]
+2025-08-05 11:58:39.627 +03:30 [INF] Executing BadRequestObjectResult, writing value of type 'System.Linq.Enumerable+WhereSelectEnumerableIterator`2[[Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateEntry, Microsoft.AspNetCore.Mvc.Abstractions, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60],[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], shop.Frameworks, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-05 11:58:39.644 +03:30 [INF] Executed action shop.Web.Controllers.Category.CategoryController.CreateCategory (shop.Web) in 564.0309ms
+2025-08-05 11:58:39.647 +03:30 [INF] Executed endpoint 'shop.Web.Controllers.Category.CategoryController.CreateCategory (shop.Web)'
+2025-08-05 11:58:39.667 +03:30 [INF] Request finished HTTP/2 POST https://localhost:7050/Category application/json 16 - 400 - application/json;+charset=utf-8 4028.6757ms
+2025-08-05 12:02:19.708 +03:30 [INF] Request starting HTTP/2 POST https://localhost:7050/Category application/json 22
+2025-08-05 12:02:19.731 +03:30 [INF] CORS policy execution successful.
+2025-08-05 12:02:19.776 +03:30 [INF] Executed DbCommand (9ms) [Parameters=[@__HashJwtToken_0='?' (Size = 250)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreateON], [u].[Deleted], [u].[Device], [u].[HashJwtToken], [u].[HashRefreshToken], [u].[RefreshTokenExpireDate], [u].[TokenExpireDate], [u].[UpdateON], [u].[UserId]
+FROM [UserToken] AS [u]
+WHERE [u].[Deleted] = CAST(0 AS bit) AND [u].[HashJwtToken] = @__HashJwtToken_0
+2025-08-05 12:02:19.833 +03:30 [INF] Executed DbCommand (27ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AvatarName], [u].[CreateON], [u].[Deleted], [u].[Email], [u].[Family], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[UpdateON]
+FROM [User] AS [u]
+WHERE [u].[Id] = @__userId_0
+2025-08-05 12:02:19.854 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserId], [u].[RoleId], [u].[CreateON], [u].[UpdateON]
+FROM [UserRole] AS [u]
+WHERE [u].[UserId] = @__p_0
+2025-08-05 12:02:19.863 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[CreateON], [r].[Deleted], [r].[Title], [r].[UpdateON]
+FROM [Role] AS [r]
+WHERE [r].[Id] = @__p_0
+2025-08-05 12:02:19.872 +03:30 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[CreateON], [r].[Deleted], [r].[Title], [r].[UpdateON]
+FROM [Role] AS [r]
+WHERE [r].[Id] = @__p_0
+2025-08-05 12:02:19.881 +03:30 [INF] Executing endpoint 'shop.Web.Controllers.Category.CategoryController.CreateCategory (shop.Web)'
+2025-08-05 12:02:19.887 +03:30 [INF] Route matched with {action = "CreateCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[shop.Frameworks.Commons.ApiResult] CreateCategory(shop.Service.DTOs.CategoryCommand.CreateCategoryDto) on controller shop.Web.Controllers.Category.CategoryController (shop.Web).
+2025-08-05 12:02:20.147 +03:30 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AvatarName], [u].[CreateON], [u].[Deleted], [u].[Email], [u].[Family], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[UpdateON]
+FROM [User] AS [u]
+WHERE [u].[Id] = @__userId_0
+2025-08-05 12:02:20.191 +03:30 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[CreateON], [t].[PermissionStatus], [t].[Id], [r].[Title]
+FROM [Role] AS [r]
+LEFT JOIN (
+    SELECT [r0].[PermissionStatus], [r0].[Id], [r0].[RoleId]
+    FROM [RolePermission] AS [r0]
+    WHERE [r0].[Deleted] = CAST(0 AS bit)
+) AS [t] ON [r].[Id] = [t].[RoleId]
+ORDER BY [r].[Id]
+2025-08-05 12:02:24.955 +03:30 [INF] shop.Web.Controllers.Category.CategoryController.CreateCategory (shop.Web) Executing
+2025-08-05 12:02:25.799 +03:30 [INF] Executing action method shop.Web.Controllers.Category.CategoryController.CreateCategory (shop.Web) - Validation state: "Valid"
+2025-08-05 12:02:26.232 +03:30 [INF] Executed DbCommand (13ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = Boolean), @p2='?' (Size = 350), @p3='?' (DbType = Int32), @p4='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Category].[Categories] ([CreateON], [Deleted], [Name], [ParentID], [UpdateON])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-08-05 12:02:26.439 +03:30 [INF] Executed action method shop.Web.Controllers.Category.CategoryController.CreateCategory (shop.Web), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 626.1052ms.
+2025-08-05 12:02:27.614 +03:30 [INF] shop.Web.Controllers.Category.CategoryController.CreateCategory (shop.Web) Executed
+2025-08-05 12:02:28.552 +03:30 [INF] Executing ObjectResult, writing value of type 'shop.Frameworks.Commons.ApiResult'.
+2025-08-05 12:02:31.276 +03:30 [INF] Executed action shop.Web.Controllers.Category.CategoryController.CreateCategory (shop.Web) in 11384.2528ms
+2025-08-05 12:02:31.282 +03:30 [INF] Executed endpoint 'shop.Web.Controllers.Category.CategoryController.CreateCategory (shop.Web)'
+2025-08-05 12:02:31.285 +03:30 [INF] Request finished HTTP/2 POST https://localhost:7050/Category application/json 22 - 201 - application/json;+charset=utf-8 11577.7769ms
+2025-08-05 14:07:54.922 +03:30 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-05 14:07:55.842 +03:30 [INF] Now listening on: https://localhost:7050
+2025-08-05 14:07:55.844 +03:30 [INF] Now listening on: http://localhost:5179
+2025-08-05 14:07:56.002 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-05 14:07:56.004 +03:30 [INF] Hosting environment: Development
+2025-08-05 14:07:56.009 +03:30 [INF] Content root path: D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Web
+2025-08-05 14:07:56.566 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7050/swagger/index.html - -
+2025-08-05 14:07:57.005 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7050/swagger/index.html - - - 200 - text/html;charset=utf-8 443.3655ms
+2025-08-05 14:07:57.317 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7050/_vs/browserLink - -
+2025-08-05 14:07:57.324 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7050/_framework/aspnetcore-browser-refresh.js - -
+2025-08-05 14:07:57.332 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7050/_framework/aspnetcore-browser-refresh.js - - - 200 16501 application/javascript;+charset=utf-8 8.4241ms
+2025-08-05 14:07:57.408 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7050/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 91.5544ms
+2025-08-05 14:07:57.796 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7050/swagger/v1/swagger.json - -
+2025-08-05 14:07:57.926 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7050/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 129.4389ms
+2025-08-05 14:09:42.593 +03:30 [INF] Request starting HTTP/2 POST https://localhost:7050/Seller/Inventory application/json 92
+2025-08-05 14:09:42.598 +03:30 [INF] CORS policy execution successful.
+2025-08-05 14:09:43.527 +03:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-08-05 14:09:43.533 +03:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-08-05 14:09:43.537 +03:30 [INF] Request finished HTTP/2 POST https://localhost:7050/Seller/Inventory application/json 92 - 401 0 - 943.7702ms
+2025-08-05 14:10:11.724 +03:30 [INF] Request starting HTTP/2 POST https://localhost:7050/Auth/login application/json 64
+2025-08-05 14:10:11.726 +03:30 [INF] CORS policy execution successful.
+2025-08-05 14:10:11.735 +03:30 [INF] Executing endpoint 'shop.Web.Controllers.Auth.AuthController.Login (shop.Web)'
+2025-08-05 14:10:11.785 +03:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[shop.Frameworks.Commons.ApiResult`1[Shop.Api.ViewModels.Auth.LoginResultDto]] Login(Shop.Api.ViewModels.Auth.LoginViewModel) on controller shop.Web.Controllers.Auth.AuthController (shop.Web).
+2025-08-05 14:10:12.620 +03:30 [INF] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executing
+2025-08-05 14:10:15.203 +03:30 [INF] Executed DbCommand (119ms) [Parameters=[@__PhoneNumber_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AvatarName], [u].[CreateON], [u].[Deleted], [u].[Email], [u].[Family], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[UpdateON]
+FROM [User] AS [u]
+WHERE [u].[PhoneNumber] = @__PhoneNumber_0
+2025-08-05 14:10:15.409 +03:30 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserId], [u].[RoleId], [u].[CreateON], [u].[UpdateON]
+FROM [UserRole] AS [u]
+WHERE [u].[UserId] = @__p_0
+2025-08-05 14:10:15.460 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[CreateON], [r].[Deleted], [r].[Title], [r].[UpdateON]
+FROM [Role] AS [r]
+WHERE [r].[Id] = @__p_0
+2025-08-05 14:10:15.487 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[CreateON], [r].[Deleted], [r].[Title], [r].[UpdateON]
+FROM [Role] AS [r]
+WHERE [r].[Id] = @__p_0
+2025-08-05 14:10:16.153 +03:30 [INF] Executed DbCommand (3ms) [Parameters=[@__user_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [UserToken] AS [u]
+WHERE [u].[UserId] = @__user_Id_0 AND [u].[Deleted] = CAST(0 AS bit)
+2025-08-05 14:10:16.297 +03:30 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = Boolean), @p2='?' (Size = 100), @p3='?' (Size = 250), @p4='?' (Size = 250), @p5='?' (DbType = DateTime2), @p6='?' (DbType = DateTime2), @p7='?' (DbType = DateTime2), @p8='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [UserToken] ([CreateON], [Deleted], [Device], [HashJwtToken], [HashRefreshToken], [RefreshTokenExpireDate], [TokenExpireDate], [UpdateON], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+2025-08-05 14:10:16.331 +03:30 [INF] shop.Web.Controllers.Auth.AuthController.Login (shop.Web) Executed
+2025-08-05 14:10:16.341 +03:30 [INF] Executing ObjectResult, writing value of type 'shop.Frameworks.Commons.ApiResult`1[[Shop.Api.ViewModels.Auth.LoginResultDto, shop.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-05 14:10:16.356 +03:30 [INF] Executed action shop.Web.Controllers.Auth.AuthController.Login (shop.Web) in 4564.171ms
+2025-08-05 14:10:16.361 +03:30 [INF] Executed endpoint 'shop.Web.Controllers.Auth.AuthController.Login (shop.Web)'
+2025-08-05 14:10:16.391 +03:30 [INF] Request finished HTTP/2 POST https://localhost:7050/Auth/login application/json 64 - 200 - application/json;+charset=utf-8 4666.5558ms
+2025-08-05 14:10:31.376 +03:30 [INF] Request starting HTTP/2 POST https://localhost:7050/Seller/Inventory application/json 92
+2025-08-05 14:10:31.378 +03:30 [INF] CORS policy execution successful.
+2025-08-05 14:10:31.463 +03:30 [INF] Executed DbCommand (3ms) [Parameters=[@__HashJwtToken_0='?' (Size = 250)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreateON], [u].[Deleted], [u].[Device], [u].[HashJwtToken], [u].[HashRefreshToken], [u].[RefreshTokenExpireDate], [u].[TokenExpireDate], [u].[UpdateON], [u].[UserId]
+FROM [UserToken] AS [u]
+WHERE [u].[Deleted] = CAST(0 AS bit) AND [u].[HashJwtToken] = @__HashJwtToken_0
+2025-08-05 14:10:31.479 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AvatarName], [u].[CreateON], [u].[Deleted], [u].[Email], [u].[Family], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[UpdateON]
+FROM [User] AS [u]
+WHERE [u].[Id] = @__userId_0
+2025-08-05 14:10:31.489 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserId], [u].[RoleId], [u].[CreateON], [u].[UpdateON]
+FROM [UserRole] AS [u]
+WHERE [u].[UserId] = @__p_0
+2025-08-05 14:10:31.495 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[CreateON], [r].[Deleted], [r].[Title], [r].[UpdateON]
+FROM [Role] AS [r]
+WHERE [r].[Id] = @__p_0
+2025-08-05 14:10:31.500 +03:30 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[CreateON], [r].[Deleted], [r].[Title], [r].[UpdateON]
+FROM [Role] AS [r]
+WHERE [r].[Id] = @__p_0
+2025-08-05 14:10:31.511 +03:30 [INF] Executing endpoint 'shop.Web.Controllers.Seller.SellerController.AddInventory (shop.Web)'
+2025-08-05 14:10:31.518 +03:30 [INF] Route matched with {action = "AddInventory", controller = "Seller"}. Executing controller action with signature System.Threading.Tasks.Task`1[shop.Frameworks.Commons.ApiResult] AddInventory(shop.Service.DTOs.SellerCommand.AddInventoryDto) on controller shop.Web.Controllers.Seller.SellerController (shop.Web).
+2025-08-05 14:10:31.620 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AvatarName], [u].[CreateON], [u].[Deleted], [u].[Email], [u].[Family], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[UpdateON]
+FROM [User] AS [u]
+WHERE [u].[Id] = @__userId_0
+2025-08-05 14:10:31.711 +03:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[CreateON], [t].[PermissionStatus], [t].[Id], [r].[Title]
+FROM [Role] AS [r]
+LEFT JOIN (
+    SELECT [r0].[PermissionStatus], [r0].[Id], [r0].[RoleId]
+    FROM [RolePermission] AS [r0]
+    WHERE [r0].[Deleted] = CAST(0 AS bit)
+) AS [t] ON [r].[Id] = [t].[RoleId]
+ORDER BY [r].[Id]
+2025-08-05 14:10:31.731 +03:30 [INF] shop.Web.Controllers.Seller.SellerController.AddInventory (shop.Web) Executing
+2025-08-05 14:10:31.747 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[CreateON], [s].[Deleted], [s].[NationalCode], [s].[ShopName], [s].[Status], [s].[UpdateON], [s].[UserId]
+FROM [Seller] AS [s]
+WHERE [s].[Id] = @__p_0
+2025-08-05 14:10:31.754 +03:30 [INF] shop.Web.Controllers.Seller.SellerController.AddInventory (shop.Web) Executed
+2025-08-05 14:10:31.756 +03:30 [INF] Executing ObjectResult, writing value of type 'shop.Frameworks.Commons.ApiResult'.
+2025-08-05 14:10:31.759 +03:30 [INF] Executed action shop.Web.Controllers.Seller.SellerController.AddInventory (shop.Web) in 237.9703ms
+2025-08-05 14:10:31.762 +03:30 [INF] Executed endpoint 'shop.Web.Controllers.Seller.SellerController.AddInventory (shop.Web)'
+2025-08-05 14:10:31.765 +03:30 [INF] Request finished HTTP/2 POST https://localhost:7050/Seller/Inventory application/json 92 - 200 - application/json;+charset=utf-8 388.9295ms
+2025-08-05 14:12:07.150 +03:30 [INF] Request starting HTTP/2 POST https://localhost:7050/Seller application/json 53
+2025-08-05 14:12:07.153 +03:30 [INF] CORS policy execution successful.
+2025-08-05 14:12:07.159 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__HashJwtToken_0='?' (Size = 250)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreateON], [u].[Deleted], [u].[Device], [u].[HashJwtToken], [u].[HashRefreshToken], [u].[RefreshTokenExpireDate], [u].[TokenExpireDate], [u].[UpdateON], [u].[UserId]
+FROM [UserToken] AS [u]
+WHERE [u].[Deleted] = CAST(0 AS bit) AND [u].[HashJwtToken] = @__HashJwtToken_0
+2025-08-05 14:12:07.172 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AvatarName], [u].[CreateON], [u].[Deleted], [u].[Email], [u].[Family], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[UpdateON]
+FROM [User] AS [u]
+WHERE [u].[Id] = @__userId_0
+2025-08-05 14:12:07.178 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserId], [u].[RoleId], [u].[CreateON], [u].[UpdateON]
+FROM [UserRole] AS [u]
+WHERE [u].[UserId] = @__p_0
+2025-08-05 14:12:07.186 +03:30 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[CreateON], [r].[Deleted], [r].[Title], [r].[UpdateON]
+FROM [Role] AS [r]
+WHERE [r].[Id] = @__p_0
+2025-08-05 14:12:07.190 +03:30 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[CreateON], [r].[Deleted], [r].[Title], [r].[UpdateON]
+FROM [Role] AS [r]
+WHERE [r].[Id] = @__p_0
+2025-08-05 14:12:07.195 +03:30 [INF] Executing endpoint 'shop.Web.Controllers.Seller.SellerController.AddSeller (shop.Web)'
+2025-08-05 14:12:07.201 +03:30 [INF] Route matched with {action = "AddSeller", controller = "Seller"}. Executing controller action with signature System.Threading.Tasks.Task`1[shop.Frameworks.Commons.ApiResult] AddSeller(shop.Service.DTOs.SellerCommand.AddSellerDto) on controller shop.Web.Controllers.Seller.SellerController (shop.Web).
+2025-08-05 14:12:07.212 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AvatarName], [u].[CreateON], [u].[Deleted], [u].[Email], [u].[Family], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[UpdateON]
+FROM [User] AS [u]
+WHERE [u].[Id] = @__userId_0
+2025-08-05 14:12:07.219 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[CreateON], [t].[PermissionStatus], [t].[Id], [r].[Title]
+FROM [Role] AS [r]
+LEFT JOIN (
+    SELECT [r0].[PermissionStatus], [r0].[Id], [r0].[RoleId]
+    FROM [RolePermission] AS [r0]
+    WHERE [r0].[Deleted] = CAST(0 AS bit)
+) AS [t] ON [r].[Id] = [t].[RoleId]
+ORDER BY [r].[Id]
+2025-08-05 14:12:07.232 +03:30 [INF] Executing BadRequestObjectResult, writing value of type 'System.Linq.Enumerable+WhereSelectEnumerableIterator`2[[Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateEntry, Microsoft.AspNetCore.Mvc.Abstractions, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60],[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], shop.Frameworks, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-05 14:12:07.238 +03:30 [INF] Executed action shop.Web.Controllers.Seller.SellerController.AddSeller (shop.Web) in 33.8233ms
+2025-08-05 14:12:07.241 +03:30 [INF] Executed endpoint 'shop.Web.Controllers.Seller.SellerController.AddSeller (shop.Web)'
+2025-08-05 14:12:07.243 +03:30 [INF] Request finished HTTP/2 POST https://localhost:7050/Seller application/json 53 - 400 - application/json;+charset=utf-8 92.6724ms
+2025-08-05 14:12:23.882 +03:30 [INF] Request starting HTTP/2 POST https://localhost:7050/Seller application/json 57
+2025-08-05 14:12:23.884 +03:30 [INF] CORS policy execution successful.
+2025-08-05 14:12:23.887 +03:30 [INF] Executed DbCommand (0ms) [Parameters=[@__HashJwtToken_0='?' (Size = 250)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreateON], [u].[Deleted], [u].[Device], [u].[HashJwtToken], [u].[HashRefreshToken], [u].[RefreshTokenExpireDate], [u].[TokenExpireDate], [u].[UpdateON], [u].[UserId]
+FROM [UserToken] AS [u]
+WHERE [u].[Deleted] = CAST(0 AS bit) AND [u].[HashJwtToken] = @__HashJwtToken_0
+2025-08-05 14:12:23.893 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AvatarName], [u].[CreateON], [u].[Deleted], [u].[Email], [u].[Family], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[UpdateON]
+FROM [User] AS [u]
+WHERE [u].[Id] = @__userId_0
+2025-08-05 14:12:23.898 +03:30 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserId], [u].[RoleId], [u].[CreateON], [u].[UpdateON]
+FROM [UserRole] AS [u]
+WHERE [u].[UserId] = @__p_0
+2025-08-05 14:12:23.904 +03:30 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[CreateON], [r].[Deleted], [r].[Title], [r].[UpdateON]
+FROM [Role] AS [r]
+WHERE [r].[Id] = @__p_0
+2025-08-05 14:12:23.912 +03:30 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[CreateON], [r].[Deleted], [r].[Title], [r].[UpdateON]
+FROM [Role] AS [r]
+WHERE [r].[Id] = @__p_0
+2025-08-05 14:12:23.917 +03:30 [INF] Executing endpoint 'shop.Web.Controllers.Seller.SellerController.AddSeller (shop.Web)'
+2025-08-05 14:12:23.918 +03:30 [INF] Route matched with {action = "AddSeller", controller = "Seller"}. Executing controller action with signature System.Threading.Tasks.Task`1[shop.Frameworks.Commons.ApiResult] AddSeller(shop.Service.DTOs.SellerCommand.AddSellerDto) on controller shop.Web.Controllers.Seller.SellerController (shop.Web).
+2025-08-05 14:12:23.923 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AvatarName], [u].[CreateON], [u].[Deleted], [u].[Email], [u].[Family], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[UpdateON]
+FROM [User] AS [u]
+WHERE [u].[Id] = @__userId_0
+2025-08-05 14:12:23.930 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[CreateON], [t].[PermissionStatus], [t].[Id], [r].[Title]
+FROM [Role] AS [r]
+LEFT JOIN (
+    SELECT [r0].[PermissionStatus], [r0].[Id], [r0].[RoleId]
+    FROM [RolePermission] AS [r0]
+    WHERE [r0].[Deleted] = CAST(0 AS bit)
+) AS [t] ON [r].[Id] = [t].[RoleId]
+ORDER BY [r].[Id]
+2025-08-05 14:12:23.973 +03:30 [INF] Executing BadRequestObjectResult, writing value of type 'System.Linq.Enumerable+WhereSelectEnumerableIterator`2[[Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateEntry, Microsoft.AspNetCore.Mvc.Abstractions, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60],[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], shop.Frameworks, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-05 14:12:23.977 +03:30 [INF] Executed action shop.Web.Controllers.Seller.SellerController.AddSeller (shop.Web) in 56.3749ms
+2025-08-05 14:12:23.978 +03:30 [INF] Executed endpoint 'shop.Web.Controllers.Seller.SellerController.AddSeller (shop.Web)'
+2025-08-05 14:12:23.980 +03:30 [INF] Request finished HTTP/2 POST https://localhost:7050/Seller application/json 57 - 400 - application/json;+charset=utf-8 98.1992ms
+2025-08-05 14:12:39.072 +03:30 [INF] Request starting HTTP/2 POST https://localhost:7050/Seller application/json 60
+2025-08-05 14:12:39.074 +03:30 [INF] CORS policy execution successful.
+2025-08-05 14:12:39.077 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__HashJwtToken_0='?' (Size = 250)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreateON], [u].[Deleted], [u].[Device], [u].[HashJwtToken], [u].[HashRefreshToken], [u].[RefreshTokenExpireDate], [u].[TokenExpireDate], [u].[UpdateON], [u].[UserId]
+FROM [UserToken] AS [u]
+WHERE [u].[Deleted] = CAST(0 AS bit) AND [u].[HashJwtToken] = @__HashJwtToken_0
+2025-08-05 14:12:39.082 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AvatarName], [u].[CreateON], [u].[Deleted], [u].[Email], [u].[Family], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[UpdateON]
+FROM [User] AS [u]
+WHERE [u].[Id] = @__userId_0
+2025-08-05 14:12:39.134 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserId], [u].[RoleId], [u].[CreateON], [u].[UpdateON]
+FROM [UserRole] AS [u]
+WHERE [u].[UserId] = @__p_0
+2025-08-05 14:12:39.145 +03:30 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[CreateON], [r].[Deleted], [r].[Title], [r].[UpdateON]
+FROM [Role] AS [r]
+WHERE [r].[Id] = @__p_0
+2025-08-05 14:12:39.150 +03:30 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[CreateON], [r].[Deleted], [r].[Title], [r].[UpdateON]
+FROM [Role] AS [r]
+WHERE [r].[Id] = @__p_0
+2025-08-05 14:12:39.154 +03:30 [INF] Executing endpoint 'shop.Web.Controllers.Seller.SellerController.AddSeller (shop.Web)'
+2025-08-05 14:12:39.156 +03:30 [INF] Route matched with {action = "AddSeller", controller = "Seller"}. Executing controller action with signature System.Threading.Tasks.Task`1[shop.Frameworks.Commons.ApiResult] AddSeller(shop.Service.DTOs.SellerCommand.AddSellerDto) on controller shop.Web.Controllers.Seller.SellerController (shop.Web).
+2025-08-05 14:12:39.161 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AvatarName], [u].[CreateON], [u].[Deleted], [u].[Email], [u].[Family], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[UpdateON]
+FROM [User] AS [u]
+WHERE [u].[Id] = @__userId_0
+2025-08-05 14:12:39.165 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[CreateON], [t].[PermissionStatus], [t].[Id], [r].[Title]
+FROM [Role] AS [r]
+LEFT JOIN (
+    SELECT [r0].[PermissionStatus], [r0].[Id], [r0].[RoleId]
+    FROM [RolePermission] AS [r0]
+    WHERE [r0].[Deleted] = CAST(0 AS bit)
+) AS [t] ON [r].[Id] = [t].[RoleId]
+ORDER BY [r].[Id]
+2025-08-05 14:12:39.174 +03:30 [INF] Executed action shop.Web.Controllers.Seller.SellerController.AddSeller (shop.Web) in 15.2156ms
+2025-08-05 14:12:39.177 +03:30 [INF] Executed endpoint 'shop.Web.Controllers.Seller.SellerController.AddSeller (shop.Web)'
+2025-08-05 14:12:39.179 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentOutOfRangeException: StartIndex cannot be less than zero. (Parameter 'startIndex')
+   at System.String.ThrowSubstringArgumentOutOfRange(Int32 startIndex, Int32 length)
+   at System.String.Substring(Int32 startIndex)
+   at Common.Application.Validation.IranianNationalIdChecker.IsValid(String nationalId) in D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Service\Extension\Validation\IranianNationalIdChecker.cs:line 16
+   at Common.Application.Validation.FluentValidations.FluentValidations.<>c__DisplayClass1_0`1.<ValidNationalId>b__0(String nationalCode, ValidationContext`1 context) in D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Service\Extension\Validation\FluentValidations\FluentValidations.cs:line 29
+   at FluentValidation.DefaultValidatorExtensions.<>c__DisplayClass67_0`2.<Custom>b__0(T parent, TProperty value, ValidationContext`1 context) in /Users/jskinner/code/FluentValidation/src/FluentValidation/DefaultValidatorExtensions.cs:line 1122
+   at FluentValidation.DefaultValidatorExtensions.<>c__DisplayClass29_0`2.<Must>b__0(T instance, TProperty property, ValidationContext`1 propertyValidatorContext) in /Users/jskinner/code/FluentValidation/src/FluentValidation/DefaultValidatorExtensions.cs:line 459
+   at FluentValidation.Validators.PredicateValidator`2.IsValid(ValidationContext`1 context, TProperty value) in /Users/jskinner/code/FluentValidation/src/FluentValidation/Validators/PredicateValidator.cs:line 36
+   at FluentValidation.Internal.RuleComponent`2.Validate(ValidationContext`1 context, TProperty value) in /Users/jskinner/code/FluentValidation/src/FluentValidation/Internal/RuleComponent.cs:line 89
+   at FluentValidation.Internal.PropertyRule`2.InvokePropertyValidator(ValidationContext`1 context, Lazy`1 accessor, String propertyName, RuleComponent`2 component) in /Users/jskinner/code/FluentValidation/src/FluentValidation/Internal/PropertyRule.cs:line 231
+   at FluentValidation.Internal.PropertyRule`2.Validate(ValidationContext`1 context) in /Users/jskinner/code/FluentValidation/src/FluentValidation/Internal/PropertyRule.cs:line 124
+   at FluentValidation.AbstractValidator`1.Validate(ValidationContext`1 context) in /Users/jskinner/code/FluentValidation/src/FluentValidation/AbstractValidator.cs:line 200
+   at FluentValidation.AbstractValidator`1.FluentValidation.IValidator.Validate(IValidationContext context) in /Users/jskinner/code/FluentValidation/src/FluentValidation/AbstractValidator.cs:line 151
+   at FluentValidation.AspNetCore.FluentValidationModelValidator.Validate(ModelValidationContext mvContext) in /Users/jskinner/code/FluentValidation/src/FluentValidation.AspNetCore/FluentValidationModelValidatorProvider.cs:line 118
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.ValidateNode()
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitComplexType(IValidationStrategy defaultStrategy)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitImplementation(ModelMetadata& metadata, String& key, Object model)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.Visit(ModelMetadata metadata, String key, Object model)
+   at FluentValidation.AspNetCore.FluentValidationVisitor.<>n__1(ModelMetadata metadata, String key, Object model, Boolean alwaysValidateAtTopLevel, Object container)
+   at FluentValidation.AspNetCore.FluentValidationVisitor.<>c__DisplayClass2_0.<Validate>g__BaseValidate|0() in /Users/jskinner/code/FluentValidation/src/FluentValidation.AspNetCore/FluentValidationVisitor.cs:line 44
+   at FluentValidation.AspNetCore.FluentValidationVisitor.ValidateInternal(ModelMetadata metadata, String key, Object model, Func`1 continuation) in /Users/jskinner/code/FluentValidation/src/FluentValidation.AspNetCore/FluentValidationVisitor.cs:line 62
+   at FluentValidation.AspNetCore.FluentValidationVisitor.Validate(ModelMetadata metadata, String key, Object model, Boolean alwaysValidateAtTopLevel, Object container) in /Users/jskinner/code/FluentValidation/src/FluentValidation.AspNetCore/FluentValidationVisitor.cs:line 46
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ObjectModelValidator.Validate(ActionContext actionContext, ValidationStateDictionary validationState, String prefix, Object model, ModelMetadata metadata, Object container)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.EnforceBindRequiredAndValidate(ObjectModelValidator baseObjectValidator, ActionContext actionContext, ParameterDescriptor parameter, ModelMetadata metadata, ModelBindingContext modelBindingContext, ModelBindingResult modelBindingResult, Object container)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-08-05 14:12:39.338 +03:30 [INF] Request finished HTTP/2 POST https://localhost:7050/Seller application/json 60 - 500 - application/json;+charset=utf-8 265.6029ms
+2025-08-05 14:12:44.710 +03:30 [INF] Request starting HTTP/2 POST https://localhost:7050/Seller application/json 64
+2025-08-05 14:12:44.712 +03:30 [INF] CORS policy execution successful.
+2025-08-05 14:12:44.715 +03:30 [INF] Executed DbCommand (0ms) [Parameters=[@__HashJwtToken_0='?' (Size = 250)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreateON], [u].[Deleted], [u].[Device], [u].[HashJwtToken], [u].[HashRefreshToken], [u].[RefreshTokenExpireDate], [u].[TokenExpireDate], [u].[UpdateON], [u].[UserId]
+FROM [UserToken] AS [u]
+WHERE [u].[Deleted] = CAST(0 AS bit) AND [u].[HashJwtToken] = @__HashJwtToken_0
+2025-08-05 14:12:44.728 +03:30 [INF] Executed DbCommand (7ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AvatarName], [u].[CreateON], [u].[Deleted], [u].[Email], [u].[Family], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[UpdateON]
+FROM [User] AS [u]
+WHERE [u].[Id] = @__userId_0
+2025-08-05 14:12:44.734 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserId], [u].[RoleId], [u].[CreateON], [u].[UpdateON]
+FROM [UserRole] AS [u]
+WHERE [u].[UserId] = @__p_0
+2025-08-05 14:12:44.741 +03:30 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[CreateON], [r].[Deleted], [r].[Title], [r].[UpdateON]
+FROM [Role] AS [r]
+WHERE [r].[Id] = @__p_0
+2025-08-05 14:12:44.747 +03:30 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[CreateON], [r].[Deleted], [r].[Title], [r].[UpdateON]
+FROM [Role] AS [r]
+WHERE [r].[Id] = @__p_0
+2025-08-05 14:12:44.750 +03:30 [INF] Executing endpoint 'shop.Web.Controllers.Seller.SellerController.AddSeller (shop.Web)'
+2025-08-05 14:12:44.751 +03:30 [INF] Route matched with {action = "AddSeller", controller = "Seller"}. Executing controller action with signature System.Threading.Tasks.Task`1[shop.Frameworks.Commons.ApiResult] AddSeller(shop.Service.DTOs.SellerCommand.AddSellerDto) on controller shop.Web.Controllers.Seller.SellerController (shop.Web).
+2025-08-05 14:12:44.757 +03:30 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AvatarName], [u].[CreateON], [u].[Deleted], [u].[Email], [u].[Family], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[UpdateON]
+FROM [User] AS [u]
+WHERE [u].[Id] = @__userId_0
+2025-08-05 14:12:44.761 +03:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[CreateON], [t].[PermissionStatus], [t].[Id], [r].[Title]
+FROM [Role] AS [r]
+LEFT JOIN (
+    SELECT [r0].[PermissionStatus], [r0].[Id], [r0].[RoleId]
+    FROM [RolePermission] AS [r0]
+    WHERE [r0].[Deleted] = CAST(0 AS bit)
+) AS [t] ON [r].[Id] = [t].[RoleId]
+ORDER BY [r].[Id]
+2025-08-05 14:12:44.766 +03:30 [INF] Executed action shop.Web.Controllers.Seller.SellerController.AddSeller (shop.Web) in 10.0632ms
+2025-08-05 14:12:44.767 +03:30 [INF] Executed endpoint 'shop.Web.Controllers.Seller.SellerController.AddSeller (shop.Web)'
+2025-08-05 14:12:44.770 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentOutOfRangeException: StartIndex cannot be less than zero. (Parameter 'startIndex')
+   at System.String.ThrowSubstringArgumentOutOfRange(Int32 startIndex, Int32 length)
+   at System.String.Substring(Int32 startIndex)
+   at Common.Application.Validation.IranianNationalIdChecker.IsValid(String nationalId) in D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Service\Extension\Validation\IranianNationalIdChecker.cs:line 16
+   at Common.Application.Validation.FluentValidations.FluentValidations.<>c__DisplayClass1_0`1.<ValidNationalId>b__0(String nationalCode, ValidationContext`1 context) in D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Service\Extension\Validation\FluentValidations\FluentValidations.cs:line 29
+   at FluentValidation.DefaultValidatorExtensions.<>c__DisplayClass67_0`2.<Custom>b__0(T parent, TProperty value, ValidationContext`1 context) in /Users/jskinner/code/FluentValidation/src/FluentValidation/DefaultValidatorExtensions.cs:line 1122
+   at FluentValidation.DefaultValidatorExtensions.<>c__DisplayClass29_0`2.<Must>b__0(T instance, TProperty property, ValidationContext`1 propertyValidatorContext) in /Users/jskinner/code/FluentValidation/src/FluentValidation/DefaultValidatorExtensions.cs:line 459
+   at FluentValidation.Validators.PredicateValidator`2.IsValid(ValidationContext`1 context, TProperty value) in /Users/jskinner/code/FluentValidation/src/FluentValidation/Validators/PredicateValidator.cs:line 36
+   at FluentValidation.Internal.RuleComponent`2.Validate(ValidationContext`1 context, TProperty value) in /Users/jskinner/code/FluentValidation/src/FluentValidation/Internal/RuleComponent.cs:line 89
+   at FluentValidation.Internal.PropertyRule`2.InvokePropertyValidator(ValidationContext`1 context, Lazy`1 accessor, String propertyName, RuleComponent`2 component) in /Users/jskinner/code/FluentValidation/src/FluentValidation/Internal/PropertyRule.cs:line 231
+   at FluentValidation.Internal.PropertyRule`2.Validate(ValidationContext`1 context) in /Users/jskinner/code/FluentValidation/src/FluentValidation/Internal/PropertyRule.cs:line 124
+   at FluentValidation.AbstractValidator`1.Validate(ValidationContext`1 context) in /Users/jskinner/code/FluentValidation/src/FluentValidation/AbstractValidator.cs:line 200
+   at FluentValidation.AbstractValidator`1.FluentValidation.IValidator.Validate(IValidationContext context) in /Users/jskinner/code/FluentValidation/src/FluentValidation/AbstractValidator.cs:line 151
+   at FluentValidation.AspNetCore.FluentValidationModelValidator.Validate(ModelValidationContext mvContext) in /Users/jskinner/code/FluentValidation/src/FluentValidation.AspNetCore/FluentValidationModelValidatorProvider.cs:line 118
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.ValidateNode()
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitComplexType(IValidationStrategy defaultStrategy)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitImplementation(ModelMetadata& metadata, String& key, Object model)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.Visit(ModelMetadata metadata, String key, Object model)
+   at FluentValidation.AspNetCore.FluentValidationVisitor.<>n__1(ModelMetadata metadata, String key, Object model, Boolean alwaysValidateAtTopLevel, Object container)
+   at FluentValidation.AspNetCore.FluentValidationVisitor.<>c__DisplayClass2_0.<Validate>g__BaseValidate|0() in /Users/jskinner/code/FluentValidation/src/FluentValidation.AspNetCore/FluentValidationVisitor.cs:line 44
+   at FluentValidation.AspNetCore.FluentValidationVisitor.ValidateInternal(ModelMetadata metadata, String key, Object model, Func`1 continuation) in /Users/jskinner/code/FluentValidation/src/FluentValidation.AspNetCore/FluentValidationVisitor.cs:line 62
+   at FluentValidation.AspNetCore.FluentValidationVisitor.Validate(ModelMetadata metadata, String key, Object model, Boolean alwaysValidateAtTopLevel, Object container) in /Users/jskinner/code/FluentValidation/src/FluentValidation.AspNetCore/FluentValidationVisitor.cs:line 46
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ObjectModelValidator.Validate(ActionContext actionContext, ValidationStateDictionary validationState, String prefix, Object model, ModelMetadata metadata, Object container)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.EnforceBindRequiredAndValidate(ObjectModelValidator baseObjectValidator, ActionContext actionContext, ParameterDescriptor parameter, ModelMetadata metadata, ModelBindingContext modelBindingContext, ModelBindingResult modelBindingResult, Object container)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-08-05 14:12:44.797 +03:30 [INF] Request finished HTTP/2 POST https://localhost:7050/Seller application/json 64 - 500 - application/json;+charset=utf-8 86.7314ms
+2025-08-05 14:12:53.149 +03:30 [INF] Request starting HTTP/2 POST https://localhost:7050/Seller application/json 64
+2025-08-05 14:12:53.151 +03:30 [INF] CORS policy execution successful.
+2025-08-05 14:12:53.154 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__HashJwtToken_0='?' (Size = 250)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreateON], [u].[Deleted], [u].[Device], [u].[HashJwtToken], [u].[HashRefreshToken], [u].[RefreshTokenExpireDate], [u].[TokenExpireDate], [u].[UpdateON], [u].[UserId]
+FROM [UserToken] AS [u]
+WHERE [u].[Deleted] = CAST(0 AS bit) AND [u].[HashJwtToken] = @__HashJwtToken_0
+2025-08-05 14:12:53.160 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AvatarName], [u].[CreateON], [u].[Deleted], [u].[Email], [u].[Family], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[UpdateON]
+FROM [User] AS [u]
+WHERE [u].[Id] = @__userId_0
+2025-08-05 14:12:53.204 +03:30 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserId], [u].[RoleId], [u].[CreateON], [u].[UpdateON]
+FROM [UserRole] AS [u]
+WHERE [u].[UserId] = @__p_0
+2025-08-05 14:12:53.218 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[CreateON], [r].[Deleted], [r].[Title], [r].[UpdateON]
+FROM [Role] AS [r]
+WHERE [r].[Id] = @__p_0
+2025-08-05 14:12:53.223 +03:30 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[CreateON], [r].[Deleted], [r].[Title], [r].[UpdateON]
+FROM [Role] AS [r]
+WHERE [r].[Id] = @__p_0
+2025-08-05 14:12:53.226 +03:30 [INF] Executing endpoint 'shop.Web.Controllers.Seller.SellerController.AddSeller (shop.Web)'
+2025-08-05 14:12:53.229 +03:30 [INF] Route matched with {action = "AddSeller", controller = "Seller"}. Executing controller action with signature System.Threading.Tasks.Task`1[shop.Frameworks.Commons.ApiResult] AddSeller(shop.Service.DTOs.SellerCommand.AddSellerDto) on controller shop.Web.Controllers.Seller.SellerController (shop.Web).
+2025-08-05 14:12:53.233 +03:30 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AvatarName], [u].[CreateON], [u].[Deleted], [u].[Email], [u].[Family], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[UpdateON]
+FROM [User] AS [u]
+WHERE [u].[Id] = @__userId_0
+2025-08-05 14:12:53.238 +03:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[CreateON], [t].[PermissionStatus], [t].[Id], [r].[Title]
+FROM [Role] AS [r]
+LEFT JOIN (
+    SELECT [r0].[PermissionStatus], [r0].[Id], [r0].[RoleId]
+    FROM [RolePermission] AS [r0]
+    WHERE [r0].[Deleted] = CAST(0 AS bit)
+) AS [t] ON [r].[Id] = [t].[RoleId]
+ORDER BY [r].[Id]
+2025-08-05 14:12:53.242 +03:30 [INF] Executed action shop.Web.Controllers.Seller.SellerController.AddSeller (shop.Web) in 10.4855ms
+2025-08-05 14:12:53.244 +03:30 [INF] Executed endpoint 'shop.Web.Controllers.Seller.SellerController.AddSeller (shop.Web)'
+2025-08-05 14:12:53.246 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentOutOfRangeException: StartIndex cannot be less than zero. (Parameter 'startIndex')
+   at System.String.ThrowSubstringArgumentOutOfRange(Int32 startIndex, Int32 length)
+   at System.String.Substring(Int32 startIndex)
+   at Common.Application.Validation.IranianNationalIdChecker.IsValid(String nationalId) in D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Service\Extension\Validation\IranianNationalIdChecker.cs:line 16
+   at Common.Application.Validation.FluentValidations.FluentValidations.<>c__DisplayClass1_0`1.<ValidNationalId>b__0(String nationalCode, ValidationContext`1 context) in D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Service\Extension\Validation\FluentValidations\FluentValidations.cs:line 29
+   at FluentValidation.DefaultValidatorExtensions.<>c__DisplayClass67_0`2.<Custom>b__0(T parent, TProperty value, ValidationContext`1 context) in /Users/jskinner/code/FluentValidation/src/FluentValidation/DefaultValidatorExtensions.cs:line 1122
+   at FluentValidation.DefaultValidatorExtensions.<>c__DisplayClass29_0`2.<Must>b__0(T instance, TProperty property, ValidationContext`1 propertyValidatorContext) in /Users/jskinner/code/FluentValidation/src/FluentValidation/DefaultValidatorExtensions.cs:line 459
+   at FluentValidation.Validators.PredicateValidator`2.IsValid(ValidationContext`1 context, TProperty value) in /Users/jskinner/code/FluentValidation/src/FluentValidation/Validators/PredicateValidator.cs:line 36
+   at FluentValidation.Internal.RuleComponent`2.Validate(ValidationContext`1 context, TProperty value) in /Users/jskinner/code/FluentValidation/src/FluentValidation/Internal/RuleComponent.cs:line 89
+   at FluentValidation.Internal.PropertyRule`2.InvokePropertyValidator(ValidationContext`1 context, Lazy`1 accessor, String propertyName, RuleComponent`2 component) in /Users/jskinner/code/FluentValidation/src/FluentValidation/Internal/PropertyRule.cs:line 231
+   at FluentValidation.Internal.PropertyRule`2.Validate(ValidationContext`1 context) in /Users/jskinner/code/FluentValidation/src/FluentValidation/Internal/PropertyRule.cs:line 124
+   at FluentValidation.AbstractValidator`1.Validate(ValidationContext`1 context) in /Users/jskinner/code/FluentValidation/src/FluentValidation/AbstractValidator.cs:line 200
+   at FluentValidation.AbstractValidator`1.FluentValidation.IValidator.Validate(IValidationContext context) in /Users/jskinner/code/FluentValidation/src/FluentValidation/AbstractValidator.cs:line 151
+   at FluentValidation.AspNetCore.FluentValidationModelValidator.Validate(ModelValidationContext mvContext) in /Users/jskinner/code/FluentValidation/src/FluentValidation.AspNetCore/FluentValidationModelValidatorProvider.cs:line 118
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.ValidateNode()
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitComplexType(IValidationStrategy defaultStrategy)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitImplementation(ModelMetadata& metadata, String& key, Object model)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.Visit(ModelMetadata metadata, String key, Object model)
+   at FluentValidation.AspNetCore.FluentValidationVisitor.<>n__1(ModelMetadata metadata, String key, Object model, Boolean alwaysValidateAtTopLevel, Object container)
+   at FluentValidation.AspNetCore.FluentValidationVisitor.<>c__DisplayClass2_0.<Validate>g__BaseValidate|0() in /Users/jskinner/code/FluentValidation/src/FluentValidation.AspNetCore/FluentValidationVisitor.cs:line 44
+   at FluentValidation.AspNetCore.FluentValidationVisitor.ValidateInternal(ModelMetadata metadata, String key, Object model, Func`1 continuation) in /Users/jskinner/code/FluentValidation/src/FluentValidation.AspNetCore/FluentValidationVisitor.cs:line 62
+   at FluentValidation.AspNetCore.FluentValidationVisitor.Validate(ModelMetadata metadata, String key, Object model, Boolean alwaysValidateAtTopLevel, Object container) in /Users/jskinner/code/FluentValidation/src/FluentValidation.AspNetCore/FluentValidationVisitor.cs:line 46
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ObjectModelValidator.Validate(ActionContext actionContext, ValidationStateDictionary validationState, String prefix, Object model, ModelMetadata metadata, Object container)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.EnforceBindRequiredAndValidate(ObjectModelValidator baseObjectValidator, ActionContext actionContext, ParameterDescriptor parameter, ModelMetadata metadata, ModelBindingContext modelBindingContext, ModelBindingResult modelBindingResult, Object container)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-08-05 14:12:53.272 +03:30 [INF] Request finished HTTP/2 POST https://localhost:7050/Seller application/json 64 - 500 - application/json;+charset=utf-8 123.1346ms
+2025-08-05 14:13:09.776 +03:30 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-05 14:13:10.768 +03:30 [INF] Now listening on: https://localhost:7050
+2025-08-05 14:13:10.849 +03:30 [INF] Now listening on: http://localhost:5179
+2025-08-05 14:13:11.383 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-05 14:13:11.557 +03:30 [INF] Hosting environment: Development
+2025-08-05 14:13:11.561 +03:30 [INF] Content root path: D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Web
+2025-08-05 14:13:11.765 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7050/swagger/index.html - -
+2025-08-05 14:13:12.755 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7050/swagger/index.html - - - 200 - text/html;charset=utf-8 993.7859ms
+2025-08-05 14:13:13.245 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7050/_framework/aspnetcore-browser-refresh.js - -
+2025-08-05 14:13:13.246 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7050/_vs/browserLink - -
+2025-08-05 14:13:13.259 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7050/_framework/aspnetcore-browser-refresh.js - - - 200 16501 application/javascript;+charset=utf-8 14.1468ms
+2025-08-05 14:13:13.372 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7050/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 125.7960ms
+2025-08-05 14:13:14.691 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7050/swagger/v1/swagger.json - -
+2025-08-05 14:13:14.819 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7050/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 127.4443ms
+2025-08-05 14:13:17.108 +03:30 [INF] Request starting HTTP/2 POST https://localhost:7050/Seller application/json 64
+2025-08-05 14:13:17.115 +03:30 [INF] CORS policy execution successful.
+2025-08-05 14:13:20.351 +03:30 [INF] Executed DbCommand (95ms) [Parameters=[@__HashJwtToken_0='?' (Size = 250)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreateON], [u].[Deleted], [u].[Device], [u].[HashJwtToken], [u].[HashRefreshToken], [u].[RefreshTokenExpireDate], [u].[TokenExpireDate], [u].[UpdateON], [u].[UserId]
+FROM [UserToken] AS [u]
+WHERE [u].[Deleted] = CAST(0 AS bit) AND [u].[HashJwtToken] = @__HashJwtToken_0
+2025-08-05 14:13:20.543 +03:30 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AvatarName], [u].[CreateON], [u].[Deleted], [u].[Email], [u].[Family], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[UpdateON]
+FROM [User] AS [u]
+WHERE [u].[Id] = @__userId_0
+2025-08-05 14:13:20.725 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserId], [u].[RoleId], [u].[CreateON], [u].[UpdateON]
+FROM [UserRole] AS [u]
+WHERE [u].[UserId] = @__p_0
+2025-08-05 14:13:20.791 +03:30 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[CreateON], [r].[Deleted], [r].[Title], [r].[UpdateON]
+FROM [Role] AS [r]
+WHERE [r].[Id] = @__p_0
+2025-08-05 14:13:20.823 +03:30 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[CreateON], [r].[Deleted], [r].[Title], [r].[UpdateON]
+FROM [Role] AS [r]
+WHERE [r].[Id] = @__p_0
+2025-08-05 14:13:20.846 +03:30 [INF] Executing endpoint 'shop.Web.Controllers.Seller.SellerController.AddSeller (shop.Web)'
+2025-08-05 14:13:20.888 +03:30 [INF] Route matched with {action = "AddSeller", controller = "Seller"}. Executing controller action with signature System.Threading.Tasks.Task`1[shop.Frameworks.Commons.ApiResult] AddSeller(shop.Service.DTOs.SellerCommand.AddSellerDto) on controller shop.Web.Controllers.Seller.SellerController (shop.Web).
+2025-08-05 14:13:21.251 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AvatarName], [u].[CreateON], [u].[Deleted], [u].[Email], [u].[Family], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[UpdateON]
+FROM [User] AS [u]
+WHERE [u].[Id] = @__userId_0
+2025-08-05 14:13:21.371 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[CreateON], [t].[PermissionStatus], [t].[Id], [r].[Title]
+FROM [Role] AS [r]
+LEFT JOIN (
+    SELECT [r0].[PermissionStatus], [r0].[Id], [r0].[RoleId]
+    FROM [RolePermission] AS [r0]
+    WHERE [r0].[Deleted] = CAST(0 AS bit)
+) AS [t] ON [r].[Id] = [t].[RoleId]
+ORDER BY [r].[Id]
+2025-08-05 14:13:27.630 +03:30 [INF] Executed action shop.Web.Controllers.Seller.SellerController.AddSeller (shop.Web) in 6734.6146ms
+2025-08-05 14:13:27.635 +03:30 [INF] Executed endpoint 'shop.Web.Controllers.Seller.SellerController.AddSeller (shop.Web)'
+2025-08-05 14:13:27.640 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentOutOfRangeException: StartIndex cannot be less than zero. (Parameter 'startIndex')
+   at System.String.ThrowSubstringArgumentOutOfRange(Int32 startIndex, Int32 length)
+   at System.String.Substring(Int32 startIndex)
+   at Common.Application.Validation.IranianNationalIdChecker.IsValid(String nationalId) in D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Service\Extension\Validation\IranianNationalIdChecker.cs:line 16
+   at Common.Application.Validation.FluentValidations.FluentValidations.<>c__DisplayClass1_0`1.<ValidNationalId>b__0(String nationalCode, ValidationContext`1 context) in D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Service\Extension\Validation\FluentValidations\FluentValidations.cs:line 29
+   at FluentValidation.DefaultValidatorExtensions.<>c__DisplayClass67_0`2.<Custom>b__0(T parent, TProperty value, ValidationContext`1 context) in /Users/jskinner/code/FluentValidation/src/FluentValidation/DefaultValidatorExtensions.cs:line 1122
+   at FluentValidation.DefaultValidatorExtensions.<>c__DisplayClass29_0`2.<Must>b__0(T instance, TProperty property, ValidationContext`1 propertyValidatorContext) in /Users/jskinner/code/FluentValidation/src/FluentValidation/DefaultValidatorExtensions.cs:line 459
+   at FluentValidation.Validators.PredicateValidator`2.IsValid(ValidationContext`1 context, TProperty value) in /Users/jskinner/code/FluentValidation/src/FluentValidation/Validators/PredicateValidator.cs:line 36
+   at FluentValidation.Internal.RuleComponent`2.Validate(ValidationContext`1 context, TProperty value) in /Users/jskinner/code/FluentValidation/src/FluentValidation/Internal/RuleComponent.cs:line 89
+   at FluentValidation.Internal.PropertyRule`2.InvokePropertyValidator(ValidationContext`1 context, Lazy`1 accessor, String propertyName, RuleComponent`2 component) in /Users/jskinner/code/FluentValidation/src/FluentValidation/Internal/PropertyRule.cs:line 231
+   at FluentValidation.Internal.PropertyRule`2.Validate(ValidationContext`1 context) in /Users/jskinner/code/FluentValidation/src/FluentValidation/Internal/PropertyRule.cs:line 124
+   at FluentValidation.AbstractValidator`1.Validate(ValidationContext`1 context) in /Users/jskinner/code/FluentValidation/src/FluentValidation/AbstractValidator.cs:line 200
+   at FluentValidation.AbstractValidator`1.FluentValidation.IValidator.Validate(IValidationContext context) in /Users/jskinner/code/FluentValidation/src/FluentValidation/AbstractValidator.cs:line 151
+   at FluentValidation.AspNetCore.FluentValidationModelValidator.Validate(ModelValidationContext mvContext) in /Users/jskinner/code/FluentValidation/src/FluentValidation.AspNetCore/FluentValidationModelValidatorProvider.cs:line 118
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.ValidateNode()
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitComplexType(IValidationStrategy defaultStrategy)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitImplementation(ModelMetadata& metadata, String& key, Object model)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.Visit(ModelMetadata metadata, String key, Object model)
+   at FluentValidation.AspNetCore.FluentValidationVisitor.<>n__1(ModelMetadata metadata, String key, Object model, Boolean alwaysValidateAtTopLevel, Object container)
+   at FluentValidation.AspNetCore.FluentValidationVisitor.<>c__DisplayClass2_0.<Validate>g__BaseValidate|0() in /Users/jskinner/code/FluentValidation/src/FluentValidation.AspNetCore/FluentValidationVisitor.cs:line 44
+   at FluentValidation.AspNetCore.FluentValidationVisitor.ValidateInternal(ModelMetadata metadata, String key, Object model, Func`1 continuation) in /Users/jskinner/code/FluentValidation/src/FluentValidation.AspNetCore/FluentValidationVisitor.cs:line 62
+   at FluentValidation.AspNetCore.FluentValidationVisitor.Validate(ModelMetadata metadata, String key, Object model, Boolean alwaysValidateAtTopLevel, Object container) in /Users/jskinner/code/FluentValidation/src/FluentValidation.AspNetCore/FluentValidationVisitor.cs:line 46
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ObjectModelValidator.Validate(ActionContext actionContext, ValidationStateDictionary validationState, String prefix, Object model, ModelMetadata metadata, Object container)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.EnforceBindRequiredAndValidate(ObjectModelValidator baseObjectValidator, ActionContext actionContext, ParameterDescriptor parameter, ModelMetadata metadata, ModelBindingContext modelBindingContext, ModelBindingResult modelBindingResult, Object container)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-08-05 14:13:30.308 +03:30 [INF] Request finished HTTP/2 POST https://localhost:7050/Seller application/json 64 - 500 - application/json;+charset=utf-8 13200.2487ms
+2025-08-05 14:14:13.843 +03:30 [INF] Request starting HTTP/2 POST https://localhost:7050/Seller application/json 64
+2025-08-05 14:14:13.846 +03:30 [INF] CORS policy execution successful.
+2025-08-05 14:14:13.894 +03:30 [INF] Executed DbCommand (15ms) [Parameters=[@__HashJwtToken_0='?' (Size = 250)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreateON], [u].[Deleted], [u].[Device], [u].[HashJwtToken], [u].[HashRefreshToken], [u].[RefreshTokenExpireDate], [u].[TokenExpireDate], [u].[UpdateON], [u].[UserId]
+FROM [UserToken] AS [u]
+WHERE [u].[Deleted] = CAST(0 AS bit) AND [u].[HashJwtToken] = @__HashJwtToken_0
+2025-08-05 14:14:13.909 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AvatarName], [u].[CreateON], [u].[Deleted], [u].[Email], [u].[Family], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[UpdateON]
+FROM [User] AS [u]
+WHERE [u].[Id] = @__userId_0
+2025-08-05 14:14:13.917 +03:30 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserId], [u].[RoleId], [u].[CreateON], [u].[UpdateON]
+FROM [UserRole] AS [u]
+WHERE [u].[UserId] = @__p_0
+2025-08-05 14:14:13.923 +03:30 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[CreateON], [r].[Deleted], [r].[Title], [r].[UpdateON]
+FROM [Role] AS [r]
+WHERE [r].[Id] = @__p_0
+2025-08-05 14:14:13.928 +03:30 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[CreateON], [r].[Deleted], [r].[Title], [r].[UpdateON]
+FROM [Role] AS [r]
+WHERE [r].[Id] = @__p_0
+2025-08-05 14:14:13.935 +03:30 [INF] Executing endpoint 'shop.Web.Controllers.Seller.SellerController.AddSeller (shop.Web)'
+2025-08-05 14:14:13.938 +03:30 [INF] Route matched with {action = "AddSeller", controller = "Seller"}. Executing controller action with signature System.Threading.Tasks.Task`1[shop.Frameworks.Commons.ApiResult] AddSeller(shop.Service.DTOs.SellerCommand.AddSellerDto) on controller shop.Web.Controllers.Seller.SellerController (shop.Web).
+2025-08-05 14:14:14.037 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AvatarName], [u].[CreateON], [u].[Deleted], [u].[Email], [u].[Family], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[UpdateON]
+FROM [User] AS [u]
+WHERE [u].[Id] = @__userId_0
+2025-08-05 14:14:14.043 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[CreateON], [t].[PermissionStatus], [t].[Id], [r].[Title]
+FROM [Role] AS [r]
+LEFT JOIN (
+    SELECT [r0].[PermissionStatus], [r0].[Id], [r0].[RoleId]
+    FROM [RolePermission] AS [r0]
+    WHERE [r0].[Deleted] = CAST(0 AS bit)
+) AS [t] ON [r].[Id] = [t].[RoleId]
+ORDER BY [r].[Id]
+2025-08-05 14:14:28.488 +03:30 [INF] Executed action shop.Web.Controllers.Seller.SellerController.AddSeller (shop.Web) in 14547.232ms
+2025-08-05 14:14:28.491 +03:30 [INF] Executed endpoint 'shop.Web.Controllers.Seller.SellerController.AddSeller (shop.Web)'
+2025-08-05 14:14:28.494 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentOutOfRangeException: StartIndex cannot be less than zero. (Parameter 'startIndex')
+   at System.String.ThrowSubstringArgumentOutOfRange(Int32 startIndex, Int32 length)
+   at System.String.Substring(Int32 startIndex)
+   at Common.Application.Validation.IranianNationalIdChecker.IsValid(String nationalId) in D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Service\Extension\Validation\IranianNationalIdChecker.cs:line 16
+   at Common.Application.Validation.FluentValidations.FluentValidations.<>c__DisplayClass1_0`1.<ValidNationalId>b__0(String nationalCode, ValidationContext`1 context) in D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Service\Extension\Validation\FluentValidations\FluentValidations.cs:line 29
+   at FluentValidation.DefaultValidatorExtensions.<>c__DisplayClass67_0`2.<Custom>b__0(T parent, TProperty value, ValidationContext`1 context) in /Users/jskinner/code/FluentValidation/src/FluentValidation/DefaultValidatorExtensions.cs:line 1122
+   at FluentValidation.DefaultValidatorExtensions.<>c__DisplayClass29_0`2.<Must>b__0(T instance, TProperty property, ValidationContext`1 propertyValidatorContext) in /Users/jskinner/code/FluentValidation/src/FluentValidation/DefaultValidatorExtensions.cs:line 459
+   at FluentValidation.Validators.PredicateValidator`2.IsValid(ValidationContext`1 context, TProperty value) in /Users/jskinner/code/FluentValidation/src/FluentValidation/Validators/PredicateValidator.cs:line 36
+   at FluentValidation.Internal.RuleComponent`2.Validate(ValidationContext`1 context, TProperty value) in /Users/jskinner/code/FluentValidation/src/FluentValidation/Internal/RuleComponent.cs:line 89
+   at FluentValidation.Internal.PropertyRule`2.InvokePropertyValidator(ValidationContext`1 context, Lazy`1 accessor, String propertyName, RuleComponent`2 component) in /Users/jskinner/code/FluentValidation/src/FluentValidation/Internal/PropertyRule.cs:line 231
+   at FluentValidation.Internal.PropertyRule`2.Validate(ValidationContext`1 context) in /Users/jskinner/code/FluentValidation/src/FluentValidation/Internal/PropertyRule.cs:line 124
+   at FluentValidation.AbstractValidator`1.Validate(ValidationContext`1 context) in /Users/jskinner/code/FluentValidation/src/FluentValidation/AbstractValidator.cs:line 200
+   at FluentValidation.AbstractValidator`1.FluentValidation.IValidator.Validate(IValidationContext context) in /Users/jskinner/code/FluentValidation/src/FluentValidation/AbstractValidator.cs:line 151
+   at FluentValidation.AspNetCore.FluentValidationModelValidator.Validate(ModelValidationContext mvContext) in /Users/jskinner/code/FluentValidation/src/FluentValidation.AspNetCore/FluentValidationModelValidatorProvider.cs:line 118
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.ValidateNode()
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitComplexType(IValidationStrategy defaultStrategy)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitImplementation(ModelMetadata& metadata, String& key, Object model)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.Visit(ModelMetadata metadata, String key, Object model)
+   at FluentValidation.AspNetCore.FluentValidationVisitor.<>n__1(ModelMetadata metadata, String key, Object model, Boolean alwaysValidateAtTopLevel, Object container)
+   at FluentValidation.AspNetCore.FluentValidationVisitor.<>c__DisplayClass2_0.<Validate>g__BaseValidate|0() in /Users/jskinner/code/FluentValidation/src/FluentValidation.AspNetCore/FluentValidationVisitor.cs:line 44
+   at FluentValidation.AspNetCore.FluentValidationVisitor.ValidateInternal(ModelMetadata metadata, String key, Object model, Func`1 continuation) in /Users/jskinner/code/FluentValidation/src/FluentValidation.AspNetCore/FluentValidationVisitor.cs:line 62
+   at FluentValidation.AspNetCore.FluentValidationVisitor.Validate(ModelMetadata metadata, String key, Object model, Boolean alwaysValidateAtTopLevel, Object container) in /Users/jskinner/code/FluentValidation/src/FluentValidation.AspNetCore/FluentValidationVisitor.cs:line 46
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ObjectModelValidator.Validate(ActionContext actionContext, ValidationStateDictionary validationState, String prefix, Object model, ModelMetadata metadata, Object container)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.EnforceBindRequiredAndValidate(ObjectModelValidator baseObjectValidator, ActionContext actionContext, ParameterDescriptor parameter, ModelMetadata metadata, ModelBindingContext modelBindingContext, ModelBindingResult modelBindingResult, Object container)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-08-05 14:14:28.530 +03:30 [INF] Request finished HTTP/2 POST https://localhost:7050/Seller application/json 64 - 500 - application/json;+charset=utf-8 14686.6110ms
+2025-08-05 14:14:35.007 +03:30 [INF] Request starting HTTP/2 POST https://localhost:7050/Seller application/json 71
+2025-08-05 14:14:35.009 +03:30 [INF] CORS policy execution successful.
+2025-08-05 14:14:35.086 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__HashJwtToken_0='?' (Size = 250)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreateON], [u].[Deleted], [u].[Device], [u].[HashJwtToken], [u].[HashRefreshToken], [u].[RefreshTokenExpireDate], [u].[TokenExpireDate], [u].[UpdateON], [u].[UserId]
+FROM [UserToken] AS [u]
+WHERE [u].[Deleted] = CAST(0 AS bit) AND [u].[HashJwtToken] = @__HashJwtToken_0
+2025-08-05 14:14:35.094 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AvatarName], [u].[CreateON], [u].[Deleted], [u].[Email], [u].[Family], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[UpdateON]
+FROM [User] AS [u]
+WHERE [u].[Id] = @__userId_0
+2025-08-05 14:14:37.235 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserId], [u].[RoleId], [u].[CreateON], [u].[UpdateON]
+FROM [UserRole] AS [u]
+WHERE [u].[UserId] = @__p_0
+2025-08-05 14:14:37.241 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[CreateON], [r].[Deleted], [r].[Title], [r].[UpdateON]
+FROM [Role] AS [r]
+WHERE [r].[Id] = @__p_0
+2025-08-05 14:14:37.247 +03:30 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[CreateON], [r].[Deleted], [r].[Title], [r].[UpdateON]
+FROM [Role] AS [r]
+WHERE [r].[Id] = @__p_0
+2025-08-05 14:14:37.253 +03:30 [INF] Executing endpoint 'shop.Web.Controllers.Seller.SellerController.AddSeller (shop.Web)'
+2025-08-05 14:14:37.256 +03:30 [INF] Route matched with {action = "AddSeller", controller = "Seller"}. Executing controller action with signature System.Threading.Tasks.Task`1[shop.Frameworks.Commons.ApiResult] AddSeller(shop.Service.DTOs.SellerCommand.AddSellerDto) on controller shop.Web.Controllers.Seller.SellerController (shop.Web).
+2025-08-05 14:14:37.415 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AvatarName], [u].[CreateON], [u].[Deleted], [u].[Email], [u].[Family], [u].[IsActive], [u].[Name], [u].[Password], [u].[PhoneNumber], [u].[UpdateON]
+FROM [User] AS [u]
+WHERE [u].[Id] = @__userId_0
+2025-08-05 14:14:37.420 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[CreateON], [t].[PermissionStatus], [t].[Id], [r].[Title]
+FROM [Role] AS [r]
+LEFT JOIN (
+    SELECT [r0].[PermissionStatus], [r0].[Id], [r0].[RoleId]
+    FROM [RolePermission] AS [r0]
+    WHERE [r0].[Deleted] = CAST(0 AS bit)
+) AS [t] ON [r].[Id] = [t].[RoleId]
+ORDER BY [r].[Id]
+2025-08-05 14:14:47.644 +03:30 [INF] Executing BadRequestObjectResult, writing value of type 'System.Linq.Enumerable+WhereSelectEnumerableIterator`2[[Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateEntry, Microsoft.AspNetCore.Mvc.Abstractions, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60],[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], shop.Frameworks, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-05 14:14:47.655 +03:30 [INF] Executed action shop.Web.Controllers.Seller.SellerController.AddSeller (shop.Web) in 10392.7311ms
+2025-08-05 14:14:47.658 +03:30 [INF] Executed endpoint 'shop.Web.Controllers.Seller.SellerController.AddSeller (shop.Web)'
+2025-08-05 14:14:47.659 +03:30 [INF] Request finished HTTP/2 POST https://localhost:7050/Seller application/json 71 - 400 - application/json;+charset=utf-8 12652.1021ms
