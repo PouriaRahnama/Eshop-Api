@@ -8,6 +8,7 @@ public interface ICommentsService
     Task<OperationResult> AddComments(CreateCommentDto CreateCommentDto);
     Task<OperationResult> UpdateComments(EditCommentDto EditCommentDto);
     Task<OperationResult> ChangeStatus(ChangeStatusDto ChangeStatusDto);
-
+    // new
+    Task<OperationResult> DeleteComment(DeleteCommentDto deleteCommentDto);
 }
 

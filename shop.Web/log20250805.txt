@@ -310,3 +310,65 @@ WHERE [p].[CategoryID] = @__p_0
 2025-08-05 15:31:01.491 +03:30 [INF] Executed action shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) in 975.0845ms
 2025-08-05 15:31:01.493 +03:30 [INF] Executed endpoint 'shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web)'
 2025-08-05 15:31:01.495 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7050/Category - - - 200 - application/json;+charset=utf-8 1205.8274ms
+2025-08-05 16:56:30.000 +03:30 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-08-05 16:56:30.049 +03:30 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-08-05 16:56:30.052 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-08-05 16:56:30.053 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-08-05 16:56:30.073 +03:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-08-05 16:56:30.088 +03:30 [INF] Applying migration '20250805132609_fix-order'.
+2025-08-05 16:56:30.172 +03:30 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [SellerInventory] ADD [ReservedCount] int NOT NULL DEFAULT 0;
+2025-08-05 16:56:30.174 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20250805132609_fix-order', N'8.0.0-preview.3.23174.2');
+2025-08-05 16:57:27.552 +03:30 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-05 16:57:27.844 +03:30 [INF] Now listening on: https://localhost:7050
+2025-08-05 16:57:27.849 +03:30 [INF] Now listening on: http://localhost:5179
+2025-08-05 16:57:28.118 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-05 16:57:28.158 +03:30 [INF] Hosting environment: Development
+2025-08-05 16:57:28.160 +03:30 [INF] Content root path: D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Web
+2025-08-05 16:57:29.618 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7050/swagger/index.html - -
+2025-08-05 16:57:30.078 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7050/swagger/index.html - - - 200 - text/html;charset=utf-8 463.9225ms
+2025-08-05 16:57:30.145 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7050/_framework/aspnetcore-browser-refresh.js - -
+2025-08-05 16:57:30.148 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7050/_vs/browserLink - -
+2025-08-05 16:57:30.175 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7050/_framework/aspnetcore-browser-refresh.js - - - 200 16501 application/javascript;+charset=utf-8 29.0965ms
+2025-08-05 16:57:30.293 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7050/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 145.5215ms
+2025-08-05 16:57:30.497 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7050/swagger/v1/swagger.json - -
+2025-08-05 16:57:30.677 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7050/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 179.8266ms
+2025-08-05 16:57:39.826 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7050/Product/ProductFilter - -
+2025-08-05 16:57:39.903 +03:30 [INF] Executing endpoint 'shop.Web.Controllers.Product.ProductController.GetProductByFilter (shop.Web)'
+2025-08-05 16:57:39.933 +03:30 [INF] Route matched with {action = "GetProductByFilter", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[shop.Frameworks.Commons.ApiResult`1[shop.Service.Query.ProductFilterResult]] GetProductByFilter(shop.Service.Query.ProductFilterParams) on controller shop.Web.Controllers.Product.ProductController (shop.Web).
+2025-08-05 16:57:40.251 +03:30 [INF] Starting shop.Web.Controllers.Product.ProductController.GetProductByFilter (shop.Web) with arguments: {"filterParams":{"Title":null,"Id":null,"PageId":1,"Take":10}}
+2025-08-05 16:57:40.258 +03:30 [INF] Executing action method shop.Web.Controllers.Product.ProductController.GetProductByFilter (shop.Web) - Validation state: "Valid"
+2025-08-05 16:57:41.641 +03:30 [INF] Executed DbCommand (46ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CreateON], [p].[Deleted], [p].[Description], [p].[ImageName], [p].[Name], [p].[UpdateON]
+FROM [Product] AS [p]
+ORDER BY [p].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-08-05 16:57:41.832 +03:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Product] AS [p]
+2025-08-05 16:57:41.848 +03:30 [INF] Executed action method shop.Web.Controllers.Product.ProductController.GetProductByFilter (shop.Web), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1578.1119ms.
+2025-08-05 16:57:41.852 +03:30 [INF] Finished shop.Web.Controllers.Product.ProductController.GetProductByFilter (shop.Web) with StatusCode 200 in 1597 ms
+2025-08-05 16:57:41.891 +03:30 [INF] Executing ObjectResult, writing value of type 'shop.Frameworks.Commons.ApiResult`1[[shop.Service.Query.ProductFilterResult, shop.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-05 16:57:41.933 +03:30 [INF] Executed action shop.Web.Controllers.Product.ProductController.GetProductByFilter (shop.Web) in 1979.9408ms
+2025-08-05 16:57:41.936 +03:30 [INF] Executed endpoint 'shop.Web.Controllers.Product.ProductController.GetProductByFilter (shop.Web)'
+2025-08-05 16:57:41.958 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7050/Product/ProductFilter - - - 200 - application/json;+charset=utf-8 2131.9716ms
+2025-08-05 16:57:53.063 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7050/Product/Shop - -
+2025-08-05 16:57:53.103 +03:30 [INF] Executing endpoint 'shop.Web.Controllers.Product.ProductController.GetProductForShopFilter (shop.Web)'
+2025-08-05 16:57:53.111 +03:30 [INF] Route matched with {action = "GetProductForShopFilter", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[shop.Frameworks.Commons.ApiResult`1[shop.Service.Query.Product.GetForShop.ProductShopResult]] GetProductForShopFilter(shop.Service.Query.Product.GetForShop.ProductShopFilterParam) on controller shop.Web.Controllers.Product.ProductController (shop.Web).
+2025-08-05 16:57:53.217 +03:30 [INF] Starting shop.Web.Controllers.Product.ProductController.GetProductForShopFilter (shop.Web) with arguments: {"filterParams":{"Category":"","Search":"","OnlyAvailableProducts":true,"JustHasDiscount":false,"SearchOrderBy":2,"PageId":1,"Take":10}}
+2025-08-05 16:57:53.220 +03:30 [INF] Executing action method shop.Web.Controllers.Product.ProductController.GetProductForShopFilter (shop.Web) - Validation state: "Valid"
+2025-08-05 16:57:53.516 +03:30 [INF] Executed action method shop.Web.Controllers.Product.ProductController.GetProductForShopFilter (shop.Web), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 293.0243ms.
+2025-08-05 16:57:53.520 +03:30 [INF] Finished shop.Web.Controllers.Product.ProductController.GetProductForShopFilter (shop.Web) with StatusCode 200 in 300 ms
+2025-08-05 16:57:53.558 +03:30 [INF] Executing ObjectResult, writing value of type 'shop.Frameworks.Commons.ApiResult`1[[shop.Service.Query.Product.GetForShop.ProductShopResult, shop.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-05 16:57:53.591 +03:30 [INF] Executed action shop.Web.Controllers.Product.ProductController.GetProductForShopFilter (shop.Web) in 464.7213ms
+2025-08-05 16:57:53.595 +03:30 [INF] Executed endpoint 'shop.Web.Controllers.Product.ProductController.GetProductForShopFilter (shop.Web)'
+2025-08-05 16:57:53.598 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7050/Product/Shop - - - 200 - application/json;+charset=utf-8 534.9789ms

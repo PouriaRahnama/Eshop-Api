@@ -50,4 +50,15 @@ public class CommentsService : ICommentsService
         _repository.Update(Comment);
         return OperationResult.Success();
     }
+
+    //new 
+    public async Task<OperationResult> DeleteComment(DeleteCommentDto deleteCommentDto)
+    {
+        var comment = await _repository.FindByIdAsync(deleteCommentDto.Id);
+        if (comment == null || comment.UserId != deleteCommentDto.UserId)
+            return OperationResult.NotFound();
+
+        _repository.Delete(comment);
+        return OperationResult.Success();
+    }
 }

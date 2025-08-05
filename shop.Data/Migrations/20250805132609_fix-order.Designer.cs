@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using shop.Data.ApplicationContext;
 
@@ -11,9 +12,11 @@ using shop.Data.ApplicationContext;
 namespace shop.Data.Migrations
 {
     [DbContext(typeof(SqlServerApplicationContext))]
-    partial class SqlServerApplicationContextModelSnapshot : ModelSnapshot
+    [Migration("20250805132609_fix-order")]
+    partial class fixorder
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

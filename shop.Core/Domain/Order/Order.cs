@@ -1,4 +1,4 @@
-using shop.Core.Commons;
+﻿using shop.Core.Commons;
 using shop.Core.Domain.Comment;
 using shop.Core.Domain.User;
 
@@ -39,14 +39,11 @@ namespace shop.Core.Domain.Order
 
     public enum OrderStatus
     {
-        //0
-        Pending,
-        //1
-        Processing,
-        //2
-        Completed,
-        //3
-        Failed
+        Pending,        // هنوز نهایی نشده و پرداخت هم نشده
+        CheckedOut,     // کاربر سفارش رو نهایی کرده، ولی هنوز پرداخت نکرده
+        Finally,        // پرداخت انجام شده
+        Shipping,
+        Rejected
     }
 
 

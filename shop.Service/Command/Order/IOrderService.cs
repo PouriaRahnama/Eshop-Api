@@ -11,5 +11,9 @@ namespace shop.Service.Command
         Task<OperationResult> IncreaseOrderItem(IncreaseOrderItemCountDto IncreaseOrderItemCountDto);
         Task<OperationResult> RemoveOrderItem(RemoveOrderItemDto RemoveOrderItemDto);
         Task<OperationResult> RemoveOrderAddress(RemoveOrderAddressDto RemoveOrderAddressDto);
+
+        //new
+        Task<OperationResult> CancelOrder(CancelOrderDto cancelOrderDto);
+
     }
 }
