@@ -5534,3 +5534,4 @@ D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Web\obj\Debug\net7.0\static
 D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Web\obj\Debug\net7.0\shop.Web.csproj.Up2Date
 D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Web\obj\Debug\net7.0\shop.Web.genruntimeconfig.cache
 D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Web\obj\Debug\net7.0\ref\shop.Web.dll
+D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Web\bin\Debug\net7.0\Serilog.Sinks.Async.dll

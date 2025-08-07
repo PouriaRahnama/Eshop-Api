@@ -490,6 +490,10 @@
               "target": "Package",
               "version": "[7.0.0, )"
             },
+            "Serilog.Sinks.Async": {
+              "target": "Package",
+              "version": "[1.5.0, )"
+            },
             "Serilog.Sinks.Console": {
               "target": "Package",
               "version": "[4.1.0, )"

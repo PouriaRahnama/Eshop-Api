@@ -14,7 +14,7 @@ builder.Services.AddHttpClient<IZibalService, ZibalService>();
 builder.Services.AddTransient<IFileService, FileService>();
 builder.Services.AddJwtAuthentication(builder.Configuration);
 builder.Services.RegisterApiDependency(builder.Configuration);
-SerilogConfig.ConfigureLogging(builder.Host);
+SerilogConfig.ConfigureLogging(builder.Host, "ShopApi");
 
 
 var app = builder.Build();
