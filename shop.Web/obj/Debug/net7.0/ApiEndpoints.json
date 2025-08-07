@@ -486,6 +486,32 @@
   },
   {
     "ContainingType": "shop.Web.Controllers.Order.OrderController",
+    "Method": "CheckoutOrder",
+    "RelativePath": "Order/Checkout",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "shop.Service.DTOs.OrderCommand.CheckoutOrderDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Order.OrderController",
     "Method": "AddOrderAddress",
     "RelativePath": "Order/OrderAddress",
     "HttpMethod": "POST",
@@ -676,6 +702,32 @@
       {
         "Name": "command",
         "Type": "shop.Service.DTOs.OrderCommand.IncreaseOrderItemCountDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "shop.Web.Controllers.Order.OrderController",
+    "Method": "SendOrder",
+    "RelativePath": "Order/SendOrder/{orderId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderId",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -1711,6 +1763,68 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "Shop.Api.Controllers.TransactionController",
+    "Method": "CreateTransaction",
+    "RelativePath": "Transaction",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Shop.Api.ViewModels.Transactions.CreateTransactionViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "shop.Frameworks.Commons.ApiResult\u00601[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Shop.Api.Controllers.TransactionController",
+    "Method": "Verify",
+    "RelativePath": "Transaction",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "trackId",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "success",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "errorRedirect",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "successRedirect",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "shop.Web.Controllers.User.UserController",

@@ -22,8 +22,8 @@ namespace shop.Data.Mapping
             //builder.Property(c => c.OrderStatusId)
             //    .IsRequired();
 
-            builder.Property(d => d.Status)
-                .HasConversion(new EnumToStringConverter<OrderStatus>());
+            //builder.Property(d => d.Status)
+            //    .HasConversion(new EnumToStringConverter<OrderStatus>());
         }
     }
 }

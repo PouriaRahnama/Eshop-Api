@@ -24,8 +24,8 @@ namespace shop.Data.Mapping.Comments
             builder.Property(b => b.ProductId)
               .IsRequired();
 
-            builder.Property(d => d.Status)
-                 .HasConversion(new EnumToStringConverter<CommentStatus>());
+            //builder.Property(d => d.Status)
+            //     .HasConversion(new EnumToStringConverter<CommentStatus>());
 
             //builder.Property(b => b.StatusId)
             // .IsRequired();

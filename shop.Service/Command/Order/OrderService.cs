@@ -6,11 +6,14 @@ using shop.Service.DTOs.OrderCommand;
 using shop.Service.Extension.Util;
 using System.Diagnostics.Metrics;
 using System.Net;
+using System.Threading;
 
 namespace shop.Service.Command
 {
     public class OrderService : IOrderService
     {
+        private static readonly SemaphoreSlim _inventoryLock = new SemaphoreSlim(1, 1);
+        private static readonly SemaphoreSlim _OrderFinallyLock = new SemaphoreSlim(1, 1);
         private readonly IRepository<Order> _orderRepository;
         private readonly IRepository<User> _userRepository;
         private readonly IRepository<SellerInventory> _sellerInventoryRepository;
@@ -91,7 +94,7 @@ namespace shop.Service.Command
             currentItem.Count -= DecreaseOrderItemCountDto.Count;
             if (currentItem.Count <= 0)
                 currentItem.Count = 0;
-  
+
 
             _orderItemRepository.Update(currentItem);
             return OperationResult.Success();
@@ -192,15 +195,113 @@ namespace shop.Service.Command
                 if (inventory == null)
                     return OperationResult.Error($"موجودی آیتم با شناسه {item.InventoryId} یافت نشد.");
 
-                if (inventory.Count < 1 || inventory.ReservedCount < inventory.Count)
+                if (item.Count < 1 || inventory.ReservedCount < item.Count)
                     return OperationResult.Error("رزرو برای آزادسازی کافی نیست.");
 
-                inventory.ReservedCount -= inventory.Count;
+                inventory.ReservedCount -= item.Count;
 
                 _sellerInventoryRepository.Update(inventory);
             }
 
             order.Status = OrderStatus.Rejected;
+            _orderRepository.Update(order);
+
+            return OperationResult.Success();
+        }
+
+        public async Task<OperationResult> CheckoutOrder(CheckoutOrderDto checkoutOrderDto)
+        {
+            var currentOrder = await _orderRepository.GetEntity(f => f.UserId == checkoutOrderDto.UserId &&
+                (f.Status == OrderStatus.Pending || f.Status == OrderStatus.CheckedOut));
+
+            if (currentOrder == null)
+                return OperationResult.NotFound();
+
+            // ✅ فقط اگر سفارش واقعاً نهایی یا رد شده باشه، جلوی ادامه رو بگیر
+            if (currentOrder.Status == OrderStatus.Finally || currentOrder.Status == OrderStatus.Rejected)
+                return OperationResult.Error("این سفارش قبلاً نهایی شده یا رد شده است.");
+
+            // ✅ اگر سفارش هنوز Pending هست، باید checkout و رزرو بشه
+            if (currentOrder.Status == OrderStatus.Pending)
+            {
+                currentOrder.Status = OrderStatus.CheckedOut;
+                currentOrder.UpdateON = DateTime.Now;
+
+                await _inventoryLock.WaitAsync();
+                try
+                {
+                    foreach (var item in currentOrder.OrderItems)
+                    {
+                        var inventory = await _sellerInventoryRepository.FindByIdAsync(item.InventoryId);
+                        if (inventory == null)
+                            return OperationResult.Error("موجودی کالا یافت نشد.");
+
+                        if (item.Count < 1 || inventory.AvailableCount < item.Count)
+                            return OperationResult.Error("موجودی کافی برای رزرو وجود ندارد.");
+
+                        inventory.ReservedCount += item.Count;
+                    }
+                }
+                finally
+                {
+                    _inventoryLock.Release();
+                }
+
+                _orderRepository.Update(currentOrder);
+            }
+
+            // ✅ اگر سفارش در حالت CheckedOut بود، فقط بدون تغییر ادامه بده
+            return OperationResult.Success();
+        }
+
+        public async Task<OperationResult> OrderFinally(OrderFinallyDto orderFinallyDto)
+        {
+            await _OrderFinallyLock.WaitAsync();
+            try
+            {
+                var order = await _orderRepository.FindByIdAsync(orderFinallyDto.OrderId);
+                if (order == null)
+                    return OperationResult.NotFound();
+
+                order.Status = OrderStatus.Finally;
+                order.UpdateON = DateTime.Now;
+
+                _orderRepository.Update(order);
+
+                foreach (var item in order.OrderItems)
+                {
+                    var inventory = await _sellerInventoryRepository.FindByIdAsync(item.InventoryId);
+                    if (inventory == null)
+                    {
+                        Console.WriteLine($"⚠️ Inventory not found: {item.InventoryId}");
+                        continue;
+                    }
+
+                    if (item.Count < 1 || inventory.ReservedCount < item.Count)
+                        return OperationResult.Error("موجودی رزرو شده کافی نیست.");
+
+                    inventory.ReservedCount -= item.Count;
+                    inventory.Count -= item.Count;
+
+                    _sellerInventoryRepository.Update(inventory);
+                }
+                return OperationResult.Success();
+            }
+            finally
+            {
+                _OrderFinallyLock.Release();
+            }
+        }
+
+        public async Task<OperationResult> SendOrder(SendOrderDto sendOrderDto)
+        {
+            var order = await _orderRepository.FindByIdAsync(sendOrderDto.OrderId);
+            if (order == null)
+                return OperationResult.NotFound();
+
+            order.Status = OrderStatus.Shipping;
+            order.UpdateON = DateTime.Now;
+
             _orderRepository.Update(order);
 
             return OperationResult.Success();

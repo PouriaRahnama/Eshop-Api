@@ -67,9 +67,10 @@ public class ProductController : ShopController
     [HttpGet("{productId}")]
     public async Task<ApiResult<ProductQueryDto?>> GetProductById(int productId)
     {
-        var product = await _cacheManager.GetAsync($"productId{productId}", 30000,
-            async () => _productQueryService.GetProductById(productId).Result);
-        return QueryResult(product);
+        //var product = await _cacheManager.GetAsync($"productId{productId}", 1,
+        //    async () =>await _productQueryService.GetProductById(productId));
+
+        return QueryResult(await _productQueryService.GetProductById(productId));
     }
 
     [HttpPut]

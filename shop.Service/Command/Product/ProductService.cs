@@ -15,7 +15,7 @@ namespace shop.Service.Command
         private readonly IRepository<ProductCategory> _ProductCategoryRepository;
         private readonly IRepository<ProductPicture> _ProductPictureRepository;
         private readonly IRepository<ProductSpecification> _ProductSpecificationRepository;
-        private readonly IRepository<Category> _caegoryRepository;
+        private readonly IRepository<Category> _categoryRepository;
         private readonly IFileService _fileService;
 
         public ProductService(IRepository<Product> Repository,
@@ -30,7 +30,7 @@ namespace shop.Service.Command
             _fileService = fileService;
             _PictureRepository = pictureRepository;
             _ProductCategoryRepository = productCategoryRepository;
-            _caegoryRepository = caegoryRepository;
+            _categoryRepository = caegoryRepository;
             _ProductPictureRepository = productPictureRepository;
             _ProductSpecificationRepository = productSpecificationRepository;
         }
@@ -68,7 +68,7 @@ namespace shop.Service.Command
             if (product == null)
                 return OperationResult.NotFound();
 
-            var category = await _repository.FindByIdAsync(AddProductCategoryDto.CategoryID);
+            var category = await _categoryRepository.FindByIdAsync(AddProductCategoryDto.CategoryID);
             if (category == null)
                 return OperationResult.NotFound();
 
@@ -136,7 +136,7 @@ namespace shop.Service.Command
             if (product == null)
                 return OperationResult.NotFound();
 
-            var category = await _caegoryRepository.FindByIdAsync(RemoveProductCategoryDto.CategoryID);
+            var category = await _categoryRepository.FindByIdAsync(RemoveProductCategoryDto.CategoryID);
             if (category == null)
                 return OperationResult.NotFound();
 

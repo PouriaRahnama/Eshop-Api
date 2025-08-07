@@ -14,6 +14,8 @@ namespace shop.Service.Command
 
         //new
         Task<OperationResult> CancelOrder(CancelOrderDto cancelOrderDto);
-
+        Task<OperationResult> CheckoutOrder(CheckoutOrderDto checkoutOrderDto);
+        Task<OperationResult> OrderFinally(OrderFinallyDto orderFinallyDto);
+        Task<OperationResult> SendOrder(SendOrderDto sendOrderDto);
     }
 }

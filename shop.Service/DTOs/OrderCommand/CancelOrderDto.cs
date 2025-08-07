@@ -2,6 +2,6 @@
 {
     public class CancelOrderDto
     {
-        public long OrderId { get; set; }
+        public int OrderId { get; set; }
     }
 }

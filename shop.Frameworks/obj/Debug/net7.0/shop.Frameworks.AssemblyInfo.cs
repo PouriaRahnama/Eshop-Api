@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("shop.Frameworks")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+35d12440a6262a23a3841c13d40e4779b96def91")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bad6d5fdca4f3626eb6ef143175abf2f0fe56381")]
 [assembly: System.Reflection.AssemblyProductAttribute("shop.Frameworks")]
 [assembly: System.Reflection.AssemblyTitleAttribute("shop.Frameworks")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

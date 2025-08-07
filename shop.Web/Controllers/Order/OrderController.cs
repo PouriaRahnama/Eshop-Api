@@ -76,4 +76,18 @@ public class OrderController : ShopController
         var result = await _orderService.RemoveOrderItem(command);
         return CommandResult(result);
     }
+
+    [HttpPost("Checkout")]
+    public async Task<ApiResult> CheckoutOrder(CheckoutOrderDto command)
+    {
+        var result = await _orderService.CheckoutOrder(command);
+        return CommandResult(result);
+    }
+
+    [HttpPut("SendOrder/{orderId}")]
+    public async Task<ApiResult> SendOrder(int orderId)
+    {
+        var result = await _orderService.SendOrder(new SendOrderDto() { OrderId=orderId});
+        return CommandResult(result);
+    }
 }

@@ -12,8 +12,8 @@ namespace shop.Data.Mapping
         {
             builder.HasKey(x => x.Id);
             //builder.Ignore(c => c.SellerStatus);
-            builder.Property(d => d.Status)
-                .HasConversion(new EnumToStringConverter<SellerStatus>());
+            //builder.Property(d => d.Status)
+            //    .HasConversion(new EnumToStringConverter<SellerStatus>());
         }
     }
 }
