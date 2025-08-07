@@ -1,0 +1,55 @@
+2025-08-07 11:16:22.118 +03:30 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-07 11:16:22.523 +03:30 [INF] Now listening on: https://localhost:7050
+2025-08-07 11:16:22.602 +03:30 [INF] Now listening on: http://localhost:5179
+2025-08-07 11:16:22.782 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-07 11:16:22.784 +03:30 [INF] Hosting environment: Development
+2025-08-07 11:16:22.785 +03:30 [INF] Content root path: D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Web
+2025-08-07 11:16:23.349 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7050/swagger/index.html - -
+2025-08-07 11:16:23.881 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7050/swagger/index.html - - - 200 - text/html;charset=utf-8 534.3572ms
+2025-08-07 11:16:24.257 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7050/_framework/aspnetcore-browser-refresh.js - -
+2025-08-07 11:16:24.261 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7050/_vs/browserLink - -
+2025-08-07 11:16:24.280 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7050/_framework/aspnetcore-browser-refresh.js - - - 200 16501 application/javascript;+charset=utf-8 23.2040ms
+2025-08-07 11:16:24.472 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7050/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 210.6659ms
+2025-08-07 11:16:25.115 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7050/swagger/v1/swagger.json - -
+2025-08-07 11:16:25.306 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7050/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 191.1424ms
+2025-08-07 11:16:44.002 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7050/Category - -
+2025-08-07 11:16:44.107 +03:30 [INF] Executing endpoint 'shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web)'
+2025-08-07 11:16:44.135 +03:30 [INF] Route matched with {action = "GetAllCategories", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[shop.Frameworks.Commons.ApiResult`1[System.Collections.Generic.List`1[shop.Service.Query.CategoryQueryDto]]] GetAllCategories() on controller shop.Web.Controllers.Category.CategoryController (shop.Web).
+2025-08-07 11:16:44.389 +03:30 [INF] Starting shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) with arguments: {}
+2025-08-07 11:16:44.394 +03:30 [INF] Executing action method shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) - Validation state: "Valid"
+2025-08-07 11:16:44.406 +03:30 [INF] Finished shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) with StatusCode 200 in 15 ms
+2025-08-07 11:16:44.440 +03:30 [INF] Executed action shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) in 283.0195ms
+2025-08-07 11:16:44.443 +03:30 [INF] Executed endpoint 'shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web)'
+2025-08-07 11:16:44.508 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7050/Category - - - 521 - application/json;+charset=utf-8 505.2708ms
+2025-08-07 11:17:24.803 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7050/swagger/index.html - -
+2025-08-07 11:17:24.879 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7050/swagger/index.html - - - 200 - text/html;charset=utf-8 77.1427ms
+2025-08-07 11:17:24.916 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7050/_framework/aspnetcore-browser-refresh.js - -
+2025-08-07 11:17:24.920 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7050/_vs/browserLink - -
+2025-08-07 11:17:24.938 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7050/_framework/aspnetcore-browser-refresh.js - - - 200 16501 application/javascript;+charset=utf-8 22.4248ms
+2025-08-07 11:17:25.035 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7050/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 114.6543ms
+2025-08-07 11:17:25.716 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7050/swagger/v1/swagger.json - -
+2025-08-07 11:17:26.020 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7050/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 303.7868ms
+2025-08-07 11:17:30.834 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7050/Category - -
+2025-08-07 11:17:30.861 +03:30 [INF] Executing endpoint 'shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web)'
+2025-08-07 11:17:30.869 +03:30 [INF] Route matched with {action = "GetAllCategories", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[shop.Frameworks.Commons.ApiResult`1[System.Collections.Generic.List`1[shop.Service.Query.CategoryQueryDto]]] GetAllCategories() on controller shop.Web.Controllers.Category.CategoryController (shop.Web).
+2025-08-07 11:17:30.925 +03:30 [INF] Starting shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) with arguments: {}
+2025-08-07 11:17:30.926 +03:30 [INF] Executing action method shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) - Validation state: "Valid"
+2025-08-07 11:17:32.476 +03:30 [INF] Executed DbCommand (50ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreateON], [c].[Deleted], [c].[Name], [c].[ParentID], [c].[UpdateON]
+FROM [Category].[Categories] AS [c]
+WHERE [c].[ParentID] IS NULL AND [c].[Deleted] = CAST(0 AS bit)
+ORDER BY [c].[Id] DESC
+2025-08-07 11:17:32.839 +03:30 [INF] Executed DbCommand (20ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreateON], [c].[Deleted], [c].[Name], [c].[ParentID], [c].[UpdateON]
+FROM [Category].[Categories] AS [c]
+WHERE [c].[ParentID] = @__p_0
+2025-08-07 11:17:32.902 +03:30 [INF] Executed DbCommand (6ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductID], [p].[CategoryID], [p].[CreateON], [p].[UpdateON]
+FROM [ProductCategory] AS [p]
+WHERE [p].[CategoryID] = @__p_0
+2025-08-07 11:17:32.955 +03:30 [INF] Executed action method shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 2023.6167ms.
+2025-08-07 11:17:32.959 +03:30 [INF] Finished shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) with StatusCode 200 in 2032 ms
+2025-08-07 11:17:33.007 +03:30 [INF] Executing ObjectResult, writing value of type 'shop.Frameworks.Commons.ApiResult`1[[System.Collections.Generic.List`1[[shop.Service.Query.CategoryQueryDto, shop.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-07 11:17:33.052 +03:30 [INF] Executed action shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web) in 2162.4066ms
+2025-08-07 11:17:33.054 +03:30 [INF] Executed endpoint 'shop.Web.Controllers.Category.CategoryController.GetAllCategories (shop.Web)'
+2025-08-07 11:17:33.065 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7050/Category - - - 200 - application/json;+charset=utf-8 2230.3743ms

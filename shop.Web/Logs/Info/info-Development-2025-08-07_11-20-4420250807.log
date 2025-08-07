@@ -1,0 +1,6 @@
+2025-08-07 11:20:44.658 +03:30 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-07 11:20:45.145 +03:30 [INF] Now listening on: https://localhost:7050
+2025-08-07 11:20:45.155 +03:30 [INF] Now listening on: http://localhost:5179
+2025-08-07 11:20:45.396 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-07 11:20:45.397 +03:30 [INF] Hosting environment: Development
+2025-08-07 11:20:45.398 +03:30 [INF] Content root path: D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Web
