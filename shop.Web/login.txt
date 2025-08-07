@@ -8,8 +8,8 @@ Response body Example
 {
   "isSuccess": true,
   "data": {
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9tb2JpbGVwaG9uZSI6IjA5MTMyODg0OTIyIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiIyIiwiZXhwIjoxNzU1MTU3MjQzLCJpc3MiOiJFc2hvcC5jb20iLCJhdWQiOiJFc2hvcC1hcGkifQ.gT7Fsed8INX-MQJiO7_dRqfIxDjqQRfWvn3cErQc5m4",
-    "refreshToken": "a7869785-98d3-40c5-81cf-971408b5b031"
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9tb2JpbGVwaG9uZSI6IjA5MTMyODg0OTIyIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6IlBvdXJpYSAgdGVzdCIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWVpZGVudGlmaWVyIjoiMiIsImV4cCI6MTc1NTE5NTE2NCwiaXNzIjoiRXNob3AuY29tIiwiYXVkIjoiRXNob3AtYXBpIn0.1wQkEgFfNimRxKmtip2vXPNiewFIoOXD3scAQFfkmIg",
+    "refreshToken": "e4007f4a-4238-409c-a126-ad5cfd52bb95"
   },
   "metaData": {
     "message": null,

@@ -9,7 +9,7 @@ using Shop.Api.Infrastructure.JwtUtil;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.ConfigureApplicationServices(builder.Configuration);
-
+builder.Services.AddHttpContextAccessor();
 builder.Services.AddHttpClient<IZibalService, ZibalService>();
 builder.Services.AddTransient<IFileService, FileService>();
 builder.Services.AddJwtAuthentication(builder.Configuration);
@@ -17,7 +17,9 @@ builder.Services.RegisterApiDependency(builder.Configuration);
 SerilogConfig.ConfigureLogging(builder.Host, "ShopApi");
 
 
+
 var app = builder.Build();
+app.UseSerilogRequestLogging();
 app.UseCors("Shop");
 app.UseIpRateLimiting();
 app.UseStaticFiles();

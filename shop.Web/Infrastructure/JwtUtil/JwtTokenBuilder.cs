@@ -13,6 +13,7 @@ public class JwtTokenBuilder
         var claims = new List<Claim>()
         {
             new Claim(ClaimTypes.MobilePhone,user.PhoneNumber),
+            new Claim(ClaimTypes.Name,$"{user.Name} {user.Family}"),
             new Claim(ClaimTypes.NameIdentifier,user.Id.ToString())
         };
         var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["JwtConfig:SignInKey"]));
