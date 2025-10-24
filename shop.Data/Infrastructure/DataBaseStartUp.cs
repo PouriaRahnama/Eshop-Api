@@ -15,7 +15,7 @@ namespace shop.Data.Infrastructure
         public MiddleWarePriority Priority => MiddleWarePriority.AboveNormal;
         public void ConfigureServices(IServiceCollection services, IConfiguration configuration)
         {
-            string connectionString = "Data Source=.;Initial Catalog=EShopApp;Integrated Security=true;Encrypt=false;MultipleActiveResultSets=true";
+            string connectionString = "Data Source=.\\SQL2019;Initial Catalog=EShopApp;Integrated Security=true;Encrypt=false;MultipleActiveResultSets=true";
             services.AddScoped(typeof(IRepository<>), typeof(EFRepository<>));
             services.AddDbContextPool<IApplicationContext, SqlServerApplicationContext>((options) =>
             {

@@ -13,7 +13,7 @@
                 Description = product.Description,
                 ImageName = product.ImageName,
                 Title = product.Name,
-
+                //جداگانه کوئری میزنه - lazy loading
                 Specifications = product.Specifications.Where(s => s.Deleted == false).Select(s => new ProductSpecificationDto()
                 {
                     Id = s.Id,
@@ -22,21 +22,21 @@
                     CreationDate = s.CreateON
 
                 }).ToList(),
-
+                //جداگانه کوئری میزنه - lazy loading
                 Images = product.ProductPictures.Select(s => new ProductImageDto()
                 {
                     ProductID = s.ProductID,
                     PictureID = s.PictureID,
 
                 }).ToList(),
-
+                //جداگانه کوئری میزنه - lazy loading
                 Category = product.ProductCategories.Select(s => new ProductCategoryDto()
                 {
                     Id = s.CategoryID,
                     CreationDate = s.CreateON,
                     ProductID = s.ProductID,
                     CategoryID = s.CategoryID,
-                    CategoryName = s.Category.Name
+                    CategoryName = s.Category.Name    //جداگانه کوئری میزنه - lazy loading
 
                 }).ToList(),
 
