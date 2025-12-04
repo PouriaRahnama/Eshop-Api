@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "V5HKso6ZbRg=",
+  "dgSpecHash": "xpTAYfOLBP0=",
   "success": true,
-  "projectFilePath": "D:\\Project\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Core\\shop.Core.csproj",
+  "projectFilePath": "E:\\Projects\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Core\\shop.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Parandeh Abi\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.0.1\\microsoft.aspnetcore.http.abstractions.2.0.1.nupkg.sha512",
     "C:\\Users\\Parandeh Abi\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.0.1\\microsoft.aspnetcore.http.features.2.0.1.nupkg.sha512",

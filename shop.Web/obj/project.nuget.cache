@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MEC/XsoXCVA=",
+  "dgSpecHash": "26sXKUkrfrM=",
   "success": true,
-  "projectFilePath": "D:\\Project\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Web\\shop.Web.csproj",
+  "projectFilePath": "E:\\Projects\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Web\\shop.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Parandeh Abi\\.nuget\\packages\\anglesharp\\0.17.1\\anglesharp.0.17.1.nupkg.sha512",
     "C:\\Users\\Parandeh Abi\\.nuget\\packages\\anglesharp.css\\0.17.0\\anglesharp.css.0.17.0.nupkg.sha512",

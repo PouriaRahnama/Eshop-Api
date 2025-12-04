@@ -7969,11 +7969,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Project\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Data\\shop.Data.csproj",
+      "projectUniqueName": "E:\\Projects\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Data\\shop.Data.csproj",
       "projectName": "shop.Data",
-      "projectPath": "D:\\Project\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Data\\shop.Data.csproj",
+      "projectPath": "E:\\Projects\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Data\\shop.Data.csproj",
       "packagesPath": "C:\\Users\\Parandeh Abi\\.nuget\\packages\\",
-      "outputPath": "D:\\Project\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Data\\obj\\",
+      "outputPath": "E:\\Projects\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -7995,8 +7995,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\Project\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Core\\shop.Core.csproj": {
-              "projectPath": "D:\\Project\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Core\\shop.Core.csproj"
+            "E:\\Projects\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Core\\shop.Core.csproj": {
+              "projectPath": "E:\\Projects\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Core\\shop.Core.csproj"
             }
           }
         }
@@ -8062,7 +8062,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308\\RuntimeIdentifierGraph.json"
       }
     }
   }

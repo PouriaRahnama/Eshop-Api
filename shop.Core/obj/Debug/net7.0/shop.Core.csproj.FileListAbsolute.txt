@@ -360,3 +360,16 @@ D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Core\obj\Debug\net7.0\shop.
 D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Core\obj\Debug\net7.0\shop.Core.csproj.CoreCompileInputs.cache
 D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Core\obj\Debug\net7.0\shop.Core.sourcelink.json
 D:\Project\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Core\obj\Debug\net7.0\ref\shop.Core.dll
+E:\Projects\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Core\bin\Debug\net7.0\shop.Core.deps.json
+E:\Projects\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Core\bin\Debug\net7.0\shop.Core.dll
+E:\Projects\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Core\bin\Debug\net7.0\shop.Core.pdb
+E:\Projects\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Core\obj\Debug\net7.0\shop.Core.csproj.AssemblyReference.cache
+E:\Projects\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Core\obj\Debug\net7.0\shop.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Core\obj\Debug\net7.0\shop.Core.AssemblyInfoInputs.cache
+E:\Projects\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Core\obj\Debug\net7.0\shop.Core.AssemblyInfo.cs
+E:\Projects\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Core\obj\Debug\net7.0\shop.Core.csproj.CoreCompileInputs.cache
+E:\Projects\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Core\obj\Debug\net7.0\shop.Core.sourcelink.json
+E:\Projects\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Core\obj\Debug\net7.0\shop.Core.dll
+E:\Projects\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Core\obj\Debug\net7.0\refint\shop.Core.dll
+E:\Projects\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Core\obj\Debug\net7.0\shop.Core.pdb
+E:\Projects\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Core\obj\Debug\net7.0\ref\shop.Core.dll
