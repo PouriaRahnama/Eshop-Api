@@ -27,6 +27,9 @@ namespace shop.Service.Command
             _userRepository = userRepository;
         }
 
+        /*
+         To Do => ACID , Row Version , unit of work for all service                       
+         */
         public async Task<OperationResult> AddOrderItem(CreateOrderItemDto CreateOrderItemDto)
         {
             var inventory = await _sellerInventoryRepository.FindByIdAsync(CreateOrderItemDto.inventoryId);
