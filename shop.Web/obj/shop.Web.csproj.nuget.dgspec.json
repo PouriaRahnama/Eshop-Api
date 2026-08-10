@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Projects\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Web\\shop.Web.csproj": {}
+    "C:\\Users\\pouria\\Desktop\\Eshop-Api\\shop.Web\\shop.Web.csproj": {}
   },
   "projects": {
-    "E:\\Projects\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Core\\shop.Core.csproj": {
+    "C:\\Users\\pouria\\Desktop\\Eshop-Api\\shop.Core\\shop.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projects\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Core\\shop.Core.csproj",
+        "projectUniqueName": "C:\\Users\\pouria\\Desktop\\Eshop-Api\\shop.Core\\shop.Core.csproj",
         "projectName": "shop.Core",
-        "projectPath": "E:\\Projects\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Core\\shop.Core.csproj",
-        "packagesPath": "C:\\Users\\Parandeh Abi\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Core\\obj\\",
+        "projectPath": "C:\\Users\\pouria\\Desktop\\Eshop-Api\\shop.Core\\shop.Core.csproj",
+        "packagesPath": "C:\\Users\\pouria\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pouria\\Desktop\\Eshop-Api\\shop.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Parandeh Abi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pouria\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -92,24 +91,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.315\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Projects\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Data\\shop.Data.csproj": {
+    "C:\\Users\\pouria\\Desktop\\Eshop-Api\\shop.Data\\shop.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projects\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Data\\shop.Data.csproj",
+        "projectUniqueName": "C:\\Users\\pouria\\Desktop\\Eshop-Api\\shop.Data\\shop.Data.csproj",
         "projectName": "shop.Data",
-        "projectPath": "E:\\Projects\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Data\\shop.Data.csproj",
-        "packagesPath": "C:\\Users\\Parandeh Abi\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Data\\obj\\",
+        "projectPath": "C:\\Users\\pouria\\Desktop\\Eshop-Api\\shop.Data\\shop.Data.csproj",
+        "packagesPath": "C:\\Users\\pouria\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pouria\\Desktop\\Eshop-Api\\shop.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Parandeh Abi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pouria\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -118,15 +117,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "E:\\Projects\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Core\\shop.Core.csproj": {
-                "projectPath": "E:\\Projects\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Core\\shop.Core.csproj"
+              "C:\\Users\\pouria\\Desktop\\Eshop-Api\\shop.Core\\shop.Core.csproj": {
+                "projectPath": "C:\\Users\\pouria\\Desktop\\Eshop-Api\\shop.Core\\shop.Core.csproj"
               }
             }
           }
@@ -192,24 +190,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.315\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Projects\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Frameworks\\shop.Frameworks.csproj": {
+    "C:\\Users\\pouria\\Desktop\\Eshop-Api\\shop.Frameworks\\shop.Frameworks.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projects\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Frameworks\\shop.Frameworks.csproj",
+        "projectUniqueName": "C:\\Users\\pouria\\Desktop\\Eshop-Api\\shop.Frameworks\\shop.Frameworks.csproj",
         "projectName": "shop.Frameworks",
-        "projectPath": "E:\\Projects\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Frameworks\\shop.Frameworks.csproj",
-        "packagesPath": "C:\\Users\\Parandeh Abi\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Frameworks\\obj\\",
+        "projectPath": "C:\\Users\\pouria\\Desktop\\Eshop-Api\\shop.Frameworks\\shop.Frameworks.csproj",
+        "packagesPath": "C:\\Users\\pouria\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pouria\\Desktop\\Eshop-Api\\shop.Frameworks\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Parandeh Abi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pouria\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -218,18 +216,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "E:\\Projects\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Core\\shop.Core.csproj": {
-                "projectPath": "E:\\Projects\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Core\\shop.Core.csproj"
+              "C:\\Users\\pouria\\Desktop\\Eshop-Api\\shop.Core\\shop.Core.csproj": {
+                "projectPath": "C:\\Users\\pouria\\Desktop\\Eshop-Api\\shop.Core\\shop.Core.csproj"
               },
-              "E:\\Projects\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Service\\shop.Service.csproj": {
-                "projectPath": "E:\\Projects\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Service\\shop.Service.csproj"
+              "C:\\Users\\pouria\\Desktop\\Eshop-Api\\shop.Service\\shop.Service.csproj": {
+                "projectPath": "C:\\Users\\pouria\\Desktop\\Eshop-Api\\shop.Service\\shop.Service.csproj"
               }
             }
           }
@@ -287,24 +284,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.315\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Projects\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Service\\shop.Service.csproj": {
+    "C:\\Users\\pouria\\Desktop\\Eshop-Api\\shop.Service\\shop.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projects\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Service\\shop.Service.csproj",
+        "projectUniqueName": "C:\\Users\\pouria\\Desktop\\Eshop-Api\\shop.Service\\shop.Service.csproj",
         "projectName": "shop.Service",
-        "projectPath": "E:\\Projects\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Service\\shop.Service.csproj",
-        "packagesPath": "C:\\Users\\Parandeh Abi\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Service\\obj\\",
+        "projectPath": "C:\\Users\\pouria\\Desktop\\Eshop-Api\\shop.Service\\shop.Service.csproj",
+        "packagesPath": "C:\\Users\\pouria\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pouria\\Desktop\\Eshop-Api\\shop.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Parandeh Abi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pouria\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -313,18 +310,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "E:\\Projects\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Core\\shop.Core.csproj": {
-                "projectPath": "E:\\Projects\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Core\\shop.Core.csproj"
+              "C:\\Users\\pouria\\Desktop\\Eshop-Api\\shop.Core\\shop.Core.csproj": {
+                "projectPath": "C:\\Users\\pouria\\Desktop\\Eshop-Api\\shop.Core\\shop.Core.csproj"
               },
-              "E:\\Projects\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Data\\shop.Data.csproj": {
-                "projectPath": "E:\\Projects\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Data\\shop.Data.csproj"
+              "C:\\Users\\pouria\\Desktop\\Eshop-Api\\shop.Data\\shop.Data.csproj": {
+                "projectPath": "C:\\Users\\pouria\\Desktop\\Eshop-Api\\shop.Data\\shop.Data.csproj"
               }
             }
           }
@@ -390,24 +386,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.315\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Projects\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Web\\shop.Web.csproj": {
+    "C:\\Users\\pouria\\Desktop\\Eshop-Api\\shop.Web\\shop.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projects\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Web\\shop.Web.csproj",
+        "projectUniqueName": "C:\\Users\\pouria\\Desktop\\Eshop-Api\\shop.Web\\shop.Web.csproj",
         "projectName": "shop.Web",
-        "projectPath": "E:\\Projects\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Web\\shop.Web.csproj",
-        "packagesPath": "C:\\Users\\Parandeh Abi\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Web\\obj\\",
+        "projectPath": "C:\\Users\\pouria\\Desktop\\Eshop-Api\\shop.Web\\shop.Web.csproj",
+        "packagesPath": "C:\\Users\\pouria\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pouria\\Desktop\\Eshop-Api\\shop.Web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Parandeh Abi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pouria\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -416,24 +412,23 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "E:\\Projects\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Core\\shop.Core.csproj": {
-                "projectPath": "E:\\Projects\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Core\\shop.Core.csproj"
+              "C:\\Users\\pouria\\Desktop\\Eshop-Api\\shop.Core\\shop.Core.csproj": {
+                "projectPath": "C:\\Users\\pouria\\Desktop\\Eshop-Api\\shop.Core\\shop.Core.csproj"
               },
-              "E:\\Projects\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Data\\shop.Data.csproj": {
-                "projectPath": "E:\\Projects\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Data\\shop.Data.csproj"
+              "C:\\Users\\pouria\\Desktop\\Eshop-Api\\shop.Data\\shop.Data.csproj": {
+                "projectPath": "C:\\Users\\pouria\\Desktop\\Eshop-Api\\shop.Data\\shop.Data.csproj"
               },
-              "E:\\Projects\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Frameworks\\shop.Frameworks.csproj": {
-                "projectPath": "E:\\Projects\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Frameworks\\shop.Frameworks.csproj"
+              "C:\\Users\\pouria\\Desktop\\Eshop-Api\\shop.Frameworks\\shop.Frameworks.csproj": {
+                "projectPath": "C:\\Users\\pouria\\Desktop\\Eshop-Api\\shop.Frameworks\\shop.Frameworks.csproj"
               },
-              "E:\\Projects\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Service\\shop.Service.csproj": {
-                "projectPath": "E:\\Projects\\Eshop-Api\\Eshop-Api (2025-04-02)-git\\shop.Service\\shop.Service.csproj"
+              "C:\\Users\\pouria\\Desktop\\Eshop-Api\\shop.Service\\shop.Service.csproj": {
+                "projectPath": "C:\\Users\\pouria\\Desktop\\Eshop-Api\\shop.Service\\shop.Service.csproj"
               }
             }
           }
@@ -522,7 +517,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.315\\RuntimeIdentifierGraph.json"
         }
       }
     }

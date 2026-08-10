@@ -552,3 +552,23 @@ E:\Projects\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Frameworks\obj\Debug\net7.
 E:\Projects\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Frameworks\obj\Debug\net7.0\refint\shop.Frameworks.dll
 E:\Projects\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Frameworks\obj\Debug\net7.0\shop.Frameworks.pdb
 E:\Projects\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Frameworks\obj\Debug\net7.0\ref\shop.Frameworks.dll
+C:\Users\pouria\Desktop\Eshop-Api\shop.Frameworks\bin\Debug\net7.0\shop.Frameworks.deps.json
+C:\Users\pouria\Desktop\Eshop-Api\shop.Frameworks\bin\Debug\net7.0\shop.Frameworks.dll
+C:\Users\pouria\Desktop\Eshop-Api\shop.Frameworks\bin\Debug\net7.0\shop.Frameworks.pdb
+C:\Users\pouria\Desktop\Eshop-Api\shop.Frameworks\bin\Debug\net7.0\shop.Core.dll
+C:\Users\pouria\Desktop\Eshop-Api\shop.Frameworks\bin\Debug\net7.0\shop.Data.dll
+C:\Users\pouria\Desktop\Eshop-Api\shop.Frameworks\bin\Debug\net7.0\shop.Service.dll
+C:\Users\pouria\Desktop\Eshop-Api\shop.Frameworks\bin\Debug\net7.0\shop.Core.pdb
+C:\Users\pouria\Desktop\Eshop-Api\shop.Frameworks\bin\Debug\net7.0\shop.Service.pdb
+C:\Users\pouria\Desktop\Eshop-Api\shop.Frameworks\bin\Debug\net7.0\shop.Data.pdb
+C:\Users\pouria\Desktop\Eshop-Api\shop.Frameworks\obj\Debug\net7.0\shop.Frameworks.csproj.AssemblyReference.cache
+C:\Users\pouria\Desktop\Eshop-Api\shop.Frameworks\obj\Debug\net7.0\shop.Frameworks.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pouria\Desktop\Eshop-Api\shop.Frameworks\obj\Debug\net7.0\shop.Frameworks.AssemblyInfoInputs.cache
+C:\Users\pouria\Desktop\Eshop-Api\shop.Frameworks\obj\Debug\net7.0\shop.Frameworks.AssemblyInfo.cs
+C:\Users\pouria\Desktop\Eshop-Api\shop.Frameworks\obj\Debug\net7.0\shop.Frameworks.csproj.CoreCompileInputs.cache
+C:\Users\pouria\Desktop\Eshop-Api\shop.Frameworks\obj\Debug\net7.0\shop.Frameworks.sourcelink.json
+C:\Users\pouria\Desktop\Eshop-Api\shop.Frameworks\obj\Debug\net7.0\shop.Fra.8CAEB4FE.Up2Date
+C:\Users\pouria\Desktop\Eshop-Api\shop.Frameworks\obj\Debug\net7.0\shop.Frameworks.dll
+C:\Users\pouria\Desktop\Eshop-Api\shop.Frameworks\obj\Debug\net7.0\refint\shop.Frameworks.dll
+C:\Users\pouria\Desktop\Eshop-Api\shop.Frameworks\obj\Debug\net7.0\shop.Frameworks.pdb
+C:\Users\pouria\Desktop\Eshop-Api\shop.Frameworks\obj\Debug\net7.0\ref\shop.Frameworks.dll

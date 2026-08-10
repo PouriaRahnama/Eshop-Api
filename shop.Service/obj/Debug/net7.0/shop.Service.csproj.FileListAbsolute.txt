@@ -528,3 +528,21 @@ E:\Projects\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Service\obj\Debug\net7.0\s
 E:\Projects\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Service\obj\Debug\net7.0\refint\shop.Service.dll
 E:\Projects\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Service\obj\Debug\net7.0\shop.Service.pdb
 E:\Projects\Eshop-Api\Eshop-Api (2025-04-02)-git\shop.Service\obj\Debug\net7.0\ref\shop.Service.dll
+C:\Users\pouria\Desktop\Eshop-Api\shop.Service\bin\Debug\net7.0\shop.Service.deps.json
+C:\Users\pouria\Desktop\Eshop-Api\shop.Service\bin\Debug\net7.0\shop.Service.dll
+C:\Users\pouria\Desktop\Eshop-Api\shop.Service\bin\Debug\net7.0\shop.Service.pdb
+C:\Users\pouria\Desktop\Eshop-Api\shop.Service\bin\Debug\net7.0\shop.Core.dll
+C:\Users\pouria\Desktop\Eshop-Api\shop.Service\bin\Debug\net7.0\shop.Data.dll
+C:\Users\pouria\Desktop\Eshop-Api\shop.Service\bin\Debug\net7.0\shop.Core.pdb
+C:\Users\pouria\Desktop\Eshop-Api\shop.Service\bin\Debug\net7.0\shop.Data.pdb
+C:\Users\pouria\Desktop\Eshop-Api\shop.Service\obj\Debug\net7.0\shop.Service.csproj.AssemblyReference.cache
+C:\Users\pouria\Desktop\Eshop-Api\shop.Service\obj\Debug\net7.0\shop.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pouria\Desktop\Eshop-Api\shop.Service\obj\Debug\net7.0\shop.Service.AssemblyInfoInputs.cache
+C:\Users\pouria\Desktop\Eshop-Api\shop.Service\obj\Debug\net7.0\shop.Service.AssemblyInfo.cs
+C:\Users\pouria\Desktop\Eshop-Api\shop.Service\obj\Debug\net7.0\shop.Service.csproj.CoreCompileInputs.cache
+C:\Users\pouria\Desktop\Eshop-Api\shop.Service\obj\Debug\net7.0\shop.Service.sourcelink.json
+C:\Users\pouria\Desktop\Eshop-Api\shop.Service\obj\Debug\net7.0\shop.Ser.ED681AE2.Up2Date
+C:\Users\pouria\Desktop\Eshop-Api\shop.Service\obj\Debug\net7.0\shop.Service.dll
+C:\Users\pouria\Desktop\Eshop-Api\shop.Service\obj\Debug\net7.0\refint\shop.Service.dll
+C:\Users\pouria\Desktop\Eshop-Api\shop.Service\obj\Debug\net7.0\shop.Service.pdb
+C:\Users\pouria\Desktop\Eshop-Api\shop.Service\obj\Debug\net7.0\ref\shop.Service.dll

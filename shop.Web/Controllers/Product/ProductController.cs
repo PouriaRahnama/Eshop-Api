@@ -81,7 +81,7 @@ public class ProductController : ShopController
         return CommandResult(result);
     }
 
-    [AllowAnonymous]
+    //[AllowAnonymous]
     [HttpGet("ProductFilter")]
     public async Task<ApiResult<ProductFilterResult>> GetProductByFilter([FromQuery] ProductFilterParams filterParams)
     {

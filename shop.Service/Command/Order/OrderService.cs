@@ -4,16 +4,11 @@ using shop.Core.Domain.User;
 using shop.Data.Repository;
 using shop.Service.DTOs.OrderCommand;
 using shop.Service.Extension.Util;
-using System.Diagnostics.Metrics;
-using System.Net;
-using System.Threading;
 
 namespace shop.Service.Command
 {
     public class OrderService : IOrderService
     {
-        private static readonly SemaphoreSlim _inventoryLock = new SemaphoreSlim(1, 1);
-        private static readonly SemaphoreSlim _OrderFinallyLock = new SemaphoreSlim(1, 1);
         private readonly IRepository<Order> _orderRepository;
         private readonly IRepository<User> _userRepository;
         private readonly IRepository<SellerInventory> _sellerInventoryRepository;
@@ -62,6 +57,7 @@ namespace shop.Service.Command
                 };
                 if (ItemCountBeggerThanInventoryCount(inventory, OrderItem))
                     return OperationResult.Error("تعداد محصولات موجود کمتر از حد درخواستی است.");
+
                 await _orderItemRepository.AddAsync(OrderItem);
             }
             else if (Order != null)
@@ -72,6 +68,7 @@ namespace shop.Service.Command
                     OrderItem.Count += CreateOrderItemDto.Count;
                     OrderItem.UpdateON = DateTime.Now;
                 }
+
                 if (ItemCountBeggerThanInventoryCount(inventory, OrderItem))
                     return OperationResult.Error("تعداد محصولات موجود کمتر از حد درخواستی است.");
 
@@ -84,6 +81,7 @@ namespace shop.Service.Command
         {
             var currentOrder = await _orderRepository.GetEntity(f => f.UserId == DecreaseOrderItemCountDto.UserId
             && f.Status == OrderStatus.Pending);
+
             if (currentOrder == null)
                 return OperationResult.NotFound();
 
@@ -92,9 +90,9 @@ namespace shop.Service.Command
                 return OperationResult.NotFound();
 
             currentItem.Count -= DecreaseOrderItemCountDto.Count;
+
             if (currentItem.Count <= 0)
                 currentItem.Count = 0;
-
 
             _orderItemRepository.Update(currentItem);
             return OperationResult.Success();
@@ -102,6 +100,7 @@ namespace shop.Service.Command
         public async Task<OperationResult> IncreaseOrderItem(IncreaseOrderItemCountDto IncreaseOrderItemCountDto)
         {
             var currentOrder = await _orderRepository.GetEntity(f => f.UserId == IncreaseOrderItemCountDto.UserId);
+
             if (currentOrder == null)
                 return OperationResult.NotFound();
 
@@ -110,34 +109,33 @@ namespace shop.Service.Command
                 return OperationResult.NotFound();
 
             currentItem.Count += IncreaseOrderItemCountDto.Count;
-
             _orderItemRepository.Update(currentItem);
+
             return OperationResult.Success();
         }
         public async Task<OperationResult> RemoveOrderItem(RemoveOrderItemDto RemoveOrderItemDto)
         {
             var currentOrder = await _orderRepository.GetEntity(f => f.UserId == RemoveOrderItemDto.UserId
                && f.Status == OrderStatus.Pending);
+
             if (currentOrder == null)
                 return OperationResult.NotFound();
 
             var currentItem = await _orderItemRepository.GetEntity(f => f.Id == RemoveOrderItemDto.OrderItemId);
-            if (currentItem != null)
-            {
-                currentItem.Deleted = true;
-                _orderItemRepository.Update(currentItem);
-            }
-
+            if (currentItem != null)         
+                _orderItemRepository.Delete(currentItem);          
 
             return OperationResult.Success();
         }
         public async Task<OperationResult> AddOrderAddress(AddOrderAddressDto AddOrderAddressDto)
         {
             var currentUser = await _userRepository.FindByIdAsync(AddOrderAddressDto.UserId);
+
             if (currentUser == null)
                 return OperationResult.NotFound("!کاربری با این مشخصات وجود ندارد");
 
             var ExistOrderAddress = await _orderAddressRepository.GetEntity(ad => ad.OrderId == AddOrderAddressDto.OrderId);
+
             if (ExistOrderAddress != null)
                 return OperationResult.NotFound("!آدرسی مربوط به این سفارش موجوداست");
 
@@ -172,31 +170,18 @@ namespace shop.Service.Command
             _orderAddressRepository.Update(Address);
             return OperationResult.Success();
 
-        }
-
-
-        private bool ItemCountBeggerThanInventoryCount(SellerInventory inventory, OrderItem orderItem)
-        {
-            if (orderItem.Count > inventory.Count)
-                return true;
-            return false;
-        }
-
+        }  
         public async Task<OperationResult> CancelOrder(CancelOrderDto cancelOrderDto)
         {
             var order = await _orderRepository.FindByIdAsync(cancelOrderDto.OrderId);
             if (order == null)
                 return OperationResult.NotFound();
 
-            // آزادسازی موجودی رزرو شده
             foreach (var item in order.OrderItems)
             {
                 var inventory = await _sellerInventoryRepository.FindByIdAsync(item.InventoryId);
                 if (inventory == null)
                     return OperationResult.Error($"موجودی آیتم با شناسه {item.InventoryId} یافت نشد.");
-
-                if (item.Count < 1 || inventory.ReservedCount < item.Count)
-                    return OperationResult.Error("رزرو برای آزادسازی کافی نیست.");
 
                 inventory.ReservedCount -= item.Count;
 
@@ -208,7 +193,6 @@ namespace shop.Service.Command
 
             return OperationResult.Success();
         }
-
         public async Task<OperationResult> CheckoutOrder(CheckoutOrderDto checkoutOrderDto)
         {
             var currentOrder = await _orderRepository.GetEntity(f => f.UserId == checkoutOrderDto.UserId &&
@@ -217,82 +201,58 @@ namespace shop.Service.Command
             if (currentOrder == null)
                 return OperationResult.NotFound();
 
-            // ✅ فقط اگر سفارش واقعاً نهایی یا رد شده باشه، جلوی ادامه رو بگیر
             if (currentOrder.Status == OrderStatus.Finally || currentOrder.Status == OrderStatus.Rejected)
                 return OperationResult.Error("این سفارش قبلاً نهایی شده یا رد شده است.");
 
-            // ✅ اگر سفارش هنوز Pending هست، باید checkout و رزرو بشه
             if (currentOrder.Status == OrderStatus.Pending)
             {
                 currentOrder.Status = OrderStatus.CheckedOut;
                 currentOrder.UpdateON = DateTime.Now;
 
-                await _inventoryLock.WaitAsync();
-                try
-                {
-                    foreach (var item in currentOrder.OrderItems)
-                    {
-                        var inventory = await _sellerInventoryRepository.FindByIdAsync(item.InventoryId);
-                        if (inventory == null)
-                            return OperationResult.Error("موجودی کالا یافت نشد.");
-
-                        if (item.Count < 1 || inventory.AvailableCount < item.Count)
-                            return OperationResult.Error("موجودی کافی برای رزرو وجود ندارد.");
-
-                        inventory.ReservedCount += item.Count;
-                    }
-                }
-                finally
-                {
-                    _inventoryLock.Release();
-                }
-
                 _orderRepository.Update(currentOrder);
-            }
 
-            // ✅ اگر سفارش در حالت CheckedOut بود، فقط بدون تغییر ادامه بده
-            return OperationResult.Success();
-        }
-
-        public async Task<OperationResult> OrderFinally(OrderFinallyDto orderFinallyDto)
-        {
-            await _OrderFinallyLock.WaitAsync();
-            try
-            {
-                var order = await _orderRepository.FindByIdAsync(orderFinallyDto.OrderId);
-                if (order == null)
-                    return OperationResult.NotFound();
-
-                order.Status = OrderStatus.Finally;
-                order.UpdateON = DateTime.Now;
-
-                _orderRepository.Update(order);
-
-                foreach (var item in order.OrderItems)
+                foreach (var item in currentOrder.OrderItems)
                 {
                     var inventory = await _sellerInventoryRepository.FindByIdAsync(item.InventoryId);
                     if (inventory == null)
-                    {
-                        Console.WriteLine($"⚠️ Inventory not found: {item.InventoryId}");
-                        continue;
-                    }
+                        return OperationResult.Error("موجودی کالا یافت نشد.");
 
-                    if (item.Count < 1 || inventory.ReservedCount < item.Count)
-                        return OperationResult.Error("موجودی رزرو شده کافی نیست.");
+                    if (item.Count < 1 || inventory.AvailableCount < item.Count)
+                        return OperationResult.Error("موجودی کافی برای رزرو وجود ندارد.");
 
-                    inventory.ReservedCount -= item.Count;
-                    inventory.Count -= item.Count;
+                    inventory.ReservedCount += item.Count;
 
                     _sellerInventoryRepository.Update(inventory);
-                }
-                return OperationResult.Success();
+                }         
             }
-            finally
-            {
-                _OrderFinallyLock.Release();
-            }
-        }
 
+            return OperationResult.Success();
+        }
+        public async Task<OperationResult> OrderFinally(OrderFinallyDto orderFinallyDto)
+        {
+            var order = await _orderRepository.FindByIdAsync(orderFinallyDto.OrderId);
+            if (order == null)
+                return OperationResult.NotFound();
+
+            order.Status = OrderStatus.Finally;
+            order.UpdateON = DateTime.Now;
+
+            _orderRepository.Update(order);
+
+            foreach (var item in order.OrderItems)
+            {
+                var inventory = await _sellerInventoryRepository.FindByIdAsync(item.InventoryId);
+
+                if (item.Count < 1 || inventory.ReservedCount < item.Count)
+                    return OperationResult.Error("موجودی رزرو شده کافی نیست.");
+
+                inventory.ReservedCount -= item.Count;
+                inventory.Count -= item.Count;
+
+                _sellerInventoryRepository.Update(inventory);
+            }
+            return OperationResult.Success();
+        }
         public async Task<OperationResult> SendOrder(SendOrderDto sendOrderDto)
         {
             var order = await _orderRepository.FindByIdAsync(sendOrderDto.OrderId);
@@ -305,6 +265,13 @@ namespace shop.Service.Command
             _orderRepository.Update(order);
 
             return OperationResult.Success();
+        }
+
+        private bool ItemCountBeggerThanInventoryCount(SellerInventory inventory, OrderItem orderItem)
+        {
+            if (orderItem.Count > inventory.Count)
+                return true;
+            return false;
         }
     }
 }
